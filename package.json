@@ -1,6 +1,6 @@
 {
-  "name": "@gov.nasa.jpl.stellar/css-stellar",
+  "name": "@gov.nasa.jpl.stellar/css",
   "version": "1.0.0",
-  "description": "CSS implementation of the Stellar design system",
+  "description": "CSS implementation of the Stellar design system.",
   "license": "UNLICENSED"
 }
