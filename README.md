@@ -4,12 +4,14 @@ CSS implementation of the Stellar design system.
 
 ## Components
 
-| Name                        | Description                                       |
-| --------------------------- | ------------------------------------------------- |
-| [button](./dist/button.css) | CSS class that decorates the HTML button element  |
-| [color](./dist/color.css)   | CSS variables that define colors to theme classes |
-| [font](./font/inter.css)    | Standard 'Inter' font face                        |
-| [reset](./dist/reset.css)   | A basic CSS reset file for convenience            |
+| Name                              | Description                                          |
+| --------------------------------- | ---------------------------------------------------- |
+| [button](./dist/button.css)       | CSS class that decorates the HTML button element     |
+| [card](./dist/card.css)           | CSS card class that can decorate an HTML div element |
+| [color](./dist/color.css)         | CSS variables that define colors to theme classes    |
+| [font](./font/inter.css)          | Standard 'Inter' font face                           |
+| [reset](./dist/reset.css)         | A basic CSS reset file for convenience               |
+| [utilities](./dist/utilities.css) | Utility classes taken directly from Bootstrap        |
 
 ## Install
 
