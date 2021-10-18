@@ -34,24 +34,20 @@ Import the desired CSS files into your project to make the classes globally avai
 ```html
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
   <head>
-    <title>Stellar Button</title>
-    <link
-      href="node_modules/@gov.nasa.jpl.stellar/css/dist/button.css"
-      rel="stylesheet"
-    />
+    <link href="node_modules/@gov.nasa.jpl.stellar/css/dist/button.css" rel="stylesheet" />
   </head>
   <body>
-    <button class="button">Stellar!</button>
+    <button class="stellar-button">Stellar!</button>
   </body>
 </html>
 ```
 
-If you are using a JavaScript build tool like Webpack or Rollup you can also include the CSS in your JavaScript to be included in your build. Your build tool will need to be configured properly with the correct loader.
+If you are using a JavaScript build tool like Webpack or Rollup you can also include the CSS in your JavaScript. Your build tool will need to be configured properly with the correct loader.
 
 ```js
-import "@gov.nasa.jpl.stellar/css/dist/button.css";
+import '@gov.nasa.jpl.stellar/css/dist/button.css';
 ```
 
 ## Installation Prerequisites

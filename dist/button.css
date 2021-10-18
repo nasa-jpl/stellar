@@ -1,74 +1,73 @@
 :root {
   /* General. */
-  --button-font-family: Inter, Roboto;
-  --button-font-size: 12px;
-  --button-min-width: 80px;
-  --button-width: 112px;
+  --stellar-button-font-family: Inter, Roboto;
+  --stellar-button-font-size: 12px;
+  --stellar-button-min-width: 80px;
+  --stellar-button-width: 112px;
 
   /* Colors. */
-  --button-disabled-background-color: var(--gray-20, #ebecec);
-  --button-disabled-color: var(--gray-40, #bcbcbc);
-  --button-focus-color: var(--blue, #4fa1ff);
-  --button-primary-background-color: var(--primary-900, #0d1667);
-  --button-primary-border: 0;
-  --button-primary-color: white;
-  --button-primary-hover-background-color: var(--primary-700, #283593);
-  --button-secondary-background-color: white;
-  --button-secondary-border: solid 1px var(--primary-400, #5c6bc0);
-  --button-secondary-color: var(--primary-700, #283593);
-  --button-secondary-hover-background-color: var(--primary-50, #e8eaf6);
+  --stellar-button-disabled-background-color: var(--stellar-gray-20, #ebecec);
+  --stellar-button-disabled-color: var(--stellar-gray-40, #bcbcbc);
+  --stellar-button-focus-color: var(--stellar-blue, #4fa1ff);
+  --stellar-button-primary-background-color: var(--stellar-primary-900, #0d1667);
+  --stellar-button-primary-border: 0;
+  --stellar-button-primary-color: var(--stellar-white, #ffffff);
+  --stellar-button-primary-hover-background-color: var(--stellar-primary-700, #283593);
+  --stellar-button-secondary-background-color: var(--stellar-white, #ffffff);
+  --stellar-button-secondary-border: solid 1px var(--stellar-primary-400, #5c6bc0);
+  --stellar-button-secondary-color: var(--stellar-primary-700, #283593);
+  --stellar-button-secondary-hover-background-color: var(--stellar-primary-50, #e8eaf6);
 }
 
-.button {
+.stellar-button {
   align-items: center;
-  background-color: var(--button-primary-background-color);
-  border: var(--button-primary-border);
+  background-color: var(--stellar-button-primary-background-color);
+  border: var(--stellar-button-primary-border);
   border-radius: 4px;
-  color: var(--button-primary-color);
+  color: var(--stellar-button-primary-color);
   cursor: pointer;
   display: inline-flex;
-  font-family: var(--button-font-family);
-  font-size: var(--button-font-size);
+  font-family: var(--stellar-button-font-family);
+  font-size: var(--stellar-button-font-size);
   font-style: normal;
   font-weight: bold;
   height: 24px;
   justify-content: center;
   line-height: 15px;
   letter-spacing: 0.05em;
-  min-width: var(--button-min-width);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  width: var(--button-width);
+  min-width: var(--stellar-button-min-width);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: var(--stellar-button-width);
 }
 
-.button.secondary {
-  background-color: var(--button-secondary-background-color);
-  border: var(--button-secondary-border);
-  color: var(--button-secondary-color);
+.stellar-button.secondary {
+  background-color: var(--stellar-button-secondary-background-color);
+  border: var(--stellar-button-secondary-border);
+  color: var(--stellar-button-secondary-color);
 }
 
-.button:disabled {
-  background-color: var(--button-disabled-background-color);
+.stellar-button:disabled {
+  background-color: var(--stellar-button-disabled-background-color);
   border: 0;
-  color: var(--button-disabled-color);
+  color: var(--stellar-button-disabled-color);
   cursor: not-allowed;
   opacity: 0.8;
 }
 
-.button:focus {
-  box-shadow: 0 0 0 2px var(--button-focus-color);
+.stellar-button:focus {
+  box-shadow: 0 0 0 2px var(--stellar-button-focus-color);
   outline: 0;
 }
 
-.button:hover:not([disabled]) {
-  background-color: var(--button-primary-hover-background-color);
+.stellar-button:hover:not([disabled]) {
+  background-color: var(--stellar-button-primary-hover-background-color);
 }
 
-.button:hover.secondary:not([disabled]) {
-  background-color: var(--button-secondary-hover-background-color);
+.stellar-button:hover.secondary:not([disabled]) {
+  background-color: var(--stellar-button-secondary-hover-background-color);
 }
 
-.button-icon {
+.stellar-button-icon {
   background-color: transparent;
   border: 0;
   cursor: pointer;
