@@ -20,11 +20,11 @@ yarn add @gov.nasa.jpl.stellar/css
 
 ## Components
 
-| Name                   | Description                                       |
-| ---------------------- | ------------------------------------------------- |
-| [button](./button.css) | CSS class that decorates the HTML button element  |
-| [color](./color.css)   | CSS variables that define colors to theme classes |
-| [reset](./reset.css)   | A basic CSS reset file for convenience            |
+| Name                        | Description                                       |
+| --------------------------- | ------------------------------------------------- |
+| [button](./dist/button.css) | CSS class that decorates the HTML button element  |
+| [color](./dist/color.css)   | CSS variables that define colors to theme classes |
+| [reset](./dist/reset.css)   | A basic CSS reset file for convenience            |
 
 ## Usage
 
@@ -37,7 +37,7 @@ Import the desired CSS files into your project to make the classes globally avai
   <head>
     <title>Stellar Button</title>
     <link
-      href="node_modules/@gov.nasa.jpl.stellar/css/button.css"
+      href="node_modules/@gov.nasa.jpl.stellar/css/dist/button.css"
       rel="stylesheet"
     />
   </head>
@@ -50,7 +50,7 @@ Import the desired CSS files into your project to make the classes globally avai
 If you are using a JavaScript build tool like Webpack or Rollup you can also include the CSS in your JavaScript to be included in your build. Your build tool will need to be configured properly with the correct loader.
 
 ```js
-import "@gov.nasa.jpl.stellar/css/button.css";
+import "@gov.nasa.jpl.stellar/css/dist/button.css";
 ```
 
 ## Installation Prerequisites
