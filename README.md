@@ -2,6 +2,15 @@
 
 CSS implementation of the Stellar design system.
 
+## Components
+
+| Name                        | Description                                       |
+| --------------------------- | ------------------------------------------------- |
+| [button](./dist/button.css) | CSS class that decorates the HTML button element  |
+| [color](./dist/color.css)   | CSS variables that define colors to theme classes |
+| [font](./font/inter.css)    | Standard 'Inter' font face                        |
+| [reset](./dist/reset.css)   | A basic CSS reset file for convenience            |
+
 ## Install
 
 First complete the [installation prerequisites](#installation-prerequisites) before installing this package.
@@ -17,15 +26,6 @@ npm install @gov.nasa.jpl.stellar/css --save
 ```bash
 yarn add @gov.nasa.jpl.stellar/css
 ```
-
-## Components
-
-| Name                        | Description                                       |
-| --------------------------- | ------------------------------------------------- |
-| [button](./dist/button.css) | CSS class that decorates the HTML button element  |
-| [color](./dist/color.css)   | CSS variables that define colors to theme classes |
-| [font](./font/inter.css)    | Standard 'Inter' font face                        |
-| [reset](./dist/reset.css)   | A basic CSS reset file for convenience            |
 
 ## Usage
 
