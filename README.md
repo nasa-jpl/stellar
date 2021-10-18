@@ -24,7 +24,7 @@ yarn add @gov.nasa.jpl.stellar/css
 | --------------------------- | ------------------------------------------------- |
 | [button](./dist/button.css) | CSS class that decorates the HTML button element  |
 | [color](./dist/color.css)   | CSS variables that define colors to theme classes |
-| [font]('./font/inter.css)   | Standard 'Inter' font face                        |
+| [font](./font/inter.css)    | Standard 'Inter' font face                        |
 | [reset](./dist/reset.css)   | A basic CSS reset file for convenience            |
 
 ## Usage
