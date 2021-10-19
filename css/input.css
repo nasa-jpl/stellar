@@ -28,7 +28,6 @@
   letter-spacing: 0.04em;
   line-height: 16px;
   min-width: var(--st-input-min-width);
-  width: 100%;
 }
 
 .st-input:disabled {
