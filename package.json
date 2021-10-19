@@ -1,10 +1,10 @@
 {
-  "name": "@gov.nasa.jpl.stellar/css",
-  "version": "1.0.3",
-  "description": "CSS implementation of the Stellar design system.",
+  "name": "@gov.nasa.jpl.stellar/stellar",
+  "version": "1.0.0",
+  "description": "A CSS, HTML, and JavaScript implementation of the Stellar design system.",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.jpl.nasa.gov/Stellar/css-stellar.git"
+    "url": "https://github.jpl.nasa.gov/Stellar/stellar.git"
   }
 }

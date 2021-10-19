@@ -1,17 +1,24 @@
-# css-stellar
+# stellar
 
-CSS implementation of the Stellar design system.
+A CSS, HTML, and JavaScript implementation of the Stellar design system.
 
 ## Components
 
-| Name                              | Description                                          |
-| --------------------------------- | ---------------------------------------------------- |
-| [button](./dist/button.css)       | CSS class that decorates the HTML button element     |
-| [card](./dist/card.css)           | CSS card class that can decorate an HTML div element |
-| [color](./dist/color.css)         | CSS variables that define colors to theme classes    |
-| [font](./font/inter.css)          | Standard 'Inter' font face                           |
-| [reset](./dist/reset.css)         | A basic CSS reset file for convenience               |
-| [utilities](./dist/utilities.css) | Utility classes taken directly from Bootstrap        |
+### CSS
+
+| Name                             | Description                                          |
+| -------------------------------- | ---------------------------------------------------- |
+| [button](./css/button.css)       | CSS class that decorates the HTML button element     |
+| [card](./css/card.css)           | CSS card class that can decorate an HTML div element |
+| [color](./css/color.css)         | CSS variables that define colors to theme classes    |
+| [reset](./css/reset.css)         | A basic CSS reset file for convenience               |
+| [utilities](./css/utilities.css) | Utility classes taken directly from Bootstrap        |
+
+### Font
+
+| Name           | Description                |
+| -------------- | -------------------------- |
+| [font](./font) | Standard 'Inter' font face |
 
 ## Install
 
@@ -20,13 +27,13 @@ First complete the [installation prerequisites](#installation-prerequisites) bef
 #### Npm
 
 ```bash
-npm install @gov.nasa.jpl.stellar/css --save
+npm install @gov.nasa.jpl.stellar/stellar --save
 ```
 
 #### Yarn
 
 ```bash
-yarn add @gov.nasa.jpl.stellar/css
+yarn add @gov.nasa.jpl.stellar/stellar
 ```
 
 ## Usage
@@ -38,7 +45,7 @@ Import the desired CSS files into your project to make the classes globally avai
 
 <html>
   <head>
-    <link href="node_modules/@gov.nasa.jpl.stellar/css/dist/button.css" rel="stylesheet" />
+    <link href="node_modules/@gov.nasa.jpl.stellar/stellar/css/button.css" rel="stylesheet" />
   </head>
   <body>
     <button class="stellar-button">Stellar!</button>
@@ -49,7 +56,7 @@ Import the desired CSS files into your project to make the classes globally avai
 If you are using a JavaScript build tool like Webpack or Rollup you can also include the CSS in your JavaScript. Your build tool will need to be configured properly with the correct loader.
 
 ```js
-import '@gov.nasa.jpl.stellar/css/dist/button.css';
+import '@gov.nasa.jpl.stellar/stellar/css/button.css';
 ```
 
 ## Installation Prerequisites
