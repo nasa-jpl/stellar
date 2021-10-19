@@ -48,7 +48,7 @@ Import the desired CSS files into your project to make the classes globally avai
     <link href="node_modules/@gov.nasa.jpl.stellar/stellar/css/button.css" rel="stylesheet" />
   </head>
   <body>
-    <button class="stellar-button">Stellar!</button>
+    <button class="st-button">Stellar!</button>
   </body>
 </html>
 ```
