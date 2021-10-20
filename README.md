@@ -40,12 +40,12 @@ yarn add @gov.nasa.jpl.stellar/stellar
 
 ## Usage
 
-Import the desired CSS files into your project to make the classes globally available.
+Import the desired CSS files into your project to make the classes globally available. See our [example project](https://github.jpl.nasa.gov/Stellar/example-stellar) for more detailed examples.
 
 ```html
 <html>
   <head>
-    <link href="node_modules/@gov.nasa.jpl.stellar/stellar/css/button.css" rel="stylesheet" />
+    <link href="@gov.nasa.jpl.stellar/stellar/css/button.css" rel="stylesheet" />
   </head>
   <body>
     <button class="st-button">Stellar!</button>
