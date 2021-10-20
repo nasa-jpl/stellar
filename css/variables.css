@@ -34,6 +34,8 @@
   --st-input-disabled-color: var(--st-gray-50, #969696);
   --st-input-error-background-color: rgba(255, 119, 96, 0.2);
   --st-input-focus-color: var(--st-blue, #4fa1ff);
+  --st-input-icon-color: var(--st-gray-40, #bcbcbc);
+  --st-input-icon-disabled-color: var(--st-gray-30, #bec0c2);
   --st-input-placeholder-color: var(--st-gray-50, #969696);
   --st-input-warning-background-color: rgba(253, 180, 98, 0.2);
 }
