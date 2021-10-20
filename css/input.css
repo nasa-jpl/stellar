@@ -1,103 +1,86 @@
-:root {
-  /* General. */
-  --st-input-font-family: Inter, Roboto;
-  --st-input-font-size: 12px;
-  --st-input-min-width: 100px;
-
-  /* Colors. */
-  --st-input-background-color: var(--st-gray-20);
-  --st-input-color: var(--st-gray-80);
-  --st-input-disabled-background-color: var(--st-gray-10);
-  --st-input-disabled-color: var(--st-gray-50);
-  --st-input-error-background-color: rgba(255, 119, 96, 0.2);
-  --st-input-focus-color: var(--st-blue);
-  --st-input-placeholder-color: var(--st-gray-50);
-  --st-input-warning-background-color: rgba(253, 180, 98, 0.2);
-}
-
 .st-input {
-  background-color: var(--st-input-background-color);
+  background-color: var(--st-input-background-color, #ebecec);
   border-radius: 4px;
-  border: 1px solid var(--st-input-background-color);
-  color: var(--st-input-color);
-  font-family: var(--st-input-font-family);
-  font-size: var(--st-input-font-size);
+  border: 1px solid var(--st-input-background-color, #ebecec);
+  color: var(--st-input-color, #293137);
+  font-family: var(--st-input-font-family, Inter);
+  font-size: var(--st-input-font-size, 12px);
   font-style: normal;
   font-weight: 500;
   height: 24px;
   letter-spacing: 0.04em;
   line-height: 16px;
-  min-width: var(--st-input-min-width);
+  min-width: var(--st-input-min-width, 60px);
 }
 
 .st-input:disabled {
-  background-color: var(--st-input-disabled-background-color);
-  border: 1px solid var(--st-input-disabled-background-color);
-  color: var(--st-input-disabled-color);
+  background-color: var(--st-input-disabled-background-color, #f8f8f8);
+  border: 1px solid var(--st-input-disabled-background-color, #f8f8f8);
+  color: var(--st-input-disabled-color, #969696);
   cursor: not-allowed;
 }
 
 .st-input:disabled::placeholder {
-  color: var(--st-input-disabled-color);
+  color: var(--st-input-disabled-color, #969696);
 }
 
 .st-input:focus {
-  box-shadow: 0 0 0 2px var(--st-input-focus-color);
+  box-shadow: 0 0 0 2px var(--st-input-focus-color, #4fa1ff);
   outline: 0;
 }
 
 .st-input::placeholder {
-  color: var(--st-input-placeholder-color);
+  color: var(--st-input-placeholder-color, #969696);
 }
 
 .st-input.error {
   background-color: var(--st-input-error-background-color);
-  border: 1px solid var(--st-red);
-  color: var(--st-red);
+  border: 1px solid var(--st-red, #ff7760);
+  color: var(--st-red, #ff7760);
 }
 
 .st-input.error:disabled {
-  background-color: var(--st-input-disabled-background-color);
-  border: 1px solid var(--st-red);
-  color: var(--st-input-disabled-color);
+  background-color: var(--st-input-disabled-background-color, #f8f8f8);
+  border: 1px solid var(--st-red, #ff7760);
+  color: var(--st-input-disabled-color, #969696);
   cursor: not-allowed;
 }
 
 .st-input.error:disabled::placeholder {
-  color: var(--st-input-disabled-color);
+  color: var(--st-input-disabled-color, #969696);
 }
 
 .st-input.error:focus {
-  box-shadow: 0 0 0 1px var(--st-red);
+  box-shadow: 0 0 0 1px var(--st-red, #ff7760);
   outline: 0;
 }
 
 .st-input.error::placeholder {
-  color: var(--st-red);
+  color: var(--st-red, #ff7760);
 }
 
 .st-input.warning {
   background-color: var(--st-input-warning-background-color);
-  border: 1px solid var(--st-orange);
-  color: var(--st-orange);
+  border: 1px solid var(--st-orange, #fdb462);
+  color: var(--st-orange, #fdb462);
 }
 
 .st-input.warning:disabled {
-  background-color: var(--st-input-disabled-background-color);
-  border: 1px solid var(--st-orange);
-  color: var(--st-input-disabled-color);
+  background-color: var(--st-input-disabled-background-color, #f8f8f8);
+  border: 1px solid var(--st-orange, #fdb462);
+  color: var(--st-input-disabled-color, #969696);
   cursor: not-allowed;
 }
 
 .st-input.warning:disabled::placeholder {
-  color: var(--st-input-disabled-color);
+  color: var(--st-input-disabled-color, #969696);
 }
 
 .st-input.warning:focus {
-  box-shadow: 0 0 0 1px var(--st-orange);
+  box-shadow: 0 0 0 1px var(--st-orange, #fdb462);
   outline: 0;
 }
 
 .st-input.warning::placeholder {
-  color: var(--st-orange);
+  color: var(--st-orange, #fdb462);
 }

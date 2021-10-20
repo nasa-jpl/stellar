@@ -1,5 +1,6 @@
 :root {
   /* Emphasis Colors. */
+  --st-black: #000000;
   --st-blue: #4fa1ff;
   --st-green: #1aff66;
   --st-orange: #fdb462;
@@ -31,9 +32,9 @@
   --st-primary-200: #9fa8da;
   --st-primary-100: #c5cae9;
   --st-primary-50: #e8eaf6;
-  --st-primary: var(--st-primary-900);
-  --st-primary-background-color: var(--st-white);
-  --st-primary-inverse-background-color: var(--st-gray-100);
-  --st-primary-inverse-text-color: var(--st-white);
-  --st-primary-text-color: var(--st-gray-100);
+  --st-primary: var(--st-primary-900, #0d1667);
+  --st-primary-background-color: var(--st-white, #ffffff);
+  --st-primary-inverse-background-color: var(--st-gray-100, #1b1d1e);
+  --st-primary-inverse-text-color: var(--st-white, #ffffff);
+  --st-primary-text-color: var(--st-gray-100, #1b1d1e);
 }

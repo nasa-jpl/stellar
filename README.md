@@ -14,12 +14,13 @@ A CSS, HTML, and JavaScript implementation of the Stellar design system.
 | [input](./css/input.css)         | CSS class that decorates the HTML input element      |
 | [reset](./css/reset.css)         | A basic CSS reset file for convenience               |
 | [utilities](./css/utilities.css) | Utility classes taken directly from Bootstrap        |
+| [variables](./css/variables.css) | Collection of all CSS variables for each component   |
 
 ### Font
 
-| Name           | Description                |
-| -------------- | -------------------------- |
-| [font](./font) | Standard 'Inter' font face |
+| Name                  | Description                |
+| --------------------- | -------------------------- |
+| [inter](./font/inter) | Standard 'Inter' font face |
 
 ## Install
 
@@ -42,8 +43,6 @@ yarn add @gov.nasa.jpl.stellar/stellar
 Import the desired CSS files into your project to make the classes globally available.
 
 ```html
-<!DOCTYPE html>
-
 <html>
   <head>
     <link href="node_modules/@gov.nasa.jpl.stellar/stellar/css/button.css" rel="stylesheet" />
@@ -52,12 +51,6 @@ Import the desired CSS files into your project to make the classes globally avai
     <button class="st-button">Stellar!</button>
   </body>
 </html>
-```
-
-If you are using a JavaScript build tool like Webpack or Rollup you can also include the CSS in your JavaScript. Your build tool will need to be configured properly with the correct loader.
-
-```js
-import '@gov.nasa.jpl.stellar/stellar/css/button.css';
 ```
 
 ## Installation Prerequisites
