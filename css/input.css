@@ -34,7 +34,7 @@
 }
 
 .st-input.error {
-  background-color: var(--st-input-error-background-color);
+  background-color: var(--st-input-error-background-color, rgba(255, 119, 96, 0.2));
   border: 1px solid var(--st-red, #ff7760);
   color: var(--st-red, #ff7760);
 }
@@ -60,7 +60,7 @@
 }
 
 .st-input.warning {
-  background-color: var(--st-input-warning-background-color);
+  background-color: var(--st-input-warning-background-color, rgba(253, 180, 98, 0.2));
   border: 1px solid var(--st-orange, #fdb462);
   color: var(--st-orange, #fdb462);
 }

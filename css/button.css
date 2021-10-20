@@ -21,7 +21,7 @@
 
 .st-button.secondary {
   background-color: var(--st-button-secondary-background-color, #ffffff);
-  border: var(--st-button-secondary-border);
+  border: var(--st-button-secondary-border, solid 1px #5c6bc0);
   color: var(--st-button-secondary-color, #283593);
 }
 
