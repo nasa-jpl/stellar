@@ -6,16 +6,17 @@ A CSS, HTML, and JavaScript implementation of the Stellar design system. See the
 
 ### CSS
 
-| Name                             | Description                                          |
-| -------------------------------- | ---------------------------------------------------- |
-| [button](./css/button.css)       | CSS class that decorates the HTML button element     |
-| [card](./css/card.css)           | CSS card class that can decorate an HTML div element |
-| [color](./css/color.css)         | CSS variables that define colors to theme classes    |
-| [input](./css/input.css)         | CSS class that decorates the HTML input element      |
-| [reset](./css/reset.css)         | A basic CSS reset file for convenience               |
-| [select](./css/select.css)       | CSS class that decorates the HTML select element     |
-| [utilities](./css/utilities.css) | Utility classes taken directly from Bootstrap        |
-| [variables](./css/variables.css) | Collection of all CSS variables for each component   |
+| Name                                  | Description                                          |
+| ------------------------------------- | ---------------------------------------------------- |
+| [button](./css/button.css)            | CSS class that decorates the HTML button element     |
+| [card](./css/card.css)                | CSS card class that can decorate an HTML div element |
+| [color](./css/color.css)              | CSS variables that define colors to theme classes    |
+| [input-group]('./css/input-group.css) | CSS class for grouping sets of input fields          |
+| [input](./css/input.css)              | CSS class that decorates the HTML input element      |
+| [reset](./css/reset.css)              | A basic CSS reset file for convenience               |
+| [select](./css/select.css)            | CSS class that decorates the HTML select element     |
+| [utilities](./css/utilities.css)      | Utility classes taken directly from Bootstrap        |
+| [variables](./css/variables.css)      | Collection of all CSS variables for each component   |
 
 ### Font
 
@@ -46,7 +47,10 @@ Import the desired CSS files into your project to make the classes globally avai
 ```html
 <html>
   <head>
-    <link href="@gov.nasa.jpl.stellar/stellar/css/button.css" rel="stylesheet" />
+    <link
+      href="@gov.nasa.jpl.stellar/stellar/css/button.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <button class="st-button">Stellar!</button>
