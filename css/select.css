@@ -1,0 +1,41 @@
+.st-select {
+  background: var(--st-select-background, #ebecec);
+  border: 0;
+  border-radius: 4px;
+  color: var(--st-select-color, #293137);
+  cursor: pointer;
+  font-family: var(--st-select-font-family, Inter);
+  font-size: var(--st-select-font-size, 12px);
+  font-style: normal;
+  font-weight: 500;
+  height: 24px;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  min-width: var(--st-select-min-width, 120px);
+}
+
+.st-select:disabled {
+  background: var(--st-select-disabled-background, #ebecec);
+  color: var(--st-select-disabled-color, #969696);
+  cursor: not-allowed;
+}
+
+.st-select:focus {
+  box-shadow: 0 0 0 2px var(--st-select-focus-color, #4fa1ff);
+  outline: 0;
+}
+
+.st-select:hover:not([disabled], .error) {
+  background: var(--st-select-hover-background, #e6e6e6);
+}
+
+.st-select.error {
+  background-color: var(--st-select-error-background-color, rgba(255, 119, 96, 0.2));
+  border: 1px solid var(--st-red, #ff7760);
+  color: var(--st-red, #ff7760);
+}
+
+.st-select.error:focus {
+  box-shadow: 0 0 0 1px var(--st-red, #ff7760);
+  outline: 0;
+}
