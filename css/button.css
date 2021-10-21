@@ -12,10 +12,13 @@
   font-weight: bold;
   height: 24px;
   justify-content: center;
-  line-height: 15px;
   letter-spacing: 0.05em;
+  line-height: 15px;
   min-width: var(--st-button-min-width, 60px);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
   width: var(--st-button-width, 112px);
 }

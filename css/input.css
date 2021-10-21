@@ -1,7 +1,7 @@
 .st-input {
   background-color: var(--st-input-background-color, #ebecec);
-  border-radius: 4px;
   border: 1px solid var(--st-input-background-color, #ebecec);
+  border-radius: 4px;
   color: var(--st-input-color, #293137);
   font-family: var(--st-input-font-family, Inter);
   font-size: var(--st-input-font-size, 12px);
