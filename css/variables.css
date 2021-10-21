@@ -1,58 +1,45 @@
-/* Button. */
 :root {
-  /* General. */
-  --st-button-font-family: Inter, Roboto;
-  --st-button-font-size: 12px;
-  --st-button-min-width: 60px;
-  --st-button-width: 112px;
-
-  /* Colors. */
+  /* Button. */
   --st-button-disabled-background-color: var(--st-gray-20, #ebecec);
   --st-button-disabled-color: var(--st-gray-40, #bcbcbc);
   --st-button-focus-color: var(--st-blue, #4fa1ff);
+  --st-button-font-family: inter, roboto;
+  --st-button-font-size: 12px;
+  --st-button-min-width: 60px;
   --st-button-primary-background-color: var(--st-primary-900, #0d1667);
   --st-button-primary-border: 0;
-  --st-button-primary-color: var(--st-white, #ffffff);
+  --st-button-primary-color: var(--st-white, #fff);
   --st-button-primary-hover-background-color: var(--st-primary-700, #283593);
-  --st-button-secondary-background-color: var(--st-white, #ffffff);
+  --st-button-secondary-background-color: var(--st-white, #fff);
   --st-button-secondary-border: solid 1px var(--st-primary-400, #5c6bc0);
   --st-button-secondary-color: var(--st-primary-700, #283593);
   --st-button-secondary-hover-background-color: var(--st-primary-50, #e8eaf6);
-}
+  --st-button-width: 112px;
 
-/* Input. */
-:root {
-  /* General. */
-  --st-input-font-family: Inter, Roboto;
-  --st-input-font-size: 12px;
-  --st-input-min-width: 60px;
-
-  /* Colors. */
+  /* Input. */
   --st-input-background-color: var(--st-gray-20, #ebecec);
   --st-input-color: var(--st-gray-80, #293137);
   --st-input-disabled-background-color: var(--st-gray-10, #f8f8f8);
   --st-input-disabled-color: var(--st-gray-50, #969696);
-  --st-input-error-background-color: rgba(255, 119, 96, 0.2);
+  --st-input-error-background-color: rgb(255 119 96 / 20%);
   --st-input-focus-color: var(--st-blue, #4fa1ff);
+  --st-input-font-family: inter, roboto;
+  --st-input-font-size: 12px;
   --st-input-icon-color: var(--st-gray-40, #bcbcbc);
   --st-input-icon-disabled-color: var(--st-gray-30, #bec0c2);
+  --st-input-min-width: 60px;
   --st-input-placeholder-color: var(--st-gray-50, #969696);
-  --st-input-warning-background-color: rgba(253, 180, 98, 0.2);
-}
+  --st-input-warning-background-color: rgb(253 180 98 / 20%);
 
-/* Select. */
-:root {
-  /* General. */
-  --st-select-font-family: Inter, Roboto;
-  --st-select-font-size: 12px;
-  --st-select-min-width: 120px;
-
-  /* Colors. */
+  /* Select. */
   --st-select-background: var(--st-gray-20, #ebecec);
   --st-select-color: var(--st-gray-80, #293137);
   --st-select-disabled-background: var(--st-gray-20, #ebecec);
   --st-select-disabled-color: var(--st-gray-50, #969696);
-  --st-select-error-background-color: rgba(255, 119, 96, 0.2);
+  --st-select-error-background-color: rgb(255 119 96 / 20%);
   --st-select-focus-color: var(--st-blue, #4fa1ff);
+  --st-select-font-size: 12px;
+  --st-select-font-family: inter, roboto;
   --st-select-hover-background: #e6e6e6;
+  --st-select-min-width: 120px;
 }

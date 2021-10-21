@@ -30,7 +30,7 @@
 }
 
 .st-select.error {
-  background-color: var(--st-select-error-background-color, rgba(255, 119, 96, 0.2));
+  background-color: var(--st-select-error-background-color, rgb(255 119 96 / 20%));
   border: 1px solid var(--st-red, #ff7760);
   color: var(--st-red, #ff7760);
 }
