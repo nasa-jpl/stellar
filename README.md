@@ -1,6 +1,6 @@
 # @gov.nasa.jpl.stellar/stellar
 
-A CSS, HTML, and JavaScript implementation of the Stellar design system.
+A CSS, HTML, and JavaScript implementation of the Stellar design system. See the [live demo here](https://github.jpl.nasa.gov/pages/Stellar/stellar/example/).
 
 ## Components
 
@@ -13,6 +13,7 @@ A CSS, HTML, and JavaScript implementation of the Stellar design system.
 | [color](./css/color.css)         | CSS variables that define colors to theme classes    |
 | [input](./css/input.css)         | CSS class that decorates the HTML input element      |
 | [reset](./css/reset.css)         | A basic CSS reset file for convenience               |
+| [select](./css/select.css)       | CSS class that decorates the HTML select element     |
 | [utilities](./css/utilities.css) | Utility classes taken directly from Bootstrap        |
 | [variables](./css/variables.css) | Collection of all CSS variables for each component   |
 
