@@ -3,12 +3,10 @@
   display: flex;
   position: relative;
 }
-
 .st-input-group > .left {
   left: 5px;
   position: absolute;
 }
-
 .st-input-group > .right {
   position: absolute;
   right: 5px;

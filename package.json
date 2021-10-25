@@ -8,11 +8,13 @@
     "url": "https://github.jpl.nasa.gov/Stellar/stellar.git"
   },
   "scripts": {
-    "lint-css": "stylelint ./css/**/*.css --fix"
+    "build": "rm -rf css && sass --no-source-map scss:css",
+    "lint": "stylelint scss/**/*.scss --fix"
   },
   "devDependencies": {
+    "sass": "^1.43.3",
     "stylelint": "^14.0.0",
-    "stylelint-config-standard": "^23.0.0",
+    "stylelint-config-standard-scss": "^2.0.0",
     "stylelint-order": "^5.0.0"
   }
 }

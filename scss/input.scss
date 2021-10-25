@@ -1,0 +1,86 @@
+.st-input {
+  background-color: var(--st-input-background-color, #ebecec);
+  border: 1px solid var(--st-input-background-color, #ebecec);
+  border-radius: 4px;
+  color: var(--st-input-color, #293137);
+  font-family: var(--st-input-font-family, Inter);
+  font-size: var(--st-input-font-size, 12px);
+  font-style: normal;
+  font-weight: 500;
+  height: 24px;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  min-width: var(--st-input-min-width, 60px);
+
+  &::placeholder {
+    color: var(--st-input-placeholder-color, #969696);
+  }
+
+  &:disabled {
+    background-color: var(--st-input-disabled-background-color, #f8f8f8);
+    border: 1px solid var(--st-input-disabled-background-color, #f8f8f8);
+    color: var(--st-input-disabled-color, #969696);
+    cursor: not-allowed;
+
+    &::placeholder {
+      color: var(--st-input-disabled-color, #969696);
+    }
+  }
+
+  &.error {
+    background-color: var(--st-input-error-background-color, rgb(255 119 96 / 20%));
+    border: 1px solid var(--st-red, #ff7760);
+    color: var(--st-red, #ff7760);
+
+    &::placeholder {
+      color: var(--st-red, #ff7760);
+    }
+
+    &:disabled {
+      background-color: var(--st-input-disabled-background-color, #f8f8f8);
+      border: 1px solid var(--st-red, #ff7760);
+      color: var(--st-input-disabled-color, #969696);
+      cursor: not-allowed;
+
+      &::placeholder {
+        color: var(--st-input-disabled-color, #969696);
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 1px var(--st-red, #ff7760);
+      outline: 0;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--st-input-focus-color, #4fa1ff);
+    outline: 0;
+  }
+
+  &.warning {
+    background-color: var(--st-input-warning-background-color, rgb(253 180 98 / 20%));
+    border: 1px solid var(--st-orange, #fdb462);
+    color: var(--st-orange, #fdb462);
+
+    &::placeholder {
+      color: var(--st-orange, #fdb462);
+    }
+
+    &:disabled {
+      background-color: var(--st-input-disabled-background-color, #f8f8f8);
+      border: 1px solid var(--st-orange, #fdb462);
+      color: var(--st-input-disabled-color, #969696);
+      cursor: not-allowed;
+
+      &::placeholder {
+        color: var(--st-input-disabled-color, #969696);
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 1px var(--st-orange, #fdb462);
+      outline: 0;
+    }
+  }
+}

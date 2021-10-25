@@ -8,6 +8,7 @@
   --st-white: #fff;
   --st-yellow: #ffdd5c;
   --st-yellow-light: #ffc93e;
+
   /* Gray Color Pallette. */
   --st-gray-100: #1b1d1e;
   --st-gray-90: #1f2223;
@@ -19,6 +20,7 @@
   --st-gray-30: #bec0c2;
   --st-gray-20: #ebecec;
   --st-gray-10: #f8f8f8;
+
   /* Primary Color Pallette. */
   --st-primary-900: #0d1667;
   --st-primary-800: #1a237e;
@@ -35,6 +37,7 @@
   --st-primary-inverse-background-color: var(--st-gray-100, #1b1d1e);
   --st-primary-inverse-text-color: var(--st-white, #fff);
   --st-primary-text-color: var(--st-gray-100, #1b1d1e);
+
   /* Button. */
   --st-button-disabled-background-color: var(--st-gray-20, #ebecec);
   --st-button-disabled-color: var(--st-gray-40, #bcbcbc);
@@ -51,6 +54,7 @@
   --st-button-secondary-color: var(--st-primary-700, #283593);
   --st-button-secondary-hover-background-color: var(--st-primary-50, #e8eaf6);
   --st-button-width: 112px;
+
   /* Input. */
   --st-input-background-color: var(--st-gray-20, #ebecec);
   --st-input-color: var(--st-gray-80, #293137);
@@ -65,6 +69,7 @@
   --st-input-min-width: 60px;
   --st-input-placeholder-color: var(--st-gray-50, #969696);
   --st-input-warning-background-color: rgb(253 180 98 / 20%);
+
   /* Select. */
   --st-select-background: var(--st-gray-20, #ebecec);
   --st-select-color: var(--st-gray-80, #293137);

@@ -15,20 +15,17 @@
   letter-spacing: 0.05em;
   line-height: 15px;
   min-width: var(--st-button-min-width, 60px);
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   width: var(--st-button-width, 112px);
 }
-
 .st-button.secondary {
   background-color: var(--st-button-secondary-background-color, #fff);
   border: var(--st-button-secondary-border, solid 1px #5c6bc0);
   color: var(--st-button-secondary-color, #283593);
 }
-
+.st-button.secondary:hover:not([disabled]) {
+  background-color: var(--st-button-secondary-hover-background-color, #e8eaf6);
+}
 .st-button:disabled {
   background-color: var(--st-button-disabled-background-color, #ebecec);
   border: 0;
@@ -36,20 +33,13 @@
   cursor: not-allowed;
   opacity: 80%;
 }
-
 .st-button:focus {
   box-shadow: 0 0 0 2px var(--st-button-focus-color, #4fa1ff);
   outline: 0;
 }
-
 .st-button:hover:not([disabled]) {
   background-color: var(--st-button-primary-hover-background-color, #283593);
 }
-
-.st-button:hover.secondary:not([disabled]) {
-  background-color: var(--st-button-secondary-hover-background-color, #e8eaf6);
-}
-
 .st-button-icon {
   background-color: transparent;
   border: 0;
