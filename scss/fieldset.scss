@@ -1,4 +1,5 @@
 @use 'mixins/input';
+@use 'mixins/select';
 
 .st-fieldset {
   align-items: center;
@@ -7,6 +8,11 @@
   margin: 0;
   padding: 0;
   position: relative;
+
+  & .st-legend {
+    margin: 0;
+    padding: 0;
+  }
 
   &:disabled {
     & i {
@@ -19,13 +25,25 @@
       color: var(--st-red, #ff7760);
     }
 
+    & .st-legend {
+      color: var(--st-red, #ff7760);
+    }
+
     & .st-input {
       @include input.st-input-error;
+    }
+
+    & .st-select {
+      @include select.st-select-error;
     }
   }
 
   &.warning {
     & i {
+      color: var(--st-orange, #fdb462);
+    }
+
+    & .st-legend {
       color: var(--st-orange, #fdb462);
     }
 

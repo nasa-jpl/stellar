@@ -1,0 +1,10 @@
+@mixin st-select-error {
+  background-color: var(--st-select-error-background-color, rgb(255 119 96 / 20%));
+  border: 1px solid var(--st-red, #ff7760);
+  color: var(--st-red, #ff7760);
+
+  &:focus {
+    box-shadow: 0 0 0 1px var(--st-red, #ff7760);
+    outline: 0;
+  }
+}
