@@ -1,0 +1,50 @@
+@use 'mixins/input';
+
+.st-fieldset {
+  align-items: center;
+  border: 0;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &:disabled {
+    & i {
+      color: var(--st-fieldset-icon-disabled-color, #bec0c2);
+    }
+  }
+
+  &.error {
+    & i {
+      color: var(--st-red, --st-red);
+    }
+
+    & .st-input {
+      @include input.st-input-error;
+    }
+  }
+
+  &.warning {
+    & i {
+      color: var(--st-orange, #fdb462);
+    }
+
+    & .st-input {
+      @include input.st-input-warning;
+    }
+  }
+
+  & i {
+    color: var(--st-fieldset-icon-color, #bcbcbc);
+  }
+
+  & > .left {
+    left: 5px;
+    position: absolute;
+  }
+
+  & > .right {
+    position: absolute;
+    right: 5px;
+  }
+}

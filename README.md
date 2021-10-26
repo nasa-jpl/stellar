@@ -6,14 +6,14 @@ A CSS, HTML, and JavaScript implementation of the Stellar design system. See the
 
 ### CSS
 
-| Name                                   | Description                                                       |
-| -------------------------------------- | ----------------------------------------------------------------- |
-| [button](./scss/button.scss)           | CSS class that decorates the HTML button element                  |
-| [card](./scss/card.scss)               | CSS card class that can decorate an HTML div element              |
-| [input-group](./scss/input-group.scss) | CSS class for grouping sets of input fields                       |
-| [input](./scss/input.scss)             | CSS class that decorates the HTML input element                   |
-| [select](./scss/select.scss)           | CSS class that decorates the HTML select element                  |
-| [variables](./scss/variables.scss)     | Collection of all CSS variables. Overwrite to set your own theme. |
+| Name                               | Description                                                       |
+| ---------------------------------- | ----------------------------------------------------------------- |
+| [button](./scss/button.scss)       | CSS class that decorates the HTML button element                  |
+| [card](./scss/card.scss)           | CSS card class that can decorate an HTML div element              |
+| [fieldset](./scss/fieldset.scss)   | CSS class for grouping sets of input fields                       |
+| [input](./scss/input.scss)         | CSS class that decorates the HTML input element                   |
+| [select](./scss/select.scss)       | CSS class that decorates the HTML select element                  |
+| [variables](./scss/variables.scss) | Collection of all CSS variables. Overwrite to set your own theme. |
 
 ### Font
 

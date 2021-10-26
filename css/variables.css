@@ -51,6 +51,9 @@
   --st-button-secondary-color: var(--st-primary-700, #283593);
   --st-button-secondary-hover-background-color: var(--st-primary-50, #e8eaf6);
   --st-button-width: 112px;
+  /* Fieldset. */
+  --st-fieldset-icon-color: var(--st-gray-40, #bcbcbc);
+  --st-fieldset-icon-disabled-color: var(--st-gray-30, #bec0c2);
   /* Input. */
   --st-input-background-color: var(--st-gray-20, #ebecec);
   --st-input-color: var(--st-gray-80, #293137);
@@ -60,8 +63,6 @@
   --st-input-focus-color: var(--st-blue, #4fa1ff);
   --st-input-font-family: inter, roboto;
   --st-input-font-size: 12px;
-  --st-input-icon-color: var(--st-gray-40, #bcbcbc);
-  --st-input-icon-disabled-color: var(--st-gray-30, #bec0c2);
   --st-input-min-width: 60px;
   --st-input-placeholder-color: var(--st-gray-50, #969696);
   --st-input-warning-background-color: rgb(253 180 98 / 20%);
