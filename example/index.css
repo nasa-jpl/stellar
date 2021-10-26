@@ -1,0 +1,13 @@
+body {
+  font-family: Inter, -apple-system, sans-serif;
+  font-size: 16px;
+}
+
+section {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+section > div:first-child {
+  margin-bottom: 0.8rem;
+}
