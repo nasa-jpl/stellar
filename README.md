@@ -1,6 +1,6 @@
 # @gov.nasa.jpl.stellar/stellar
 
-A CSS, HTML, and JavaScript implementation of the Stellar design system. See the [live demo here](https://github.jpl.nasa.gov/pages/Stellar/stellar/example/).
+A CSS, HTML, and JavaScript implementation of the Stellar design system. See the [live demo here](https://github.jpl.nasa.gov/pages/Stellar/stellar-example/).
 
 ## Components
 
