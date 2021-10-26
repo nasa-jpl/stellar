@@ -38,6 +38,15 @@
   --st-primary-inverse-text-color: var(--st-white, #fff);
   --st-primary-text-color: var(--st-gray-100, #1b1d1e);
 
+  /* Layout. */
+  --st-grid-unit: 8px;
+  --st-grid-unit2x: calc(var(--st-grid-unit) * 2);
+  --st-grid-unit3x: calc(var(--st-grid-unit) * 3);
+  --st-grid-unit4x: calc(var(--st-grid-unit) * 4);
+
+  /* Typography. */
+  --st-font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
+
   /* Button. */
   --st-button-disabled-background-color: var(--st-gray-20, #ebecec);
   --st-button-disabled-color: var(--st-gray-40, #bcbcbc);

@@ -1,4 +1,4 @@
-.st-typography-base, .st-typography--displayBody, .st-typography--displayH3, .st-typography--displayH2, .st-typography--displayH1, .st-typography--smallCaps, .st-typography--bold, .st-typography--medium, .st-button, .st-typography--body, .st-typography--label, .st-typography--header, *,
+.st-typography-base, .st-typography--displayBody, .st-typography--displayH3, .st-typography--displayH2, .st-typography--displayH1, .st-typography--smallCaps, .st-typography--bold, .st-typography--medium, .st-typography--body, .st-typography--label, .st-typography--header, *,
 *:before,
 *:after {
   font-family: var(--st-font-family);
@@ -47,7 +47,7 @@
   color: rgba(var(--st-gray-10-RGB), 0.9);
 }
 
-.st-typography--medium, .st-button {
+.st-typography--medium {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -160,53 +160,4 @@
 
 .st-typography--capitalize {
   text-transform: capitalize;
-}
-
-.st-button {
-  align-items: center;
-  background-color: var(--st-button-primary-background-color, #0d1667);
-  border: var(--st-button-primary-border, 0);
-  border-radius: 4px;
-  color: var(--st-button-primary-color, #fff);
-  cursor: pointer;
-  display: inline-flex;
-  height: var(--st-grid-unit3x);
-  justify-content: center;
-  padding: 0 var(--st-grid-unit);
-}
-.st-button.large {
-  padding: 0 var(--st-grid-unit2x);
-  height: var(--st-grid-unit4x);
-  font-size: 16px;
-  line-height: 16px;
-}
-.st-button.secondary {
-  background-color: var(--st-button-secondary-background-color, #fff);
-  border: var(--st-button-secondary-border, solid 1px #5c6bc0);
-  color: var(--st-button-secondary-color, #283593);
-}
-.st-button.secondary:hover:not([disabled]) {
-  background-color: var(--st-button-secondary-hover-background-color, #e8eaf6);
-}
-.st-button:disabled {
-  background-color: var(--st-button-disabled-background-color, #ebecec);
-  border: 0;
-  color: var(--st-button-disabled-color, #bcbcbc);
-  cursor: not-allowed;
-  opacity: 80%;
-}
-.st-button:focus {
-  box-shadow: 0 0 0 2px var(--st-button-focus-color, #4fa1ff);
-  outline: 0;
-}
-.st-button:hover:not([disabled]) {
-  background-color: var(--st-button-primary-hover-background-color, #283593);
-}
-.st-button-icon {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  margin: 0;
-  outline: 0;
-  padding: 0;
 }

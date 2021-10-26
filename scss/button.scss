@@ -1,4 +1,7 @@
+@use "typography.scss";
+
 .st-button {
+  @extend .st-typography--medium;
   align-items: center;
   background-color: var(--st-button-primary-background-color, #0d1667);
   border: var(--st-button-primary-border, 0);
@@ -6,21 +9,23 @@
   color: var(--st-button-primary-color, #fff);
   cursor: pointer;
   display: inline-flex;
-  font-family: var(--st-button-font-family, Inter);
-  font-size: var(--st-button-font-size, 12px);
-  font-style: normal;
-  font-weight: bold;
-  height: 24px;
+  height: var(--st-grid-unit3x);
   justify-content: center;
-  letter-spacing: 0.05em;
-  line-height: 15px;
-  min-width: var(--st-button-min-width, 60px);
-  transition:
-    color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  width: var(--st-button-width, 112px);
+  padding: 0 var(--st-grid-unit);
+  // min-width: var(--st-button-min-width, 60px);
+  // transition:
+  //   color 0.15s ease-in-out,
+  //   background-color 0.15s ease-in-out,
+  //   border-color 0.15s ease-in-out,
+  //   box-shadow 0.15s ease-in-out;
+  // width: var(--st-button-width, 112px);
+
+  &.large {
+    padding: 0 var(--st-grid-unit2x);
+    height: var(--st-grid-unit4x);
+    font-size: 16px;
+    line-height: 16px;
+  }
 
   &.secondary {
     background-color: var(--st-button-secondary-background-color, #fff);
@@ -62,3 +67,4 @@
     padding: 0;
   }
 }
+

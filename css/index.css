@@ -1,0 +1,589 @@
+:root {
+  /* Emphasis Colors. */
+  --st-black: #000;
+  --st-blue: #4fa1ff;
+  --st-green: #1aff66;
+  --st-orange: #fdb462;
+  --st-red: #ff7760;
+  --st-white: #fff;
+  --st-yellow: #ffdd5c;
+  --st-yellow-light: #ffc93e;
+  /* Gray Color Pallette. */
+  --st-gray-100: #1b1d1e;
+  --st-gray-90: #1f2223;
+  --st-gray-80: #293137;
+  --st-gray-70: #444c50;
+  --st-gray-60: #545f64;
+  --st-gray-50: #969696;
+  --st-gray-40: #bcbcbc;
+  --st-gray-30: #bec0c2;
+  --st-gray-20: #ebecec;
+  --st-gray-10: #f8f8f8;
+  /* Primary Color Pallette. */
+  --st-primary-900: #0d1667;
+  --st-primary-800: #1a237e;
+  --st-primary-700: #283593;
+  --st-primary-600: #303f9f;
+  --st-primary-500: #3949ab;
+  --st-primary-400: #5c6bc0;
+  --st-primary-300: #7986cb;
+  --st-primary-200: #9fa8da;
+  --st-primary-100: #c5cae9;
+  --st-primary-50: #e8eaf6;
+  --st-primary: var(--st-primary-900, #0d1667);
+  --st-primary-background-color: var(--st-white, #fff);
+  --st-primary-inverse-background-color: var(--st-gray-100, #1b1d1e);
+  --st-primary-inverse-text-color: var(--st-white, #fff);
+  --st-primary-text-color: var(--st-gray-100, #1b1d1e);
+  /* Layout. */
+  --st-grid-unit: 8px;
+  --st-grid-unit2x: calc(var(--st-grid-unit) * 2);
+  --st-grid-unit3x: calc(var(--st-grid-unit) * 3);
+  --st-grid-unit4x: calc(var(--st-grid-unit) * 4);
+  /* Typography. */
+  --st-font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
+  /* Button. */
+  --st-button-disabled-background-color: var(--st-gray-20, #ebecec);
+  --st-button-disabled-color: var(--st-gray-40, #bcbcbc);
+  --st-button-focus-color: var(--st-blue, #4fa1ff);
+  --st-button-font-family: inter, roboto;
+  --st-button-font-size: 12px;
+  --st-button-min-width: 60px;
+  --st-button-primary-background-color: var(--st-primary-900, #0d1667);
+  --st-button-primary-border: 0;
+  --st-button-primary-color: var(--st-white, #fff);
+  --st-button-primary-hover-background-color: var(--st-primary-700, #283593);
+  --st-button-secondary-background-color: var(--st-white, #fff);
+  --st-button-secondary-border: solid 1px var(--st-primary-400, #5c6bc0);
+  --st-button-secondary-color: var(--st-primary-700, #283593);
+  --st-button-secondary-hover-background-color: var(--st-primary-50, #e8eaf6);
+  --st-button-width: 112px;
+  /* Input. */
+  --st-input-background-color: var(--st-gray-20, #ebecec);
+  --st-input-color: var(--st-gray-80, #293137);
+  --st-input-disabled-background-color: var(--st-gray-10, #f8f8f8);
+  --st-input-disabled-color: var(--st-gray-50, #969696);
+  --st-input-error-background-color: rgb(255 119 96 / 20%);
+  --st-input-focus-color: var(--st-blue, #4fa1ff);
+  --st-input-font-family: inter, roboto;
+  --st-input-font-size: 12px;
+  --st-input-icon-color: var(--st-gray-40, #bcbcbc);
+  --st-input-icon-disabled-color: var(--st-gray-30, #bec0c2);
+  --st-input-min-width: 60px;
+  --st-input-placeholder-color: var(--st-gray-50, #969696);
+  --st-input-warning-background-color: rgb(253 180 98 / 20%);
+  /* Select. */
+  --st-select-background: var(--st-gray-20, #ebecec);
+  --st-select-color: var(--st-gray-80, #293137);
+  --st-select-disabled-background: var(--st-gray-20, #ebecec);
+  --st-select-disabled-color: var(--st-gray-50, #969696);
+  --st-select-error-background-color: rgb(255 119 96 / 20%);
+  --st-select-focus-color: var(--st-blue, #4fa1ff);
+  --st-select-font-size: 12px;
+  --st-select-font-family: inter, roboto;
+  --st-select-hover-background: #e6e6e6;
+  --st-select-min-width: 120px;
+}
+
+.st-typography-base, .st-button, .st-typography--displayBody, .st-typography--displayH3, .st-typography--displayH2, .st-typography--displayH1, .st-typography--smallCaps, .st-typography--bold, .st-typography--medium, .st-typography--body, .st-typography--label, .st-typography--header, *,
+*:before,
+*:after {
+  font-family: var(--st-font-family);
+  -webkit-font-smoothing: auto;
+}
+
+.st-typography--header {
+  color: var(--st-gray-100);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.st-typography--header--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.st-typography--label--light {
+  color: rgba(var(--st-gray-100-RGB), 0.65);
+}
+
+.st-typography--label--dark {
+  color: rgba(var(--st-gray-10-RGB), 0.65);
+}
+
+.st-typography--body {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.st-typography--body--light {
+  color: rgba(var(--st-gray-100-RGB), 0.9);
+}
+
+.st-typography--body--dark {
+  color: rgba(var(--st-gray-10-RGB), 0.9);
+}
+
+.st-typography--medium, .st-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+.st-typography--medium--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--medium--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--bold {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+.st-typography--bold--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--bold--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--smallCaps {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+}
+
+.st-typography--smallCaps--light {
+  color: rgba(var(--st-gray-100-RGB), 0.65);
+}
+
+.st-typography--smallCaps--dark {
+  color: rgba(var(--st-gray-10-RGB), 0.65);
+}
+
+/* M20 GDS Display Font Definitions */
+.st-typography--displayH1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+}
+
+.st-typography--displayH1--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--displayH1--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--displayH2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.005em;
+}
+
+.st-typography--displayH2--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--displayH2--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--displayH3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.st-typography--displayH3--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--displayH3--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--displayBody {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.st-typography--displayBody--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--displayBody--dark {
+  color: var(--st-gray-10);
+}
+
+/* Utility Classes */
+.st-typography--noSelect {
+  user-select: none;
+}
+
+.st-typography--capitalize {
+  text-transform: capitalize;
+}
+
+.st-button {
+  align-items: center;
+  background-color: var(--st-button-primary-background-color, #0d1667);
+  border: var(--st-button-primary-border, 0);
+  border-radius: 4px;
+  color: var(--st-button-primary-color, #fff);
+  cursor: pointer;
+  display: inline-flex;
+  height: var(--st-grid-unit3x);
+  justify-content: center;
+  padding: 0 var(--st-grid-unit);
+}
+.st-button.large {
+  padding: 0 var(--st-grid-unit2x);
+  height: var(--st-grid-unit4x);
+  font-size: 16px;
+  line-height: 16px;
+}
+.st-button.secondary {
+  background-color: var(--st-button-secondary-background-color, #fff);
+  border: var(--st-button-secondary-border, solid 1px #5c6bc0);
+  color: var(--st-button-secondary-color, #283593);
+}
+.st-button.secondary:hover:not([disabled]) {
+  background-color: var(--st-button-secondary-hover-background-color, #e8eaf6);
+}
+.st-button:disabled {
+  background-color: var(--st-button-disabled-background-color, #ebecec);
+  border: 0;
+  color: var(--st-button-disabled-color, #bcbcbc);
+  cursor: not-allowed;
+  opacity: 80%;
+}
+.st-button:focus {
+  box-shadow: 0 0 0 2px var(--st-button-focus-color, #4fa1ff);
+  outline: 0;
+}
+.st-button:hover:not([disabled]) {
+  background-color: var(--st-button-primary-hover-background-color, #283593);
+}
+.st-button-icon {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+.st-card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.st-input {
+  background-color: var(--st-input-background-color, #ebecec);
+  border: 1px solid var(--st-input-background-color, #ebecec);
+  border-radius: 4px;
+  color: var(--st-input-color, #293137);
+  font-family: var(--st-input-font-family, Inter);
+  font-size: var(--st-input-font-size, 12px);
+  font-style: normal;
+  font-weight: 500;
+  height: 24px;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  min-width: var(--st-input-min-width, 60px);
+}
+.st-input::placeholder {
+  color: var(--st-input-placeholder-color, #969696);
+}
+.st-input:disabled {
+  background-color: var(--st-input-disabled-background-color, #f8f8f8);
+  border: 1px solid var(--st-input-disabled-background-color, #f8f8f8);
+  color: var(--st-input-disabled-color, #969696);
+  cursor: not-allowed;
+}
+.st-input:disabled::placeholder {
+  color: var(--st-input-disabled-color, #969696);
+}
+.st-input.error {
+  background-color: var(--st-input-error-background-color, rgba(255, 119, 96, 0.2));
+  border: 1px solid var(--st-red, #ff7760);
+  color: var(--st-red, #ff7760);
+}
+.st-input.error::placeholder {
+  color: var(--st-red, #ff7760);
+}
+.st-input.error:disabled {
+  background-color: var(--st-input-disabled-background-color, #f8f8f8);
+  border: 1px solid var(--st-red, #ff7760);
+  color: var(--st-input-disabled-color, #969696);
+  cursor: not-allowed;
+}
+.st-input.error:disabled::placeholder {
+  color: var(--st-input-disabled-color, #969696);
+}
+.st-input.error:focus {
+  box-shadow: 0 0 0 1px var(--st-red, #ff7760);
+  outline: 0;
+}
+.st-input:focus {
+  box-shadow: 0 0 0 2px var(--st-input-focus-color, #4fa1ff);
+  outline: 0;
+}
+.st-input.warning {
+  background-color: var(--st-input-warning-background-color, rgba(253, 180, 98, 0.2));
+  border: 1px solid var(--st-orange, #fdb462);
+  color: var(--st-orange, #fdb462);
+}
+.st-input.warning::placeholder {
+  color: var(--st-orange, #fdb462);
+}
+.st-input.warning:disabled {
+  background-color: var(--st-input-disabled-background-color, #f8f8f8);
+  border: 1px solid var(--st-orange, #fdb462);
+  color: var(--st-input-disabled-color, #969696);
+  cursor: not-allowed;
+}
+.st-input.warning:disabled::placeholder {
+  color: var(--st-input-disabled-color, #969696);
+}
+.st-input.warning:focus {
+  box-shadow: 0 0 0 1px var(--st-orange, #fdb462);
+  outline: 0;
+}
+
+.st-select {
+  background: var(--st-select-background, #ebecec);
+  border: 0;
+  border-radius: 4px;
+  color: var(--st-select-color, #293137);
+  cursor: pointer;
+  font-family: var(--st-select-font-family, Inter);
+  font-size: var(--st-select-font-size, 12px);
+  font-style: normal;
+  font-weight: 500;
+  height: 24px;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  min-width: var(--st-select-min-width, 120px);
+}
+.st-select:disabled {
+  background: var(--st-select-disabled-background, #ebecec);
+  color: var(--st-select-disabled-color, #969696);
+  cursor: not-allowed;
+}
+.st-select:focus {
+  box-shadow: 0 0 0 2px var(--st-select-focus-color, #4fa1ff);
+  outline: 0;
+}
+.st-select:hover:not([disabled], .error) {
+  background: var(--st-select-hover-background, #e6e6e6);
+}
+.st-select.error {
+  background-color: var(--st-select-error-background-color, rgba(255, 119, 96, 0.2));
+  border: 1px solid var(--st-red, #ff7760);
+  color: var(--st-red, #ff7760);
+}
+.st-select.error:focus {
+  box-shadow: 0 0 0 1px var(--st-red, #ff7760);
+  outline: 0;
+}
+
+.st-typography-base, .st-typography--displayBody, .st-typography--displayH3, .st-typography--displayH2, .st-typography--displayH1, .st-typography--smallCaps, .st-typography--bold, .st-typography--medium, .st-button, .st-typography--body, .st-typography--label, .st-typography--header, *,
+*:before,
+*:after {
+  font-family: var(--st-font-family);
+  -webkit-font-smoothing: auto;
+}
+
+.st-typography--header {
+  color: var(--st-gray-100);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.st-typography--header--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.st-typography--label--light {
+  color: rgba(var(--st-gray-100-RGB), 0.65);
+}
+
+.st-typography--label--dark {
+  color: rgba(var(--st-gray-10-RGB), 0.65);
+}
+
+.st-typography--body {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.st-typography--body--light {
+  color: rgba(var(--st-gray-100-RGB), 0.9);
+}
+
+.st-typography--body--dark {
+  color: rgba(var(--st-gray-10-RGB), 0.9);
+}
+
+.st-typography--medium, .st-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+.st-typography--medium--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--medium--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--bold {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+.st-typography--bold--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--bold--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--smallCaps {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+}
+
+.st-typography--smallCaps--light {
+  color: rgba(var(--st-gray-100-RGB), 0.65);
+}
+
+.st-typography--smallCaps--dark {
+  color: rgba(var(--st-gray-10-RGB), 0.65);
+}
+
+/* M20 GDS Display Font Definitions */
+.st-typography--displayH1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+}
+
+.st-typography--displayH1--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--displayH1--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--displayH2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.005em;
+}
+
+.st-typography--displayH2--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--displayH2--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--displayH3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.st-typography--displayH3--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--displayH3--dark {
+  color: var(--st-gray-10);
+}
+
+.st-typography--displayBody {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.st-typography--displayBody--light {
+  color: var(--st-gray-100);
+}
+
+.st-typography--displayBody--dark {
+  color: var(--st-gray-10);
+}
+
+/* Utility Classes */
+.st-typography--noSelect {
+  user-select: none;
+}
+
+.st-typography--capitalize {
+  text-transform: capitalize;
+}
+
+.st-dark-theme {
+  --st-primary-900: red;
+  /* Button. */
+  --st-button-primary-background-color: var(--st-primary-900, #0d1667);
+}

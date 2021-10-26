@@ -1,0 +1,5 @@
+.st-dark-theme {
+  --st-primary-900: red;
+  /* Button. */
+  --st-button-primary-background-color: var(--st-primary-900, #0d1667);
+}
