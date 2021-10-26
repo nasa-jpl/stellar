@@ -16,7 +16,7 @@
 
   &.error {
     & i {
-      color: var(--st-red, --st-red);
+      color: var(--st-red, #ff7760);
     }
 
     & .st-input {
