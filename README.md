@@ -93,3 +93,12 @@ npm install
 npm run lint # Lint SCSS
 npm run build # Compile SCSS to CSS
 ```
+
+## Publish
+
+Make sure the [installation prerequisites](#installation-prerequisites) have been completed. First update [package.json](./package.json) version and do:
+
+```sh
+npm install # Updates package-lock.json
+npm publish
+```
