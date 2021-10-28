@@ -1,16 +1,14 @@
 .st-input {
+  font-family: var(--st-input-font-family);
+  font-size: var(--st-input-font-size);
+  font-weight: var(--st-input-font-weight);
+  line-height: var(--st-input-line-height);
+  letter-spacing: var(--st-input-letter-spacing);
   background-color: var(--st-input-background-color, #ebecec);
   border: 1px solid var(--st-input-background-color, #ebecec);
   border-radius: 4px;
   color: var(--st-input-color, #293137);
-  font-family: var(--st-input-font-family, Inter);
-  font-size: var(--st-input-font-size, 12px);
-  font-style: normal;
-  font-weight: 500;
-  height: 24px;
-  letter-spacing: 0.04em;
-  line-height: 16px;
-  min-width: var(--st-input-min-width, 60px);
+  padding: 3px 6px;
 }
 .st-input::placeholder {
   color: var(--st-input-placeholder-color, #969696);
@@ -42,11 +40,11 @@
   color: var(--st-input-disabled-color, #969696);
 }
 .st-input.error:focus {
-  box-shadow: 0 0 0 1px var(--st-red, #ff7760);
+  box-shadow: 0 0 0 3px var(--st-red, #ff7760);
   outline: 0;
 }
 .st-input:focus {
-  box-shadow: 0 0 0 2px var(--st-input-focus-color, #4fa1ff);
+  box-shadow: 0 0 0 4px var(--st-input-focus-color, #4fa1ff);
   outline: 0;
 }
 .st-input.warning {
@@ -67,6 +65,6 @@
   color: var(--st-input-disabled-color, #969696);
 }
 .st-input.warning:focus {
-  box-shadow: 0 0 0 1px var(--st-orange, #fdb462);
+  box-shadow: 0 0 0 3px var(--st-orange, #fdb462);
   outline: 0;
 }

@@ -1,16 +1,15 @@
 .st-select {
   background: var(--st-select-background, #ebecec);
-  border: 0;
+  border: var(--st-select-border);
   border-radius: 4px;
   color: var(--st-select-color, #293137);
   cursor: pointer;
-  font-family: var(--st-select-font-family, Inter);
-  font-size: var(--st-select-font-size, 12px);
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--st-select-font-family);
+  font-size: var(--st-select-font-size);
+  font-weight: var(--st-select-font-weight);
+  line-height: var(--st-select-line-height);
+  letter-spacing: var(--st-select-letter-spacing);
   height: 24px;
-  letter-spacing: 0.04em;
-  line-height: 16px;
   min-width: var(--st-select-min-width, 120px);
 }
 .st-select:disabled {

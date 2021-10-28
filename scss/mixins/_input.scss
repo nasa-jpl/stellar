@@ -19,7 +19,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px var(--st-red, #ff7760);
+    box-shadow: 0 0 0 3px var(--st-red, #ff7760);
     outline: 0;
   }
 }
@@ -45,7 +45,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px var(--st-orange, #fdb462);
+    box-shadow: 0 0 0 3px var(--st-orange, #fdb462);
     outline: 0;
   }
 }

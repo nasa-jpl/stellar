@@ -1,24 +1,20 @@
-@use "typography.scss";
-
 .st-button {
-  @extend .st-typography--medium;
+  color: var(--st-button-primary-color, #fff);
+  font-family: var(--st-button-font-family);
+  font-size: var(--st-button-font-size);
+  font-weight: var(--st-button-font-weight);
+  line-height: var(--st-button-line-height);
+  letter-spacing: var(--st-button-letter-spacing);
+  user-select: none;
   align-items: center;
   background-color: var(--st-button-primary-background-color, #0d1667);
   border: var(--st-button-primary-border, 0);
   border-radius: 4px;
-  color: var(--st-button-primary-color, #fff);
   cursor: pointer;
   display: inline-flex;
   height: var(--st-grid-unit3x);
   justify-content: center;
   padding: 0 var(--st-grid-unit);
-  // min-width: var(--st-button-min-width, 60px);
-  // transition:
-  //   color 0.15s ease-in-out,
-  //   background-color 0.15s ease-in-out,
-  //   border-color 0.15s ease-in-out,
-  //   box-shadow 0.15s ease-in-out;
-  // width: var(--st-button-width, 112px);
 
   &.large {
     padding: 0 var(--st-grid-unit2x);
@@ -39,6 +35,18 @@
     }
   }
 
+  &.tertiary {
+    background-color: transparent;
+    border: 0;
+    color: var(--st-button-tertiary-color, #283593);
+
+    &:hover {
+      &:not([disabled]) {
+        background-color: var(--st-button-tertiary-hover-background-color, #e8eaf6);
+      }
+    }
+  }
+
   &:disabled {
     background-color: var(--st-button-disabled-background-color, #ebecec);
     border: 0;
@@ -48,7 +56,8 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px var(--st-button-focus-color, #4fa1ff);
+    // TODO generalize box shadow focus
+    box-shadow: 0 0 0 4px var(--st-button-focus-color, #4fa1ff);
     outline: 0;
   }
 

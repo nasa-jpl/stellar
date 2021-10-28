@@ -1,163 +1,97 @@
-.st-typography-base, .st-typography--displayBody, .st-typography--displayH3, .st-typography--displayH2, .st-typography--displayH1, .st-typography--smallCaps, .st-typography--bold, .st-typography--medium, .st-typography--body, .st-typography--label, .st-typography--header, *,
+*,
 *:before,
 *:after {
-  font-family: var(--st-font-family);
-  -webkit-font-smoothing: auto;
+  font-family: var(--st-typography-font-family);
 }
 
-.st-typography--header {
-  color: var(--st-gray-100);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+.st-typography-header {
+  font-family: var(--st-typography-font-family);
+  color: var(--st-typography-header-color);
+  font-weight: var(--st-typography-header-font-weight);
+  font-size: var(--st-typography-header-font-size);
+  line-height: var(--st-typography-header-line-height);
+  letter-spacing: var(--st-typography-header-letter-spacing);
 }
 
-.st-typography--header--dark {
-  color: var(--st-gray-10);
+.st-typography-label {
+  color: var(--st-typography-label-color);
+  font-weight: var(--st-typography-label-font-weight);
+  font-size: var(--st-typography-label-font-size);
+  line-height: var(--st-typography-label-line-height);
+  letter-spacing: var(--st-typography-label-letter-spacing);
 }
 
-.st-typography--label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
+.st-typography-body {
+  color: var(--st-typography-body-color);
+  font-weight: var(--st-typography-body-font-weight);
+  font-size: var(--st-typography-body-font-size);
+  line-height: var(--st-typography-body-line-height);
+  letter-spacing: var(--st-typography-body-letter-spacing);
 }
 
-.st-typography--label--light {
-  color: rgba(var(--st-gray-100-RGB), 0.65);
+.st-typography-medium {
+  color: var(--st-typography-medium-color);
+  font-weight: var(--st-typography-medium-font-weight);
+  font-size: var(--st-typography-medium-font-size);
+  line-height: var(--st-typography-medium-line-height);
+  letter-spacing: var(--st-typography-medium-letter-spacing);
 }
 
-.st-typography--label--dark {
-  color: rgba(var(--st-gray-10-RGB), 0.65);
+.st-typography-bold {
+  color: var(--st-typography-bold-color);
+  font-weight: var(--st-typography-bold-font-weight);
+  font-size: var(--st-typography-bold-font-size);
+  line-height: var(--st-typography-bold-line-height);
+  letter-spacing: var(--st-typography-bold-letter-spacing);
 }
 
-.st-typography--body {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-}
-
-.st-typography--body--light {
-  color: rgba(var(--st-gray-100-RGB), 0.9);
-}
-
-.st-typography--body--dark {
-  color: rgba(var(--st-gray-10-RGB), 0.9);
-}
-
-.st-typography--medium {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-}
-
-.st-typography--medium--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--medium--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--bold {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-}
-
-.st-typography--bold--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--bold--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--smallCaps {
+.st-typography-small-caps {
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-}
-
-.st-typography--smallCaps--light {
-  color: rgba(var(--st-gray-100-RGB), 0.65);
-}
-
-.st-typography--smallCaps--dark {
-  color: rgba(var(--st-gray-10-RGB), 0.65);
+  color: var(--st-typography-header-color);
+  font-weight: var(--st-typography-label-font-weight);
+  font-size: var(--st-typography-header-font-size);
+  line-height: var(--st-typography-header-line-height);
+  letter-spacing: var(--st-typography-header-letter-spacing);
 }
 
 /* M20 GDS Display Font Definitions */
-.st-typography--displayH1 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: -0.01em;
+.st-typography-displayH1 {
+  color: var(--st-typography-displayH1-color);
+  font-weight: var(--st-typography-displayH1-font-weight);
+  font-size: var(--st-typography-displayH1-font-size);
+  line-height: var(--st-typography-displayH1-line-height);
+  letter-spacing: var(--st-typography-displayH1-letter-spacing);
 }
 
-.st-typography--displayH1--light {
-  color: var(--st-gray-100);
+.st-typography-displayH2 {
+  color: var(--st-typography-displayH2-color);
+  font-weight: var(--st-typography-displayH2-font-weight);
+  font-size: var(--st-typography-displayH2-font-size);
+  line-height: var(--st-typography-displayH2-line-height);
+  letter-spacing: var(--st-typography-displayH2-letter-spacing);
 }
 
-.st-typography--displayH1--dark {
-  color: var(--st-gray-10);
+.st-typography-displayH3 {
+  color: var(--st-typography-displayH3-color);
+  font-weight: var(--st-typography-displayH3-font-weight);
+  font-size: var(--st-typography-displayH3-font-size);
+  line-height: var(--st-typography-displayH3-line-height);
+  letter-spacing: var(--st-typography-displayH3-letter-spacing);
 }
 
-.st-typography--displayH2 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: -0.005em;
-}
-
-.st-typography--displayH2--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--displayH2--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--displayH3 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.st-typography--displayH3--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--displayH3--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--displayBody {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-}
-
-.st-typography--displayBody--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--displayBody--dark {
-  color: var(--st-gray-10);
+.st-typography-displayBody {
+  color: var(--st-typography-displayBody-color);
+  font-weight: var(--st-typography-displayBody-font-weight);
+  font-size: var(--st-typography-displayBody-font-size);
+  line-height: var(--st-typography-displayBody-line-height);
+  letter-spacing: var(--st-typography-displayBody-letter-spacing);
 }
 
 /* Utility Classes */
-.st-typography--noSelect {
+.st-typography-noSelect {
   user-select: none;
 }
 
-.st-typography--capitalize {
+.st-typography-capitalize {
   text-transform: capitalize;
 }

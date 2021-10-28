@@ -1,173 +1,15 @@
-.st-typography-base, .st-typography--displayBody, .st-typography--displayH3, .st-typography--displayH2, .st-typography--displayH1, .st-typography--smallCaps, .st-typography--bold, .st-typography--medium, .st-button, .st-typography--body, .st-typography--label, .st-typography--header, *,
-*:before,
-*:after {
-  font-family: var(--st-font-family);
-  -webkit-font-smoothing: auto;
-}
-
-.st-typography--header {
-  color: var(--st-gray-100);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
-.st-typography--header--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-}
-
-.st-typography--label--light {
-  color: rgba(var(--st-gray-100-RGB), 0.65);
-}
-
-.st-typography--label--dark {
-  color: rgba(var(--st-gray-10-RGB), 0.65);
-}
-
-.st-typography--body {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-}
-
-.st-typography--body--light {
-  color: rgba(var(--st-gray-100-RGB), 0.9);
-}
-
-.st-typography--body--dark {
-  color: rgba(var(--st-gray-10-RGB), 0.9);
-}
-
-.st-typography--medium, .st-button {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-}
-
-.st-typography--medium--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--medium--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--bold {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-}
-
-.st-typography--bold--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--bold--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--smallCaps {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-}
-
-.st-typography--smallCaps--light {
-  color: rgba(var(--st-gray-100-RGB), 0.65);
-}
-
-.st-typography--smallCaps--dark {
-  color: rgba(var(--st-gray-10-RGB), 0.65);
-}
-
-/* M20 GDS Display Font Definitions */
-.st-typography--displayH1 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: -0.01em;
-}
-
-.st-typography--displayH1--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--displayH1--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--displayH2 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: -0.005em;
-}
-
-.st-typography--displayH2--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--displayH2--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--displayH3 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.st-typography--displayH3--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--displayH3--dark {
-  color: var(--st-gray-10);
-}
-
-.st-typography--displayBody {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-}
-
-.st-typography--displayBody--light {
-  color: var(--st-gray-100);
-}
-
-.st-typography--displayBody--dark {
-  color: var(--st-gray-10);
-}
-
-/* Utility Classes */
-.st-typography--noSelect {
-  user-select: none;
-}
-
-.st-typography--capitalize {
-  text-transform: capitalize;
-}
-
 .st-button {
+  color: var(--st-button-primary-color, #fff);
+  font-family: var(--st-button-font-family);
+  font-size: var(--st-button-font-size);
+  font-weight: var(--st-button-font-weight);
+  line-height: var(--st-button-line-height);
+  letter-spacing: var(--st-button-letter-spacing);
+  user-select: none;
   align-items: center;
   background-color: var(--st-button-primary-background-color, #0d1667);
   border: var(--st-button-primary-border, 0);
   border-radius: 4px;
-  color: var(--st-button-primary-color, #fff);
   cursor: pointer;
   display: inline-flex;
   height: var(--st-grid-unit3x);
@@ -188,6 +30,14 @@
 .st-button.secondary:hover:not([disabled]) {
   background-color: var(--st-button-secondary-hover-background-color, #e8eaf6);
 }
+.st-button.tertiary {
+  background-color: transparent;
+  border: 0;
+  color: var(--st-button-tertiary-color, #283593);
+}
+.st-button.tertiary:hover:not([disabled]) {
+  background-color: var(--st-button-tertiary-hover-background-color, #e8eaf6);
+}
 .st-button:disabled {
   background-color: var(--st-button-disabled-background-color, #ebecec);
   border: 0;
@@ -196,7 +46,7 @@
   opacity: 80%;
 }
 .st-button:focus {
-  box-shadow: 0 0 0 2px var(--st-button-focus-color, #4fa1ff);
+  box-shadow: 0 0 0 4px var(--st-button-focus-color, #4fa1ff);
   outline: 0;
 }
 .st-button:hover:not([disabled]) {
