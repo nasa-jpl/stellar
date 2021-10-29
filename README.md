@@ -6,13 +6,15 @@ A CSS, HTML, and JavaScript implementation of the Stellar design system. See the
 
 ### CSS
 
-| Name                               | Description                                                       |
-| ---------------------------------- | ----------------------------------------------------------------- |
-| [button](./scss/button.scss)       | CSS class that decorates the HTML button element                  |
-| [card](./scss/card.scss)           | CSS card class that can decorate an HTML div element              |
-| [input](./scss/input.scss)         | CSS class that decorates the HTML input element                   |
-| [select](./scss/select.scss)       | CSS class that decorates the HTML select element                  |
-| [variables](./scss/variables.scss) | Collection of all CSS variables. Overwrite to set your own theme. |
+| Name                                 | Description                                                       |
+| ------------------------------------ | ----------------------------------------------------------------- |
+| [button](./scss/button.scss)         | CSS class that decorates the HTML button element                  |
+| [card](./scss/card.scss)             | CSS card class that can decorate an HTML div element              |
+| [input](./scss/input.scss)           | CSS class that decorates the HTML input element                   |
+| [layout](./scss/layout.scss)         | CSS variables for specifying layout                               |
+| [select](./scss/select.scss)         | CSS class that decorates the HTML select element                  |
+| [typography](./scss/typography.scss) | CSS variables for specifying typography                           |
+| [variables](./scss/variables.scss)   | Collection of all CSS variables. Overwrite to set your own theme. |
 
 ### Font
 
@@ -96,7 +98,7 @@ npm run build # Compile SCSS to CSS
 
 ## Publish
 
-Make sure the [installation prerequisites](#installation-prerequisites) have been completed. First update [package.json](./package.json) version and do:
+Make sure the [installation prerequisites](#installation-prerequisites) have been completed. Next update the [package.json](./package.json) version and do:
 
 ```sh
 npm install # Updates package-lock.json

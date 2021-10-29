@@ -6,24 +6,24 @@
   font-weight: var(--st-input-font-weight);
   line-height: var(--st-input-line-height);
   letter-spacing: var(--st-input-letter-spacing);
-  background-color: var(--st-input-background-color, #ebecec);
-  border: 1px solid var(--st-input-background-color, #ebecec);
+  background-color: var(--st-input-background-color);
+  border: 1px solid var(--st-input-background-color);
   border-radius: 4px;
-  color: var(--st-input-color, #293137);
+  color: var(--st-input-color);
   padding: 3px 6px;
 
   &::placeholder {
-    color: var(--st-input-placeholder-color, #969696);
+    color: var(--st-input-placeholder-color);
   }
 
   &:disabled {
-    background-color: var(--st-input-disabled-background-color, #f8f8f8);
-    border: 1px solid var(--st-input-disabled-background-color, #f8f8f8);
-    color: var(--st-input-disabled-color, #969696);
+    background-color: var(--st-input-disabled-background-color);
+    border: 1px solid var(--st-input-disabled-background-color);
+    color: var(--st-input-disabled-color);
     cursor: not-allowed;
 
     &::placeholder {
-      color: var(--st-input-disabled-color, #969696);
+      color: var(--st-input-disabled-color);
     }
   }
 
@@ -32,7 +32,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 4px var(--st-input-focus-color, #4fa1ff);
+    box-shadow: 0 0 0 4px var(--st-input-focus-color);
     outline: 0;
   }
 

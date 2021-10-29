@@ -1,51 +1,51 @@
 @mixin st-input-error {
-  background-color: var(--st-input-error-background-color, rgb(255 119 96 / 20%));
-  border: 1px solid var(--st-red, #ff7760);
-  color: var(--st-red, #ff7760);
+  background-color: var(--st-input-error-background-color);
+  border: 1px solid var(--st-red);
+  color: var(--st-red);
 
   &::placeholder {
-    color: var(--st-red, #ff7760);
+    color: var(--st-red);
   }
 
   &:disabled {
-    background-color: var(--st-input-disabled-background-color, #f8f8f8);
-    border: 1px solid var(--st-red, #ff7760);
-    color: var(--st-input-disabled-color, #969696);
+    background-color: var(--st-input-disabled-background-color);
+    border: 1px solid var(--st-red);
+    color: var(--st-input-disabled-color);
     cursor: not-allowed;
 
     &::placeholder {
-      color: var(--st-input-disabled-color, #969696);
+      color: var(--st-input-disabled-color);
     }
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px var(--st-red, #ff7760);
+    box-shadow: 0 0 0 3px var(--st-red);
     outline: 0;
   }
 }
 
 @mixin st-input-warning {
-  background-color: var(--st-input-warning-background-color, rgb(253 180 98 / 20%));
-  border: 1px solid var(--st-orange, #fdb462);
-  color: var(--st-orange, #fdb462);
+  background-color: var(--st-input-warning-background-color);
+  border: 1px solid var(--st-orange);
+  color: var(--st-orange);
 
   &::placeholder {
-    color: var(--st-orange, #fdb462);
+    color: var(--st-orange);
   }
 
   &:disabled {
-    background-color: var(--st-input-disabled-background-color, #f8f8f8);
-    border: 1px solid var(--st-orange, #fdb462);
-    color: var(--st-input-disabled-color, #969696);
+    background-color: var(--st-input-disabled-background-color);
+    border: 1px solid var(--st-orange);
+    color: var(--st-input-disabled-color);
     cursor: not-allowed;
 
     &::placeholder {
-      color: var(--st-input-disabled-color, #969696);
+      color: var(--st-input-disabled-color);
     }
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px var(--st-orange, #fdb462);
+    box-shadow: 0 0 0 3px var(--st-orange);
     outline: 0;
   }
 }

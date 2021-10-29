@@ -1,5 +1,5 @@
 .st-button {
-  color: var(--st-button-primary-color, #fff);
+  color: var(--st-button-primary-color);
   font-family: var(--st-button-font-family);
   font-size: var(--st-button-font-size);
   font-weight: var(--st-button-font-weight);
@@ -7,8 +7,8 @@
   letter-spacing: var(--st-button-letter-spacing);
   user-select: none;
   align-items: center;
-  background-color: var(--st-button-primary-background-color, #0d1667);
-  border: var(--st-button-primary-border, 0);
+  background-color: var(--st-button-primary-background-color);
+  border: var(--st-button-primary-border);
   border-radius: 4px;
   cursor: pointer;
   display: inline-flex;
@@ -24,13 +24,13 @@
   }
 
   &.secondary {
-    background-color: var(--st-button-secondary-background-color, #fff);
-    border: var(--st-button-secondary-border, solid 1px #5c6bc0);
-    color: var(--st-button-secondary-color, #283593);
+    background-color: var(--st-button-secondary-background-color);
+    border: var(--st-button-secondary-border);
+    color: var(--st-button-secondary-color);
 
     &:hover {
       &:not([disabled]) {
-        background-color: var(--st-button-secondary-hover-background-color, #e8eaf6);
+        background-color: var(--st-button-secondary-hover-background-color);
       }
     }
   }
@@ -38,32 +38,32 @@
   &.tertiary {
     background-color: transparent;
     border: 0;
-    color: var(--st-button-tertiary-color, #283593);
+    color: var(--st-button-tertiary-color);
 
     &:hover {
       &:not([disabled]) {
-        background-color: var(--st-button-tertiary-hover-background-color, #e8eaf6);
+        background-color: var(--st-button-tertiary-hover-background-color);
       }
     }
   }
 
   &:disabled {
-    background-color: var(--st-button-disabled-background-color, #ebecec);
+    background-color: var(--st-button-disabled-background-color);
     border: 0;
-    color: var(--st-button-disabled-color, #bcbcbc);
+    color: var(--st-button-disabled-color);
     cursor: not-allowed;
     opacity: 80%;
   }
 
   &:focus {
     // TODO generalize box shadow focus
-    box-shadow: 0 0 0 4px var(--st-button-focus-color, #4fa1ff);
+    box-shadow: 0 0 0 4px var(--st-button-focus-color);
     outline: 0;
   }
 
   &:hover {
     &:not([disabled]) {
-      background-color: var(--st-button-primary-hover-background-color, #283593);
+      background-color: var(--st-button-primary-hover-background-color);
     }
   }
 
@@ -76,4 +76,3 @@
     padding: 0;
   }
 }
-

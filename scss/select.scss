@@ -1,10 +1,10 @@
 @use 'mixins/select';
 
 .st-select {
-  background: var(--st-select-background, #ebecec);
+  background: var(--st-select-background);
   border: var(--st-select-border);
   border-radius: 4px;
-  color: var(--st-select-color, #293137);
+  color: var(--st-select-color);
   cursor: pointer;
   font-family: var(--st-select-font-family);
   font-size: var(--st-select-font-size);
@@ -12,22 +12,21 @@
   line-height: var(--st-select-line-height);
   letter-spacing: var(--st-select-letter-spacing);
   height: 24px;
-  min-width: var(--st-select-min-width, 120px);
 
   &:disabled {
-    background: var(--st-select-disabled-background, #ebecec);
-    color: var(--st-select-disabled-color, #969696);
+    background: var(--st-select-disabled-background);
+    color: var(--st-select-disabled-color);
     cursor: not-allowed;
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px var(--st-select-focus-color, #4fa1ff);
+    box-shadow: 0 0 0 2px var(--st-select-focus-color);
     outline: 0;
   }
 
   &:hover {
     &:not([disabled], .error) {
-      background: var(--st-select-hover-background, #e6e6e6);
+      background: var(--st-select-hover-background);
     }
   }
 

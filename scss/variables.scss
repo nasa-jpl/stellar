@@ -48,18 +48,17 @@
   --st-primary-30: #9fa8da;
   --st-primary-20: #c5cae9;
   --st-primary-10: #e8eaf6;
-  --st-primary: var(--st-primary-50, #5c6bc0);
-  --st-primary-background-color: var(--st-white, #fff);
-  --st-primary-inverse-background-color: var(--st-gray-10, #1b1d1e);
-  --st-primary-inverse-text-color: var(--st-white, #fff);
-  --st-primary-text-color: var(--st-gray-10, #1b1d1e);
+  --st-primary: var(--st-primary-50);
+  --st-primary-background-color: var(--st-white);
+  --st-primary-inverse-background-color: var(--st-gray-10);
+  --st-primary-inverse-text-color: var(--st-white);
+  --st-primary-text-color: var(--st-gray-10);
 
   /* Layout. */
   --st-grid-unit: 8px;
   --st-grid-unit2x: calc(var(--st-grid-unit) * 2);
   --st-grid-unit3x: calc(var(--st-grid-unit) * 3);
   --st-grid-unit4x: calc(var(--st-grid-unit) * 4);
-  --st-border-radius: 4px;
 
   /* Typography. */
   --st-typography-font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
@@ -134,57 +133,54 @@
   --st-typography-displayBody-letter-spacing: 0.01em;
 
   /* Button. */
-  --st-button-disabled-background-color: var(--st-gray-20, #ebecec);
-  --st-button-disabled-color: var(--st-gray-40, #bcbcbc);
-  --st-button-focus-color: var(--st-blue, #4fa1ff);
+  --st-button-disabled-background-color: var(--st-gray-20);
+  --st-button-disabled-color: var(--st-gray-40);
+  --st-button-focus-color: var(--st-blue);
   --st-button-font-family: var(--st-typography-font-family);
   --st-button-font-weight: var(--st-typography-medium-font-weight);
   --st-button-font-size: var(--st-typography-medium-font-size);
   --st-button-line-height: var(--st-typography-medium-line-height);
   --st-button-letter-spacing: var(--st-typography-medium-letter-spacing);
-  --st-button-min-width: 60px;
-  --st-button-primary-background-color: var(--st-primary-80, #0d1667);
+  --st-button-primary-background-color: var(--st-primary-80);
   --st-button-primary-border: 0;
-  --st-button-primary-color: rgba(var(--st-gray-10-RGB, #fff), 0.96);
-  --st-button-primary-hover-background-color: var(--st-primary-70, #283593);
-  --st-button-secondary-background-color: var(--st-gray-10, #fff);
-  --st-button-secondary-border: solid 1px var(--st-gray-30, #5c6bc0);
-  --st-button-secondary-color: rgba(var(--st-gray-90-RGB, black), 0.96);
-  --st-button-secondary-hover-background-color: var(--st-white, white);
-  --st-button-tertiary-color: rgba(var(--st-gray-90-RGB, black), 0.96);
-  --st-button-tertiary-hover-background-color: var(--st-gray-15, gray);
+  --st-button-primary-color: rgba(var(--st-gray-10-RGB), 0.96);
+  --st-button-primary-hover-background-color: var(--st-primary-70);
+  --st-button-secondary-background-color: var(--st-gray-10);
+  --st-button-secondary-border: solid 1px var(--st-gray-30);
+  --st-button-secondary-color: rgba(var(--st-gray-90-RGB), 0.96);
+  --st-button-secondary-hover-background-color: var(--st-white);
+  --st-button-tertiary-color: rgba(var(--st-gray-90-RGB), 0.96);
+  --st-button-tertiary-hover-background-color: var(--st-gray-15);
 
   /* Input. */
-  --st-input-background-color: var(--st-gray-20, #ebecec);
-  --st-input-color: var(--st-gray-80, #293137);
-  --st-input-disabled-background-color: var(--st-gray-10, #f8f8f8);
-  --st-input-disabled-color: var(--st-gray-50, #969696);
+  --st-input-background-color: var(--st-gray-20);
+  --st-input-color: var(--st-gray-80);
+  --st-input-disabled-background-color: var(--st-gray-10);
+  --st-input-disabled-color: var(--st-gray-50);
   --st-input-error-background-color: rgb(255 119 96 / 20%);
-  --st-input-focus-color: var(--st-blue, #4fa1ff);
+  --st-input-focus-color: var(--st-blue);
   --st-input-font-family: var(--st-typography-font-family);
   --st-input-font-weight: var(--st-typography-body-font-weight);
   --st-input-font-size: var(--st-typography-body-font-size);
   --st-input-line-height: var(--st-typography-body-line-height);
   --st-input-letter-spacing: var(--st-typography-body-letter-spacing);
-  --st-input-icon-color: var(--st-gray-40, #bcbcbc);
-  --st-input-icon-disabled-color: var(--st-gray-30, #bec0c2);
-  --st-input-min-width: 60px;
-  --st-input-placeholder-color: var(--st-gray-50, #969696);
+  --st-input-icon-color: var(--st-gray-40);
+  --st-input-icon-disabled-color: var(--st-gray-30);
+  --st-input-placeholder-color: var(--st-gray-50);
   --st-input-warning-background-color: rgb(253 180 98 / 20%);
 
   /* Select. */
-  --st-select-background: var(--st-gray-20, #ebecec);
-  --st-select-color: var(--st-gray-80, #293137);
+  --st-select-background: var(--st-gray-20);
+  --st-select-color: var(--st-gray-80);
   --st-select-font-family: var(--st-typography-font-family);
   --st-select-font-weight: var(--st-typography-label-font-weight);
   --st-select-font-size: var(--st-typography-label-font-size);
   --st-select-line-height: var(--st-typography-label-line-height);
   --st-select-letter-spacing: var(--st-typography-label-letter-spacing);
-  --st-select-border: 1px solid var(--st-gray-30, gray);
-  --st-select-disabled-background: var(--st-gray-20, #ebecec);
-  --st-select-disabled-color: var(--st-gray-50, #969696);
+  --st-select-border: 1px solid var(--st-gray-30);
+  --st-select-disabled-background: var(--st-gray-20);
+  --st-select-disabled-color: var(--st-gray-50);
   --st-select-error-background-color: rgb(255 119 96 / 20%);
-  --st-select-focus-color: var(--st-blue, #4fa1ff);
+  --st-select-focus-color: var(--st-blue);
   --st-select-hover-background: #e6e6e6;
-  --st-select-min-width: 120px;
 }

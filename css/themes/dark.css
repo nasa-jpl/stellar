@@ -1,0 +1,17 @@
+.st-theme-dark {
+  --st-primary-100: #01579b;
+  --st-primary-90: #0277bd;
+  --st-primary-80: #0288d1;
+  --st-primary-70: #039be5;
+  --st-primary-60: #03a9f4;
+  --st-primary-50: #29b6f6;
+  --st-primary-40: #4fc3f7;
+  --st-primary-30: #81d4fa;
+  --st-primary-20: #b3e5fc;
+  --st-primary-10: #e1f5fe;
+  --st-primary: var(--st-primary-50);
+  --st-primary-background-color: var(--st-white);
+  --st-primary-inverse-background-color: var(--st-gray-10);
+  --st-primary-inverse-text-color: var(--st-white);
+  --st-primary-text-color: var(--st-gray-10);
+}
