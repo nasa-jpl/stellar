@@ -47,11 +47,11 @@
 
 .st-typography-small-caps {
   text-transform: uppercase;
-  color: var(--st-typography-header-color);
-  font-weight: var(--st-typography-label-font-weight);
-  font-size: var(--st-typography-header-font-size);
-  line-height: var(--st-typography-header-line-height);
-  letter-spacing: var(--st-typography-header-letter-spacing);
+  color: var(--st-typography-small-caps-color);
+  font-weight: var(--st-typography-small-caps-font-weight);
+  font-size: var(--st-typography-small-caps-font-size);
+  line-height: var(--st-typography-small-caps-line-height);
+  letter-spacing: var(--st-typography-small-caps-letter-spacing);
 }
 
 /* M20 GDS Display Font Definitions */
