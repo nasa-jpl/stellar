@@ -151,6 +151,7 @@
   --st-input-icon-disabled-color: var(--st-gray-30);
   --st-input-line-height: var(--st-typography-body-line-height);
   --st-input-letter-spacing: var(--st-typography-body-letter-spacing);
+  --st-input-padding: 3px 6px;
   --st-input-placeholder-color: var(--st-gray-50);
   --st-input-warning-background-color: rgb(253 180 98 / 20%);
   /* Select. */

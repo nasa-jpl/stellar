@@ -8,6 +8,7 @@
   border: 1px solid var(--st-input-background-color);
   border-radius: 4px;
   color: var(--st-input-color);
+  padding: var(--st-input-padding);
 }
 .st-input::placeholder {
   color: var(--st-input-placeholder-color);
