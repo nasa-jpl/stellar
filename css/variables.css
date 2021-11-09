@@ -120,6 +120,7 @@
   --st-button-disabled-background-color: var(--st-gray-20);
   --st-button-disabled-color: var(--st-gray-40);
   --st-button-focus-color: var(--st-blue);
+  --st-button-focus-box-shadow: 0 0 0 4px var(--st-button-focus-color);
   --st-button-font-family: var(--st-typography-font-family);
   --st-button-font-weight: var(--st-typography-medium-font-weight);
   --st-button-font-size: var(--st-typography-medium-font-size);
@@ -142,27 +143,30 @@
   --st-input-disabled-color: var(--st-gray-50);
   --st-input-error-background-color: rgb(255 119 96 / 20%);
   --st-input-focus-color: var(--st-blue);
+  --st-input-focus-box-shadow: 0 0 0 4px var(--st-input-focus-color);
   --st-input-font-family: var(--st-typography-font-family);
   --st-input-font-weight: var(--st-typography-body-font-weight);
   --st-input-font-size: var(--st-typography-body-font-size);
-  --st-input-line-height: var(--st-typography-body-line-height);
-  --st-input-letter-spacing: var(--st-typography-body-letter-spacing);
   --st-input-icon-color: var(--st-gray-40);
   --st-input-icon-disabled-color: var(--st-gray-30);
+  --st-input-line-height: var(--st-typography-body-line-height);
+  --st-input-letter-spacing: var(--st-typography-body-letter-spacing);
   --st-input-placeholder-color: var(--st-gray-50);
   --st-input-warning-background-color: rgb(253 180 98 / 20%);
   /* Select. */
   --st-select-background: var(--st-gray-20);
-  --st-select-color: var(--st-gray-80);
-  --st-select-font-family: var(--st-typography-font-family);
-  --st-select-font-weight: var(--st-typography-label-font-weight);
-  --st-select-font-size: var(--st-typography-label-font-size);
-  --st-select-line-height: var(--st-typography-label-line-height);
-  --st-select-letter-spacing: var(--st-typography-label-letter-spacing);
   --st-select-border: 1px solid var(--st-gray-30);
+  --st-select-color: var(--st-gray-80);
   --st-select-disabled-background: var(--st-gray-20);
   --st-select-disabled-color: var(--st-gray-50);
   --st-select-error-background-color: rgb(255 119 96 / 20%);
   --st-select-focus-color: var(--st-blue);
+  --st-select-focus-box-shadow: 0 0 0 4px var(--st-select-focus-color);
+  --st-select-font-family: var(--st-typography-font-family);
+  --st-select-font-weight: var(--st-typography-label-font-weight);
+  --st-select-font-size: var(--st-typography-label-font-size);
+  --st-select-height: 24px;
   --st-select-hover-background: #e6e6e6;
+  --st-select-letter-spacing: var(--st-typography-label-letter-spacing);
+  --st-select-line-height: var(--st-typography-label-line-height);
 }

@@ -46,7 +46,7 @@
   opacity: 80%;
 }
 .st-button:focus {
-  box-shadow: 0 0 0 4px var(--st-button-focus-color);
+  box-shadow: var(--st-button-focus-box-shadow);
   outline: 0;
 }
 .st-button:hover:not([disabled]) {

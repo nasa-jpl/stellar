@@ -8,7 +8,6 @@
   border: 1px solid var(--st-input-background-color);
   border-radius: 4px;
   color: var(--st-input-color);
-  padding: 3px 6px;
 }
 .st-input::placeholder {
   color: var(--st-input-placeholder-color);
@@ -44,7 +43,7 @@
   outline: 0;
 }
 .st-input:focus {
-  box-shadow: 0 0 0 4px var(--st-input-focus-color);
+  box-shadow: var(--st-input-focus-box-shadow);
   outline: 0;
 }
 .st-input.warning {
