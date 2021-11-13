@@ -2,9 +2,4 @@
   background-color: var(--st-select-error-background-color);
   border: 1px solid var(--st-red);
   color: var(--st-red);
-
-  &:focus {
-    box-shadow: 0 0 0 1px var(--st-red);
-    outline: 0;
-  }
 }

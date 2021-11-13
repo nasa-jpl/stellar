@@ -119,8 +119,6 @@
   /* Button. */
   --st-button-disabled-background-color: var(--st-gray-20);
   --st-button-disabled-color: var(--st-gray-40);
-  --st-button-focus-color: var(--st-blue);
-  --st-button-focus-box-shadow: 0 0 0 4px var(--st-button-focus-color);
   --st-button-font-family: var(--st-typography-font-family);
   --st-button-font-weight: var(--st-typography-medium-font-weight);
   --st-button-font-size: var(--st-typography-medium-font-size);
@@ -142,8 +140,6 @@
   --st-input-disabled-background-color: var(--st-gray-10);
   --st-input-disabled-color: var(--st-gray-50);
   --st-input-error-background-color: rgb(255 119 96 / 20%);
-  --st-input-focus-color: var(--st-blue);
-  --st-input-focus-box-shadow: 0 0 0 4px var(--st-input-focus-color);
   --st-input-font-family: var(--st-typography-font-family);
   --st-input-font-weight: var(--st-typography-body-font-weight);
   --st-input-font-size: var(--st-typography-body-font-size);
@@ -161,8 +157,6 @@
   --st-select-disabled-background: var(--st-gray-20);
   --st-select-disabled-color: var(--st-gray-50);
   --st-select-error-background-color: rgb(255 119 96 / 20%);
-  --st-select-focus-color: var(--st-blue);
-  --st-select-focus-box-shadow: 0 0 0 4px var(--st-select-focus-color);
   --st-select-font-family: var(--st-typography-font-family);
   --st-select-font-weight: var(--st-typography-label-font-weight);
   --st-select-font-size: var(--st-typography-label-font-size);
@@ -218,10 +212,6 @@
   color: var(--st-button-disabled-color);
   cursor: not-allowed;
   opacity: 80%;
-}
-.st-button:focus {
-  box-shadow: var(--st-button-focus-box-shadow);
-  outline: 0;
 }
 .st-button:hover:not([disabled]) {
   background-color: var(--st-button-primary-hover-background-color);
@@ -286,14 +276,6 @@
 .st-input.error:disabled::placeholder {
   color: var(--st-input-disabled-color);
 }
-.st-input.error:focus {
-  box-shadow: 0 0 0 3px var(--st-red);
-  outline: 0;
-}
-.st-input:focus {
-  box-shadow: var(--st-input-focus-box-shadow);
-  outline: 0;
-}
 .st-input.warning {
   background-color: var(--st-input-warning-background-color);
   border: 1px solid var(--st-orange);
@@ -310,10 +292,6 @@
 }
 .st-input.warning:disabled::placeholder {
   color: var(--st-input-disabled-color);
-}
-.st-input.warning:focus {
-  box-shadow: 0 0 0 3px var(--st-orange);
-  outline: 0;
 }
 
 .st-select {
@@ -334,10 +312,6 @@
   color: var(--st-select-disabled-color);
   cursor: not-allowed;
 }
-.st-select:focus {
-  box-shadow: var(--st-select-focus-box-shadow);
-  outline: 0;
-}
 .st-select:hover:not([disabled], .error) {
   background: var(--st-select-hover-background);
 }
@@ -345,10 +319,6 @@
   background-color: var(--st-select-error-background-color);
   border: 1px solid var(--st-red);
   color: var(--st-red);
-}
-.st-select.error:focus {
-  box-shadow: 0 0 0 1px var(--st-red);
-  outline: 0;
 }
 
 .st-typography-header {

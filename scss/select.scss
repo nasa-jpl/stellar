@@ -19,11 +19,6 @@
     cursor: not-allowed;
   }
 
-  &:focus {
-    box-shadow: var(--st-select-focus-box-shadow);
-    outline: 0;
-  }
-
   &:hover {
     &:not([disabled], .error) {
       background: var(--st-select-hover-background);

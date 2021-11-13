@@ -55,11 +55,6 @@
     opacity: 80%;
   }
 
-  &:focus {
-    box-shadow: var(--st-button-focus-box-shadow);
-    outline: 0;
-  }
-
   &:hover {
     &:not([disabled]) {
       background-color: var(--st-button-primary-hover-background-color);

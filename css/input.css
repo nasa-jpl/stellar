@@ -39,14 +39,6 @@
 .st-input.error:disabled::placeholder {
   color: var(--st-input-disabled-color);
 }
-.st-input.error:focus {
-  box-shadow: 0 0 0 3px var(--st-red);
-  outline: 0;
-}
-.st-input:focus {
-  box-shadow: var(--st-input-focus-box-shadow);
-  outline: 0;
-}
 .st-input.warning {
   background-color: var(--st-input-warning-background-color);
   border: 1px solid var(--st-orange);
@@ -63,8 +55,4 @@
 }
 .st-input.warning:disabled::placeholder {
   color: var(--st-input-disabled-color);
-}
-.st-input.warning:focus {
-  box-shadow: 0 0 0 3px var(--st-orange);
-  outline: 0;
 }

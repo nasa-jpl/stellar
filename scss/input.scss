@@ -31,11 +31,6 @@
     @include input.st-input-error;
   }
 
-  &:focus {
-    box-shadow: var(--st-input-focus-box-shadow);
-    outline: 0;
-  }
-
   &.warning {
     @include input.st-input-warning
   }

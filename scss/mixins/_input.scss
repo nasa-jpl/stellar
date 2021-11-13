@@ -17,11 +17,6 @@
       color: var(--st-input-disabled-color);
     }
   }
-
-  &:focus {
-    box-shadow: 0 0 0 3px var(--st-red);
-    outline: 0;
-  }
 }
 
 @mixin st-input-warning {
@@ -42,10 +37,5 @@
     &::placeholder {
       color: var(--st-input-disabled-color);
     }
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 3px var(--st-orange);
-    outline: 0;
   }
 }
