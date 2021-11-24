@@ -5,7 +5,7 @@
   line-height: var(--st-input-line-height);
   letter-spacing: var(--st-input-letter-spacing);
   background-color: var(--st-input-background-color);
-  border: 1px solid var(--st-input-background-color);
+  border: var(--st-input-border);
   border-radius: 4px;
   color: var(--st-input-color);
   padding: var(--st-input-padding);
@@ -50,4 +50,12 @@
 }
 .st-input.warning:disabled::placeholder {
   color: var(--st-input-disabled-color);
+}
+
+textarea.st-input {
+  min-width: var(--st-input-textarea-min-width);
+  min-height: var(--st-input-textarea-min-height);
+}
+textarea.st-input.no-resize {
+  resize: none;
 }

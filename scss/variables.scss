@@ -160,7 +160,8 @@
   --st-button-icon-min-width: var(--st-grid-unit3x);
 
   /* Input. */
-  --st-input-background-color: var(--st-gray-20);
+  --st-input-border: 1px solid var(--st-gray-15);
+  --st-input-background-color: var(--st-gray-10);
   --st-input-color: var(--st-gray-80);
   --st-input-error-background-color: rgb(255 119 96 / 20%);
   --st-input-font-family: var(--st-typography-font-family);
@@ -172,6 +173,8 @@
   --st-input-padding: 3px 6px;
   --st-input-placeholder-color: var(--st-gray-50);
   --st-input-warning-background-color: rgb(253 180 98 / 20%);
+  --st-input-textarea-min-width: calc(var(--st-grid-unit) * 14);
+  --st-input-textarea-min-height: calc(var(--st-grid-unit) * 7);
 
   /* Select. */
   --st-select-background: var(--st-white);
