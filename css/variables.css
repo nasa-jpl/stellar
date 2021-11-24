@@ -165,6 +165,25 @@
   --st-select-hover-background: var(--st-gray-10);
   --st-select-letter-spacing: var(--st-typography-label-letter-spacing);
   --st-select-line-height: var(--st-typography-label-line-height);
+  /* Table. */
+  --st-table-th-padding: var(--st-grid-unit);
+  --st-table-th-background: var(--st-gray-10);
+  --st-table-th-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.09);
+  --st-table-th-color: var(--st-gray-100);
+  --st-table-th-font-family: var(--st-typography-font-family);
+  --st-table-th-font-weight: var(--st-typography-medium-font-weight);
+  --st-table-th-font-size: var(--st-typography-medium-font-size);
+  --st-table-th-line-height: var(--st-typography-medium-line-height);
+  --st-table-th-letter-spacing: var(--st-typography-medium-letter-spacing);
+  --st-table-td-padding: var(--st-grid-unit);
+  --st-table-td-background: var(--st-white);
+  --st-table-td-box-shadow: inset 0px -1px 0px #E3E7EB;
+  --st-table-td-color: var(--st-gray-100);
+  --st-table-td-font-family: var(--st-typography-font-family);
+  --st-table-td-font-weight: var(--st-typography-body-font-weight);
+  --st-table-td-font-size: var(--st-typography-body-font-size);
+  --st-table-td-line-height: var(--st-typography-body-line-height);
+  --st-table-td-letter-spacing: var(--st-typography-body-letter-spacing);
   /* Card (not represented in design system). */
   --st-card-border: 1px solid rgb(0 0 0 / 12.5%);
 }
