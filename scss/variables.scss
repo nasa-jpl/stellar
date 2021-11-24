@@ -38,16 +38,16 @@
   --st-gray-10-RGB: 248, 248, 248;
 
   /* Primary Color Pallette. */
-  --st-primary-100: #0d1667;
-  --st-primary-90: #1a237e;
-  --st-primary-80: #283593;
-  --st-primary-70: #303f9f;
-  --st-primary-60: #3949ab;
-  --st-primary-50: #5c6bc0;
-  --st-primary-40: #7986cb;
-  --st-primary-30: #9fa8da;
-  --st-primary-20: #c5cae9;
-  --st-primary-10: #e8eaf6;
+  --st-primary-100: #46039C;
+  --st-primary-90: #5809BB;
+  --st-primary-80: #6B0EE1;
+  --st-primary-70: #984EFF;
+  --st-primary-60: #984EFF;
+  --st-primary-50: #A864FF;
+  --st-primary-40: #B881FF;
+  --st-primary-30: #CAA0FF;
+  --st-primary-20: #E0CAFF;
+  --st-primary-10: #F0E4FF;
   --st-primary: var(--st-primary-50);
   --st-primary-background-color: var(--st-white);
   --st-primary-inverse-background-color: var(--st-gray-10);
@@ -148,13 +148,16 @@
   --st-button-primary-background-color: var(--st-primary-80);
   --st-button-primary-border: 0;
   --st-button-primary-color: rgba(var(--st-gray-10-RGB), 0.96);
-  --st-button-primary-hover-background-color: var(--st-primary-70);
-  --st-button-secondary-background-color: var(--st-gray-10);
-  --st-button-secondary-border: solid 1px var(--st-gray-30);
-  --st-button-secondary-color: rgba(var(--st-gray-90-RGB), 0.96);
-  --st-button-secondary-hover-background-color: var(--st-white);
-  --st-button-tertiary-color: rgba(var(--st-gray-90-RGB), 0.96);
-  --st-button-tertiary-hover-background-color: var(--st-gray-15);
+  --st-button-primary-hover-background-color: var(--st-primary-90);
+  --st-button-secondary-background-color: var(--st-gray-15);
+  --st-button-secondary-border: none;
+  --st-button-secondary-color: rgba(var(--st-gray-20), 0.96);
+  --st-button-secondary-hover-background-color: var(--st-gray-20);
+  --st-button-tertiary-color: rgba(var(--st-gray-80-RGB), 0.96);
+  --st-button-tertiary-hover-background-color: var(--st-gray-10);
+  --st-button-icon-color: var(--st-gray-80);
+  --st-button-icon-hover-background-color: var(--st-gray-10);
+  --st-button-icon-min-width: var(--st-grid-unit3x);
 
   /* Input. */
   --st-input-background-color: var(--st-gray-20);
