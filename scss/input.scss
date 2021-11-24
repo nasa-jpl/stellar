@@ -17,14 +17,8 @@
   }
 
   &:disabled {
-    background-color: var(--st-input-disabled-background-color);
-    border: 1px solid var(--st-input-disabled-background-color);
-    color: var(--st-input-disabled-color);
+    opacity: 0.5;
     cursor: not-allowed;
-
-    &::placeholder {
-      color: var(--st-input-disabled-color);
-    }
   }
 
   &.error {

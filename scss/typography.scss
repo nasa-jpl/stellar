@@ -55,39 +55,39 @@
 
 /* M20 GDS Display Font Definitions */
 .st-typography-displayH1 {
-  font-family: var(--st-typography-displayH1-font-family);
-  color: var(--st-typography-displayH1-color);
-  font-weight: var(--st-typography-displayH1-font-weight);
-  font-size: var(--st-typography-displayH1-font-size);
-  line-height: var(--st-typography-displayH1-line-height);
-  letter-spacing: var(--st-typography-displayH1-letter-spacing);
+  font-family: var(--st-typography-display-h1-font-family);
+  color: var(--st-typography-display-h1-color);
+  font-weight: var(--st-typography-display-h1-font-weight);
+  font-size: var(--st-typography-display-h1-font-size);
+  line-height: var(--st-typography-display-h1-line-height);
+  letter-spacing: var(--st-typography-display-h1-letter-spacing);
 }
 
 .st-typography-displayH2 {
-  font-family: var(--st-typography-displayH2-font-family);
-  color: var(--st-typography-displayH2-color);
-  font-weight: var(--st-typography-displayH2-font-weight);
-  font-size: var(--st-typography-displayH2-font-size);
-  line-height: var(--st-typography-displayH2-line-height);
-  letter-spacing: var(--st-typography-displayH2-letter-spacing);
+  font-family: var(--st-typography-display-h2-font-family);
+  color: var(--st-typography-display-h2-color);
+  font-weight: var(--st-typography-display-h2-font-weight);
+  font-size: var(--st-typography-display-h2-font-size);
+  line-height: var(--st-typography-display-h2-line-height);
+  letter-spacing: var(--st-typography-display-h2-letter-spacing);
 }
 
 .st-typography-displayH3 {
-  font-family: var(--st-typography-displayH3-font-family);
-  color: var(--st-typography-displayH3-color);
-  font-weight: var(--st-typography-displayH3-font-weight);
-  font-size: var(--st-typography-displayH3-font-size);
-  line-height: var(--st-typography-displayH3-line-height);
-  letter-spacing: var(--st-typography-displayH3-letter-spacing);
+  font-family: var(--st-typography-display-h3-font-family);
+  color: var(--st-typography-display-h3-color);
+  font-weight: var(--st-typography-display-h3-font-weight);
+  font-size: var(--st-typography-display-h3-font-size);
+  line-height: var(--st-typography-display-h3-line-height);
+  letter-spacing: var(--st-typography-display-h3-letter-spacing);
 }
 
 .st-typography-displayBody {
-  font-family: var(--st-typography-displayBody-font-family);
-  color: var(--st-typography-displayBody-color);
-  font-weight: var(--st-typography-displayBody-font-weight);
-  font-size: var(--st-typography-displayBody-font-size);
-  line-height: var(--st-typography-displayBody-line-height);
-  letter-spacing: var(--st-typography-displayBody-letter-spacing);
+  font-family: var(--st-typography-display-body-font-family);
+  color: var(--st-typography-display-body-color);
+  font-weight: var(--st-typography-display-body-font-weight);
+  font-size: var(--st-typography-display-body-font-size);
+  line-height: var(--st-typography-display-body-line-height);
+  letter-spacing: var(--st-typography-display-body-letter-spacing);
 }
 
 /* Utility Classes */

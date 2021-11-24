@@ -54,6 +54,10 @@
   --st-primary-inverse-text-color: var(--st-white);
   --st-primary-text-color: var(--st-gray-10);
 
+  /* Utility Colors */
+  --st-button-stroke: rgba(0, 0, 0, 0.16);
+  --st-error-red: #FF7760;
+
   /* Layout. */
   --st-grid-unit: 8px;
   --st-grid-unit2x: calc(var(--st-grid-unit) * 2);
@@ -105,33 +109,33 @@
   --st-typography-small-caps-line-height: 16px;
   --st-typography-small-caps-letter-spacing: 0.1em;
 
-  --st-typography-displayH1-font-family: var(--st-typography-font-family);
-  --st-typography-displayH1-color: var(--st-gray-100);
-  --st-typography-displayH1-font-weight: 700;
-  --st-typography-displayH1-font-size: 40px;
-  --st-typography-displayH1-line-height: 48px;
-  --st-typography-displayH1-letter-spacing: -0.02em;
+  --st-typography-display-h1-font-family: var(--st-typography-font-family);
+  --st-typography-display-h1-color: var(--st-gray-100);
+  --st-typography-display-h1-font-weight: 700;
+  --st-typography-display-h1-font-size: 40px;
+  --st-typography-display-h1-line-height: 48px;
+  --st-typography-display-h1-letter-spacing: -0.02em;
 
-  --st-typography-displayH2-font-family: var(--st-typography-font-family);
-  --st-typography-displayH2-color: var(--st-gray-100);
-  --st-typography-displayH2-font-weight: 700;
-  --st-typography-displayH2-font-size: 32px;
-  --st-typography-displayH2-line-height: 40px;
-  --st-typography-displayH2-letter-spacing: -0.005em;
+  --st-typography-display-h2-font-family: var(--st-typography-font-family);
+  --st-typography-display-h2-color: var(--st-gray-100);
+  --st-typography-display-h2-font-weight: 700;
+  --st-typography-display-h2-font-size: 32px;
+  --st-typography-display-h2-line-height: 40px;
+  --st-typography-display-h2-letter-spacing: -0.005em;
 
-  --st-typography-displayH3-font-family: var(--st-typography-font-family);
-  --st-typography-displayH3-color: var(--st-gray-100);
-  --st-typography-displayH3-font-weight: 600;
-  --st-typography-displayH3-font-size: 24px;
-  --st-typography-displayH3-line-height: 32px;
-  --st-typography-displayH3-letter-spacing: 0;
+  --st-typography-display-h3-font-family: var(--st-typography-font-family);
+  --st-typography-display-h3-color: var(--st-gray-100);
+  --st-typography-display-h3-font-weight: 600;
+  --st-typography-display-h3-font-size: 24px;
+  --st-typography-display-h3-line-height: 32px;
+  --st-typography-display-h3-letter-spacing: 0;
 
-  --st-typography-displayBody-font-family: var(--st-typography-font-family);
-  --st-typography-displayBody-color: var(--st-gray-100);
-  --st-typography-displayBody-font-weight: 400;
-  --st-typography-displayBody-font-size: 16px;
-  --st-typography-displayBody-line-height: 24px;
-  --st-typography-displayBody-letter-spacing: 0.01em;
+  --st-typography-display-body-font-family: var(--st-typography-font-family);
+  --st-typography-display-body-color: var(--st-gray-100);
+  --st-typography-display-body-font-weight: 400;
+  --st-typography-display-body-font-size: 16px;
+  --st-typography-display-body-line-height: 24px;
+  --st-typography-display-body-letter-spacing: 0.01em;
 
   /* Button. */
   --st-button-disabled-background-color: var(--st-gray-20);
@@ -155,14 +159,11 @@
   /* Input. */
   --st-input-background-color: var(--st-gray-20);
   --st-input-color: var(--st-gray-80);
-  --st-input-disabled-background-color: var(--st-gray-10);
-  --st-input-disabled-color: var(--st-gray-50);
   --st-input-error-background-color: rgb(255 119 96 / 20%);
   --st-input-font-family: var(--st-typography-font-family);
   --st-input-font-weight: var(--st-typography-body-font-weight);
   --st-input-font-size: var(--st-typography-body-font-size);
   --st-input-icon-color: var(--st-gray-40);
-  --st-input-icon-disabled-color: var(--st-gray-30);
   --st-input-line-height: var(--st-typography-body-line-height);
   --st-input-letter-spacing: var(--st-typography-body-letter-spacing);
   --st-input-padding: 3px 6px;
@@ -170,17 +171,18 @@
   --st-input-warning-background-color: rgb(253 180 98 / 20%);
 
   /* Select. */
-  --st-select-background: var(--st-gray-20);
-  --st-select-border: 1px solid var(--st-gray-30);
+  --st-select-background: var(--st-white);
+  --st-select-border: 1px solid var(--st-button-stroke);
   --st-select-color: var(--st-gray-80);
-  --st-select-disabled-background: var(--st-gray-20);
-  --st-select-disabled-color: var(--st-gray-50);
   --st-select-error-background-color: rgb(255 119 96 / 20%);
   --st-select-font-family: var(--st-typography-font-family);
   --st-select-font-weight: var(--st-typography-label-font-weight);
   --st-select-font-size: var(--st-typography-label-font-size);
   --st-select-height: 24px;
-  --st-select-hover-background: #e6e6e6;
+  --st-select-hover-background: var(--st-gray-10);
   --st-select-letter-spacing: var(--st-typography-label-letter-spacing);
   --st-select-line-height: var(--st-typography-label-line-height);
+
+  /* Card (not represented in design system). */
+  --st-card-border: 1px solid rgb(0 0 0 / 12.5%);
 }

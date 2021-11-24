@@ -12,8 +12,7 @@
   line-height: var(--st-select-line-height);
 }
 .st-select:disabled {
-  background: var(--st-select-disabled-background);
-  color: var(--st-select-disabled-color);
+  opacity: 0.5;
   cursor: not-allowed;
 }
 .st-select:hover:not([disabled], .error) {

@@ -1,5 +1,5 @@
 .st-card {
-  border: 1px solid rgb(0 0 0 / 12.5%);
+  border: var(--st-card-border);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;

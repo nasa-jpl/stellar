@@ -14,8 +14,7 @@
   line-height: var(--st-select-line-height);
 
   &:disabled {
-    background: var(--st-select-disabled-background);
-    color: var(--st-select-disabled-color);
+    opacity: 0.5;
     cursor: not-allowed;
   }
 

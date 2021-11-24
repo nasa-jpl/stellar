@@ -15,5 +15,30 @@
   --st-primary-inverse-text-color: var(--st-white);
   --st-primary-text-color: var(--st-gray-10);
 
-  // TODO: Complete dark theme for all components.
+  /* Typography. */
+  --st-typography-header-color: var(--st-gray-10);
+  --st-typography-label-color: rgba(var(--st-gray-10-RGB), 0.65);
+  --st-typography-body-color: rgba(var(--st-gray-10-RGB), 0.9);
+  --st-typography-medium-color: var(--st-gray-10);
+  --st-typography-bold-color: var(--st-gray-10);
+  --st-typography-small-caps-color: rgba(var(--st-gray-10-RGB), 0.65);
+  --st-typography-display-h1-color: var(--st-gray-10);
+  --st-typography-display-h2-color: var(--st-gray-10);
+  --st-typography-display-h3-color: var(--st-gray-10);
+  --st-typography-display-body-color: var(--st-gray-10);
+
+  /* TODO Button. */
+
+  /* Input. */
+  --st-input-background-color: var(--st-gray-70);
+  --st-input-color: var(--st-gray-10);
+  --st-input-placeholder-color: var(--st-gray-40);
+
+  /* Select. */
+  --st-select-background: var(--st-gray-70);
+  --st-select-color: var(--st-gray-30);
+  --st-select-hover-background: var(--st-gray-60);
+
+  /* Card (not represented in design system). */
+  --st-card-border: 1px solid rgb(255 255 255 / 12.5%);
 }

@@ -14,13 +14,8 @@
   color: var(--st-input-placeholder-color);
 }
 .st-input:disabled {
-  background-color: var(--st-input-disabled-background-color);
-  border: 1px solid var(--st-input-disabled-background-color);
-  color: var(--st-input-disabled-color);
+  opacity: 0.5;
   cursor: not-allowed;
-}
-.st-input:disabled::placeholder {
-  color: var(--st-input-disabled-color);
 }
 .st-input.error {
   background-color: var(--st-input-error-background-color);
