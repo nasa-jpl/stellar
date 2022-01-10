@@ -24,3 +24,7 @@ Import the desired CSS files into your project to make the classes globally avai
 ```
 
 [stellar-example]: https://nasa-jpl.github.io/stellar/example/
+
+## License
+
+The scripts and documentation in this project are released under the [Apache 2.0 License](LICENSE).
