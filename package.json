@@ -1,5 +1,5 @@
 {
-  "name": "@gov.nasa.jpl.stellar/stellar",
+  "name": "@nasa-jpl/stellar",
   "description": "A CSS, HTML, and JavaScript implementation of the Stellar design system.",
   "version": "1.0.0",
   "license": "Apache-2.0",
