@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Stellar</title>
+    <link href="../font/inter/inter.css" rel="stylesheet" />
+    <link href="../icons/stellar-icons.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div>
+      <div class="st-typography-displayH1">Stellar Design System</div>
+      <div class="st-typography-displayBody">Base CSS Library</div>
+    </div>
+    <div>
+      <button onclick="switchTheme()" class="st-button secondary">
+        Toggle Light/Dark
+      </button>
+    </div>
+    <section class="st-card">
+      <div class="st-typography-header">Button</div>
+      <div>
+        <button class="st-button">Primary</button>
+        <button class="st-button" disabled>Disabled</button>
+        <button class="st-button secondary">Secondary</button>
+        <button class="st-button secondary" disabled>Disabled</button>
+        <button class="st-button tertiary">Tertiary</button>
+        <button class="st-button tertiary" disabled>Disabled</button>
+        <button class="st-button icon">
+          <i class="si si-search"></i>
+        </button>
+      </div>
+      <br />
+    </section>
+
+    <section class="st-card">
+      <div class="st-typography-header">Input</div>
+      <div>
+        <input class="st-input" type="text" value="Hello, World!" />
+        <input class="st-input" type="password" value="Hello, World!" />
+        <input class="st-input" type="text" placeholder="Placeholder" />
+        <input class="st-input" type="text" placeholder="Disabled" disabled />
+        <input
+          class="st-input error"
+          type="text"
+          placeholder="Error"
+          value="Hello, World!"
+        />
+        <input class="st-input warning" type="text" placeholder="Warning" />
+      </div>
+    </section>
+
+    <section class="st-card">
+      <div class="st-typography-header">Textarea</div>
+      <div>
+        <textarea
+          placeholder="Placeholder that wraps to another line"
+          class="st-input"
+        ></textarea>
+        <textarea
+          placeholder="Placeholder that wraps to another line"
+          class="st-input"
+        >
+User input that wraps to another line</textarea
+        >
+        <textarea
+          placeholder="Placeholder that wraps to another line"
+          class="st-input no-resize"
+        >
+Non-resizable textarea</textarea
+        >
+      </div>
+    </section>
+
+    <section class="st-card">
+      <div class="st-typography-header">Select</div>
+      <div>
+        <select class="st-select">
+          <option value="cat">Cat</option>
+          <option value="dog">Dog</option>
+          <option value="parrot">Parrot</option>
+        </select>
+        <select class="st-select" disabled>
+          <option value="disabled">Disabled</option>
+        </select>
+        <select class="st-select error">
+          <option value="error">Error</option>
+        </select>
+      </div>
+    </section>
+    <section class="st-card">
+      <div class="st-typography-header">Table</div>
+      <div>
+        <table class="st-table">
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+              <th>Column 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cell text</td>
+              <td>Cell text</td>
+              <td>Cell text</td>
+              <td>Cell text</td>
+            </tr>
+            <tr>
+              <td>Cell text</td>
+              <td>Cell text</td>
+              <td>Cell text</td>
+              <td>Cell text</td>
+            </tr>
+            <tr>
+              <td>Cell text</td>
+              <td>Cell text</td>
+              <td>Cell text</td>
+              <td>Cell text</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="st-card">
+      <div class="st-typography-header">Typography</div>
+      <div>
+        <div class="st-typography-displayH1">Display H1</div>
+        <div class="st-typography-displayH2">Display H2</div>
+        <div class="st-typography-displayH3">Display H3</div>
+        <div class="st-typography-displayBody">Display Body</div>
+        <div class="st-typography-header">Header</div>
+        <div class="st-typography-label">Label</div>
+        <div class="st-typography-body">Body</div>
+        <div class="st-typography-medium">Medium</div>
+        <div class="st-typography-bold">Bold</div>
+        <div class="st-typography-small-caps">Small Caps</div>
+      </div>
+    </section>
+    <section class="st-card">
+      <div class="st-typography-header">Color</div>
+      <div class="color-groups">
+        <div class="color-group">
+          <div class="color-square">
+            <div style="background: var(--st-gray-10)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 10</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-10</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-15)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 15</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-15</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-20)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 20</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-20</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-30)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 30</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-30</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-40)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 40</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-40</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-50)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 50</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-50</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-60)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 60</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-60</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-70)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 70</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-70</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-80)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 80</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-80</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-90)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 90</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-90</div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-gray-100)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Gray 100</div>
+              <div class="st-typography-label">CSS Variable: --st-gray-100</div>
+            </div>
+          </div>
+        </div>
+        <div class="color-group">
+          <div class="color-square">
+            <div style="background: var(--st-primary-10)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 10</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-10
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-20)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 20</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-20
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-30)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 30</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-30
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-40)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 40</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-40
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-50)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 50</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-50
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-60)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 60</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-60
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-70)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 70</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-70
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-80)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 80</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-80
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-90)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 90</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-90
+              </div>
+            </div>
+          </div>
+          <div class="color-square">
+            <div style="background: var(--st-primary-100)" class="color"></div>
+            <div class="color-square-metadata">
+              <div class="st-typography-medium">Primary 100</div>
+              <div class="st-typography-label">
+                CSS Variable: --st-primary-100
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      function switchTheme() {
+        document.body.classList.toggle("st-theme-dark");
+      }
+    </script>
+  </body>
+</html>

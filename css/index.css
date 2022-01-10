@@ -526,11 +526,11 @@ html {
   --st-primary-text-color: var(--st-gray-10);
   /* Typography. */
   --st-typography-header-color: var(--st-gray-10);
-  --st-typography-label-color: rgba(var(--st-gray-10-RGB), 0.65);
-  --st-typography-body-color: rgba(var(--st-gray-10-RGB), 0.9);
+  --st-typography-label-color: rgb(var(--st-gray-10-RGB) 0.65);
+  --st-typography-body-color: rgb(var(--st-gray-10-RGB) 0.9);
   --st-typography-medium-color: var(--st-gray-10);
   --st-typography-bold-color: var(--st-gray-10);
-  --st-typography-small-caps-color: rgba(var(--st-gray-10-RGB), 0.65);
+  --st-typography-small-caps-color: rgb(var(--st-gray-10-RGB) 0.65);
   --st-typography-display-h1-color: var(--st-gray-10);
   --st-typography-display-h2-color: var(--st-gray-10);
   --st-typography-display-h3-color: var(--st-gray-10);

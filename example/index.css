@@ -1,0 +1,48 @@
+body {
+  font-family: var(--st-typography-font-family);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--st-grid-unit2x);
+  padding: var(--st-grid-unit2x);
+}
+
+body.st-theme-dark {
+  background: var(--st-gray-100);
+}
+
+section {
+  padding: 1rem;
+}
+
+section > div:first-child {
+  margin-bottom: 0.8rem;
+}
+
+.color-groups {
+  display: flex;
+}
+
+.color-group {
+  margin-right: 60px;
+}
+
+.color-square {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.color-square .color {
+  border: 1px solid rgb(255, 255, 255, 0.1);
+  width: 48px;
+  height: 48px;
+}
+
+.color-square-metadata {
+  margin-left: 8px;
+}
+
+.theme-toggle {
+  margin: 1rem;
+}
