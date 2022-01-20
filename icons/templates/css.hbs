@@ -3,6 +3,10 @@
   src: {{{ fontSrc }}};
 }
 
+.{{prefix}},
+[class^="{{prefix}}-"],
+[class*=" {{prefix}}-"],
+.{{prefix}}::before,
 [class^="{{prefix}}-"]::before,
 [class*=" {{prefix}}-"]::before {
   display: inline-block;
@@ -15,6 +19,13 @@
   vertical-align: -.125em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.{{prefix}},
+[class^="{{prefix}}-"],
+[class*=" {{prefix}}-"] {
+  line-height: 0;
+  vertical-align: 0;
 }
 
 {{# each codepoints }}

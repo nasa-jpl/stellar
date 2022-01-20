@@ -1,9 +1,13 @@
 @font-face {
   font-family: "stellar-icons";
-  src: url("./stellar-icons.woff2?1a4ef283f5ffafa0b2f1924e779f5e93") format("woff2"),
-url("./stellar-icons.woff?1a4ef283f5ffafa0b2f1924e779f5e93") format("woff");
+  src: url("./stellar-icons.woff2?934a60334a3d33154374e7c8a74cc832") format("woff2"),
+url("./stellar-icons.woff?934a60334a3d33154374e7c8a74cc832") format("woff");
 }
 
+.si,
+[class^="si-"],
+[class*=" si-"],
+.si::before,
 [class^="si-"]::before,
 [class*=" si-"]::before {
   display: inline-block;
@@ -16,6 +20,13 @@ url("./stellar-icons.woff?1a4ef283f5ffafa0b2f1924e779f5e93") format("woff");
   vertical-align: -.125em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.si,
+[class^="si-"],
+[class*=" si-"] {
+  line-height: 0;
+  vertical-align: 0;
 }
 
 .si-activity_dictionary::before { content: "\f101"; }

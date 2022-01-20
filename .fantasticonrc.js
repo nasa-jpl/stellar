@@ -3,8 +3,12 @@ module.exports = {
   fontTypes: ["woff2", "woff"],
   inputDir: "./icons/svg",
   name: "stellar-icons",
+  normalize: true,
   outputDir: "./icons",
   prefix: "si",
   selector: ".si",
-  templates: { css: "./icons/css.hbs" },
+  templates: {
+    css: "./icons/templates/css.hbs",
+    html: "./icons/templates/html.hbs",
+  },
 };
