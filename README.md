@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/@nasa-jpl/stellar.svg)](https://www.npmjs.com/package/@nasa-jpl/stellar)
+
 # Stellar
 
 A CSS, HTML, and JavaScript implementation of the Stellar design system. See the [live demo here][stellar-example].
