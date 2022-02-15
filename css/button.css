@@ -33,11 +33,8 @@
   background-color: var(--st-button-tertiary-hover-background-color);
 }
 .st-button:disabled {
-  background-color: var(--st-button-disabled-background-color);
-  border: 0;
-  color: var(--st-button-disabled-color);
+  opacity: var(--st-button-disabled-opacity);
   cursor: not-allowed;
-  opacity: 80%;
 }
 .st-button:hover:not([disabled]) {
   background-color: var(--st-button-primary-hover-background-color);
