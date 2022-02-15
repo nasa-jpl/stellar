@@ -7,7 +7,7 @@ body {
   padding: var(--st-grid-unit2x);
 }
 
-body.st-theme-dark {
+.st-theme-dark {
   background: var(--st-gray-100);
 }
 
