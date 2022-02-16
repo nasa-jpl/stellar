@@ -41,7 +41,7 @@
   --st-primary-100: #46039C;
   --st-primary-90: #5809BB;
   --st-primary-80: #6B0EE1;
-  --st-primary-70: #984EFF;
+  --st-primary-70: #811FFF;
   --st-primary-60: #984EFF;
   --st-primary-50: #A864FF;
   --st-primary-40: #B881FF;
@@ -138,21 +138,20 @@
   --st-typography-display-body-letter-spacing: 0.01em;
 
   /* Button. */
-  --st-button-disabled-background-color: var(--st-gray-20);
-  --st-button-disabled-color: var(--st-gray-40);
+  --st-button-disabled-opacity: 50%;
   --st-button-font-family: var(--st-typography-font-family);
   --st-button-font-weight: var(--st-typography-medium-font-weight);
   --st-button-font-size: var(--st-typography-medium-font-size);
   --st-button-line-height: var(--st-typography-medium-line-height);
   --st-button-letter-spacing: var(--st-typography-medium-letter-spacing);
   --st-button-primary-background-color: var(--st-primary-80);
-  --st-button-primary-border: 0;
+  --st-button-primary-border: 1px solid var(--st-button-stroke);
   --st-button-primary-color: rgba(var(--st-gray-10-RGB), 0.96);
   --st-button-primary-hover-background-color: var(--st-primary-90);
-  --st-button-secondary-background-color: var(--st-gray-15);
-  --st-button-secondary-border: none;
-  --st-button-secondary-color: rgba(var(--st-gray-20), 0.96);
-  --st-button-secondary-hover-background-color: var(--st-gray-20);
+  --st-button-secondary-background-color: var(--st-white);
+  --st-button-secondary-border: 1px solid var(--st-gray-20);
+  --st-button-secondary-color: rgba(var(--st-gray-80-RGB), 0.96);
+  --st-button-secondary-hover-background-color: var(--st-gray-10);
   --st-button-tertiary-color: rgba(var(--st-gray-80-RGB), 0.96);
   --st-button-tertiary-hover-background-color: var(--st-gray-10);
   --st-button-icon-color: var(--st-gray-80);
