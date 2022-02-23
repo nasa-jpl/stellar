@@ -1,7 +1,7 @@
 {
   "name": "@nasa-jpl/stellar",
   "description": "A CSS, HTML, and JavaScript implementation of the Stellar design system.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -14,8 +14,8 @@
   },
   "devDependencies": {
     "fantasticon": "^1.2.3",
-    "sass": "^1.49.0",
-    "stylelint": "^14.2.0",
+    "sass": "^1.49.8",
+    "stylelint": "^14.5.3",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0"
   }
