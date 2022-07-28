@@ -1,7 +1,7 @@
 @font-face {
   font-family: "stellar-icons";
-  src: url("./stellar-icons.woff2?d42b4046046deb0bf6dea99fcaccdb77") format("woff2"),
-url("./stellar-icons.woff?d42b4046046deb0bf6dea99fcaccdb77") format("woff");
+  src: url("./stellar-icons.woff2?2cc37326ff140e86e8c0135d7903aa49") format("woff2"),
+url("./stellar-icons.woff?2cc37326ff140e86e8c0135d7903aa49") format("woff");
 }
 
 .si,
@@ -150,11 +150,12 @@ url("./stellar-icons.woff?d42b4046046deb0bf6dea99fcaccdb77") format("woff");
 .si-timeline::before { content: "\f177"; }
 .si-trash::before { content: "\f178"; }
 .si-tree_leaf::before { content: "\f179"; }
-.si-tree_parent::before { content: "\f17a"; }
-.si-unlinked::before { content: "\f17b"; }
-.si-unlock::before { content: "\f17c"; }
-.si-upload::before { content: "\f17d"; }
-.si-utility_wrench::before { content: "\f17e"; }
-.si-visible_hide::before { content: "\f17f"; }
-.si-visible_show::before { content: "\f180"; }
-.si-warning::before { content: "\f181"; }
+.si-tree_parent_collapsed::before { content: "\f17a"; }
+.si-tree_parent_expanded::before { content: "\f17b"; }
+.si-unlinked::before { content: "\f17c"; }
+.si-unlock::before { content: "\f17d"; }
+.si-upload::before { content: "\f17e"; }
+.si-utility_wrench::before { content: "\f17f"; }
+.si-visible_hide::before { content: "\f180"; }
+.si-visible_show::before { content: "\f181"; }
+.si-warning::before { content: "\f182"; }
