@@ -2,7 +2,7 @@
 
 # Stellar
 
-A CSS, HTML, and JavaScript implementation of the Stellar design system. See the [live demo here][stellar-example].
+A CSS implementation of the Stellar design system for spacecraft operations tools. See the [live demo here][stellar-example].
 
 ## Install
 
