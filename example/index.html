@@ -4,9 +4,9 @@
   <head>
     <title>Stellar</title>
     <link href="../font/inter/inter.css" rel="stylesheet" />
-    <link href="../icons/stellar-icons.css" rel="stylesheet" />
     <link href="../css/index.css" rel="stylesheet" />
     <link href="./index.css" rel="stylesheet" />
+    <script src="./icons.js"></script>
   </head>
 
   <body>
@@ -14,11 +14,11 @@
       <div class="st-typography-displayH1">Stellar Design System</div>
       <div class="st-typography-displayBody">Base CSS Library</div>
     </div>
+
     <div>
-      <button onclick="switchTheme()" class="st-button secondary">
-        Toggle Light/Dark
-      </button>
+      <button onclick="switchTheme()" class="st-button secondary">Toggle Light/Dark</button>
     </div>
+
     <section class="st-card">
       <div class="st-typography-header">Button</div>
       <div>
@@ -28,9 +28,6 @@
         <button class="st-button secondary" disabled>Disabled</button>
         <button class="st-button tertiary">Tertiary</button>
         <button class="st-button tertiary" disabled>Disabled</button>
-        <button class="st-button icon">
-          <i class="si si-search"></i>
-        </button>
       </div>
       <br />
       <div>
@@ -40,9 +37,6 @@
         <button class="st-button large secondary" disabled>Disabled</button>
         <button class="st-button large tertiary">Tertiary</button>
         <button class="st-button large tertiary" disabled>Disabled</button>
-        <button class="st-button large icon">
-          <i class="si si-search"></i>
-        </button>
       </div>
     </section>
 
@@ -54,14 +48,9 @@
         <input class="st-input" type="text" placeholder="Placeholder" />
         <input class="st-input" type="text" placeholder="Disabled" disabled />
       </div>
-      <br>
+      <br />
       <div>
-        <input
-          class="st-input error"
-          type="text"
-          placeholder="Error"
-          value="Hello, World!"
-        />
+        <input class="st-input error" type="text" placeholder="Error" value="Hello, World!" />
         <input class="st-input warning" type="text" placeholder="Warning" />
       </div>
     </section>
@@ -69,22 +58,13 @@
     <section class="st-card">
       <div class="st-typography-header">Textarea</div>
       <div>
-        <textarea
-          placeholder="Placeholder that wraps to another line"
-          class="st-input"
-        ></textarea>
-        <textarea
-          placeholder="Placeholder that wraps to another line"
-          class="st-input"
-        >
-User input that wraps to another line</textarea
-        >
-        <textarea
-          placeholder="Placeholder that wraps to another line"
-          class="st-input no-resize"
-        >
-Non-resizable textarea</textarea
-        >
+        <textarea placeholder="Placeholder that wraps to another line" class="st-input"></textarea>
+        <textarea placeholder="Placeholder that wraps to another line" class="st-input">
+User input that wraps to another line
+        </textarea>
+        <textarea placeholder="Placeholder that wraps to another line" class="st-input no-resize">
+Non-resizable textarea
+        </textarea>
       </div>
     </section>
 
@@ -104,6 +84,7 @@ Non-resizable textarea</textarea
         </select>
       </div>
     </section>
+
     <section class="st-card">
       <div class="st-typography-header">Table</div>
       <div>
@@ -155,6 +136,7 @@ Non-resizable textarea</textarea
         <div class="st-typography-small-caps">Small Caps</div>
       </div>
     </section>
+
     <section class="st-card">
       <div class="st-typography-header">Color</div>
       <div class="color-groups">
@@ -242,98 +224,111 @@ Non-resizable textarea</textarea
             <div style="background: var(--st-primary-10)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 10</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-10
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-10</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-20)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 20</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-20
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-20</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-30)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 30</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-30
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-30</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-40)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 40</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-40
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-40</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-50)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 50</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-50
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-50</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-60)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 60</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-60
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-60</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-70)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 70</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-70
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-70</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-80)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 80</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-80
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-80</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-90)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 90</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-90
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-90</div>
             </div>
           </div>
           <div class="color-square">
             <div style="background: var(--st-primary-100)" class="color"></div>
             <div class="color-square-metadata">
               <div class="st-typography-medium">Primary 100</div>
-              <div class="st-typography-label">
-                CSS Variable: --st-primary-100
-              </div>
+              <div class="st-typography-label">CSS Variable: --st-primary-100</div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="st-card">
+      <div class="st-typography-header">Icons</div>
+      <div class="icons-container"></div>
+    </section>
+
     <script type="text/javascript">
       function switchTheme() {
-        document.documentElement.classList.toggle("st-theme-dark");
+        document.documentElement.classList.toggle('st-theme-dark');
+      }
+    </script>
+
+    <script type="text/javascript">
+      const iconsContainer = document.querySelector('.icons-container');
+
+      for (const icon of window.icons) {
+        const iconContainer = document.createElement('div');
+        iconContainer.className = 'icon-container';
+        iconsContainer.appendChild(iconContainer);
+
+        const imgContainer = document.createElement('div');
+        imgContainer.className = 'img-container';
+
+        const img = document.createElement('img');
+        img.alt = icon;
+        img.height = '32';
+        img.src = `../icons/${icon}`;
+        img.width = '32';
+        imgContainer.appendChild(img);
+
+        const label = document.createElement('div');
+        label.className = 'st-typography-label';
+        label.textContent = icon.replace(/\.svg/, '');
+
+        iconContainer.appendChild(imgContainer);
+        iconContainer.appendChild(label);
       }
     </script>
   </body>

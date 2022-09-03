@@ -1,22 +1,22 @@
 {
   "name": "@nasa-jpl/stellar",
-  "description": "A CSS, HTML, and JavaScript implementation of the Stellar design system.",
-  "version": "1.0.8",
+  "description": "A CSS implementation of the Stellar design system.",
+  "type": "module",
+  "version": "1.0.9",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/nasa-jpl/stellar.git"
   },
   "scripts": {
-    "build-css": "rm -rf css && sass --no-source-map scss:css",
-    "build-icons": "fantasticon",
+    "build:css": "rm -rf css && sass --no-source-map scss:css",
+    "build:icons": "node scripts/build-icons.js",
     "lint": "stylelint scss/**/*.scss --fix"
   },
   "devDependencies": {
-    "fantasticon": "^1.2.3",
-    "sass": "^1.49.8",
-    "stylelint": "^14.5.3",
-    "stylelint-config-standard-scss": "^3.0.0",
+    "sass": "^1.54.8",
+    "stylelint": "^14.11.0",
+    "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-order": "^5.0.0"
   }
 }
