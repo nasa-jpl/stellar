@@ -19,13 +19,13 @@
   /* Button. */
   --st-button-primary-background-color: var(--st-primary-70);
   --st-button-primary-hover-background-color: var(--st-primary-60);
-  --st-button-secondary-color: rgba(var(--st-gray-10-RGB), 0.96);
+  --st-button-secondary-color: rgb(var(--st-gray-10-RGB) 0.96);
   --st-button-secondary-background-color: var(--st-gray-70);
   --st-button-secondary-border: none;
   --st-button-secondary-hover-background-color: var(--st-gray-60);
-  --st-button-tertiary-color: rgba(var(--st-gray-10-RGB), 0.96);
+  --st-button-tertiary-color: rgb(var(--st-gray-10-RGB) 0.96);
   --st-button-tertiary-hover-background-color: var(--st-gray-80);
-  --st-button-icon-color: rgba(var(--st-gray-10-RGB), 0.96);
+  --st-button-icon-color: rgb(var(--st-gray-10-RGB) 0.96);
   --st-button-icon-hover-background-color: var(--st-gray-80);
 
   /* Input. */

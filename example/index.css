@@ -1,8 +1,8 @@
 body {
-  font-family: var(--st-typography-font-family);
-  font-size: 16px;
   display: flex;
   flex-direction: column;
+  font-family: var(--st-typography-font-family);
+  font-size: 16px;
   gap: var(--st-grid-unit2x);
   padding: var(--st-grid-unit2x);
 }
@@ -32,19 +32,39 @@ section > div:nth-of-type(2) {
 }
 
 .color-square {
-  margin-bottom: 16px;
-  display: flex;
   align-items: center;
+  display: flex;
+  margin-bottom: 16px;
 }
 
 .color-square .color {
-  border: 1px solid rgb(255, 255, 255, 0.1);
-  width: 48px;
+  border: 1px solid rgb(255 255 255 / 10%);
   height: 48px;
+  width: 48px;
 }
 
 .color-square-metadata {
   margin-left: 8px;
+}
+
+.icons-container {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.icon-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.img-container {
+  background-color: var(--st-gray-10);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 32px;
 }
 
 .theme-toggle {
