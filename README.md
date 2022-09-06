@@ -2,7 +2,7 @@
 
 # Stellar
 
-A CSS implementation of the Stellar design system for spacecraft operations tools. See our [example project][stellar-example] for detailed API usage.
+A CSS implementation of the Stellar design system for spacecraft operation tools.
 
 ## Install
 
@@ -12,7 +12,7 @@ npm install @nasa-jpl/stellar --save
 
 ## Usage
 
-Import the desired CSS files into your project to make the classes globally available.
+Import the desired CSS files into your project to make the classes globally available. See our [example project][stellar-example] for detailed API usage.
 
 ```html
 <html>
