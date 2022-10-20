@@ -51,7 +51,8 @@
   --st-primary-text-color: var(--st-gray-10);
   /* Utility Colors */
   --st-button-stroke: rgba(0, 0, 0, 0.16);
-  --st-error-red: #FF7760;
+  --st-error-red: #DB5139;
+  --st-success-green: #0EAF0A;
   /* Layout. */
   --st-grid-unit: 8px;
   --st-grid-unit2x: calc(var(--st-grid-unit) * 2);
