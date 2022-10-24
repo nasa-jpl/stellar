@@ -189,6 +189,18 @@
   --st-table-td-letter-spacing: var(--st-typography-body-letter-spacing);
   /* Card (not represented in design system). */
   --st-card-border: 1px solid rgb(0 0 0 / 12.5%);
+  /* Badge */
+  --st-badge-background: var(--st-primary-10);
+  --st-badge-color: var(--st-gray-100);
+  --st-badge-border-radius: var(--st-grid-unit2x);
+  --st-badge-font-family: var(--st-typography-font-family);
+  --st-badge-font-weight: var(--st-typography-bold-font-weight);
+  --st-badge-font-size: var(--st-typography-bold-font-size);
+  --st-badge-line-height: var(--st-typography-bold-line-height);
+  --st-badge-letter-spacing: var(--st-typography-bold-letter-spacing);
+  --st-badge-padding: 0px 4px;
+  --st-badge-min-width: var(--st-grid-unit2x);
+  --st-badge-min-height: var(--st-grid-unit2x);
 }
 
 .st-button {
@@ -383,6 +395,26 @@ textarea.st-input.no-resize {
   font-weight: var(--st-table-td-font-weight);
   line-height: var(--st-table-td-line-height);
   letter-spacing: var(--st-table-td-letter-spacing);
+}
+
+.st-badge {
+  background: var(--st-badge-background);
+  border-radius: var(--st-badge-border-radius);
+  color: var(--st-badge-color);
+  font-family: var(--st-badge-font-family);
+  font-size: var(--st-badge-font-size);
+  font-weight: var(--st-badge-font-weight);
+  height: var(--st-badge-height);
+  letter-spacing: var(--st-badge-letter-spacing);
+  line-height: var(--st-badge-line-height);
+  user-select: none;
+  width: max-content;
+  padding: var(--st-badge-padding);
+  min-width: var(--st-badge-min-width);
+  min-height: var(--st-badge-min-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .st-typography-header {

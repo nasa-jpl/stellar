@@ -189,4 +189,16 @@
   --st-table-td-letter-spacing: var(--st-typography-body-letter-spacing);
   /* Card (not represented in design system). */
   --st-card-border: 1px solid rgb(0 0 0 / 12.5%);
+  /* Badge */
+  --st-badge-background: var(--st-primary-10);
+  --st-badge-color: var(--st-gray-100);
+  --st-badge-border-radius: var(--st-grid-unit2x);
+  --st-badge-font-family: var(--st-typography-font-family);
+  --st-badge-font-weight: var(--st-typography-bold-font-weight);
+  --st-badge-font-size: var(--st-typography-bold-font-size);
+  --st-badge-line-height: var(--st-typography-bold-line-height);
+  --st-badge-letter-spacing: var(--st-typography-bold-letter-spacing);
+  --st-badge-padding: 0px 4px;
+  --st-badge-min-width: var(--st-grid-unit2x);
+  --st-badge-min-height: var(--st-grid-unit2x);
 }
