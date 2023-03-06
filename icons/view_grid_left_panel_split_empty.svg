@@ -1,16 +1,13 @@
-<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g opacity="0.6" clip-path="url(#clip0_230_29614)">
-    <rect width="20" height="20" transform="matrix(-1 0 0 1 20.1667 0)" />
-    <rect x="-0.625" y="0.625" width="18.75" height="18.75" rx="0.625" transform="matrix(-1 0 0 1 18.9167 0)"
-      stroke="currentColor" stroke-width="1.25" />
-    <rect x="-0.625" y="0.625" width="6.75" height="7.75" rx="0.625" transform="matrix(-1 0 0 1 6.91675 11)"
-      stroke="currentColor" stroke-width="1.25" />
-    <rect x="-0.625" y="0.625" width="6.75" height="7.75" rx="0.625" transform="matrix(-1 0 0 1 6.91675 0)"
-      stroke="currentColor" stroke-width="1.25" />
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.5" clip-path="url(#clip0_309_61077)">
+    <rect width="20" height="20" transform="matrix(1 0 0 -1 0 20)" />
+    <rect x="0.5" y="-0.5" width="19" height="19" rx="0.75" transform="matrix(1 0 0 -1 0 19)" stroke="currentColor" />
+    <rect x="0.5" y="-0.5" width="7" height="8" rx="0.75" transform="matrix(1 0 0 -1 0 8)" stroke="currentColor" />
+    <rect x="0.5" y="-0.5" width="7" height="8" rx="0.75" transform="matrix(1 0 0 -1 0 19)" stroke="currentColor" />
   </g>
   <defs>
-    <clipPath id="clip0_230_29614">
-      <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20.1667 0)" />
+    <clipPath id="clip0_309_61077">
+      <rect width="20" height="20" fill="white" transform="matrix(1 0 0 -1 0 20)" />
     </clipPath>
   </defs>
 </svg>
