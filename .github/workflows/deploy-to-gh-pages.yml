@@ -16,6 +16,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: 'lts/*'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build CSS
+        run: npm run build:css
+      - name: Build Icons
+        run: npm run build:icons
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
         with:
