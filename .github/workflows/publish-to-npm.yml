@@ -1,0 +1,25 @@
+name: Publish to NPM
+
+on:
+  push:
+    tags:
+      - v*
+  workflow_dispatch:
+
+jobs:
+  publish-to-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: 'lts/*'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Publish
+        run: npm publish
+        continue-on-error: true
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
