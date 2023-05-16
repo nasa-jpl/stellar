@@ -6,11 +6,11 @@
 
   /* Typography. */
   --st-typography-header-color: var(--st-gray-10);
-  --st-typography-label-color: rgb(var(--st-gray-10-RGB) 0.65);
-  --st-typography-body-color: rgb(var(--st-gray-10-RGB) 0.9);
+  --st-typography-label-color: rgba(var(--st-gray-10-RGB), 0.65);
+  --st-typography-body-color: rgba(var(--st-gray-10-RGB), 0.9);
   --st-typography-medium-color: var(--st-gray-10);
   --st-typography-bold-color: var(--st-gray-10);
-  --st-typography-small-caps-color: rgb(var(--st-gray-10-RGB) 0.65);
+  --st-typography-small-caps-color: rgb(var(--st-gray-10-RGB), 0.65);
   --st-typography-display-h1-color: var(--st-gray-10);
   --st-typography-display-h2-color: var(--st-gray-10);
   --st-typography-display-h3-color: var(--st-gray-10);
@@ -19,19 +19,20 @@
   /* Button. */
   --st-button-primary-background-color: var(--st-primary-70);
   --st-button-primary-hover-background-color: var(--st-primary-60);
-  --st-button-secondary-color: rgb(var(--st-gray-10-RGB) 0.96);
+  --st-button-secondary-color: rgb(var(--st-gray-10-RGB), 0.96);
   --st-button-secondary-background-color: var(--st-gray-70);
   --st-button-secondary-border: none;
   --st-button-secondary-hover-background-color: var(--st-gray-60);
-  --st-button-tertiary-color: rgb(var(--st-gray-10-RGB) 0.96);
+  --st-button-tertiary-color: rgb(var(--st-gray-10-RGB), 0.96);
   --st-button-tertiary-hover-background-color: var(--st-gray-80);
-  --st-button-icon-color: rgb(var(--st-gray-10-RGB) 0.96);
+  --st-button-icon-color: rgb(var(--st-gray-10-RGB), 0.96);
   --st-button-icon-hover-background-color: var(--st-gray-80);
 
   /* Input. */
   --st-input-background-color: var(--st-gray-70);
+  --st-input-border: 1px solid var(--st-gray-60);
   --st-input-color: var(--st-gray-10);
-  --st-input-placeholder-color: var(--st-gray-40);
+  --st-input-placeholder-color: var(--st-gray-50);
 
   /* Select. */
   --st-select-background: var(--st-gray-70);
@@ -40,4 +41,17 @@
 
   /* Card (not represented in design system). */
   --st-card-border: 1px solid rgb(255 255 255 / 12.5%);
+
+  /* Table */
+  --st-table-th-background: var(--st-gray-90);
+  --st-table-th-box-shadow: inset 0px -1px 0px var(--st-gray-70);
+  --st-table-th-color: var(--st-gray-10);
+
+  --st-table-td-background: var(--st-gray-90);
+  --st-table-td-color: var(--st-gray-10);
+  --st-table-td-box-shadow: inset 0px -1px 0px var(--st-gray-70);
+
+  /* Badge */
+  --st-badge-background: var(--st-primary-40);
+
 }

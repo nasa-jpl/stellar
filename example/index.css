@@ -67,6 +67,15 @@ section > div:nth-of-type(2) {
   padding: 32px;
 }
 
+.st-theme-dark .img-container {
+  background: var(--st-gray-80);
+  color: var(--st-gray-10);
+}
+
+.st-theme-dark .img-container img {
+  filter: invert(1);
+}
+
 .theme-toggle {
   margin: 1rem;
 }
