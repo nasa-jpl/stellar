@@ -160,7 +160,7 @@
   --st-button-icon-min-width: var(--st-grid-unit3x);
 
   /* Input. */
-  --st-input-border: 1px solid var(--st-gray-15);
+  --st-input-border: 1px solid var(--st-gray-20);
   --st-input-background-color: var(--st-gray-10);
   --st-input-color: var(--st-gray-80);
   --st-input-error-background-color: rgb(255 119 96 / 20%);
@@ -198,7 +198,6 @@
   --st-table-th-font-weight: var(--st-typography-medium-font-weight);
   --st-table-th-font-size: var(--st-typography-medium-font-size);
   --st-table-th-line-height: var(--st-typography-medium-line-height);
-  --st-table-th-letter-spacing: var(--st-typography-medium-letter-spacing);
 
   --st-table-td-padding: var(--st-grid-unit);
   --st-table-td-background: var(--st-white);

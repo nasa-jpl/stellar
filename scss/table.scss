@@ -13,6 +13,7 @@
     font-weight: var(--st-table-th-font-weight);
     line-height: var(--st-table-th-line-height);
     letter-spacing: var(--st-table-th-letter-spacing);
+    color: var(--st-table-th-color);
   }
 
   tr {
@@ -36,5 +37,6 @@
     font-weight: var(--st-table-td-font-weight);
     line-height: var(--st-table-td-line-height);
     letter-spacing: var(--st-table-td-letter-spacing);
+    color: var(--st-table-td-color);
   }
 }
