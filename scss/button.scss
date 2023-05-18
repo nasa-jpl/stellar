@@ -68,7 +68,9 @@
     min-width: var(--st-button-icon-min-width);
 
     &:hover {
-      background-color: var(--st-button-icon-hover-background-color);
+      &:not([disabled]) {
+        background-color: var(--st-button-icon-hover-background-color);
+      }
     }
   }
 }
