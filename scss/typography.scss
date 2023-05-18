@@ -1,3 +1,7 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+}
+
 .st-typography-header {
   font-family: var(--st-typography-header-font-family);
   color: var(--st-typography-header-color);
@@ -53,7 +57,7 @@
   letter-spacing: var(--st-typography-small-caps-letter-spacing);
 }
 
-/* M20 GDS Display Font Definitions */
+/* Display Font Definitions */
 .st-typography-displayH1 {
   font-family: var(--st-typography-display-h1-font-family);
   color: var(--st-typography-display-h1-color);
