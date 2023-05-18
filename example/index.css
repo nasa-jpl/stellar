@@ -1,14 +1,31 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: var(--st-typography-font-family);
-  font-size: 16px;
   gap: var(--st-grid-unit2x);
-  padding: var(--st-grid-unit2x);
+  margin: auto;
+  max-width: 1000px;
+  padding: 56px;
 }
 
 .st-theme-dark {
   background: var(--st-gray-100);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--st-grid-unit3x);
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
 
 section {
@@ -39,6 +56,7 @@ section > div:nth-of-type(2) {
 
 .color-square .color {
   border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 4px;
   height: 48px;
   width: 48px;
 }

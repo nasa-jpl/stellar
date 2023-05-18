@@ -10,33 +10,38 @@
   </head>
 
   <body>
-    <div>
-      <div class="st-typography-displayH1">Stellar Design System</div>
-      <div class="st-typography-displayBody">Base CSS Library</div>
+    <div class="header">
+      <div class="st-typography-displayH1 title">Stellar Design System</div>
+      <div class="st-typography-displayBody">
+        A CSS implementation of the Stellar design system for spacecraft operation tools.
+      </div>
     </div>
 
     <div>
-      <button onclick="switchTheme()" class="st-button secondary">Toggle Light/Dark</button>
+      <button onclick="switchTheme()" class="st-button secondary">Toggle Light/Dark Theme</button>
     </div>
-
     <section class="st-card">
       <div class="st-typography-header">Button</div>
-      <div>
+      <div class="button-row">
         <button class="st-button">Primary</button>
         <button class="st-button" disabled>Disabled</button>
         <button class="st-button secondary">Secondary</button>
         <button class="st-button secondary" disabled>Disabled</button>
         <button class="st-button tertiary">Tertiary</button>
         <button class="st-button tertiary" disabled>Disabled</button>
+        <button class="st-button icon"><img src="../icons/sol.svg" /></button>
+        <button class="st-button icon" disabled><img src="../icons/sol.svg" /></button>
       </div>
       <br />
-      <div>
+      <div class="button-row">
         <button class="st-button large">Primary</button>
         <button class="st-button large" disabled>Disabled</button>
         <button class="st-button large secondary">Secondary</button>
         <button class="st-button large secondary" disabled>Disabled</button>
         <button class="st-button large tertiary">Tertiary</button>
         <button class="st-button large tertiary" disabled>Disabled</button>
+        <button class="st-button large icon"><img src="../icons/sol.svg" /></button>
+        <button class="st-button large icon" disabled><img src="../icons/sol.svg" /></button>
       </div>
     </section>
 
