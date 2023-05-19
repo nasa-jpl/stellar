@@ -1,6 +1,7 @@
 html, body {
   -webkit-font-smoothing: antialiased;
-  // TODO add the mozilla flavor
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .st-typography-header {
