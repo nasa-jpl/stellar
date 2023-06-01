@@ -70,38 +70,38 @@
 
   --st-typography-header-font-family: var(--st-typography-font-family);
   --st-typography-header-color: var(--st-gray-100);
-  --st-typography-header-font-weight: 700;
+  --st-typography-header-font-weight: 500;
   --st-typography-header-font-size: 16px;
   --st-typography-header-line-height: 24px;
-  --st-typography-header-letter-spacing: 0.03em;
+  --st-typography-header-letter-spacing: -0.00011em;
 
   --st-typography-label-font-family: var(--st-typography-font-family);
   --st-typography-label-color: rgba(var(--st-gray-100-RGB), 0.65);
-  --st-typography-label-font-weight: 400;
+  --st-typography-label-font-weight: 500;
   --st-typography-label-font-size: 12px;
   --st-typography-label-line-height: 16px;
-  --st-typography-label-letter-spacing: 0.04em;
+  --st-typography-label-letter-spacing: 0.01em;
 
   --st-typography-body-font-family: var(--st-typography-font-family);
   --st-typography-body-color: rgba(var(--st-gray-100-RGB), 0.9);
   --st-typography-body-font-weight: 400;
   --st-typography-body-font-size: 12px;
   --st-typography-body-line-height: 16px;
-  --st-typography-body-letter-spacing: 0.04em;
+  --st-typography-body-letter-spacing: 0px;
 
   --st-typography-medium-font-family: var(--st-typography-font-family);
   --st-typography-medium-color: var(--st-gray-100);
   --st-typography-medium-font-weight: 500;
   --st-typography-medium-font-size: 12px;
   --st-typography-medium-line-height: 16px;
-  --st-typography-medium-letter-spacing: 0.025em;
+  --st-typography-medium-letter-spacing: 0px;
 
   --st-typography-bold-font-family: var(--st-typography-font-family);
   --st-typography-bold-color: var(--st-gray-100);
   --st-typography-bold-font-weight: 700;
   --st-typography-bold-font-size: 12px;
-  --st-typography-bold-line-height: 16px;
-  --st-typography-bold-letter-spacing: 0.05em;
+  --st-typography-bold-line-height: 15px;
+  --st-typography-bold-letter-spacing: 0.015em;
 
   --st-typography-small-caps-font-family: var(--st-typography-font-family);
   --st-typography-small-caps-color: rgba(var(--st-gray-100-RGB), 0.65);
@@ -114,29 +114,29 @@
   --st-typography-display-h1-color: var(--st-gray-100);
   --st-typography-display-h1-font-weight: 700;
   --st-typography-display-h1-font-size: 40px;
-  --st-typography-display-h1-line-height: 48px;
-  --st-typography-display-h1-letter-spacing: -0.02em;
+  --st-typography-display-h1-line-height: 56px;
+  --st-typography-display-h1-letter-spacing: -0.022em;
 
   --st-typography-display-h2-font-family: var(--st-typography-font-family);
   --st-typography-display-h2-color: var(--st-gray-100);
   --st-typography-display-h2-font-weight: 700;
   --st-typography-display-h2-font-size: 32px;
-  --st-typography-display-h2-line-height: 40px;
-  --st-typography-display-h2-letter-spacing: -0.005em;
+  --st-typography-display-h2-line-height: 42px;
+  --st-typography-display-h2-letter-spacing: -0.021em;
 
   --st-typography-display-h3-font-family: var(--st-typography-font-family);
   --st-typography-display-h3-color: var(--st-gray-100);
   --st-typography-display-h3-font-weight: 600;
   --st-typography-display-h3-font-size: 24px;
   --st-typography-display-h3-line-height: 32px;
-  --st-typography-display-h3-letter-spacing: 0;
+  --st-typography-display-h3-letter-spacing: -0.019em;
 
   --st-typography-display-body-font-family: var(--st-typography-font-family);
   --st-typography-display-body-color: var(--st-gray-100);
   --st-typography-display-body-font-weight: 400;
   --st-typography-display-body-font-size: 16px;
-  --st-typography-display-body-line-height: 24px;
-  --st-typography-display-body-letter-spacing: 0.01em;
+  --st-typography-display-body-line-height: 22px;
+  --st-typography-display-body-letter-spacing: -0.011em;
 
   /* Button. */
   --st-button-disabled-opacity: 50%;
