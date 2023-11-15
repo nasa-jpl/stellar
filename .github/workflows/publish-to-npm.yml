@@ -18,8 +18,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install Dependencies
         run: npm ci
-      - name: Build CSS
-        run: npm run build:css
       - name: Publish
         run: npm publish
         continue-on-error: true
