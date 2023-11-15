@@ -11,7 +11,8 @@
   "scripts": {
     "build:css": "rm -rf css && sass scss:css",
     "build:icons": "node scripts/build-icons.js",
-    "lint": "stylelint scss/**/*.scss --fix"
+    "lint": "stylelint scss/**/*.scss --fix",
+    "prepublishOnly": "npm run build:css"
   },
   "devDependencies": {
     "sass": "^1.60.0",
