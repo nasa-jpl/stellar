@@ -1,63 +1,8 @@
 :root {
-  /* Emphasis Colors. */
-  --st-black: #000;
-  --st-blue: #4fa1ff;
-  --st-green: #1aff66;
-  --st-orange: #fdb462;
-  --st-red: #ff7760;
-  --st-white: #fff;
-  --st-yellow: #ffdd5c;
-  --st-yellow-light: #ffc93e;
-
-  /* Gray Color Pallette. */
-
-  /* When used as text, these are accessible on white and the lightest gray (#F8F8F8). */
-  --st-gray-100: #1b1d1e;
-  --st-gray-100-RGB: 27, 29, 30;
-  --st-gray-90: #1f2223;
-  --st-gray-90-RGB: 31, 34, 35;
-  --st-gray-80: #293137;
-  --st-gray-80-RGB: 41, 49, 55;
-  --st-gray-70: #444c50;
-  --st-gray-70-RGB: 68, 76, 80, 1;
-  --st-gray-60: #545f64;
-  --st-gray-60-RGB: 84, 95, 100;
-
-  /* When used as text, these are accessible on black and the darkest gray (#1B1D1E). */
-  --st-gray-50: #969696;
-  --st-gray-50-RGB: 150, 150, 150;
-  --st-gray-40: #bcbcbc;
-  --st-gray-40-RGB: 188, 188, 188;
-  --st-gray-30: #bec0c2;
-  --st-gray-30-RGB: 190, 192, 194;
-  --st-gray-20: #ebecec;
-  --st-gray-20-RGB: 235, 236, 236;
-  --st-gray-15: #f1f2f3;
-  --st-gray-15-RGB: 241, 242, 243;
-  --st-gray-10: #f8f8f8;
-  --st-gray-10-RGB: 248, 248, 248;
-
-  /* Primary Color Pallette. */
-  --st-primary-100: #0C008C;
-  --st-primary-90: #1D0EBE;
-  --st-primary-80: #3525E6;
-  --st-primary-70: #4C3FDE;
-  --st-primary-60: #5D55FA;
-  --st-primary-50: #7069FA;
-  --st-primary-40: #8888FC;
-  --st-primary-30: #A1A4FC;
-  --st-primary-20: #C4C6FF;
-  --st-primary-10: #E6E6FF;
-  --st-primary: var(--st-primary-50);
-  --st-primary-background-color: var(--st-white);
-  --st-primary-inverse-background-color: var(--st-gray-10);
-  --st-primary-inverse-text-color: var(--st-white);
-  --st-primary-text-color: var(--st-gray-10);
-
   /* Utility Colors */
-  --st-button-stroke: rgba(0, 0, 0, 0.16);
-  --st-error-red: #DB5139;
-  --st-success-green: #0EAF0A;
+  // --st-button-stroke: rgba(0, 0, 0, 0.16);
+  // --st-error-red: #db5139;
+  // --st-success-green: #0eaf0a;
 
   /* Layout. */
   --st-grid-unit: 8px;
@@ -67,76 +12,104 @@
 
   /* Typography. */
   --st-typography-font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
+  --st-typography-mono-font-family: JetBrains Mono, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
 
   --st-typography-header-font-family: var(--st-typography-font-family);
-  --st-typography-header-color: var(--st-gray-100);
   --st-typography-header-font-weight: 500;
   --st-typography-header-font-size: 16px;
   --st-typography-header-line-height: 24px;
-  --st-typography-header-letter-spacing: -0.00011em;
+  --st-typography-header-letter-spacing: -0.002px;
 
   --st-typography-label-font-family: var(--st-typography-font-family);
-  --st-typography-label-color: rgba(var(--st-gray-100-RGB), 0.65);
   --st-typography-label-font-weight: 500;
   --st-typography-label-font-size: 12px;
   --st-typography-label-line-height: 16px;
-  --st-typography-label-letter-spacing: 0.01em;
+  --st-typography-label-letter-spacing: 0.12px;
 
   --st-typography-body-font-family: var(--st-typography-font-family);
-  --st-typography-body-color: rgba(var(--st-gray-100-RGB), 0.9);
   --st-typography-body-font-weight: 400;
   --st-typography-body-font-size: 12px;
   --st-typography-body-line-height: 16px;
   --st-typography-body-letter-spacing: 0px;
 
   --st-typography-medium-font-family: var(--st-typography-font-family);
-  --st-typography-medium-color: var(--st-gray-100);
   --st-typography-medium-font-weight: 500;
   --st-typography-medium-font-size: 12px;
   --st-typography-medium-line-height: 16px;
   --st-typography-medium-letter-spacing: 0px;
 
   --st-typography-bold-font-family: var(--st-typography-font-family);
-  --st-typography-bold-color: var(--st-gray-100);
   --st-typography-bold-font-weight: 700;
   --st-typography-bold-font-size: 12px;
-  --st-typography-bold-line-height: 15px;
-  --st-typography-bold-letter-spacing: 0.015em;
+  --st-typography-bold-line-height: 16px;
+  --st-typography-bold-letter-spacing: 0.18px;
 
   --st-typography-small-caps-font-family: var(--st-typography-font-family);
-  --st-typography-small-caps-color: rgba(var(--st-gray-100-RGB), 0.65);
   --st-typography-small-caps-font-weight: 700;
   --st-typography-small-caps-font-size: 11px;
   --st-typography-small-caps-line-height: 16px;
-  --st-typography-small-caps-letter-spacing: 0.1em;
+  --st-typography-small-caps-letter-spacing: 1.1px;
 
   --st-typography-display-h1-font-family: var(--st-typography-font-family);
-  --st-typography-display-h1-color: var(--st-gray-100);
   --st-typography-display-h1-font-weight: 700;
   --st-typography-display-h1-font-size: 40px;
   --st-typography-display-h1-line-height: 56px;
-  --st-typography-display-h1-letter-spacing: -0.022em;
+  --st-typography-display-h1-letter-spacing: -0.88px;
 
   --st-typography-display-h2-font-family: var(--st-typography-font-family);
-  --st-typography-display-h2-color: var(--st-gray-100);
   --st-typography-display-h2-font-weight: 700;
   --st-typography-display-h2-font-size: 32px;
   --st-typography-display-h2-line-height: 42px;
-  --st-typography-display-h2-letter-spacing: -0.021em;
+  --st-typography-display-h2-letter-spacing: -0.672px;
 
   --st-typography-display-h3-font-family: var(--st-typography-font-family);
-  --st-typography-display-h3-color: var(--st-gray-100);
   --st-typography-display-h3-font-weight: 600;
   --st-typography-display-h3-font-size: 24px;
   --st-typography-display-h3-line-height: 32px;
-  --st-typography-display-h3-letter-spacing: -0.019em;
+  --st-typography-display-h3-letter-spacing: -0.456px;
 
   --st-typography-display-body-font-family: var(--st-typography-font-family);
-  --st-typography-display-body-color: var(--st-gray-100);
   --st-typography-display-body-font-weight: 400;
   --st-typography-display-body-font-size: 16px;
   --st-typography-display-body-line-height: 22px;
-  --st-typography-display-body-letter-spacing: -0.011em;
+  --st-typography-display-body-letter-spacing: -0.176px;
+
+  --st-typography-mono-header-font-family: var(--st-typography-mono-font-family);
+  --st-typography-mono-header-font-weight: 700;
+  --st-typography-mono-header-font-size: 16px;
+  --st-typography-mono-header-line-height: 24px;
+  --st-typography-mono-header-letter-spacing: 0.48px;
+
+  --st-typography-mono-label-font-family: var(--st-typography-mono-font-family);
+  --st-typography-mono-label-font-weight: 500;
+  --st-typography-mono-label-font-size: 12px;
+  --st-typography-mono-label-line-height: 16px;
+  --st-typography-mono-label-letter-spacing: 0.48px;
+
+  --st-typography-mono-body-font-family: var(--st-typography-mono-font-family);
+  --st-typography-mono-body-font-weight: 400;
+  --st-typography-mono-body-font-size: 12px;
+  --st-typography-mono-body-line-height: 16px;
+  --st-typography-mono-body-letter-spacing: 0.48px;
+
+  --st-typography-mono-medium-font-family: var(--st-typography-mono-font-family);
+  --st-typography-mono-medium-font-weight: 500;
+  --st-typography-mono-medium-font-size: 12px;
+  --st-typography-mono-medium-line-height: 16px;
+  --st-typography-mono-medium-letter-spacing: 0.3px;
+
+  --st-typography-mono-bold-font-family: var(--st-typography-mono-font-family);
+  --st-typography-mono-bold-font-weight: 700;
+  --st-typography-mono-bold-font-size: 12px;
+  --st-typography-mono-bold-line-height: 16px;
+  --st-typography-mono-bold-letter-spacing: 0.6px;
+
+  --st-typography-mono-small-caps-font-family: var(--st-typography-mono-font-family);
+  --st-typography-mono-small-caps-font-weight: 700;
+  --st-typography-mono-small-caps-font-size: 11px;
+  --st-typography-mono-small-caps-line-height: 16px;
+  --st-typography-mono-small-caps-letter-spacing: 1.1px;
 
   /* Button. */
   --st-button-disabled-opacity: 50%;
@@ -145,64 +118,66 @@
   --st-button-font-size: var(--st-typography-medium-font-size);
   --st-button-line-height: var(--st-typography-medium-line-height);
   --st-button-letter-spacing: var(--st-typography-medium-letter-spacing);
-  --st-button-primary-background-color: var(--st-primary-80);
-  --st-button-primary-border: 1px solid var(--st-button-stroke);
-  --st-button-primary-color: rgba(var(--st-gray-10-RGB), 0.96);
-  --st-button-primary-hover-background-color: var(--st-primary-90);
-  --st-button-secondary-background-color: var(--st-white);
-  --st-button-secondary-border: 1px solid var(--st-gray-20);
-  --st-button-secondary-color: rgba(var(--st-gray-80-RGB), 0.96);
-  --st-button-secondary-hover-background-color: var(--st-gray-10);
-  --st-button-tertiary-color: rgba(var(--st-gray-80-RGB), 0.96);
-  --st-button-tertiary-hover-background-color: var(--st-gray-10);
-  --st-button-icon-color: var(--st-gray-80);
-  --st-button-icon-hover-background-color: var(--st-gray-10);
+  --st-button-primary-background-color: var(--st-accent-bg-button);
+  --st-button-primary-border: 1px solid var(--st-accent-border-action);
+  --st-button-primary-color: var(--st-neutral-content-button-primary);
+  --st-button-primary-hover-background-color: var(--st-accent-bg-button-hover);
+  --st-button-secondary-background-color: var(--st-neutral-bg-button);
+  --st-button-secondary-border: 1px solid var(--st-neutral-border-button);
+  --st-button-secondary-color: var(--st-neutral-content-button);
+  --st-button-secondary-hover-background-color: var(--st-neutral-bg-button-hover);
+  --st-button-tertiary-color: var(--st-neutral-content-button);
+  --st-button-tertiary-border: 1px solid transparent;
+  --st-button-tertiary-hover-background-color: var(--st-neutral-bg-button-hover);
+  --st-button-tertiary-hover-border: 1px solid var(--st-neutral-border-button);
+  --st-button-icon-color: var(--st-neutral-content-button);
+  --st-button-icon-border: 1px solid var(--st-neutral-border-button);
+  --st-button-icon-hover-background-color: var(--st-neutral-bg-button-hover);
   --st-button-icon-min-width: var(--st-grid-unit3x);
 
   /* Input. */
-  --st-input-border: 1px solid var(--st-gray-20);
-  --st-input-background-color: var(--st-gray-10);
-  --st-input-color: var(--st-gray-80);
-  --st-input-error-background-color: rgb(255 119 96 / 20%);
+  --st-input-border: 1px solid var(--st-neutral-border-button);
+  --st-input-background-color: var(--st-neutral-bg-secondary);
+  --st-input-color: var(--st-neutral-content-primary);
   --st-input-font-family: var(--st-typography-font-family);
   --st-input-font-weight: var(--st-typography-body-font-weight);
   --st-input-font-size: var(--st-typography-body-font-size);
   --st-input-icon-color: var(--st-gray-40);
   --st-input-line-height: var(--st-typography-body-line-height);
   --st-input-letter-spacing: var(--st-typography-body-letter-spacing);
-  --st-input-padding: 3px 6px;
-  --st-input-placeholder-color: var(--st-gray-50);
-  --st-input-warning-background-color: rgb(253 180 98 / 20%);
+  --st-input-padding: 3px 5px;
+  --st-input-placeholder-color: var(--st-neutral-content-tertiary);
   --st-input-textarea-min-width: calc(var(--st-grid-unit) * 14);
   --st-input-textarea-min-height: calc(var(--st-grid-unit) * 7);
 
   /* Select. */
-  --st-select-background: var(--st-white);
-  --st-select-border: 1px solid var(--st-button-stroke);
-  --st-select-color: var(--st-gray-80);
-  --st-select-error-background-color: rgb(255 119 96 / 20%);
+  /* TODO call this select in design system or rename implementation? */
+  --st-select-background: var(--st-neutral-white-black);
+  --st-select-border: 1px solid var(--st-neutral-border-button);
+  --st-select-color: var(--st-neutral-content-button);
   --st-select-font-family: var(--st-typography-font-family);
-  --st-select-font-weight: var(--st-typography-label-font-weight);
-  --st-select-font-size: var(--st-typography-label-font-size);
+  --st-select-font-weight: var(--st-typography-body-font-weight);
+  --st-select-font-size: var(--st-typography-body-font-size);
   --st-select-height: 24px;
-  --st-select-hover-background: var(--st-gray-10);
-  --st-select-letter-spacing: var(--st-typography-label-letter-spacing);
-  --st-select-line-height: var(--st-typography-label-line-height);
+  --st-select-hover-background: var(--st-neutral-bg-button-hover);
+  --st-select-letter-spacing: var(--st-typography-body-letter-spacing);
+  --st-select-line-height: var(--st-typography-body-line-height);
 
   /* Table. */
   --st-table-th-padding: var(--st-grid-unit);
-  --st-table-th-background: var(--st-gray-10);
-  --st-table-th-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.09);
-  --st-table-th-color: var(--st-gray-100);
+  --st-table-th-background: var(--st-neutral-bg-secondary);
+  --st-table-th-box-shadow: inset 0px -1px 0px var(--st-neutral-border-button);
+  --st-table-th-color: var(--st-neutral-content-primary);
   --st-table-th-font-family: var(--st-typography-font-family);
   --st-table-th-font-weight: var(--st-typography-medium-font-weight);
   --st-table-th-font-size: var(--st-typography-medium-font-size);
   --st-table-th-line-height: var(--st-typography-medium-line-height);
+  --st-table-th-letter-spacing: var(--st-typography-body-letter-spacing);
 
   --st-table-td-padding: var(--st-grid-unit);
-  --st-table-td-background: var(--st-white);
-  --st-table-td-box-shadow: inset 0px -1px 0px #E3E7EB;
-  --st-table-td-color: var(--st-gray-100);
+  --st-table-td-background: var(--st-neutral-white-black);
+  --st-table-td-box-shadow: inset 0px -1px 0px var(--st-neutral-border-button);
+  --st-table-td-color: var(--st-neutral-content-primary);
   --st-table-td-font-family: var(--st-typography-font-family);
   --st-table-td-font-weight: var(--st-typography-body-font-weight);
   --st-table-td-font-size: var(--st-typography-body-font-size);
@@ -212,8 +187,8 @@
   --st-card-border: 1px solid rgb(0 0 0 / 12.5%);
 
   /* Badge */
-  --st-badge-background: var(--st-primary-10);
-  --st-badge-color: var(--st-gray-100);
+  --st-badge-background: var(--st-accent-bg-primary);
+  --st-badge-color: var(--st-neutral-content-button);
   --st-badge-border-radius: var(--st-grid-unit2x);
   --st-badge-font-family: var(--st-typography-font-family);
   --st-badge-font-weight: var(--st-typography-bold-font-weight);

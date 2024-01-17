@@ -39,12 +39,13 @@
 
   &.tertiary {
     background-color: transparent;
-    border: 0;
+    border: var(--st-button-tertiary-border);
     color: var(--st-button-tertiary-color);
 
     &:hover {
       &:not([disabled]) {
         background-color: var(--st-button-tertiary-hover-background-color);
+        border: var(--st-button-tertiary-hover-border);
       }
     }
   }
@@ -62,9 +63,9 @@
 
   &.icon {
     background-color: transparent;
+    border: var(--st-button-icon-border);
     color: var(--st-button-icon-color);
     padding: 0;
-    border: 0;
     min-width: var(--st-button-icon-min-width);
 
     &:hover {

@@ -1,57 +1,52 @@
 .st-theme-dark {
-  --st-primary-background-color: var(--st-white);
-  --st-primary-inverse-background-color: var(--st-gray-10);
-  --st-primary-inverse-text-color: var(--st-white);
-  --st-primary-text-color: var(--st-gray-10);
+  /* Neutral */
+  --st-neutral-bg-primary: var(--st-neutral-800);
+  --st-neutral-bg-secondary: var(--st-neutral-950);
+  --st-neutral-content-primary: var(--st-neutral-50);
+  --st-neutral-content-secondary: var(--st-neutral-100);
+  --st-neutral-content-tertiary: var(--st-neutral-400);
+  --st-neutral-border-primary: var(--st-neutral-700);
+  --st-neutral-bg-button: var(--st-neutral-700);
+  --st-neutral-bg-button-hover: var(--st-neutral-600);
+  --st-neutral-content-button-primary: var(--st-neutral-50);
+  --st-neutral-content-button: var(--st-neutral-50);
+  --st-neutral-border-button: var(--st-neutral-600);
+  --st-neutral-white-black: #000000;
+  --st-neutral-toggle-bg: var(--st-neutral-500);
+  --st-neutral-toggle-bg-hover: var(--st-neutral-600);
 
-  /* Typography. */
-  --st-typography-header-color: var(--st-gray-10);
-  --st-typography-label-color: rgba(var(--st-gray-10-RGB), 0.65);
-  --st-typography-body-color: rgba(var(--st-gray-10-RGB), 0.9);
-  --st-typography-medium-color: var(--st-gray-10);
-  --st-typography-bold-color: var(--st-gray-10);
-  --st-typography-small-caps-color: rgb(var(--st-gray-10-RGB), 0.65);
-  --st-typography-display-h1-color: var(--st-gray-10);
-  --st-typography-display-h2-color: var(--st-gray-10);
-  --st-typography-display-h3-color: var(--st-gray-10);
-  --st-typography-display-body-color: var(--st-gray-10);
+  /* Success */
+  --st-success-bg-primary: var(--st-green-950);
+  --st-success-fg-primary: var(--st-green-400);
+  --st-success-border-primary: var(--st-green-700);
+  --st-success-bg-button: var(--st-green-700);
+  --st-success-content-button: #ffffff;
+  --st-success-border-button-primary: var(--st-green-600);
 
-  /* Button. */
-  --st-button-primary-background-color: var(--st-primary-70);
-  --st-button-primary-hover-background-color: var(--st-primary-60);
-  --st-button-secondary-color: rgb(var(--st-gray-10-RGB), 0.96);
-  --st-button-secondary-background-color: var(--st-gray-70);
-  --st-button-secondary-border: none;
-  --st-button-secondary-hover-background-color: var(--st-gray-60);
-  --st-button-tertiary-color: rgb(var(--st-gray-10-RGB), 0.96);
-  --st-button-tertiary-hover-background-color: var(--st-gray-80);
-  --st-button-icon-color: rgb(var(--st-gray-10-RGB), 0.96);
-  --st-button-icon-hover-background-color: var(--st-gray-80);
+  /* Warning */
+  --st-warning-bg-primary: var(--st-yellow-950);
+  --st-warning-fg-primary: var(--st-yellow-400);
+  --st-warning-border-primary: var(--st-yellow-600);
+  --st-warning-bg-button: var(--st-yellow-700);
+  --st-warning-content-button: var(--st-yellow-50);
+  --st-warning-border-button-primary: var(--st-yellow-600);
 
-  /* Input. */
-  --st-input-background-color: var(--st-gray-70);
-  --st-input-border: 1px solid var(--st-gray-60);
-  --st-input-color: var(--st-gray-10);
-  --st-input-placeholder-color: var(--st-gray-50);
+  /* Error */
+  --st-error-bg-primary: var(--st-red-950);
+  --st-error-fg-primary: var(--st-red-500);
+  --st-error-border-primary: var(--st-red-500);
+  --st-error-bg-button: var(--st-red-800);
+  --st-error-content-button: #ffffff;
+  --st-error-border-button-primary: var(--st-red-600);
 
-  /* Select. */
-  --st-select-background: var(--st-gray-70);
-  --st-select-color: var(--st-gray-30);
-  --st-select-hover-background: var(--st-gray-60);
-
-  /* Card (not represented in design system). */
-  --st-card-border: 1px solid rgb(255 255 255 / 12.5%);
-
-  /* Table */
-  --st-table-th-background: var(--st-gray-90);
-  --st-table-th-box-shadow: inset 0px -1px 0px var(--st-gray-70);
-  --st-table-th-color: var(--st-gray-10);
-
-  --st-table-td-background: var(--st-gray-90);
-  --st-table-td-color: var(--st-gray-10);
-  --st-table-td-box-shadow: inset 0px -1px 0px var(--st-gray-70);
-
-  /* Badge */
-  --st-badge-background: var(--st-primary-40);
-
+  /* Accent */
+  --st-accent-bg-primary: var(--st-accent-950);
+  --st-accent-fg-primary: var(--st-accent-500);
+  --st-accent-border-primary-button: var(--st-accent-600);
+  --st-accent-bg-button: var(--st-accent-600);
+  --st-accent-bg-button-hover: var(--st-accent-500);
+  --st-accent-content-button: #ffffff;
+  --st-accent-border-action: var(--st-accent-800);
+  --st-accent-bg-chip: var(--st-accent-600);
+  --st-accent-fg-chip: var(--st-accent-50);
 }

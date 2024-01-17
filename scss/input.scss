@@ -1,5 +1,3 @@
-@use 'mixins/input';
-
 .st-input {
   font-family: var(--st-input-font-family);
   font-size: var(--st-input-font-size);
@@ -20,15 +18,6 @@
     opacity: 0.5;
     cursor: not-allowed;
   }
-
-  &.error {
-    @include input.st-input-error;
-  }
-
-  &.warning {
-    @include input.st-input-warning
-  }
-
 }
 
 textarea.st-input {

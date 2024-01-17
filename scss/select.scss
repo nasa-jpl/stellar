@@ -1,5 +1,3 @@
-@use 'mixins/select';
-
 .st-select {
   background: var(--st-select-background);
   border: var(--st-select-border);
@@ -22,9 +20,5 @@
     &:not([disabled], .error) {
       background: var(--st-select-hover-background);
     }
-  }
-
-  &.error {
-    @include select.st-select-error;
   }
 }
