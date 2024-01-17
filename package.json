@@ -2,7 +2,7 @@
   "name": "@nasa-jpl/stellar",
   "description": "A CSS implementation of the Stellar design system.",
   "type": "module",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "license": "MIT",
   "repository": {
     "type": "git",

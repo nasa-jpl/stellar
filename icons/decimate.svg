@@ -1,0 +1,7 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <line x1="1.5" y1="2.18556e-08" x2="1.5" y2="16" stroke="currentColor"/>
+  <line x1="16" y1="14.5" x2="-4.37114e-08" y2="14.5" stroke="currentColor"/>
+  <path opacity="0.3" d="M4.50007 14L4.5 7.5H13.4999L13.5 0" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M1 12C8.75862 12 7.72414 3 16 3" stroke="currentColor" stroke-width="1.5"/>
+</svg>
