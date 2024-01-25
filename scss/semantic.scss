@@ -1,0 +1,53 @@
+// Default light theme
+:root {
+  /* Neutral */
+  --st-neutral-bg-primary: var(--st-neutral-100);
+  --st-neutral-bg-secondary: var(--st-neutral-50);
+  --st-neutral-content-primary: var(--st-neutral-800);
+  --st-neutral-content-secondary: var(--st-neutral-600);
+  --st-neutral-content-tertiary: var(--st-neutral-500);
+  --st-neutral-border-primary: var(--st-neutral-100);
+  --st-neutral-bg-button: var(--st-neutral-100);
+  --st-neutral-bg-button-hover: var(--st-neutral-50);
+  --st-neutral-content-button-primary: var(--st-neutral-50);
+  --st-neutral-content-button: var(--st-neutral-800);
+  --st-neutral-border-button: var(--st-neutral-200);
+  --st-neutral-white-black: #ffffff;
+  --st-neutral-toggle-bg: var(--st-neutral-400);
+  --st-neutral-toggle-bg-hover: var(--st-neutral-300);
+
+  /* Success */
+  --st-success-bg-primary: var(--st-green-50);
+  --st-success-fg-primary: var(--st-green-600);
+  --st-success-border-primary: var(--st-green-500);
+  --st-success-bg-button: var(--st-green-600);
+  --st-success-content-button: #ffffff;
+  --st-success-border-button-primary: var(--st-green-700);
+
+  /* Warning */
+  --st-warning-bg-primary: var(--st-yellow-50);
+  --st-warning-fg-primary: var(--st-yellow-600);
+  --st-warning-border-primary: var(--st-yellow-700);
+  --st-warning-bg-button: var(--st-yellow-300);
+  --st-warning-content-button: var(--st-yellow-950);
+  --st-warning-border-button-primary: var(--st-yellow-500);
+
+  /* Error */
+  --st-error-bg-primary: var(--st-red-50);
+  --st-error-fg-primary: var(--st-red-600);
+  --st-error-border-primary: var(--st-red-600);
+  --st-error-bg-button: var(--st-red-500);
+  --st-error-content-button: #ffffff;
+  --st-error-border-button-primary: var(--st-red-900);
+
+  /* Accent */
+  --st-accent-bg-primary: var(--st-accent-100);
+  --st-accent-fg-primary: var(--st-accent-700);
+  --st-accent-border-primary-button: var(--st-accent-400);
+  --st-accent-bg-button: var(--st-accent-600);
+  --st-accent-bg-button-hover: var(--st-accent-500);
+  --st-accent-content-button: #ffffff;
+  --st-accent-border-action: var(--st-accent-900);
+  --st-accent-bg-chip: var(--st-accent-100);
+  --st-accent-fg-chip: var(--st-accent-900);
+}

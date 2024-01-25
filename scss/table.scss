@@ -30,6 +30,7 @@
   }
 
   td {
+    background: var(--st-table-td-background);
     padding: var(--st-table-td-padding);
     box-shadow: var(--st-table-td-box-shadow);
     font-family: var(--st-table-td-font-family);

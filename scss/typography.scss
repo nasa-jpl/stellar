@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Sans-serif Font Definitions */
 .st-typography-header {
   font-family: var(--st-typography-header-font-family);
-  color: var(--st-typography-header-color);
   font-weight: var(--st-typography-header-font-weight);
   font-size: var(--st-typography-header-font-size);
   line-height: var(--st-typography-header-line-height);
@@ -14,7 +15,6 @@ html, body {
 
 .st-typography-label {
   font-family: var(--st-typography-label-font-family);
-  color: var(--st-typography-label-color);
   font-weight: var(--st-typography-label-font-weight);
   font-size: var(--st-typography-label-font-size);
   line-height: var(--st-typography-label-line-height);
@@ -23,7 +23,6 @@ html, body {
 
 .st-typography-body {
   font-family: var(--st-typography-body-font-family);
-  color: var(--st-typography-body-color);
   font-weight: var(--st-typography-body-font-weight);
   font-size: var(--st-typography-body-font-size);
   line-height: var(--st-typography-body-line-height);
@@ -32,7 +31,6 @@ html, body {
 
 .st-typography-medium {
   font-family: var(--st-typography-medium-font-family);
-  color: var(--st-typography-medium-color);
   font-weight: var(--st-typography-medium-font-weight);
   font-size: var(--st-typography-medium-font-size);
   line-height: var(--st-typography-medium-line-height);
@@ -41,7 +39,6 @@ html, body {
 
 .st-typography-bold {
   font-family: var(--st-typography-bold-font-family);
-  color: var(--st-typography-bold-color);
   font-weight: var(--st-typography-bold-font-weight);
   font-size: var(--st-typography-bold-font-size);
   line-height: var(--st-typography-bold-line-height);
@@ -51,7 +48,6 @@ html, body {
 .st-typography-small-caps {
   font-family: var(--st-typography-small-caps-font-family);
   text-transform: uppercase;
-  color: var(--st-typography-small-caps-color);
   font-weight: var(--st-typography-small-caps-font-weight);
   font-size: var(--st-typography-small-caps-font-size);
   line-height: var(--st-typography-small-caps-line-height);
@@ -61,7 +57,6 @@ html, body {
 /* Display Font Definitions */
 .st-typography-displayH1 {
   font-family: var(--st-typography-display-h1-font-family);
-  color: var(--st-typography-display-h1-color);
   font-weight: var(--st-typography-display-h1-font-weight);
   font-size: var(--st-typography-display-h1-font-size);
   line-height: var(--st-typography-display-h1-line-height);
@@ -70,7 +65,6 @@ html, body {
 
 .st-typography-displayH2 {
   font-family: var(--st-typography-display-h2-font-family);
-  color: var(--st-typography-display-h2-color);
   font-weight: var(--st-typography-display-h2-font-weight);
   font-size: var(--st-typography-display-h2-font-size);
   line-height: var(--st-typography-display-h2-line-height);
@@ -79,7 +73,6 @@ html, body {
 
 .st-typography-displayH3 {
   font-family: var(--st-typography-display-h3-font-family);
-  color: var(--st-typography-display-h3-color);
   font-weight: var(--st-typography-display-h3-font-weight);
   font-size: var(--st-typography-display-h3-font-size);
   line-height: var(--st-typography-display-h3-line-height);
@@ -88,11 +81,60 @@ html, body {
 
 .st-typography-displayBody {
   font-family: var(--st-typography-display-body-font-family);
-  color: var(--st-typography-display-body-color);
   font-weight: var(--st-typography-display-body-font-weight);
   font-size: var(--st-typography-display-body-font-size);
   line-height: var(--st-typography-display-body-line-height);
   letter-spacing: var(--st-typography-display-body-letter-spacing);
+}
+
+/* Mono Font Definitions */
+.st-typography-mono-header {
+  font-family: var(--st-typography-mono-header-font-family);
+  font-weight: var(--st-typography-mono-header-font-weight);
+  font-size: var(--st-typography-mono-header-font-size);
+  line-height: var(--st-typography-mono-header-line-height);
+  letter-spacing: var(--st-typography-mono-header-letter-spacing);
+}
+
+.st-typography-mono-label {
+  font-family: var(--st-typography-mono-label-font-family);
+  font-weight: var(--st-typography-mono-label-font-weight);
+  font-size: var(--st-typography-mono-label-font-size);
+  line-height: var(--st-typography-mono-label-line-height);
+  letter-spacing: var(--st-typography-mono-label-letter-spacing);
+}
+
+.st-typography-mono-body {
+  font-family: var(--st-typography-mono-body-font-family);
+  font-weight: var(--st-typography-mono-body-font-weight);
+  font-size: var(--st-typography-mono-body-font-size);
+  line-height: var(--st-typography-mono-body-line-height);
+  letter-spacing: var(--st-typography-mono-body-letter-spacing);
+}
+
+.st-typography-mono-medium {
+  font-family: var(--st-typography-mono-medium-font-family);
+  font-weight: var(--st-typography-mono-medium-font-weight);
+  font-size: var(--st-typography-mono-medium-font-size);
+  line-height: var(--st-typography-mono-medium-line-height);
+  letter-spacing: var(--st-typography-mono-medium-letter-spacing);
+}
+
+.st-typography-mono-bold {
+  font-family: var(--st-typography-mono-bold-font-family);
+  font-weight: var(--st-typography-mono-bold-font-weight);
+  font-size: var(--st-typography-mono-bold-font-size);
+  line-height: var(--st-typography-mono-bold-line-height);
+  letter-spacing: var(--st-typography-mono-bold-letter-spacing);
+}
+
+.st-typography-mono-small-caps {
+  font-family: var(--st-typography-mono-small-caps-font-family);
+  text-transform: uppercase;
+  font-weight: var(--st-typography-mono-small-caps-font-weight);
+  font-size: var(--st-typography-mono-small-caps-font-size);
+  line-height: var(--st-typography-mono-small-caps-line-height);
+  letter-spacing: var(--st-typography-mono-small-caps-letter-spacing);
 }
 
 /* Utility Classes */
@@ -102,4 +144,8 @@ html, body {
 
 .st-typography-capitalize {
   text-transform: capitalize;
+}
+
+.st-typography-tabular {
+  font-feature-settings: 'tnum' 0;
 }
