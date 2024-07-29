@@ -8,16 +8,26 @@
     "type": "git",
     "url": "https://github.com/nasa-jpl/stellar.git"
   },
-  "scripts": {
-    "build:css": "rm -rf css && sass scss:css",
-    "build:icons": "node scripts/build-icons.js",
-    "lint": "stylelint scss/**/*.scss --fix",
-    "prepublishOnly": "npm run build:css"
-  },
   "devDependencies": {
-    "sass": "^1.60.0",
+    "@types/eslint": "^8.56.7",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.1",
     "stylelint": "^15.3.0",
     "stylelint-config-standard-scss": "^7.0.1",
-    "stylelint-order": "^6.0.3"
+    "stylelint-order": "^6.0.3",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.0.0-alpha.20",
+    "vite": "^5.0.11"
+  },
+  "engines": {
+    "node": ">=18.18.0",
+    "npm": ">=9.8.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/css",
+      "packages/svelte"
+    ]
   }
 }
