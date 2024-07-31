@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Svelte",
+      "type": "shell",
+      "command": "nvm use && cd ./packages/svelte && npm run dev",
+      "detail": "Task to run Stellar Svelte in development mode.",
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "\\s*VITE v",
+            "endsPattern": ".*to show help"
+          },
+          "pattern": {
+            "regexp": "."
+          }
+        }
+      ],
+      "presentation": {
+        "group": "groupA"
+      }
+    }
+  ]
+}

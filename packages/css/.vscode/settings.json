@@ -1,20 +1,14 @@
 {
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "editor.formatOnSave": true,
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
   "prettier.configPath": "./.prettierrc.mjs",
-  "[css][scss]": {
+  "editor.formatOnSave": true,
+  "[svelte][typescript][css][scss]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
       "source.organizeImports": "explicit",
       "source.sortImports": "explicit"
     }
   },
-  "eslint.validate": ["css", "javascript", "typescript", "svelte"],
+  "stylelint.validate": ["css", "scss"],
   "terminal.integrated.profiles.osx": {
     "bash": {
       "args": ["--login"],
