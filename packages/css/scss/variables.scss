@@ -38,16 +38,16 @@
   --st-gray-10-RGB: 248, 248, 248;
 
   /* Primary Color Pallette. */
-  --st-primary-100: #0C008C;
-  --st-primary-90: #1D0EBE;
-  --st-primary-80: #3525E6;
-  --st-primary-70: #4C3FDE;
-  --st-primary-60: #5D55FA;
-  --st-primary-50: #7069FA;
-  --st-primary-40: #8888FC;
-  --st-primary-30: #A1A4FC;
-  --st-primary-20: #C4C6FF;
-  --st-primary-10: #E6E6FF;
+  --st-primary-100: #0c008c;
+  --st-primary-90: #1d0ebe;
+  --st-primary-80: #3525e6;
+  --st-primary-70: #4c3fde;
+  --st-primary-60: #5d55fa;
+  --st-primary-50: #7069fa;
+  --st-primary-40: #8888fc;
+  --st-primary-30: #a1a4fc;
+  --st-primary-20: #c4c6ff;
+  --st-primary-10: #e6e6ff;
   --st-primary: var(--st-primary-50);
   --st-primary-background-color: var(--st-white);
   --st-primary-inverse-background-color: var(--st-gray-10);
@@ -56,8 +56,8 @@
 
   /* Utility Colors */
   --st-button-stroke: rgba(0, 0, 0, 0.16);
-  --st-error-red: #DB5139;
-  --st-success-green: #0EAF0A;
+  --st-error-red: #db5139;
+  --st-success-green: #0eaf0a;
 
   /* Layout. */
   --st-grid-unit: 8px;
@@ -201,7 +201,7 @@
 
   --st-table-td-padding: var(--st-grid-unit);
   --st-table-td-background: var(--st-white);
-  --st-table-td-box-shadow: inset 0px -1px 0px #E3E7EB;
+  --st-table-td-box-shadow: inset 0px -1px 0px #e3e7eb;
   --st-table-td-color: var(--st-gray-100);
   --st-table-td-font-family: var(--st-typography-font-family);
   --st-table-td-font-weight: var(--st-typography-body-font-weight);

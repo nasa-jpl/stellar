@@ -1,15 +1,15 @@
 @use 'mixins/input';
 
 .st-input {
-  font-family: var(--st-input-font-family);
-  font-size: var(--st-input-font-size);
-  font-weight: var(--st-input-font-weight);
-  line-height: var(--st-input-line-height);
-  letter-spacing: var(--st-input-letter-spacing);
   background-color: var(--st-input-background-color);
   border: var(--st-input-border);
   border-radius: 4px;
   color: var(--st-input-color);
+  font-family: var(--st-input-font-family);
+  font-size: var(--st-input-font-size);
+  font-weight: var(--st-input-font-weight);
+  letter-spacing: var(--st-input-letter-spacing);
+  line-height: var(--st-input-line-height);
   padding: var(--st-input-padding);
 
   &::placeholder {
@@ -17,8 +17,8 @@
   }
 
   &:disabled {
-    opacity: 0.5;
     cursor: not-allowed;
+    opacity: 0.5;
   }
 
   &.error {
@@ -26,14 +26,13 @@
   }
 
   &.warning {
-    @include input.st-input-warning
+    @include input.st-input-warning;
   }
-
 }
 
 textarea.st-input {
-  min-width: var(--st-input-textarea-min-width);
   min-height: var(--st-input-textarea-min-height);
+  min-width: var(--st-input-textarea-min-width);
   &.no-resize {
     resize: none;
   }

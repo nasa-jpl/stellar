@@ -1,24 +1,24 @@
 .st-button {
-  color: var(--st-button-primary-color);
-  font-family: var(--st-button-font-family);
-  font-size: var(--st-button-font-size);
-  font-weight: var(--st-button-font-weight);
-  line-height: var(--st-button-line-height);
-  letter-spacing: var(--st-button-letter-spacing);
-  user-select: none;
   align-items: center;
   background-color: var(--st-button-primary-background-color);
   border: var(--st-button-primary-border);
   border-radius: 4px;
+  color: var(--st-button-primary-color);
   cursor: pointer;
   display: inline-flex;
+  font-family: var(--st-button-font-family);
+  font-size: var(--st-button-font-size);
+  font-weight: var(--st-button-font-weight);
   height: var(--st-grid-unit3x);
   justify-content: center;
+  letter-spacing: var(--st-button-letter-spacing);
+  line-height: var(--st-button-line-height);
   padding: 0 var(--st-grid-unit);
+  user-select: none;
 
   &.large {
-    padding: var(--st-grid-unit) var(--st-grid-unit2x);
     height: var(--st-grid-unit4x);
+    padding: var(--st-grid-unit) var(--st-grid-unit2x);
 
     &.icon {
       min-width: calc(var(--st-button-icon-min-width) + var(--st-grid-unit));
@@ -50,8 +50,8 @@
   }
 
   &:disabled {
-    opacity: var(--st-button-disabled-opacity);
     cursor: not-allowed;
+    opacity: var(--st-button-disabled-opacity);
   }
 
   &:hover {
@@ -62,10 +62,10 @@
 
   &.icon {
     background-color: transparent;
-    color: var(--st-button-icon-color);
-    padding: 0;
     border: 0;
+    color: var(--st-button-icon-color);
     min-width: var(--st-button-icon-min-width);
+    padding: 0;
 
     &:hover {
       &:not([disabled]) {
