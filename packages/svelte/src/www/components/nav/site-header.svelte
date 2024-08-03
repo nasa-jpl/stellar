@@ -9,6 +9,7 @@
 	<div class="container flex h-14 max-w-screen-2xl items-center">
 		<MainNav />
 	</div>
+  <SiteFooter/>
 </header>
 
 
