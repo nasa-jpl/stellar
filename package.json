@@ -28,6 +28,7 @@
   "workspaces": {
     "packages": [
       "packages/css",
+      "packages/react",
       "packages/svelte"
     ]
   }

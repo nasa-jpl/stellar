@@ -1,0 +1,9 @@
+.st-react-label {
+  line-height: var(--st-react-label-typography-line-height);
+  color: var(--st-react-label-color);
+
+  .st-react-label--required-mark {
+    color: var(--st-error-red);
+    margin-right: var(--st-react-label-required-spacing);
+  }
+}

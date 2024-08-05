@@ -1,0 +1,69 @@
+.st-react-checkbox {
+  .st-react-checkbox--label {
+    flex: 1;
+    text-align: left;
+    user-select: none;
+    color: var(--st-react-checkbox-label-color);
+    cursor: pointer;
+  }
+  &:hover .st-react-checkbox--label {
+    color: var(--st-react-checkbox-label-hover-color);
+  }
+
+  &:not(.st-react-checkbox--unlabeled) {
+    display: flex;
+    align-items: center;
+    gap: var(--st-grid-unit);
+  }
+
+  & button {
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid;
+    width: 12px;
+    height: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  & button[data-state="unchecked"] {
+    border-color: var(--st-react-checkbox-unchecked-border-color);
+
+    &:hover {
+      border-color: var(--st-react-checkbox-unchecked-hover-border-color);
+    }
+  }
+
+  & button[data-state="checked"] {
+    background: var(--st-react-checkbox-checked-background);
+    border-color: var(--st-react-checkbox-checked-border-color);
+    color: var(--st-react-checkbox-checked-color);
+    &:hover {
+      background: var(--st-react-checkbox-checked-hover-background);
+      border-color: var(--st-react-checkbox-checked-hover-border-color);
+      color: var(--st-react-checkbox-checked-hover-color);
+    }
+
+    .st-react-checkbox--indicator-check {
+      visibility: visible;
+    }
+  }
+
+  & .st-react-checkbox--indicator-check {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.st-react-checkbox--label-right {
+    flex-direction: row-reverse;
+  }
+
+  &.st-react-checkbox--unlabeled {
+    padding: 0;
+  }
+}

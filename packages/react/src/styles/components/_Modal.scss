@@ -1,0 +1,63 @@
+.st-react-modal {
+  display: flex;
+  flex-direction: column;
+  min-width: var(--st-react-modal-min-width);
+  border-radius: var(--st-react-modal-border-radius);
+  border: var(--st-react-modal-border);
+  box-shadow: var(--st-react-modal-box-shadow);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 9999;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: var(--st-react-modal-animation);
+  }
+
+  .st-react-modal--header {
+    display: flex;
+    flex-direction: column;
+    padding: var(--st-react-modal-header-padding);
+    background: var(--st-react-modal-header-background-color);
+    border-bottom: var(--st-react-modal-header-border-bottom);
+  }
+
+  .st-react-modal--header--title-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .st-react-modal--description--text {
+    margin-bottom: var(--st-grid-unit2x);
+  }
+
+  .st-react-modal--content {
+    background: var(--st-react-modal-content-background-color);
+    display: flex;
+    padding: var(--st-grid-unit2x);
+    flex-direction: column;
+  }
+}
+
+.st-react-modal--action-row {
+  display: flex;
+  background: var(--st-react-modal-action-row-background-color);
+  justify-content: flex-end;
+  padding: var(--st-react-modal-action-row-padding);
+  gap: var(--st-grid-unit);
+  border-top: var(--st-react-modal-action-row-border-top);
+}
+
+.st-react-modal--overlay {
+  background-color: var(--st-react-modal-overlay-background-color);
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: var(--st-react-modal-overlay-animation);
+  }
+}

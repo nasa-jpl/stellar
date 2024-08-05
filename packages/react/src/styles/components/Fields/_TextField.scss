@@ -1,0 +1,25 @@
+.st-react-text-field {
+  .st-react-text-field-helper-text {
+    min-height: 1rem;
+  }
+
+  .st-react-error {
+    padding: var(--st-input-padding);
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
+
+  .st-react-input-helper-text {
+    font-family: var(--st-react-error-font-family);
+    font-weight: var(--st-react-error-font-weight);
+    font-size: var(--st-react-error-font-size);
+    line-height: var(--st-react-error-line-height);
+    letter-spacing: var(--st-react-error-letter-spacing);
+    color: var(--st-gray-50);
+    display: flex;
+    gap: var(--st-react-error-spacing);
+    padding: var(--st-input-padding);
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
+}

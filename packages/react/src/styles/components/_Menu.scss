@@ -1,0 +1,97 @@
+.st-react-menu-content,
+.st-react-menu-subcontent {
+  min-width: 220px;
+  background: var(--st-react-menu-background);
+  border-radius: var(--st-react-menu-border-radius);
+  border: var(--st-react-menu-border);
+  padding: var(--st-react-menu-padding);
+  filter: var(--st-react-menu-filter);
+}
+
+.st-react-menu-item,
+.st-react-menu-checkbox-item,
+.st-react-menu-radio-item,
+.st-react-menu-sub-trigger {
+  line-height: 1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 4px;
+  position: relative;
+  padding-left: 24px;
+  user-select: none;
+  outline: none;
+  font-family: var(--st-react-menu-item-font-family);
+  font-size: var(--st-react-menu-item-font-size);
+  font-weight: var(--st-react-menu-item-font-weight);
+  line-height: var(--st-react-menu-item-line-height);
+  letter-spacing: var(--st-react-menu-item-letter-spacing);
+  color: var(--st-react-menu-item-color);
+}
+
+.st-react-menu-arrow {
+  filter: var(--st-react-menu-arrow-filter);
+}
+
+.st-react-menu-sub-trigger[data-state="open"] {
+  background-color: var(--st-react-menu-item-open-background);
+  color: var(--st-react-menu-item-open-color);
+}
+.st-react-menu-item[data-disabled],
+.st-react-menu-checkbox-item[data-disabled],
+.st-react-menu-radio-item[data-disabled],
+.st-react-menu-sub-trigger[data-disabled] {
+  color: var(--st-react-menu-item-disabled-color);
+  pointer-events: none;
+}
+.st-react-menu-item[data-highlighted],
+.st-react-menu-checkbox-item[data-highlighted],
+.st-react-menu-radio-item[data-highlighted],
+.st-react-menu-sub-trigger[data-highlighted] {
+  background-color: var(--st-react-menu-item-highlighted-background);
+  color: var(--st-react-menu-item-highlighted-color);
+}
+
+.st-react-menu-label {
+  padding-left: 24px;
+  line-height: 24px;
+  font-family: var(--st-react-menu-label-font-family);
+  font-size: var(--st-react-menu-label-font-size);
+  font-weight: var(--st-react-menu-label-font-weight);
+  line-height: var(--st-react-menu-label-line-height);
+  letter-spacing: var(--st-react-menu-label-letter-spacing);
+  color: var(--st-react-menu-label-color);
+  user-select: none;
+}
+
+.st-react-menu-separator {
+  height: 1px;
+  background-color: var(--st-react-menu-separator-background);
+  margin: 4px;
+}
+
+.st-react-menu-item-indicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.st-react-menu-arrow {
+  fill: white;
+}
+
+.st-react-menu-right-slot {
+  margin-left: auto;
+  display: flex;
+  color: var(--st-react-menu-right-slot-color);
+}
+[data-highlighted] > .st-react-menu-right-slot {
+  color: white;
+}
+[data-disabled] .st-react-menu-right-slot {
+  color: var(--st-react-menu-item-disabled-color);
+}

@@ -2,6 +2,28 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "React",
+      "type": "shell",
+      "command": "nvm use && cd ./packages/react && npm run storybook",
+      "detail": "Task to run Stellar React in development mode.",
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".*\\[webpack-dev-middleware\\]",
+            "endsPattern": ".*bundle\\.js"
+          },
+          "pattern": {
+            "regexp": "."
+          }
+        }
+      ],
+      "presentation": {
+        "group": "groupA"
+      }
+    },
+    {
       "label": "Svelte",
       "type": "shell",
       "command": "nvm use && cd ./packages/svelte && npm run dev",
