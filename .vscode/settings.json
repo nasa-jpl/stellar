@@ -28,7 +28,7 @@
     },
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "[javascriptreact]": {
+  "[javascriptreact][typescriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
       "source.organizeImports": "explicit",
