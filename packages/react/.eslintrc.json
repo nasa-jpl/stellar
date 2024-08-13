@@ -31,29 +31,21 @@
     // 'nofunc' option means function hoisting is still allowed
     "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
     "no-shadow": "off",
-    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-shadow": "error",
 
-    "@typescript-eslint/naming-convention": [
-      "error",
-      { "selector": "class", "format": ["PascalCase"] }
-    ],
-    "@typescript-eslint/unified-signatures": ["warn"],
+    "@typescript-eslint/naming-convention": ["error", { "selector": "class", "format": ["PascalCase"] }],
+    "@typescript-eslint/unified-signatures": "warn",
     "@typescript-eslint/member-ordering": [
       "warn",
       {
-        "default": [
-          "static-field",
-          "instance-field",
-          "static-method",
-          "instance-method"
-        ]
+        "default": ["static-field", "instance-field", "static-method", "instance-method"]
       }
     ],
     // enforce unix line breaks
     "linebreak-style": ["error", "unix"],
 
-    "@typescript-eslint/ban-ts-comment": ["warn"],
-    "@typescript-eslint/no-empty-interface": ["warn"],
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-empty-interface": "warn",
     "consistent-return": ["warn"],
     "dot-notation": ["warn"],
     "no-else-return": ["warn", { "allowElseIf": true }],
@@ -79,8 +71,8 @@
     "no-plusplus": ["off"],
     "no-underscore-dangle": ["off"],
     "spaced-comment": ["off"],
-    "@typescript-eslint/no-inferrable-types": ["off"],
-    "@typescript-eslint/no-empty-function": ["off"],
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
     "react/display-name": ["off"],
     "react/prop-types": ["off"],
     // suppress errors for missing 'import React' in files

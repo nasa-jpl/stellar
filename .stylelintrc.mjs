@@ -1,4 +1,5 @@
 const config = {
+  extends: 'stylelint-config-standard-scss',
   overrides: [
     {
       files: ['**/*.scss'],

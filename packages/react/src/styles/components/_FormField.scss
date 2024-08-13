@@ -2,8 +2,8 @@
   display: flex;
 
   &.st-react-form-field--horizontal {
-    flex-flow: row;
     gap: var(--st-react-formfield-horizontal-grid-unit);
+    flex-flow: row;
   }
 
   &.st-react-form-field--vertical {

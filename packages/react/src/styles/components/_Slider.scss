@@ -1,12 +1,12 @@
 .st-react-slider {
   .st-react-slider--root {
-    position: relative;
-    display: flex;
     align-items: center;
-    user-select: none;
-    touch-action: none;
+    display: flex;
     flex: 1;
     height: var(--st-react-slider-height);
+    position: relative;
+    touch-action: none;
+    user-select: none;
 
     &[data-disabled] {
       .st-react-slider--range {
@@ -14,6 +14,7 @@
           --st-react-slider-disabled-range-background-color
         );
       }
+
       .st-react-slider--thumb {
         background-color: var(
           --st-react-slider-disabled-thumb-background-color
@@ -24,56 +25,56 @@
   }
 
   .st-react-slider--label {
+    color: var(--st-react-slider-label-color);
     flex: 1;
     text-align: left;
     user-select: none;
-    color: var(--st-react-slider-label-color);
   }
 
   &:not(.st-react-slider--unlabeled) {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: var(--st-grid-unit);
   }
 
   .st-react-slider--container {
-    display: flex;
     align-items: center;
+    display: flex;
     flex: 2;
     gap: var(--st-grid-unit);
   }
 
   .st-react-slider--track {
     background-color: var(--st-react-slider-track-background-color);
-    position: relative;
-    flex-grow: 1;
     border-radius: 9999px;
+    flex-grow: 1;
     height: var(--st-react-slider-track-height);
+    position: relative;
   }
 
   .st-react-slider--range {
-    position: absolute;
     background-color: var(--st-react-slider-range-background-color);
     border-radius: 9999px;
     height: 100%;
+    position: absolute;
   }
 
   .st-react-slider--thumb {
-    display: block;
-    width: var(--st-react-slider-height);
-    height: var(--st-react-slider-height);
     background-color: var(--st-react-slider-thumb-background-color);
     border: 1px solid var(--st-react-slider-thumb-border-color);
-    box-shadow: var(--st-react-slider-thumb-box-shadow);
     border-radius: 10px;
+    box-shadow: var(--st-react-slider-thumb-box-shadow);
+    display: block;
+    height: var(--st-react-slider-height);
+    width: var(--st-react-slider-height);
 
     &:hover {
       background-color: var(--st-react-slider-thumb-hover-background-color);
     }
 
     &:focus {
+      box-shadow: 0 0 0 5px rgb(0 0 0 / 10%);
       outline: none;
-      box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -86,17 +87,17 @@
   }
 
   .st-react-slider--input {
-    max-width: var(--st-react-slider-input-max-width);
     flex: 1;
+    max-width: var(--st-react-slider-input-max-width);
   }
 
   .st-react-slider--min-max {
+    color: var(--st-react-slider-min-max-color);
+    display: flex;
+    justify-content: space-between;
     pointer-events: none;
     position: absolute;
     top: 12px;
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    color: var(--st-react-slider-min-max-color);
   }
 }

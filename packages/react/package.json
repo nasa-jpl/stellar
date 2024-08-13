@@ -1,7 +1,7 @@
 {
   "author": "Aaron Plave",
   "dependencies": {
-    "@nasa-jpl/stellar": "^1.1.8",
+    "@nasa-jpl/stellar-css": "file:../css",
     "@radix-ui/react-alert-dialog": "^1.0.3",
     "@radix-ui/react-avatar": "^1.0.2",
     "@radix-ui/react-checkbox": "^1.0.3",
@@ -60,7 +60,8 @@
     "sass-loader": "13.2.2",
     "storybook": "^7.0.10",
     "storybook-dark-mode": "^3.0.0",
-    "style-loader": "3.3.2"
+    "style-loader": "3.3.2",
+    "stylelint-config-standard-scss": "^7.0.1"
   },
   "files": [
     "dist"
