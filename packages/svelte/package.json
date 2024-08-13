@@ -1,33 +1,16 @@
 {
-  "name": "svelte-stellar",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build && npm run package && npm run build:css",
-    "build:css": "tailwind build src/index.css -o dist/index.css",
-    "preview": "vite preview",
-    "package": "svelte-kit sync && svelte-package && publint",
-    "prepublishOnly": "npm run package",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check . && eslint .",
-    "format": "prettier --write ."
+  "author": "",
+  "dependencies": {
+    "@nasa-jpl/stellar-css": "file:../css",
+    "bits-ui": "^0.21.10",
+    "clsx": "^2.1.1",
+    "inter-ui": "^4.0.2",
+    "lucide-svelte": "^0.394.0",
+    "mode-watcher": "^0.3.1",
+    "tailwind-merge": "^2.3.0",
+    "tailwind-variants": "^0.2.1"
   },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "svelte": "./dist/index.js"
-    },
-    "./index.css": "./dist/index.css"
-  },
-  "files": [
-    "dist",
-    "!dist/**/*.test.*",
-    "!dist/**/*.spec.*"
-  ],
-  "peerDependencies": {
-    "svelte": "^4.0.0"
-  },
+  "description": "Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).",
   "devDependencies": {
     "@sveltejs/adapter-node": "^5.0.1",
     "@sveltejs/kit": "^2.0.0",
@@ -52,21 +35,38 @@
     "typescript-eslint": "^8.0.0-alpha.20",
     "vite": "^5.0.11"
   },
-  "svelte": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "type": "module",
-  "dependencies": {
-    "@nasa-jpl/stellar-css": "file:../css",
-    "bits-ui": "^0.21.10",
-    "clsx": "^2.1.1",
-    "inter-ui": "^4.0.2",
-    "lucide-svelte": "^0.394.0",
-    "mode-watcher": "^0.3.1",
-    "tailwind-merge": "^2.3.0",
-    "tailwind-variants": "^0.2.1"
+  "exports": {
+    ".": {
+      "svelte": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./index.css": "./dist/index.css"
   },
-  "description": "Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).",
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "!dist/**/*.spec.*"
+  ],
+  "license": "ISC",
   "main": "eslint.config.js",
-  "author": "",
-  "license": "ISC"
+  "name": "svelte-stellar",
+  "peerDependencies": {
+    "svelte": "^4.0.0"
+  },
+  "scripts": {
+    "build": "vite build && npm run package && npm run build:css",
+    "build:css": "tailwind build src/index.css -o dist/index.css",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "dev": "vite dev",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint .",
+    "package": "svelte-kit sync && svelte-package && publint",
+    "prepublishOnly": "npm run package",
+    "preview": "vite preview"
+  },
+  "svelte": "./dist/index.js",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "0.0.1"
 }

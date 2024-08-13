@@ -5,7 +5,7 @@ const SvgDrillDark = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="#BEC0C2"
       fillRule="evenodd"
-      d="m5 10 2 4.5c0 .276.448.5 1 .5s1-.224 1-.5l2-4.5H5Z"
+      d="m5 10 2 4.5c0 .276.448.5 1 .5s1-.224 1-.5l2-4.5z"
       clipRule="evenodd"
       opacity={0.5}
     />
@@ -14,7 +14,7 @@ const SvgDrillDark = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="#EBECEC"
       fillRule="evenodd"
-      d="M13 5h2v9.5c0 .276-.448.5-1 .5s-1-.224-1-.5V5ZM1 5h2v9.5c0 .276-.448.5-1 .5s-1-.224-1-.5V5Z"
+      d="M13 5h2v9.5c0 .276-.448.5-1 .5s-1-.224-1-.5zM1 5h2v9.5c0 .276-.448.5-1 .5s-1-.224-1-.5z"
       clipRule="evenodd"
       opacity={0.5}
     />

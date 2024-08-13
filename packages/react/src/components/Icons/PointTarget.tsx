@@ -5,12 +5,12 @@ const SvgPointTarget = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M9.254 9.8c-.395.13-.816.2-1.254.2-.438 0-.86-.07-1.254-.2l.76 4.79c.09.563.899.563.988 0l.76-4.79Z"
+      d="M9.254 9.8c-.395.13-.816.2-1.254.2s-.86-.07-1.254-.2l.76 4.79c.09.563.899.563.988 0z"
       clipRule="evenodd"
       opacity={0.6}
     />
-    <path fill="currentColor" d="M12 5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" opacity={0.8} />
-    <path fill="currentColor" d="M12 5c0 2.21-3 2.682-4 2.682S4 7.21 4 5a4 4 0 1 1 8 0Z" />
+    <path fill="currentColor" d="M12 5a4 4 0 1 1-8 0 4 4 0 0 1 8 0" opacity={0.8} />
+    <path fill="currentColor" d="M12 5c0 2.21-3 2.682-4 2.682S4 7.21 4 5a4 4 0 1 1 8 0" />
   </svg>
 );
 export default SvgPointTarget;

@@ -5,7 +5,7 @@ const SvgArrowRight = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M1.5 8a1 1 0 0 0 1 1h6.778v2.536a1 1 0 0 0 1.707.707l3.536-3.536a1 1 0 0 0 0-1.414l-3.536-3.536a1 1 0 0 0-1.707.707V7H2.5a1 1 0 0 0-1 1Z"
+      d="M1.5 8a1 1 0 0 0 1 1h6.778v2.536a1 1 0 0 0 1.707.707l3.536-3.536a1 1 0 0 0 0-1.414l-3.536-3.536a1 1 0 0 0-1.707.707V7H2.5a1 1 0 0 0-1 1"
       clipRule="evenodd"
     />
   </svg>

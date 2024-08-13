@@ -5,13 +5,13 @@ const SvgGridEmpty2X2 = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M7.253 8.875V14h1.75V8.875h5.125v-1.75H9.003V2h-1.75v5.125H2v1.75h5.253Z"
+      d="M7.253 8.875V14h1.75V8.875h5.125v-1.75H9.003V2h-1.75v5.125H2v1.75z"
       clipRule="evenodd"
     />
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M2.878 2.75v10.5h10.5V2.75h-10.5ZM2.128 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-12Z"
+      d="M2.878 2.75v10.5h10.5V2.75zM2.128 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"
       clipRule="evenodd"
     />
   </svg>

@@ -11,7 +11,7 @@ const SvgMerge = (props: SVGProps<SVGSVGElement>) => (
     />
     <path
       fill="currentColor"
-      d="M15.367 5.417a.5.5 0 0 0 0-.834l-3.842-2.535a.5.5 0 0 0-.775.417v5.07a.5.5 0 0 0 .775.417l3.842-2.535Z"
+      d="M15.368 5.417a.5.5 0 0 0 0-.834l-3.843-2.535a.5.5 0 0 0-.775.417v5.07a.5.5 0 0 0 .775.417z"
     />
     <path stroke="currentColor" strokeLinecap="round" strokeWidth={1.5} d="M1 5h10" />
   </svg>

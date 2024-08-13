@@ -5,7 +5,7 @@ const SvgPinPause = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M8 16s5.539-7.721 5.539-10.667C13.539 2.388 11.059 0 8 0 4.941 0 2.462 2.388 2.462 5.333 2.462 8.28 8 16 8 16ZM7.385 3H5.154v5.615h2.23V3Zm3.461 0h-2.23v5.615h2.23V3Z"
+      d="M8 16s5.539-7.721 5.539-10.667S11.059 0 8 0 2.462 2.388 2.462 5.333 8 16 8 16M7.385 3H5.154v5.615h2.23zm3.461 0h-2.23v5.615h2.23z"
       clipRule="evenodd"
     />
   </svg>

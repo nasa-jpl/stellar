@@ -7,7 +7,7 @@ const SvgTableFit = (props: SVGProps<SVGSVGElement>) => (
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M12.172 10.828 9.343 8l2.829-2.828v5.656Z"
+      d="M12.172 10.828 9.343 8l2.829-2.828z"
     />
     <rect width={7} height={13} x={0.5} y={1.5} stroke="currentColor" rx={0.5} />
     <rect width={5} height={2} x={11} y={7} fill="currentColor" rx={1} />

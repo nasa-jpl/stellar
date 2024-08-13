@@ -11,7 +11,7 @@ const SvgBranch = (props: SVGProps<SVGSVGElement>) => (
     />
     <path
       fill="currentColor"
-      d="M15.367 10.583a.5.5 0 0 1 0 .834l-3.842 2.536a.5.5 0 0 1-.775-.418v-5.07a.5.5 0 0 1 .775-.417l3.842 2.535Z"
+      d="M15.368 10.583a.5.5 0 0 1 0 .834l-3.843 2.536a.5.5 0 0 1-.775-.418v-5.07a.5.5 0 0 1 .775-.417z"
     />
     <path stroke="currentColor" strokeLinecap="round" strokeWidth={1.5} d="M10 4h5" opacity={0.5} />
   </svg>

@@ -6,7 +6,7 @@ const SvgPolygon = (props: SVGProps<SVGSVGElement>) => (
       <path
         stroke="currentColor"
         strokeWidth={1.5}
-        d="M7.423 2a.667.667 0 0 1 1.154 0l6.207 10.75a.667.667 0 0 1-.578 1H1.793a.667.667 0 0 1-.577-1L7.423 2Z"
+        d="M7.423 2a.667.667 0 0 1 1.154 0l6.207 10.75a.667.667 0 0 1-.578 1H1.793a.667.667 0 0 1-.577-1z"
       />
     </g>
   </svg>

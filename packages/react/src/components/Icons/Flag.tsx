@@ -8,7 +8,7 @@ const SvgFlag = (props: SVGProps<SVGSVGElement>) => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M3 10.156c4-2.925 7 2.924 11 0V2.844c-4 2.925-7-2.924-11 0v7.312Zm0 0V15"
+      d="M3 10.156c4-2.925 7 2.924 11 0V2.844c-4 2.925-7-2.924-11 0zm0 0V15"
     />
   </svg>
 );

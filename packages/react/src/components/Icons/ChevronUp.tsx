@@ -5,7 +5,7 @@ const SvgChevronUp = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M3.289 10.703a1 1 0 0 1 .008-1.414l4.05-4a1 1 0 0 1 1.414.008l3.95 4a1 1 0 0 1-1.422 1.406L8.04 7.414l-3.338 3.297a1 1 0 0 1-1.414-.008Z"
+      d="M3.289 10.703a1 1 0 0 1 .008-1.414l4.05-4a1 1 0 0 1 1.414.008l3.95 4a1 1 0 0 1-1.422 1.406L8.04 7.414l-3.338 3.297a1 1 0 0 1-1.414-.008"
       clipRule="evenodd"
     />
   </svg>

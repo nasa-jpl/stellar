@@ -13,5 +13,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
-  }
+  },
+  "include": ["./src"],
+  "exclude": ["./node_modules"]
 }

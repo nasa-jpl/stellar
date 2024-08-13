@@ -1,4 +1,4 @@
-const template = require("./icon-index-template.cjs");
+const template = require('./icon-index-template.cjs');
 
 module.exports = {
   typescript: true,
@@ -6,7 +6,7 @@ module.exports = {
   svgoConfig: {
     plugins: [
       {
-        name: "preset-default",
+        name: 'preset-default',
         params: {
           overrides: {
             // SVGO by default strips viewBoxes even though viewBoxes are required to resize SVGs with CSS.
@@ -18,4 +18,6 @@ module.exports = {
       },
     ],
   },
+  prettier: false,
+  jsxRuntime: 'classic',
 };

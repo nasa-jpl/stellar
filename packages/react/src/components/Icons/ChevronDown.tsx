@@ -5,7 +5,7 @@ const SvgChevronDown = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M12.711 5.297a1 1 0 0 1-.008 1.414l-4.05 4a1 1 0 0 1-1.414-.008l-3.95-4A1 1 0 0 1 4.71 5.297L7.96 8.586l3.338-3.297a1 1 0 0 1 1.414.008Z"
+      d="M12.711 5.297a1 1 0 0 1-.008 1.414l-4.05 4a1 1 0 0 1-1.414-.008l-3.95-4A1 1 0 0 1 4.71 5.297L7.96 8.586l3.338-3.297a1 1 0 0 1 1.414.008"
       clipRule="evenodd"
     />
   </svg>

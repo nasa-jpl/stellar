@@ -5,7 +5,7 @@ const SvgCursorDefault = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="m9.84 9.516 4.646-1.651L2 1l3.64 13.776 2.726-4.108 3.264 4.177 1.474-1.152-3.263-4.177Z"
+      d="m9.84 9.516 4.647-1.651L2 1l3.64 13.776 2.726-4.108 3.264 4.177 1.474-1.152z"
       clipRule="evenodd"
     />
   </svg>

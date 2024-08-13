@@ -8,7 +8,7 @@ const SvgTimeline = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M2.75 2.75v10.5h10.5V2.75H2.75ZM2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2Z"
+      d="M2.75 2.75v10.5h10.5V2.75zM2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"
       clipRule="evenodd"
     />
   </svg>

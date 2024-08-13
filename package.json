@@ -1,13 +1,5 @@
 {
-  "name": "@nasa-jpl/stellar",
   "description": "A CSS implementation of the Stellar design system.",
-  "type": "module",
-  "version": "1.1.18",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nasa-jpl/stellar.git"
-  },
   "devDependencies": {
     "@types/eslint": "^8.56.7",
     "eslint": "^9.0.0",
@@ -25,6 +17,19 @@
     "node": ">=18.18.0",
     "npm": ">=9.8.1"
   },
+  "license": "MIT",
+  "name": "@nasa-jpl/stellar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nasa-jpl/stellar.git"
+  },
+  "scripts": {
+    "build:css": "cd ./packages/css && npm run build",
+    "build:svelte": "cd ./packages/svelte && npm run build",
+    "build:react": "cd ./packages/react && npm run build"
+  },
+  "type": "module",
+  "version": "1.1.18",
   "workspaces": {
     "packages": [
       "packages/css",

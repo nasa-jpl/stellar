@@ -83,14 +83,11 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:nasa-jpl/react-stellar.git"
-  },
   "scripts": {
-    "build-icons": "svgr -d src/components/Icons/ node_modules/@nasa-jpl/stellar/icons/",
-    "build-lib": "rollup -c",
-    "build-storybook": "storybook build",
+    "build": "npm run build:icons && npm run build:lib",
+    "build:icons": "svgr -d ./src/components/Icons/ ../css/icons/ && prettier ./src/components/Icons --write",
+    "build:lib": "rollup -c",
+    "build:storybook": "storybook build",
     "compile": "tsc -p .",
     "lint": "eslint ./src",
     "storybook": "storybook dev -p 6006",

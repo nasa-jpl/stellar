@@ -5,7 +5,7 @@ const SvgTreeLeaf = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M1.5 7V2h2v5a1 1 0 0 0 1 1H6v2H4.5a3 3 0 0 1-3-3Z"
+      d="M1.5 7V2h2v5a1 1 0 0 0 1 1H6v2H4.5a3 3 0 0 1-3-3"
       clipRule="evenodd"
       opacity={0.4}
     />

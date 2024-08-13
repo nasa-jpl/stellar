@@ -5,7 +5,7 @@ const SvgMarker = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M7.5 16S13 8.279 13 5.333C13 2.388 10.538 0 7.5 0S2 2.388 2 5.333C2 8.28 7.5 16 7.5 16Zm0-7a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+      d="M7.5 16S13 8.279 13 5.333 10.538 0 7.5 0 2 2.388 2 5.333 7.5 16 7.5 16m0-7a4 4 0 1 0 0-8 4 4 0 0 0 0 8"
       clipRule="evenodd"
     />
     <circle cx={7.5} cy={5} r={4} fill="#fff" />

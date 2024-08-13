@@ -1,39 +1,30 @@
 {
   "prettier.configPath": "./.prettierrc.mjs",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortImports": "explicit"
+  },
   "editor.formatOnSave": true,
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "[javascript][typescript]": {
+  "[json]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit",
-      "source.sortImports": "explicit"
+      "source.fixAll": "always"
     },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript][typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css][scss]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit",
-      "source.sortImports": "explicit"
-    },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[svelte]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit",
-      "source.sortImports": "explicit"
-    },
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[javascriptreact][typescriptreact]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit",
-      "source.sortImports": "explicit"
-    },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "stylelint.validate": ["css", "scss"],

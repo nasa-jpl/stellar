@@ -5,7 +5,7 @@ const SvgPlay = (props: SVGProps<SVGSVGElement>) => (
     <rect width={15} height={13} x={0.5} y={1.5} stroke="currentColor" rx={1.5} />
     <path
       fill="currentColor"
-      d="M11.25 7.567a.5.5 0 0 1 0 .866l-4.5 2.598a.5.5 0 0 1-.75-.433V5.402a.5.5 0 0 1 .75-.433l4.5 2.598Z"
+      d="M11.25 7.567a.5.5 0 0 1 0 .866l-4.5 2.598a.5.5 0 0 1-.75-.433V5.402a.5.5 0 0 1 .75-.433z"
     />
   </svg>
 );

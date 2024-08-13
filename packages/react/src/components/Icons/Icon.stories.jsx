@@ -1,21 +1,21 @@
-import * as IconComponents from "components/Icons";
-import "./Icon.stories.css";
+import * as IconComponents from 'components/Icons';
+import './Icon.stories.css';
 
 export const icons = () => (
   <div className="icon-stories">
     {Object.keys(IconComponents)
-      .filter((key) => typeof IconComponents[key] === "function")
+      .filter(key => typeof IconComponents[key] === 'function')
       .sort()
-      .map((key) => {
+      .map(key => {
         const component = IconComponents[key]();
         return (
           <div
             key={key}
             style={{
-              marginRight: "24px",
-              lineHeight: "24px",
-              display: "inline-block",
-              textAlign: "center",
+              marginRight: '24px',
+              lineHeight: '24px',
+              display: 'inline-block',
+              textAlign: 'center',
             }}
           >
             {component}

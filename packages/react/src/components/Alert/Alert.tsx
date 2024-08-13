@@ -1,31 +1,25 @@
-import { Ref, forwardRef } from "react";
-import * as AlertDialog from "@radix-ui/react-alert-dialog";
-import classNames from "classnames";
-import { ModalActionRow } from "components/Modal";
+import * as AlertDialog from '@radix-ui/react-alert-dialog';
+import classNames from 'classnames';
+import { ModalActionRow } from 'components/Modal';
+import { Ref, forwardRef } from 'react';
 
 export type ActionContentProps = {
   children?: string | React.ReactNode;
-} & AlertDialog.DialogContentProps;
+} & AlertDialog.AlertDialogContentProps;
 
-export const AlertContent = forwardRef(
-  (props: ActionContentProps, forwardedRef: Ref<HTMLDivElement>) => {
-    const { children, className = "", ...alertProps } = props;
-    const modalClass = classNames({
-      "st-react-modal": true,
-      "st-react-alert": true,
-      [className]: !!className,
-    });
-    return (
-      <AlertDialog.Content
-        ref={forwardedRef}
-        className={modalClass}
-        {...alertProps}
-      >
-        {children}
-      </AlertDialog.Content>
-    );
-  },
-);
+export const AlertContent = forwardRef((props: ActionContentProps, forwardedRef: Ref<HTMLDivElement>) => {
+  const { children, className = '', ...alertProps } = props;
+  const modalClass = classNames({
+    'st-react-modal': true,
+    'st-react-alert': true,
+    [className]: !!className,
+  });
+  return (
+    <AlertDialog.Content ref={forwardedRef} className={modalClass} {...alertProps}>
+      {children}
+    </AlertDialog.Content>
+  );
+});
 
 export const AlertTrigger = AlertDialog.Trigger;
 export const AlertTitle = AlertDialog.Title;
@@ -40,7 +34,7 @@ export type AlertProps = {
   trigger?: React.ReactNode;
   alertContentProps?: AlertDialog.AlertDialogContentProps;
   className?: string;
-} & AlertDialog.DialogProps;
+} & AlertDialog.AlertDialogProps;
 
 /** A modal dialog that interrupts the user with important content and expects a response.
  *
@@ -51,15 +45,7 @@ export type AlertProps = {
  * [Radix Docs](https://www.radix-ui.com/docs/primitives/components/alert-dialog)
  */
 export const Alert = (props: AlertProps) => {
-  const {
-    title,
-    description,
-    children,
-    trigger,
-    className = "",
-    alertContentProps,
-    ...alertProps
-  } = props;
+  const { title, description, children, trigger, className = '', alertContentProps, ...alertProps } = props;
 
   return (
     <AlertDialog.Root {...alertProps}>
@@ -69,17 +55,13 @@ export const Alert = (props: AlertProps) => {
           <div className="st-react-modal--header">
             <div className="st-react-modal--header--title-row">
               <AlertTitle asChild>
-                <div className="st-react-modal--header--text st-typography-header">
-                  {title}
-                </div>
+                <div className="st-react-modal--header--text st-typography-header">{title}</div>
               </AlertTitle>
             </div>
           </div>
           <div className="st-react-modal--content">
             <AlertDescription asChild>
-              <div className="st-react-modal--description--text st-typography-body">
-                {description}
-              </div>
+              <div className="st-react-modal--description--text st-typography-body">{description}</div>
             </AlertDescription>
           </div>
           <ModalActionRow>{children}</ModalActionRow>

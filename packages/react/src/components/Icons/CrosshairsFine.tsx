@@ -5,7 +5,7 @@ const SvgCrosshairsFine = (props: SVGProps<SVGSVGElement>) => (
     <path
       fill="currentColor"
       fillRule="evenodd"
-      d="M8.5 9v7h-1V9h1ZM8.5 0v7h-1V0h1ZM9 7.5h7v1H9v-1ZM0 7.5h7v1H0v-1Z"
+      d="M8.5 9v7h-1V9zM8.5 0v7h-1V0zM9 7.5h7v1H9zM0 7.5h7v1H0z"
       clipRule="evenodd"
     />
   </svg>
