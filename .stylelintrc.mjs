@@ -6,6 +6,7 @@ const config = {
       customSyntax: 'postcss-scss',
       rules: {
         'scss/at-import-no-partial-leading-underscore': null,
+        'scss/at-import-partial-extension': null,
       },
     },
   ],

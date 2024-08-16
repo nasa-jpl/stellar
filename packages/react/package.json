@@ -1,7 +1,7 @@
 {
   "author": "Aaron Plave",
   "dependencies": {
-    "@nasa-jpl/stellar": "file:../css/dist",
+    "@nasa-jpl/stellar-css": "file:../css/dist",
     "@radix-ui/react-alert-dialog": "^1.0.3",
     "@radix-ui/react-avatar": "^1.0.2",
     "@radix-ui/react-checkbox": "^1.0.3",

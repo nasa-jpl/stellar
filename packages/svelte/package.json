@@ -1,7 +1,7 @@
 {
   "author": "",
   "dependencies": {
-    "@nasa-jpl/stellar": "file:../css",
+    "@nasa-jpl/stellar-css": "file:../css/dist",
     "bits-ui": "^0.21.10",
     "clsx": "^2.1.1",
     "inter-ui": "^4.0.2",
@@ -38,7 +38,8 @@
   "files": [
     "dist",
     "!dist/**/*.test.*",
-    "!dist/**/*.spec.*"
+    "!dist/**/*.spec.*",
+    "package.json"
   ],
   "license": "ISC",
   "main": "eslint.config.js",

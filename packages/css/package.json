@@ -11,11 +11,7 @@
     "scss"
   ],
   "license": "MIT",
-  "name": "@nasa-jpl/stellar",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nasa-jpl/stellar.git"
-  },
+  "name": "@nasa-jpl/stellar-css",
   "scripts": {
     "build": "npm run build:css && node scripts/build.js",
     "build:css": "rm -rf dist/css && sass src/scss:dist/css",

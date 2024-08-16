@@ -1,4 +1,4 @@
-import "@nasa-jpl/stellar/font/inter/inter.css";
+import "@nasa-jpl/stellar-css/font/inter/inter.css";
 import { useDarkMode } from "storybook-dark-mode";
 import "../src/styles/styles.scss";
 
