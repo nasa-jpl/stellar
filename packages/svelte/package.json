@@ -1,7 +1,7 @@
 {
   "author": "",
   "dependencies": {
-    "@nasa-jpl/stellar-css": "file:../css",
+    "@nasa-jpl/stellar": "file:../css",
     "bits-ui": "^0.21.10",
     "clsx": "^2.1.1",
     "inter-ui": "^4.0.2",
@@ -35,13 +35,6 @@
     "typescript-eslint": "^8.0.0-alpha.20",
     "vite": "^5.0.11"
   },
-  "exports": {
-    ".": {
-      "svelte": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./index.css": "./dist/index.css"
-  },
   "files": [
     "dist",
     "!dist/**/*.test.*",
@@ -49,7 +42,7 @@
   ],
   "license": "ISC",
   "main": "eslint.config.js",
-  "name": "svelte-stellar",
+  "name": "@nasa-jpl/stellar-svelte",
   "peerDependencies": {
     "svelte": "^4.0.0"
   },

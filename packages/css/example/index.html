@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <title>Stellar</title>
-    <link href="../font/inter/inter.css" rel="stylesheet" />
-    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../dist/font/inter/inter.css" rel="stylesheet" />
+    <link href="../dist/css/index.css" rel="stylesheet" />
     <link href="./index.css" rel="stylesheet" />
     <script src="./icons.js"></script>
   </head>
@@ -29,8 +29,8 @@
         <button class="st-button secondary" disabled>Disabled</button>
         <button class="st-button tertiary">Tertiary</button>
         <button class="st-button tertiary" disabled>Disabled</button>
-        <button class="st-button icon"><img src="../icons/sol.svg" /></button>
-        <button class="st-button icon" disabled><img src="../icons/sol.svg" /></button>
+        <button class="st-button icon"><img src="../dist/icons/sol.svg" /></button>
+        <button class="st-button icon" disabled><img src="../dist/icons/sol.svg" /></button>
       </div>
       <br />
       <div class="button-row">
@@ -40,8 +40,8 @@
         <button class="st-button large secondary" disabled>Disabled</button>
         <button class="st-button large tertiary">Tertiary</button>
         <button class="st-button large tertiary" disabled>Disabled</button>
-        <button class="st-button large icon"><img src="../icons/sol.svg" /></button>
-        <button class="st-button large icon" disabled><img src="../icons/sol.svg" /></button>
+        <button class="st-button large icon"><img src="../dist/icons/sol.svg" /></button>
+        <button class="st-button large icon" disabled><img src="../dist/icons/sol.svg" /></button>
       </div>
     </section>
 
@@ -334,7 +334,7 @@ Non-resizable textarea
         const img = document.createElement('img');
         img.alt = icon;
         img.height = '32';
-        img.src = `../icons/${icon}`;
+        img.src = `../dist/icons/${icon}`;
         img.width = '32';
         imgContainer.appendChild(img);
 

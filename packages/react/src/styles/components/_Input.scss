@@ -1,26 +1,26 @@
-@import '@nasa-jpl/stellar-css/scss/mixins/_input.scss';
+@import '@nasa-jpl/stellar/scss/mixins/_input';
 
 .st-react-input {
   .st-react-input--container {
-    font-family: var(--st-react-input-font-family);
-    font-size: var(--st-react-input-font-size);
-    font-weight: var(--st-react-input-font-weight);
-    line-height: var(--st-react-input-line-height);
-    letter-spacing: var(--st-react-input-letter-spacing);
     background-color: var(--st-react-input-background-color);
     border: var(--st-react-input-border);
     border-radius: var(--st-react-input-border-radius);
     color: var(--st-react-input-color);
-    padding: var(--st-react-input-padding);
     display: flex;
+    font-family: var(--st-react-input-font-family);
+    font-size: var(--st-react-input-font-size);
+    font-weight: var(--st-react-input-font-weight);
     gap: var(--st-grid-unit);
+    letter-spacing: var(--st-react-input-letter-spacing);
+    line-height: var(--st-react-input-line-height);
+    padding: var(--st-react-input-padding);
 
     &:focus,
     &.focus {
-      outline-width: initial;
-      outline-style: auto;
       outline-color: Highlight;
       outline-color: var(--st-react-input-outline);
+      outline-style: auto;
+      outline-width: initial;
     }
 
     &.error {
@@ -32,8 +32,8 @@
     }
 
     .st-react-input--adornment {
-      display: flex;
       align-items: center;
+      display: flex;
       gap: var(--st-grid-unit);
 
       * {
@@ -41,30 +41,30 @@
       }
     }
 
-    &:not(.error):not(.warning) .st-react-input--adornment {
+    &:not(.error, .warning) .st-react-input--adornment {
       color: var(--st-gray-50);
     }
 
     input.st-react-input--input {
+      background-color: rgb(0 0 0 / 0%);
+      border: none;
+      color: inherit;
       font-family: inherit;
       font-size: inherit;
       font-weight: inherit;
-      line-height: inherit;
       letter-spacing: inherit;
-      background-color: rgba(0, 0, 0, 0);
-      color: inherit;
-      border: none;
+      line-height: inherit;
       outline: none;
-      width: 100%;
       padding: 0;
+      width: 100%;
 
       &::placeholder {
         color: var(--st-react-input-placeholder-color);
       }
 
       &:disabled {
-        opacity: 0.5;
         cursor: not-allowed;
+        opacity: 0.5;
       }
     }
   }

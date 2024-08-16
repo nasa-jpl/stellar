@@ -17,8 +17,12 @@
     "node": ">=18.18.0",
     "npm": ">=9.8.1"
   },
+  "files": [
+    "/packages/css/dist",
+    "/packages/svelte/dist",
+    "/packages/react/dist"
+  ],
   "license": "MIT",
-  "name": "@nasa-jpl/stellar",
   "repository": {
     "type": "git",
     "url": "https://github.com/nasa-jpl/stellar.git"
@@ -26,7 +30,8 @@
   "scripts": {
     "build:css": "cd ./packages/css && npm run build",
     "build:svelte": "cd ./packages/svelte && npm run build",
-    "build:react": "cd ./packages/react && npm run build"
+    "build:react": "cd ./packages/react && npm run build",
+    "build": "npm run build:css && npm run build:react && npm run build:svelte"
   },
   "type": "module",
   "version": "1.1.18",

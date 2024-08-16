@@ -1,9 +1,8 @@
 :root {
   // General.
   --st-react-input-outline: -webkit-focus-ring-color;
-  --st-react-overlay-border: 1px solid rgba(0, 0, 0, 0.16);
-  --st-react-overlay-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.05))
-    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+  --st-react-overlay-border: 1px solid rgb(0 0 0 / 16%);
+  --st-react-overlay-filter: drop-shadow(0px 5px 5px rgb(0 0 0 / 5%)) drop-shadow(0 1px 3px rgb(0 0 0 / 10%));
 
   // Label.
   --st-react-label-color: var(--st-gray-60);
@@ -18,7 +17,7 @@
   --st-react-multiselect-option-selected-border-color: var(--st-gray-20);
   --st-react-multiselect-option-selected-background-color: var(--st-white);
   --st-react-multiselect-option-selected-text-color: var(--st-gray-80);
-  --st-react-multiselect-option-text-color: rgba(var(--st-gray-60-RGB), 0.65);
+  --st-react-multiselect-option-text-color: rgb(var(--st-gray-60-RGB) 0.65);
 
   // Dropdown.
   --st-react-dropdown-font-family: var(--st-typography-font-family);
@@ -38,13 +37,11 @@
   --st-react-dropdown-control-hover-background-color: var(--st-gray-10);
   --st-react-dropdown-control-hover-border: 1px solid var(--st-gray-20);
   --st-react-dropdown-control-focus-box-shadow: 0px 0px 0px 1px #4d90fe;
-  --st-react-dropdown-menu-focus-box-shadow: 0px 1px 0px 0px #4d90fe,
-    1px 0px 0px 0px #4d90fe, -1px 0px 0px 0px #4d90fe;
+  --st-react-dropdown-menu-focus-box-shadow: 0px 1px 0px 0px #4d90fe, 1px 0px 0px 0px #4d90fe, -1px 0px 0px 0px #4d90fe;
   --st-react-dropdown-placeholder-color: var(--st-gray-50);
   --st-react-dropdown-menu-background-color: var(--st-white);
   --st-react-dropdown-menu-border: 1px solid var(--st-gray-20);
-  --st-react-dropdown-menu-border-radius: 0 0 calc(var(--st-grid-unit) / 2)
-    calc(var(--st-grid-unit) / 2);
+  --st-react-dropdown-menu-border-radius: 0 0 calc(var(--st-grid-unit) / 2) calc(var(--st-grid-unit) / 2);
   --st-react-dropdown-menu-list-padding-bottom: calc(var(--st-grid-unit) / 2);
   --st-react-dropdown-menu-list-border-radius: calc(var(--st-grid-unit) / 2);
   --st-react-dropdown-menu-list-box-shadow: 0 2px 3px 0 rgb(34 36 38 / 15%);
@@ -71,8 +68,7 @@
   --st-react-dropdown-multi-value-remove-width: 18px;
 
   // Modal.
-  --st-react-modal-animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal
-    none running contentShow;
+  --st-react-modal-animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none running contentshow;
   --st-react-modal-header-background-color: white;
   --st-react-modal-min-width: calc(var(--st-grid-unit) * 40);
   --st-react-modal-border-radius: 4px;
@@ -80,29 +76,23 @@
   --st-react-modal-box-shadow: hsl(206deg 22% 7% / 35%) 0px 10px 38px -10px,
     hsl(206deg 22% 7% / 20%) 0px 10px 20px -15px;
   --st-react-modal-header-border-bottom: 1px solid var(--st-gray-15);
-  --st-react-modal-header-padding: var(--st-grid-unit) var(--st-grid-unit)
-    var(--st-grid-unit) var(--st-grid-unit2x);
+  --st-react-modal-header-padding: var(--st-grid-unit) var(--st-grid-unit) var(--st-grid-unit) var(--st-grid-unit2x);
   --st-react-modal-content-background-color: white;
   --st-react-modal-action-row-background-color: var(--st-gray-10);
   --st-react-modal-action-row-padding: var(--st-grid-unit);
   --st-react-modal-action-row-border-top: 1px solid var(--st-gray-15);
   --st-react-modal-action-row-secondary-button-background: white;
-  --st-react-modal-action-row-secondary-button-border: 1px solid
-    var(--st-gray-20);
-  --st-react-modal-action-row-secondary-button-hover-background: var(
-    --st-gray-10
-  );
-  --st-react-modal-overlay-background-color: hsl(0 0% 0% / 0.439);
-  --st-react-modal-overlay-animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1
-    normal none running fadeIn;
+  --st-react-modal-action-row-secondary-button-border: 1px solid var(--st-gray-20);
+  --st-react-modal-action-row-secondary-button-hover-background: var(--st-gray-10);
+  --st-react-modal-overlay-background-color: hsl(0deg 0% 0% / 43.9%);
+  --st-react-modal-overlay-animation: 150ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal none running fadein;
 
   // Progress.
   --st-react-progress-height: var(--st-grid-unit);
   --st-react-progress-background: var(--st-gray-20);
   --st-react-progress-border-radius: 99999px;
   --st-react-progress-indicator-background: var(--st-blue);
-  --st-react-progress-indicator-transition: width 450ms
-    cubic-bezier(0.65, 0, 0.35, 1) 0s;
+  --st-react-progress-indicator-transition: width 450ms cubic-bezier(0.65, 0, 0.35, 1) 0s;
 
   // Popover.
   --st-react-popover-background: white;
@@ -116,22 +106,10 @@
   --st-react-checkbox-label-hover-color: var(--st-gray-70);
   --st-react-checkbox-unchecked-border-color: var(--st-gray-50);
   --st-react-checkbox-unchecked-hover-border-color: var(--st-gray-60);
-  --st-react-checkbox-checked-background: rgba(240, 228, 255, 0.24);
+  --st-react-checkbox-checked-background: rgb(240 228 255 / 24%);
   --st-react-checkbox-checked-color: var(--st-primary-70);
   --st-react-checkbox-checked-border-color: var(--st-primary-70);
-  --st-react-checkbox-checked-hover-background: rgba(240, 228, 255, 0.48);
-  --st-react-checkbox-checked-hover-border-color: var(--st-primary-80);
-  --st-react-checkbox-checked-hover-color: var(--st-primary-80);
-
-  // Checkbox.
-  --st-react-checkbox-label-color: var(--st-gray-60);
-  --st-react-checkbox-label-hover-color: var(--st-gray-70);
-  --st-react-checkbox-unchecked-border-color: var(--st-gray-50);
-  --st-react-checkbox-unchecked-hover-border-color: var(--st-gray-60);
-  --st-react-checkbox-checked-background: rgba(240, 228, 255, 0.24);
-  --st-react-checkbox-checked-color: var(--st-primary-70);
-  --st-react-checkbox-checked-border-color: var(--st-primary-70);
-  --st-react-checkbox-checked-hover-background: rgba(240, 228, 255, 0.48);
+  --st-react-checkbox-checked-hover-background: rgb(240 228 255 / 48%);
   --st-react-checkbox-checked-hover-border-color: var(--st-primary-80);
   --st-react-checkbox-checked-hover-color: var(--st-primary-80);
 
@@ -151,8 +129,8 @@
   --st-react-slider-thumb-background-color: var(--st-gray-15);
   --st-react-slider-thumb-hover-background-color: var(--st-gray-10);
   --st-react-slider-thumb-border-color: var(--st-primary-50);
-  --st-react-slider-thumb-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.14);
-  --st-react-slider-thumb-focus-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+  --st-react-slider-thumb-box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 14%);
+  --st-react-slider-thumb-focus-box-shadow: 0 0 0 5px rgb(0 0 0 / 10%);
   --st-react-slider-disabled-range-background-color: var(--st-gray-50);
   --st-react-slider-disabled-thumb-background-color: var(--st-gray-30);
   --st-react-slider-disabled-thumb-border-color: var(--st-gray-50);
@@ -165,15 +143,15 @@
   --st-react-tooltip-border-radius: calc(var(--st-grid-unit) / 2);
   --st-react-tooltip-padding: var(--st-grid-unit) var(--st-grid-unit3x);
   --st-react-tooltip-background-color: var(--st-white);
-  --st-react-tooltip-box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  --st-react-tooltip-box-shadow: hsl(206deg 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206deg 22% 7% / 20%) 0px 10px 20px -15px;
   --st-react-tooltip-arrow-background-color: var(--st-white);
   --st-react-tooltip-animation-duration: 400ms;
   --st-react-tooltip-animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-  --st-react-tooltip-animation-top: slideUpAndFade;
-  --st-react-tooltip-animation-right: slideRightAndFade;
-  --st-react-tooltip-animation-bottom: slideDownAndFade;
-  --st-react-tooltip-animation-left: slideLeftAndFade;
+  --st-react-tooltip-animation-top: slideupandfade;
+  --st-react-tooltip-animation-right: sliderightandfade;
+  --st-react-tooltip-animation-bottom: slidedownandfade;
+  --st-react-tooltip-animation-left: slideleftandfade;
 
   // Input.
   --st-react-input-font-family: var(--st-input-font-family);
@@ -202,40 +180,18 @@
   --st-react-formfield-vertical-grid-unit: 2px;
 
   // Navbar.
-  --st-react-navbar-brand-title-font-family: var(
-    --st-typography-header-font-family
-  );
-  --st-react-navbar-brand-title-font-weight: var(
-    --st-typography-header-font-weight
-  );
-  --st-react-navbar-brand-title-font-size: var(
-    --st-typography-header-font-size
-  );
-  --st-react-navbar-brand-title-line-height: var(
-    --st-typography-header-line-height
-  );
-  --st-react-navbar-brand-title-letter-spacing: var(
-    --st-typography-header-letter-spacing
-  );
+  --st-react-navbar-brand-title-font-family: var(--st-typography-header-font-family);
+  --st-react-navbar-brand-title-font-weight: var(--st-typography-header-font-weight);
+  --st-react-navbar-brand-title-font-size: var(--st-typography-header-font-size);
+  --st-react-navbar-brand-title-line-height: var(--st-typography-header-line-height);
+  --st-react-navbar-brand-title-letter-spacing: var(--st-typography-header-letter-spacing);
   --st-react-navbar-brand-title-color: var(--st-gray-70);
-
-  --st-react-navbar-brand-version-font-family: var(
-    --st-typography-label-font-family
-  );
-  --st-react-navbar-brand-version-font-weight: var(
-    --st-typography-label-font-weight
-  );
-  --st-react-navbar-brand-version-font-size: var(
-    --st-typography-label-font-size
-  );
-  --st-react-navbar-brand-version-line-height: var(
-    --st-typography-label-line-height
-  );
-  --st-react-navbar-brand-version-letter-spacing: var(
-    --st-typography-label-letter-spacing
-  );
+  --st-react-navbar-brand-version-font-family: var(--st-typography-label-font-family);
+  --st-react-navbar-brand-version-font-weight: var(--st-typography-label-font-weight);
+  --st-react-navbar-brand-version-font-size: var(--st-typography-label-font-size);
+  --st-react-navbar-brand-version-line-height: var(--st-typography-label-line-height);
+  --st-react-navbar-brand-version-letter-spacing: var(--st-typography-label-letter-spacing);
   --st-react-navbar-brand-version-color: var(--st-gray-50);
-
   --st-react-navbar-link-font-family: var(--st-button-font-family);
   --st-react-navbar-link-font-weight: var(--st-button-font-weight);
   --st-react-navbar-link-font-size: var(--st-button-font-size);
@@ -247,10 +203,8 @@
   --st-react-navbar-mobile-link-height: 40px;
   --st-react-navbar-link-gap: var(--st-grid-unit);
   --st-react-navbar-link-padding: 0 var(--st-grid-unit3x);
-
   --st-react-navbar-height: 48px;
   --st-react-navbar-padding: 0px 16px;
-
   --st-react-navbar-mobile-spacer-width: 24px;
 
   // Avatar.
@@ -272,25 +226,19 @@
   --st-react-menu-item-font-weight: var(--st-typography-label-font-weight);
   --st-react-menu-item-font-size: var(--st-typography-label-font-size);
   --st-react-menu-item-line-height: var(--st-typography-label-line-height);
-  --st-react-menu-item-letter-spacing: var(
-    --st-typography-label-letter-spacing
-  );
+  --st-react-menu-item-letter-spacing: var(--st-typography-label-letter-spacing);
   --st-react-menu-item-color: var(--st-typography-label-tertiary-color);
   --st-react-menu-item-open-color: var(--st-primary-40);
   --st-react-menu-item-open-background: var(--st-primary-10);
   --st-react-menu-item-highlighted-color: var(--st-gray-10);
   --st-react-menu-item-highlighted-background: var(--st-primary-50);
   --st-react-menu-item-disabled-color: var(--st-gray-30);
-
   --st-react-menu-label-font-family: var(--st-typography-label-font-family);
   --st-react-menu-label-font-weight: var(--st-typography-label-font-weight);
   --st-react-menu-label-font-size: var(--st-typography-label-font-size);
   --st-react-menu-label-line-height: 24px;
-  --st-react-menu-label-letter-spacing: var(
-    --st-typography-label-letter-spacing
-  );
+  --st-react-menu-label-letter-spacing: var(--st-typography-label-letter-spacing);
   --st-react-menu-label-color: var(--st-gray-50);
-
   --st-react-menu-separator-background: var(--st-gray-20);
   --st-react-menu-arrow-filter: drop-shadow(0px 1px 0px #d6d6d6);
   --st-react-menu-right-slot-color: var(--st-gray-50);

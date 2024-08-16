@@ -1,7 +1,7 @@
 {
   "author": "Aaron Plave",
   "dependencies": {
-    "@nasa-jpl/stellar-css": "file:../css",
+    "@nasa-jpl/stellar": "file:../css/dist",
     "@radix-ui/react-alert-dialog": "^1.0.3",
     "@radix-ui/react-avatar": "^1.0.2",
     "@radix-ui/react-checkbox": "^1.0.3",
@@ -79,14 +79,14 @@
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "name": "@nasa-jpl/react-stellar",
+  "name": "@nasa-jpl/stellar-react",
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "scripts": {
     "build": "npm run build:icons && npm run build:lib",
-    "build:icons": "svgr -d ./src/components/Icons/ ../css/icons/ && prettier ./src/components/Icons --write",
+    "build:icons": "svgr -d ./src/components/Icons/ ../css/dist/icons/ && prettier ./src/components/Icons --write",
     "build:lib": "rollup -c",
     "build:storybook": "storybook build",
     "compile": "tsc -p .",

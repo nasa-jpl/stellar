@@ -10,15 +10,11 @@
 
     &[data-disabled] {
       .st-react-slider--range {
-        background-color: var(
-          --st-react-slider-disabled-range-background-color
-        );
+        background-color: var(--st-react-slider-disabled-range-background-color);
       }
 
       .st-react-slider--thumb {
-        background-color: var(
-          --st-react-slider-disabled-thumb-background-color
-        );
+        background-color: var(--st-react-slider-disabled-thumb-background-color);
         border-color: var(--st-react-slider-disabled-thumb-border-color);
       }
     }

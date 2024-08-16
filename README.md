@@ -17,7 +17,7 @@ Import the desired CSS files into your project to make the classes globally avai
 ```html
 <html>
   <head>
-    <link href="@nasa-jpl/stellar/css/button.css" rel="stylesheet" />
+    <link href="@nasa-jpl/stellar/dist/css/button.css" rel="stylesheet" />
   </head>
   <body>
     <button class="st-button">Stellar!</button>
