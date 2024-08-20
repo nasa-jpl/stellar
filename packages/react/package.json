@@ -95,6 +95,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
+  "types": "dist/esm/index.d.ts",
   "typescript": {
     "definition": "dist/esm/index.d.ts"
   },

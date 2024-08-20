@@ -29,8 +29,14 @@
     "./font/*.woff2": "./packages/css/dist/css/font/*.woff2",
     "./icons/*.svg": "./packages/css/dist/css/icons/*.svg",
     "./react": {
-      "import": "./packages/react/dist/esm/index.js",
-      "require": "./packages/react/dist/cjs/index.js"
+      "import": {
+        "types": "./packages/react/dist/esm/index.d.ts",
+        "default": "./packages/react/dist/esm/index.js"
+      },
+      "require": {
+        "types": "./packages/react/dist/cjs/index.d.ts",
+        "default": "./packages/react/dist/cjs/index.js"
+      }
     },
     "./svelte": "./packages/svelte/dist/index.js"
   },
