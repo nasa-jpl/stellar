@@ -18,10 +18,21 @@
     "npm": ">=9.8.1"
   },
   "exports": {
-    "css": "./packages/css/dist/css/index.css",
-    "css/*.*": "./packages/css/dist/css/*.*",
-    "react/*.*": "./packages/react/dist/*.*",
-    "svelte/*.*": "./packages/svelte/dist/*.*"
+    ".": "./packages/css/dist/css/index.css",
+    "./css": "./packages/css/dist/css/index.css",
+    "./css/*.css": "./packages/css/dist/css/*.css",
+    "./scss": "./packages/css/dist/css/scss/index.scss",
+    "./scss/*.scss": "./packages/css/dist/scss/*.scss",
+    "./font": "./packages/css/dist/css/font/inter.css",
+    "./font/*.css": "./packages/css/dist/css/font/*.css",
+    "./font/*.woff": "./packages/css/dist/css/font/*.woff",
+    "./font/*.woff2": "./packages/css/dist/css/font/*.woff2",
+    "./icons/*.svg": "./packages/css/dist/css/icons/*.svg",
+    "./react": {
+      "import": "./packages/react/dist/esm/index.js",
+      "require": "./packages/react/dist/cjs/index.js"
+    },
+    "./svelte": "./packages/svelte/dist/index.js"
   },
   "files": [
     "/packages/css/dist",
