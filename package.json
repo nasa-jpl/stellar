@@ -57,10 +57,12 @@
     "build:css": "cd ./packages/css && npm run build",
     "build:svelte": "cd ./packages/svelte && npm run build",
     "build:react": "cd ./packages/react && npm run build",
-    "build": "npm run build:css && npm run build:react && npm run build:svelte"
+    "build": "npm run build:css && npm run build:react && npm run build:svelte",
+    "dev:react": "cd ./packages/react && npm run storybook",
+    "dev:svelte": "cd ./packages/svelte && npm run dev"
   },
   "type": "module",
-  "version": "1.1.18",
+  "version": "2.0.0",
   "workspaces": {
     "packages": [
       "packages/css",
