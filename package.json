@@ -62,7 +62,7 @@
     "dev:svelte": "cd ./packages/svelte && npm run dev"
   },
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.0-dev",
   "workspaces": {
     "packages": [
       "packages/css",
