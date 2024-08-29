@@ -44,6 +44,15 @@
       "presentation": {
         "group": "groupA"
       }
+    },
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "nvm use && npm run build",
+      "detail": "Task to build the entire library",
+      "presentation": {
+        "group": "groupB"
+      }
     }
   ]
 }
