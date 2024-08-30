@@ -43,7 +43,7 @@
     },
     "./svelte": {
       "types": "./packages/svelte/dist/index.d.ts",
-      "default": "./packages/svelte/dist/index.js"
+      "svelte": "./packages/svelte/dist/index.js"
     }
   },
   "files": [
@@ -65,7 +65,8 @@
     "build:react": "cd ./packages/react && npm run build",
     "build": "npm run build:css && npm run build:react && npm run build:svelte",
     "dev:react": "cd ./packages/react && npm run storybook",
-    "dev:svelte": "cd ./packages/svelte && npm run dev"
+    "dev:svelte": "cd ./packages/svelte && npm run dev",
+    "prepublishOnly": "npm run build"
   },
   "type": "module",
   "version": "2.0.0-alpha.2",
