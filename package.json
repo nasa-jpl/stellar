@@ -51,6 +51,9 @@
     "/packages/css/dist",
     "/packages/react/dist",
     "/packages/svelte/dist",
+    "/packages/css/package.json",
+    "/packages/react/package.json",
+    "/packages/svelte/package.json",
     "!/packages/svelte/dist/**/*.spec.*",
     "!/packages/svelte/dist/**/*.test.*"
   ],
