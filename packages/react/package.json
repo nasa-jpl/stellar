@@ -1,7 +1,6 @@
 {
   "author": "Aaron Plave",
   "dependencies": {
-    "@nasa-jpl/stellar-css": "file:../css/dist",
     "@radix-ui/react-alert-dialog": "^1.0.3",
     "@radix-ui/react-avatar": "^1.0.2",
     "@radix-ui/react-checkbox": "^1.0.3",
@@ -25,6 +24,7 @@
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.5",
+    "@nasa-jpl/stellar-css": "file:../css/dist",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",

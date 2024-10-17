@@ -1,7 +1,6 @@
 {
   "author": "",
   "dependencies": {
-    "@nasa-jpl/stellar-css": "file:../css/dist",
     "bits-ui": "^0.21.10",
     "clsx": "^2.1.1",
     "inter-ui": "^4.0.2",
@@ -12,6 +11,7 @@
   },
   "description": "Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).",
   "devDependencies": {
+    "@nasa-jpl/stellar-css": "file:../css/dist",
     "@sveltejs/adapter-node": "^5.0.1",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/package": "^2.0.0",
