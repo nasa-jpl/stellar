@@ -63,6 +63,18 @@
     "style-loader": "3.3.2",
     "stylelint-config-standard-scss": "^7.0.1"
   },
+  "exports": {
+    "./react": {
+      "import": {
+        "default": "./dist/esm/index.js",
+        "types": "./dist/esm/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/cjs/index.js",
+        "types": "./dist/cjs/index.d.ts"
+      }
+    }
+  },
   "files": [
     "dist"
   ],

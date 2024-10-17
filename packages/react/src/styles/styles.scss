@@ -1,15 +1,15 @@
 @charset 'utf-8';
 
-// Stellar CSS base
+/* Stellar CSS base */
 @import '@nasa-jpl/stellar-css/css/index.css';
 
-// Variables
+/* Variables */
 @import '_variables';
 
-// Animations
+/* Animations */
 @import '_animations';
 
-// Components
+/* Components */
 @import 'components/_Icons';
 @import 'components/_Button';
 @import 'components/_Multiselect';

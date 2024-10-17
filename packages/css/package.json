@@ -4,6 +4,21 @@
     "sass": "^1.60.0",
     "stylelint-config-standard-scss": "^7.0.1"
   },
+  "exports": {
+    ".": "./dist/css/index.css",
+    "./css": "./dist/css/index.css",
+    "./css/*.css": "./dist/css/*.css",
+    "./font": "./dist/font/inter/inter.css",
+    "./font/*.css": "./dist/font/inter/*.css",
+    "./font/*.woff": "./dist/font/inter/*.woff",
+    "./font/*.woff2": "./dist/font/inter/*.woff2",
+    "./font/inter/*.css": "./dist/font/inter/*.css",
+    "./font/inter/*.woff": "./dist/font/inter/*.woff",
+    "./font/inter/*.woff2": "./dist/font/inter/*.woff2",
+    "./icons/*.svg": "./dist/icons/*.svg",
+    "./scss": "./dist/scss/index.scss",
+    "./scss/*.scss": "./dist/scss/*.scss"
+  },
   "files": [
     "css",
     "font",
