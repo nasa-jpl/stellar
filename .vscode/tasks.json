@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "React",
+      "type": "shell",
+      "command": "nvm use && cd ./packages/react && npm run storybook",
+      "detail": "Task to run Stellar React in development mode.",
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".*\\[webpack-dev-middleware\\]",
+            "endsPattern": ".*bundle\\.js"
+          },
+          "pattern": {
+            "regexp": "."
+          }
+        }
+      ],
+      "presentation": {
+        "group": "groupA"
+      }
+    },
+    {
+      "label": "Svelte",
+      "type": "shell",
+      "command": "nvm use && cd ./packages/svelte && npm run dev",
+      "detail": "Task to run Stellar Svelte in development mode.",
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "\\s*VITE v",
+            "endsPattern": ".*to show help"
+          },
+          "pattern": {
+            "regexp": "."
+          }
+        }
+      ],
+      "presentation": {
+        "group": "groupA"
+      }
+    },
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "nvm use && npm run build",
+      "detail": "Task to build the entire library",
+      "presentation": {
+        "group": "groupB"
+      }
+    }
+  ]
+}

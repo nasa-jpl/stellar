@@ -1,0 +1,56 @@
+.st-react-multiselect {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: var(--st-react-multiselect-background);
+  border-radius: var(--st-react-multiselect-border-radius);
+}
+
+.st-react-multiselect--option {
+  border: 1px solid var(--st-react-multiselect-option-border-color);
+  border-radius: var(--st-react-multiselect-border-radius);
+  background: none;
+  padding: 0px var(--st-grid-unit);
+  flex: 1;
+  cursor: pointer;
+
+  & .st-react-multiselect--optionText {
+    color: var(--st-react-multiselect-option-text-color);
+    text-align: center;
+    padding: 0px var(--st-grid-unit2x);
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  &.st-react-multiselect--option--selected {
+    border: 1px solid var(--st-react-multiselect-option-selected-border-color);
+    background-color: var(
+      --st-react-multiselect-option-selected-background-color
+    );
+
+    & .st-react-multiselect--optionText {
+      color: var(--st-react-multiselect-option-selected-text-color);
+    }
+  }
+}
+
+.st-react-multiselect--background {
+  pointer-events: none;
+  border-radius: var(--st-react-multiselect-border-radius);
+  border: 1px solid var(--st-react-multiselect-border-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.st-react-multiselect--medium .st-react-multiselect--option {
+  height: var(--st-grid-unit3x);
+}
+
+.st-react-multiselect--large .st-react-multiselect--option {
+  height: var(--st-grid-unit4x);
+}

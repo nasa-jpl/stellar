@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.st-spacing--vertical--1 {
+  height: var(--st-grid-unit);
+}
+
+.st-spacing--vertical--2 {
+  height: var(--st-grid-unit2x);
+}
+
+.st-spacing--vertical--3 {
+  height: var(--st-grid-unit3x);
+}
+
+.st-spacing--vertical--4 {
+  height: var(--st-grid-unit4x);
+}

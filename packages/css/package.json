@@ -1,0 +1,41 @@
+{
+  "description": "A CSS implementation of the Stellar design system.",
+  "devDependencies": {
+    "sass": "^1.60.0",
+    "stylelint-config-standard-scss": "^7.0.1"
+  },
+  "exports": {
+    ".": "./dist/css/index.css",
+    "./css": "./dist/css/index.css",
+    "./css/*.css": "./dist/css/*.css",
+    "./font": "./dist/font/inter/inter.css",
+    "./font/*.css": "./dist/font/inter/*.css",
+    "./font/*.woff": "./dist/font/inter/*.woff",
+    "./font/*.woff2": "./dist/font/inter/*.woff2",
+    "./font/inter/*.css": "./dist/font/inter/*.css",
+    "./font/inter/*.woff": "./dist/font/inter/*.woff",
+    "./font/inter/*.woff2": "./dist/font/inter/*.woff2",
+    "./icons/*.svg": "./dist/icons/*.svg",
+    "./scss": "./dist/scss/index.scss",
+    "./scss/*.scss": "./dist/scss/*.scss"
+  },
+  "files": [
+    "css",
+    "font",
+    "icons",
+    "scss"
+  ],
+  "license": "MIT",
+  "name": "@nasa-jpl/stellar",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run build:css && node scripts/build.js",
+    "build:css": "rm -rf dist/css && sass src/scss:dist/css",
+    "lint": "stylelint scss/**/*.scss --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "type": "module",
+  "version": "2.0.0-alpha.12"
+}

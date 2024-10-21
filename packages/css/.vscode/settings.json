@@ -1,0 +1,4 @@
+{
+  "prettier.configPath": "./.prettierrc.mjs",
+  "stylelint.validate": ["css", "scss"]
+}

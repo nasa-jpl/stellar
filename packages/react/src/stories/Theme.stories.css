@@ -1,0 +1,4 @@
+.my-theme {
+  --st-primary: #a84090;
+  --st-button-primary-background-color: var(--st-primary);
+}

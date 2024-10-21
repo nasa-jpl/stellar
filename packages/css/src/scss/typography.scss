@@ -1,0 +1,106 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.st-typography-header {
+  color: var(--st-typography-header-color);
+  font-family: var(--st-typography-header-font-family);
+  font-size: var(--st-typography-header-font-size);
+  font-weight: var(--st-typography-header-font-weight);
+  letter-spacing: var(--st-typography-header-letter-spacing);
+  line-height: var(--st-typography-header-line-height);
+}
+
+.st-typography-label {
+  color: var(--st-typography-label-color);
+  font-family: var(--st-typography-label-font-family);
+  font-size: var(--st-typography-label-font-size);
+  font-weight: var(--st-typography-label-font-weight);
+  letter-spacing: var(--st-typography-label-letter-spacing);
+  line-height: var(--st-typography-label-line-height);
+}
+
+.st-typography-body {
+  color: var(--st-typography-body-color);
+  font-family: var(--st-typography-body-font-family);
+  font-size: var(--st-typography-body-font-size);
+  font-weight: var(--st-typography-body-font-weight);
+  letter-spacing: var(--st-typography-body-letter-spacing);
+  line-height: var(--st-typography-body-line-height);
+}
+
+.st-typography-medium {
+  color: var(--st-typography-medium-color);
+  font-family: var(--st-typography-medium-font-family);
+  font-size: var(--st-typography-medium-font-size);
+  font-weight: var(--st-typography-medium-font-weight);
+  letter-spacing: var(--st-typography-medium-letter-spacing);
+  line-height: var(--st-typography-medium-line-height);
+}
+
+.st-typography-bold {
+  color: var(--st-typography-bold-color);
+  font-family: var(--st-typography-bold-font-family);
+  font-size: var(--st-typography-bold-font-size);
+  font-weight: var(--st-typography-bold-font-weight);
+  letter-spacing: var(--st-typography-bold-letter-spacing);
+  line-height: var(--st-typography-bold-line-height);
+}
+
+.st-typography-small-caps {
+  color: var(--st-typography-small-caps-color);
+  font-family: var(--st-typography-small-caps-font-family);
+  font-size: var(--st-typography-small-caps-font-size);
+  font-weight: var(--st-typography-small-caps-font-weight);
+  letter-spacing: var(--st-typography-small-caps-letter-spacing);
+  line-height: var(--st-typography-small-caps-line-height);
+  text-transform: uppercase;
+}
+
+/* Display Font Definitions */
+.st-typography-displayH1 {
+  color: var(--st-typography-display-h1-color);
+  font-family: var(--st-typography-display-h1-font-family);
+  font-size: var(--st-typography-display-h1-font-size);
+  font-weight: var(--st-typography-display-h1-font-weight);
+  letter-spacing: var(--st-typography-display-h1-letter-spacing);
+  line-height: var(--st-typography-display-h1-line-height);
+}
+
+.st-typography-displayH2 {
+  color: var(--st-typography-display-h2-color);
+  font-family: var(--st-typography-display-h2-font-family);
+  font-size: var(--st-typography-display-h2-font-size);
+  font-weight: var(--st-typography-display-h2-font-weight);
+  letter-spacing: var(--st-typography-display-h2-letter-spacing);
+  line-height: var(--st-typography-display-h2-line-height);
+}
+
+.st-typography-displayH3 {
+  color: var(--st-typography-display-h3-color);
+  font-family: var(--st-typography-display-h3-font-family);
+  font-size: var(--st-typography-display-h3-font-size);
+  font-weight: var(--st-typography-display-h3-font-weight);
+  letter-spacing: var(--st-typography-display-h3-letter-spacing);
+  line-height: var(--st-typography-display-h3-line-height);
+}
+
+.st-typography-displayBody {
+  color: var(--st-typography-display-body-color);
+  font-family: var(--st-typography-display-body-font-family);
+  font-size: var(--st-typography-display-body-font-size);
+  font-weight: var(--st-typography-display-body-font-weight);
+  letter-spacing: var(--st-typography-display-body-letter-spacing);
+  line-height: var(--st-typography-display-body-line-height);
+}
+
+/* Utility Classes */
+.st-typography-noSelect {
+  user-select: none;
+}
+
+.st-typography-capitalize {
+  text-transform: capitalize;
+}

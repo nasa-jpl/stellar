@@ -1,0 +1,32 @@
+.st-react-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  user-select: none;
+  width: var(--st-grid-unit3x);
+  height: var(--st-grid-unit3x);
+  border-radius: 100%;
+  background: var(--st-react-avatar-background);
+
+  &.large {
+    width: var(--st-grid-unit4x);
+    height: var(--st-grid-unit4x);
+  }
+
+  .st-react-avatar--image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  .st-react-avatar--fallback {
+    font-family: var(--st-react-avatar-font-family);
+    font-size: var(--st-react-avatar-font-size);
+    font-weight: var(--st-react-avatar-font-weight);
+    line-height: var(--st-react-avatar-line-height);
+    letter-spacing: var(--st-react-avatar-letter-spacing);
+  }
+}
