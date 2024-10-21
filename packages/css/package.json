@@ -37,5 +37,5 @@
     "prepublishOnly": "npm run build"
   },
   "type": "module",
-  "version": "2.0.0-alpha.10"
+  "version": "2.0.0-alpha.12"
 }
