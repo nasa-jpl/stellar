@@ -31,8 +31,8 @@
   "exports": {
     "./svelte": {
       "types": "./dist/index.d.ts",
-      "default": "./dist/index.js",
-      "svelte": "./dist/index.js"
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
     }
   },
   "files": [
