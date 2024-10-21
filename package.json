@@ -76,8 +76,7 @@
     "build:react": "cd ./packages/react && npm run build",
     "build": "npm run build:css && npm run build:react && npm run build:svelte",
     "dev:react": "cd ./packages/react && npm run storybook",
-    "dev:svelte": "cd ./packages/svelte && npm run dev",
-    "prepublishOnly": "npm run build"
+    "dev:svelte": "cd ./packages/svelte && npm run dev"
   },
   "workspaces": [
     "packages/css",

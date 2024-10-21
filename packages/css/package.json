@@ -30,7 +30,8 @@
   "scripts": {
     "build": "npm run build:css && node scripts/build.js",
     "build:css": "rm -rf dist/css && sass src/scss:dist/css",
-    "lint": "stylelint scss/**/*.scss --fix"
+    "lint": "stylelint scss/**/*.scss --fix",
+    "prepublishOnly": "npm run build"
   },
   "type": "module",
   "version": "2.0.0-alpha.8"
