@@ -1,4 +1,10 @@
 {
+  "contributors": [
+    {
+      "email": "duran.bry@gmail.com",
+      "name": "Bryan Duran"
+    }
+  ],
   "description": "A CSS implementation of the Stellar design system.",
   "dependencies": {},
   "devDependencies": {
@@ -73,8 +79,6 @@
     "dev:svelte": "cd ./packages/svelte && npm run dev",
     "prepublishOnly": "npm run build"
   },
-  "type": "module",
-  "version": "2.0.0-alpha.6",
   "workspaces": [
     "packages/css",
     "packages/react",
