@@ -26,7 +26,7 @@
     "scss"
   ],
   "license": "MIT",
-  "name": "@nasa-jpl/stellar-css",
+  "name": "@nasa-jpl/stellar",
   "scripts": {
     "build": "npm run build:css && node scripts/build.js",
     "build:css": "rm -rf dist/css && sass src/scss:dist/css",
