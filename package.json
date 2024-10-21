@@ -25,46 +25,6 @@
     "node": ">=18.18.0",
     "npm": ">=9.8.1"
   },
-  "exports": {
-    ".": "./packages/css/dist/css/index.css",
-    "./css": "./packages/css/dist/css/index.css",
-    "./css/*.css": "./packages/css/dist/css/*.css",
-    "./scss": "./packages/css/dist/scss/index.scss",
-    "./scss/*.scss": "./packages/css/dist/scss/*.scss",
-    "./font": "./packages/css/dist/font/inter/inter.css",
-    "./font/*.css": "./packages/css/dist/font/inter/*.css",
-    "./font/*.woff": "./packages/css/dist/font/inter/*.woff",
-    "./font/*.woff2": "./packages/css/dist/font/inter/*.woff2",
-    "./font/inter/*.css": "./packages/css/dist/font/inter/*.css",
-    "./font/inter/*.woff": "./packages/css/dist/font/inter/*.woff",
-    "./font/inter/*.woff2": "./packages/css/dist/font/inter/*.woff2",
-    "./icons/*.svg": "./packages/css/dist/icons/*.svg",
-    "./react": {
-      "import": {
-        "types": "./packages/react/dist/esm/index.d.ts",
-        "default": "./packages/react/dist/esm/index.js"
-      },
-      "require": {
-        "types": "./packages/react/dist/cjs/index.d.ts",
-        "default": "./packages/react/dist/cjs/index.js"
-      }
-    },
-    "./svelte": {
-      "types": "./packages/svelte/dist/index.d.ts",
-      "svelte": "./packages/svelte/dist/index.js",
-      "default": "./packages/svelte/dist/index.js"
-    }
-  },
-  "files": [
-    "/packages/css/dist",
-    "/packages/react/dist",
-    "/packages/svelte/dist",
-    "/packages/css/package.json",
-    "/packages/react/package.json",
-    "/packages/svelte/package.json",
-    "!/packages/svelte/dist/**/*.spec.*",
-    "!/packages/svelte/dist/**/*.test.*"
-  ],
   "license": "MIT",
   "repository": {
     "type": "git",

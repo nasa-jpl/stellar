@@ -30,9 +30,9 @@
   },
   "exports": {
     "./svelte": {
+      "types": "./dist/index.d.ts",
       "default": "./dist/index.js",
-      "svelte": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "svelte": "./dist/index.js"
     }
   },
   "files": [
