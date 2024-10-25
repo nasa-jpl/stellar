@@ -16,4 +16,13 @@ This project utilizes [Lerna](https://lerna.js.org/docs/features/version-and-pub
 
 If you want to do a pre-release to test out functionality in other projects, you can publish a pre-release candidate to npm:
 
-- e.g. `npx lerna publish --preid=alpha`
+`npx lerna publish --preid=alpha --dist-tag=alpha`
+
+This will bump the version patch and appends the version with `-alpha` and tag the package release on npm with `alpha`
+
+If you accidentally published a release with the wrong tag you can run something like the following:
+
+```
+npm dist-tag add @nasa-jpl/stellar@version.prior.to.goof latest
+npm dist-tag add @nasa-jpl/stellar@1.0.1-foo.0 foo
+```
