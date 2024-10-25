@@ -31,8 +31,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run build:css && node scripts/build.js",
-    "build:css": "rm -rf dist/css && sass src/scss:dist/css",
+    "build": "npm run build:css-only && node scripts/build.js",
+    "build:css-only": "rm -rf dist/css && sass src/scss:dist/css",
     "lint": "stylelint scss/**/*.scss --fix",
     "prepublishOnly": "npm run build"
   },

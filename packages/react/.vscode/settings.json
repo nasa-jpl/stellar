@@ -1,5 +1,5 @@
 {
-    "cSpell.enableFiletypes": [
-        "!typescript"
-    ]
+  "prettier.configPath": "./.prettierrc.mjs",
+  "eslint.validate": ["css", "javascript", "typescript", "svelte"],
+  "cSpell.enableFiletypes": ["!typescript"]
 }
