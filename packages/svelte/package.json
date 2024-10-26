@@ -29,7 +29,7 @@
     "tslib": "^2.4.1"
   },
   "exports": {
-    "./svelte": {
+    ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js",
       "default": "./dist/index.js"
