@@ -32,9 +32,9 @@
     ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js",
-      "styles": "./dist/index.css",
       "default": "./dist/index.js"
-    }
+    },
+    "./styles": "./dist/index.css"
   },
   "files": [
     "dist",
