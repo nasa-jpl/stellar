@@ -115,6 +115,6 @@
   "typescript": {
     "definition": "dist/esm/index.d.ts"
   },
-  "version": "2.0.0-alpha.22",
+  "version": "2.0.0-alpha.23",
   "gitHead": "e8ce0b96712cefccff8f31d5307e96f26c19d965"
 }

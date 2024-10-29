@@ -29,11 +29,11 @@
   },
   "scripts": {
     "build": "npm run build:css-only && node scripts/build.js",
-    "build:css-only": "rm -rf dist/css && sass src/scss:dist/css",
+    "build:css-only": "rm -rf dist/css && sass  src/scss:dist/css --no-source-map",
     "lint": "stylelint scss/**/*.scss --fix",
     "prepublishOnly": "npm run build"
   },
   "type": "module",
-  "version": "2.0.0-alpha.22",
+  "version": "2.0.0-alpha.23",
   "gitHead": "e8ce0b96712cefccff8f31d5307e96f26c19d965"
 }
