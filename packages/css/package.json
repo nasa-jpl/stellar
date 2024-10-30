@@ -34,6 +34,6 @@
     "prepublishOnly": "npm run build"
   },
   "type": "module",
-  "version": "2.0.0-alpha.24",
+  "version": "2.0.0-alpha.25",
   "gitHead": "e8ce0b96712cefccff8f31d5307e96f26c19d965"
 }
