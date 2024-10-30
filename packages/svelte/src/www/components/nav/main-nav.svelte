@@ -1,7 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { cn } from '$lib/utils.js';
-  import '@nasa-jpl/stellar/css/index.css';
 </script>
 
 <div class="mr-4 hidden md:flex">

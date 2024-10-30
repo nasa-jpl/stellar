@@ -8,6 +8,7 @@
     "christian-kohler.path-intellisense",
     "streetsidesoftware.code-spell-checker",
     "spmeesseman.vscode-taskexplorer",
-    "csstools.postcss"
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss"
   ]
 }
