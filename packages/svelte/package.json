@@ -34,13 +34,15 @@
       "default": "./dist/index.js"
     },
     "./styles": "./dist/index.css",
-    "./tailwindConfig": "./tailwind.config.ts"
+    "./tailwindConfig": "./tailwind.config.ts",
+    "./theme": "./src/theme.css"
   },
   "files": [
     "dist",
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*",
-    "./tailwind.config.ts",
+    "tailwind.config.ts",
+    "theme.css",
     "package.json"
   ],
   "license": "ISC",
@@ -68,5 +70,5 @@
   "svelte": "./dist/index.js",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "2.0.0-alpha.25"
+  "version": "2.0.0-alpha.26"
 }
