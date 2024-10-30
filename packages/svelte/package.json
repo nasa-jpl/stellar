@@ -42,7 +42,7 @@
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*",
     "tailwind.config.ts",
-    "theme.css",
+    "src/theme.css",
     "package.json"
   ],
   "license": "ISC",
@@ -70,5 +70,5 @@
   "svelte": "./dist/index.js",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "2.0.0-alpha.26"
+  "version": "2.0.0-alpha.27"
 }
