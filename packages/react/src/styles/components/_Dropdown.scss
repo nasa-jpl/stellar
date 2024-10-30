@@ -1,0 +1,192 @@
+.st-react-dropdown {
+  display: flex;
+  gap: calc(var(--st-grid-unit) / 2);
+  flex-direction: column;
+
+  .st-react-dropdown--inner-label {
+    color: var(--st-react-dropdown-inner-label-color);
+  }
+
+  .st-react-dropdown--rs__control {
+    background: var(--st-react-dropdown-control-color);
+    border: var(--st-react-dropdown-control-border);
+    cursor: pointer;
+    min-height: var(--st-react-dropdown-control-min-height);
+    transition: none;
+  }
+
+  .st-react-dropdown--rs__control:hover {
+    background: var(--st-react-dropdown-control-hover-background-color);
+    border: var(--st-react-dropdown-control-hover-border);
+  }
+
+  .st-react-dropdown--rs__control--menu-is-open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .st-react-dropdown--rs__option,
+  .st-react-dropdown--rs__input-container,
+  .st-react-dropdown--rs__input-container input,
+  .st-react-dropdown--rs__single-value,
+  .st-react-dropdown--rs__menu-notice--no-options,
+  .st-react-dropdown--rs__placeholder {
+    font-family: var(--st-react-dropdown-font-family);
+    font-size: var(--st-react-dropdown-font-size);
+    font-weight: var(--st-react-dropdown-font-weight);
+    height: var(--st-react-dropdown-height);
+    letter-spacing: var(--st-react-dropdown-letter-spacing) !important;
+    line-height: var(--st-react-dropdown-line-height);
+    color: var(--st-react-dropdown-value-color);
+  }
+
+  .st-react-dropdown--rs__placeholder {
+    margin: 0;
+    color: var(--st-react-dropdown-placeholder-color);
+  }
+
+  .st-react-dropdown--rs__menu {
+    background-color: var(--st-react-dropdown-placeholder-background-color);
+    border: var(--st-react-dropdown-menu-border);
+    border-top: none;
+    box-shadow: none;
+    margin: 0;
+    border-radius: var(--st-react-dropdown-menu-border-radius);
+    z-index: 4;
+  }
+
+  /* lighten the scrollbars */
+  // .st-react-dropdown--rs__menu-list::-webkit-scrollbar-thumb {
+  //   background: gray60;
+  // }
+  // .st-react-dropdown--rs__menu-list::-webkit-scrollbar-thumb:hover {
+  //   background: gray50;
+  // }
+  // .st-react-dropdown--rs__menu-list {
+  //   scrollbar-color: gray60 transparent;
+  // }
+
+  .st-react-dropdown--rs__menu-list {
+    padding: var(--st-react-dropdown-menu-list-padding-bottom) 0;
+    z-index: 3;
+    border-radius: var(--st-react-dropdown-menu-list-border-radius);
+    border-radius: inherit;
+    box-shadow: var(--st-react-dropdown-menu-list-box-shadow);
+    background: var(--st-react-dropdown-menu-list-background-color);
+  }
+
+  .st-react-dropdown--rs__menu-notice--no-options {
+    color: var(--st-react-dropdown-menu-no-options-label-color);
+    cursor: default;
+  }
+
+  .st-react-dropdown--rs__single-value {
+    margin: 0 !important;
+  }
+
+  .st-react-dropdown--rs__indicator-separator {
+    display: none;
+  }
+
+  .st-react-dropdown--rs__indicator {
+    padding: var(--st-react-dropdown-indicator-padding) !important;
+    color: inherit !important;
+  }
+
+  .st-react-dropdown--rs__indicator:hover {
+    color: inherit !important;
+  }
+
+  .st-react-dropdown--rs__indicator svg {
+    width: var(--st-react-dropdown-indicator-svg-width);
+    height: var(--st-react-dropdown-indicator-svg-height);
+    color: var(--st-react-dropdown-indicator-svg-color);
+  }
+
+  .st-react-dropdown--rs__value-container {
+    padding: var(--st-react-dropdown-value-container-padding) !important;
+    gap: var(--st-react-dropdown-value-container-flex-gap);
+  }
+
+  .st-react-dropdown--rs__input-container {
+    display: flex;
+    color: var(--st-react-dropdown-input-container-color);
+    margin: 0;
+    padding: 0;
+  }
+
+  .st-react-dropdown--rs__control--is-focused {
+    box-shadow: var(--st-react-dropdown-control-focus-box-shadow);
+  }
+
+  .st-react-dropdown--rs__control--menu-is-open + .st-react-dropdown--rs__menu {
+    box-shadow: var(--st-react-dropdown-menu-focus-box-shadow);
+  }
+
+  .st-react-dropdown--rs__option {
+    cursor: pointer;
+    margin: var(--st-react-dropdown-option-margin);
+    width: var(--st-react-dropdown-option-width);
+    padding: var(--st-react-dropdown-option-padding);
+    border-radius: var(--st-react-dropdown-option-border-radius);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .st-react-dropdown--rs__option--is-focused,
+  .st-react-dropdown--rs__option--is-focused.st-react-dropdown--rs__option--is-focused,
+  .st-react-dropdown--rs__option:hover,
+  .st-react-dropdown--rs__option:focus {
+    background: var(--st-react-dropdown-option-focus-background-color);
+  }
+
+  .st-react-dropdown--rs__option--is-disabled {
+    color: var(--st-react-dropdown-option-disabled-color);
+    cursor: not-allowed;
+  }
+
+  .st-react-dropdown--rs__option--is-selected {
+    background: var(--st-react-dropdown-option-selected-background-color);
+    font-weight: var(--st-react-dropdown-option-selected-font-weight);
+  }
+
+  .st-react-dropdown--rs__option--is-active,
+  .st-react-dropdown--rs__option:active {
+    background: inherit;
+  }
+
+  .st-react-dropdown--clear-indicator {
+    display: flex;
+    color: var(--st-react-dropdown-clear-indicator-color);
+  }
+
+  .st-react-dropdown--clear-indicator:hover {
+    color: var(--st-react-dropdown-clear-indicator-hover-color);
+  }
+
+  .st-react-dropdown--rs__multi-value {
+    margin: 0;
+    height: var(--st-react-dropdown-multi-value-height);
+    background: var(--st-react-dropdown-multi-value-background-color);
+  }
+
+  .st-react-dropdown--rs__multi-value__label {
+    font-family: var(--st-react-dropdown-font-family);
+    font-size: var(--st-react-dropdown-font-size);
+    font-weight: var(--st-react-dropdown-font-weight);
+    height: var(--st-react-dropdown-height);
+    letter-spacing: var(--st-react-dropdown-letter-spacing) !important;
+    color: var(--st-react-dropdown-value-color);
+    line-height: 12px;
+  }
+
+  .st-react-dropdown--rs__multi-value__remove {
+    width: var(--st-react-dropdown-multi-value-remove-width);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

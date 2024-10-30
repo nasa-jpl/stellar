@@ -1,0 +1,13 @@
+.icon-stories {
+  padding: 50px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  line-height: 100px;
+  height: 100%;
+}
+
+.st-theme-dark .icon-stories {
+  color: var(--st-gray-10);
+  background: var(--st-gray-100);
+}

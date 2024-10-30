@@ -1,0 +1,71 @@
+@import '@nasa-jpl/stellar/scss/mixins/_input.scss';
+
+.st-react-input {
+  .st-react-input--container {
+    background-color: var(--st-react-input-background-color);
+    border: var(--st-react-input-border);
+    border-radius: var(--st-react-input-border-radius);
+    color: var(--st-react-input-color);
+    display: flex;
+    font-family: var(--st-react-input-font-family);
+    font-size: var(--st-react-input-font-size);
+    font-weight: var(--st-react-input-font-weight);
+    gap: var(--st-grid-unit);
+    letter-spacing: var(--st-react-input-letter-spacing);
+    line-height: var(--st-react-input-line-height);
+    padding: var(--st-react-input-padding);
+
+    &:focus,
+    &.focus {
+      outline-color: Highlight;
+      outline-color: var(--st-react-input-outline);
+      outline-style: auto;
+      outline-width: initial;
+    }
+
+    &.error {
+      @include st-input-error;
+    }
+
+    &.warning {
+      @include st-input-warning;
+    }
+
+    .st-react-input--adornment {
+      align-items: center;
+      display: flex;
+      gap: var(--st-grid-unit);
+
+      * {
+        display: flex;
+      }
+    }
+
+    &:not(.error, .warning) .st-react-input--adornment {
+      color: var(--st-gray-50);
+    }
+
+    input.st-react-input--input {
+      background-color: rgb(0 0 0 / 0%);
+      border: none;
+      color: inherit;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      outline: none;
+      padding: 0;
+      width: 100%;
+
+      &::placeholder {
+        color: var(--st-react-input-placeholder-color);
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+    }
+  }
+}

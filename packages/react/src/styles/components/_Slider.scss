@@ -1,0 +1,99 @@
+.st-react-slider {
+  .st-react-slider--root {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    height: var(--st-react-slider-height);
+    position: relative;
+    touch-action: none;
+    user-select: none;
+
+    &[data-disabled] {
+      .st-react-slider--range {
+        background-color: var(--st-react-slider-disabled-range-background-color);
+      }
+
+      .st-react-slider--thumb {
+        background-color: var(--st-react-slider-disabled-thumb-background-color);
+        border-color: var(--st-react-slider-disabled-thumb-border-color);
+      }
+    }
+  }
+
+  .st-react-slider--label {
+    color: var(--st-react-slider-label-color);
+    flex: 1;
+    text-align: left;
+    user-select: none;
+  }
+
+  &:not(.st-react-slider--unlabeled) {
+    align-items: center;
+    display: flex;
+    gap: var(--st-grid-unit);
+  }
+
+  .st-react-slider--container {
+    align-items: center;
+    display: flex;
+    flex: 2;
+    gap: var(--st-grid-unit);
+  }
+
+  .st-react-slider--track {
+    background-color: var(--st-react-slider-track-background-color);
+    border-radius: 9999px;
+    flex-grow: 1;
+    height: var(--st-react-slider-track-height);
+    position: relative;
+  }
+
+  .st-react-slider--range {
+    background-color: var(--st-react-slider-range-background-color);
+    border-radius: 9999px;
+    height: 100%;
+    position: absolute;
+  }
+
+  .st-react-slider--thumb {
+    background-color: var(--st-react-slider-thumb-background-color);
+    border: 1px solid var(--st-react-slider-thumb-border-color);
+    border-radius: 10px;
+    box-shadow: var(--st-react-slider-thumb-box-shadow);
+    display: block;
+    height: var(--st-react-slider-height);
+    width: var(--st-react-slider-height);
+
+    &:hover {
+      background-color: var(--st-react-slider-thumb-hover-background-color);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 5px rgb(0 0 0 / 10%);
+      outline: none;
+    }
+  }
+
+  &.st-react-slider--label-right {
+    flex-direction: row-reverse;
+  }
+
+  &.st-react-slider--unlabeled {
+    padding: 0;
+  }
+
+  .st-react-slider--input {
+    flex: 1;
+    max-width: var(--st-react-slider-input-max-width);
+  }
+
+  .st-react-slider--min-max {
+    color: var(--st-react-slider-min-max-color);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    position: absolute;
+    top: 12px;
+    width: 100%;
+  }
+}

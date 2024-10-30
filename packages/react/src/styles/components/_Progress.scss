@@ -1,0 +1,54 @@
+.st-react-progress {
+  position: relative;
+  overflow: hidden;
+  background: var(--st-react-progress-background);
+  border-radius: var(--st-react-progress-border-radius);
+  width: 100%;
+  height: var(--st-react-progress-height);
+
+  &[data-state="indeterminate"] .st-react-progress--indicator {
+    background: var(--st-react-progress-background);
+  }
+
+  .st-react-progress--indicator {
+    background: var(--st-react-progress-indicator-background);
+    height: 100%;
+    transition: var(--st-react-progress-indicator-transition);
+  }
+
+  .st-react-progress--indeterminate--line {
+    top: 0;
+    height: 100%;
+    position: absolute;
+    background: #4a8df8;
+
+    &:first-child {
+      animation: progressIndeterminateIncrease 2s infinite;
+    }
+
+    &:last-child {
+      animation: progressIndeterminateDecrease 2s infinite;
+    }
+  }
+
+  @keyframes progressIndeterminateIncrease {
+    from {
+      left: -5%;
+      width: 5%;
+    }
+    to {
+      left: 130%;
+      width: 100%;
+    }
+  }
+  @keyframes progressIndeterminateDecrease {
+    from {
+      left: -80%;
+      width: 80%;
+    }
+    to {
+      left: 110%;
+      width: 10%;
+    }
+  }
+}

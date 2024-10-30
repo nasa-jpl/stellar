@@ -1,0 +1,31 @@
+.st-react-tooltip {
+  border-radius: var(--st-react-tooltip-border-radius);
+  padding: var(--st-react-tooltip-padding);
+  background: var(--st-react-tooltip-background-color);
+  box-shadow: var(--st-react-tooltip-box-shadow);
+  @media (prefers-reduced-motion: no-preference) {
+    animation-duration: var(--st-react-tooltip-animation-duration);
+    animation-timing-function: var(
+      --st-react-tooltip-animation-timing-function
+    );
+    will-change: transform, opacity;
+
+    &[data-state="delayed-open"] {
+      &[data-side="top"] {
+        animation-name: var(--st-react-tooltip-animation-top);
+      }
+      &[data-side="right"] {
+        animation-name: var(--st-react-tooltip-animation-right);
+      }
+      &[data-side="bottom"] {
+        animation-name: var(--st-react-tooltip-animation-bottom);
+      }
+      &[data-side="left"] {
+        animation-name: var(--st-react-tooltip-animation-left);
+      }
+    }
+  }
+  .st-react-tooltip--arrow {
+    fill: var(--st-react-tooltip-arrow-background-color);
+  }
+}

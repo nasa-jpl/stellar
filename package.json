@@ -1,23 +1,46 @@
 {
-  "name": "@nasa-jpl/stellar",
+  "contributors": [
+    {
+      "email": "duran.bry@gmail.com",
+      "name": "Bryan Duran"
+    }
+  ],
   "description": "A CSS implementation of the Stellar design system.",
-  "type": "module",
-  "version": "1.1.18",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/eslint": "^8.56.7",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "lerna": "^8.1.8",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.1.1",
+    "stylelint": "^14.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^5.3.2",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.0.0-alpha.20",
+    "vite": "^5.0.11"
+  },
+  "engines": {
+    "node": ">=18.18.0",
+    "npm": ">=9.8.1"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/nasa-jpl/stellar.git"
   },
   "scripts": {
-    "build:css": "rm -rf css && sass scss:css",
-    "build:icons": "node scripts/build-icons.js",
-    "lint": "stylelint scss/**/*.scss --fix",
-    "prepublishOnly": "npm run build:css"
+    "build:css": "cd ./packages/css && npm run build",
+    "build:svelte": "cd ./packages/svelte && npm run build",
+    "build:react": "cd ./packages/react && npm run build",
+    "build": "npm run build:css && npm run build:react && npm run build:svelte",
+    "dev:react": "cd ./packages/react && npm run storybook",
+    "dev:svelte": "cd ./packages/svelte && npm run dev"
   },
-  "devDependencies": {
-    "sass": "^1.60.0",
-    "stylelint": "^15.3.0",
-    "stylelint-config-standard-scss": "^7.0.1",
-    "stylelint-order": "^6.0.3"
-  }
+  "workspaces": [
+    "packages/css",
+    "packages/react",
+    "packages/svelte"
+  ]
 }
