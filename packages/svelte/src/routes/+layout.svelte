@@ -1,7 +1,9 @@
 <script lang="ts">
-	import '../index.css';
+  import { ModeWatcher } from '$lib/index.js';
+  import '../index.css';
 </script>
 
 <slot></slot>
+<ModeWatcher />
 
 <style></style>
