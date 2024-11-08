@@ -5,7 +5,7 @@
 
 <div class="mr-4 hidden md:flex">
   <a href="/" class="mr-6 flex items-center space-x-2">
-    <span class="hidden font-bold sm:inline-block"> Svelte Stellar </span>
+    <span class="hidden font-bold sm:inline-block">Stellar Design System</span>
   </a>
   <nav class="flex items-center gap-6 text-sm">
     <a

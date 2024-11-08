@@ -1,31 +1,40 @@
 {
   "author": "",
   "dependencies": {
-    "bits-ui": "^0.21.10",
     "clsx": "^2.1.1",
-    "lucide-svelte": "^0.394.0",
-    "mode-watcher": "^0.3.1",
     "tailwind-merge": "^2.3.0",
     "tailwind-variants": "^0.2.1"
   },
   "description": "Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).",
   "devDependencies": {
+    "@internationalized/date": "^3.5.6",
     "@nasa-jpl/stellar": "file:../css/dist",
     "@sveltejs/adapter-node": "^5.0.1",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/package": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "autoprefixer": "^10.4.19",
+    "bits-ui": "^0.21.16",
+    "cmdk-sv": "^0.0.18",
+    "embla-carousel-svelte": "^8.3.1",
     "eslint-plugin-svelte": "^2.36.0",
+    "formsnap": "^1.0.1",
     "globals": "^15.0.0",
+    "lucide-svelte": "^0.454.0",
+    "mode-watcher": "^0.4.1",
+    "paneforge": "^0.0.6",
     "postcss": "^8.4.38",
     "prettier-plugin-svelte": "^3.1.2",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "publint": "^0.1.9",
     "svelte": "^4.2.7",
     "svelte-check": "^3.6.0",
+    "svelte-sonner": "^0.3.28",
+    "sveltekit-superforms": "^2.20.0",
     "tailwindcss": "^3.4.3",
-    "tslib": "^2.4.1"
+    "tslib": "^2.4.1",
+    "vaul-svelte": "^0.3.2",
+    "zod": "^3.23.8"
   },
   "exports": {
     ".": {
@@ -70,5 +79,5 @@
   "svelte": "./dist/index.js",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "2.0.0-alpha.27"
+  "version": "2.0.0-alpha.29"
 }
