@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Button, ModeWatcher, Tabs } from '$lib/index.js';
+  import DashboardOne from './components/examples/dashboard-one.svelte';
 </script>
 
 <ModeWatcher />
@@ -51,17 +52,13 @@
         <Tabs.Trigger class="data-[state=active]:bg-secondary rounded-full px-4" value="charts">Charts</Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="dashboard-1">
-        <div
-          class="w-full h-[800px] bg-secondary flex items-center justify-center text-muted-foreground font-mono uppercase"
-        >
-          Dashboard 1
+        <div class="w-full h-[800px] rounded-md border border-border overflow-hidden">
+          <DashboardOne />
         </div>
       </Tabs.Content>
       <Tabs.Content value="dashboard-2">
-        <div
-          class="w-full h-[800px] bg-secondary flex items-center justify-center text-muted-foreground font-mono uppercase"
-        >
-          Dashboard 2
+        <div class="w-full h-[800px] rounded-md border border-border overflow-hidden font-mono">
+          <DashboardOne />
         </div>
       </Tabs.Content>
       <Tabs.Content value="dashboard-3">
