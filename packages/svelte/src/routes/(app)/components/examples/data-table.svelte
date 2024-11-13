@@ -54,6 +54,9 @@
         .split('T')[0],
     });
   }
+
+  export let size: 'sm' | 'default' | 'lg' = 'default';
+  export let evr: boolean = false;
 </script>
 
 <Table.Root>
@@ -72,14 +75,26 @@
   </Table.Header>
   <Table.Body class="w-full">
     {#each satellites as satellite, i (i)}
-      <Table.Row>
-        <Table.Cell class="font-medium text-ellipsis" size="sm">{satellite.designation}</Table.Cell>
-        <Table.Cell size="sm">{satellite.orbit}</Table.Cell>
-        <Table.Cell size="sm">{satellite.altitude}</Table.Cell>
-        <Table.Cell size="sm">{satellite.inclination}</Table.Cell>
-        <Table.Cell size="sm">{satellite.mass}</Table.Cell>
-        <Table.Cell size="sm">{satellite.power}</Table.Cell>
-        <Table.Cell size="sm">
+      <Table.Row
+        class={evr
+          ? satellite.status === 'Operational'
+            ? 'bg-green-50/50 dark:bg-green-950/20'
+            : satellite.status === 'Degraded'
+              ? 'bg-yellow-50/50 dark:bg-yellow-950/20'
+              : satellite.status === 'Maintenance'
+                ? 'bg-blue-50/50 dark:bg-blue-950/20'
+                : 'bg-red-50/50 dark:bg-red-950/20'
+          : ''}
+      >
+        <Table.Cell class="font-medium text-ellipsis" {size}
+          ><span class="leading-none h-4">{satellite.designation}</span></Table.Cell
+        >
+        <Table.Cell {size}><span class="leading-none h-4">{satellite.orbit}</span></Table.Cell>
+        <Table.Cell {size}><span class="leading-none h-4">{satellite.altitude}</span></Table.Cell>
+        <Table.Cell {size}><span class="leading-none h-4">{satellite.inclination}</span></Table.Cell>
+        <Table.Cell {size}><span class="leading-none h-4">{satellite.mass}</span></Table.Cell>
+        <Table.Cell {size}><span class="leading-none h-4">{satellite.power}</span></Table.Cell>
+        <Table.Cell {size}>
           <span
             class={satellite.status === 'Operational'
               ? 'text-green-900 bg-green-50 dark:text-green-200 dark:bg-green-900/80 border border-accent px-1 rounded-sm'

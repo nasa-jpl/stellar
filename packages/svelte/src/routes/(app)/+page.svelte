@@ -8,7 +8,7 @@
 <div class="flex flex-col items-center gap-4 bg-background p-16 container mx-auto">
   <div class="flex flex-col gap-4 items-center">
     <div class="text-6xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
-      Launch powerful space tools
+      Launch powerful web tools
     </div>
 
     <p class="text-xl text-muted-foreground font-light max-w-2xl text-center">
@@ -40,7 +40,7 @@
     <Tabs.Root value="dashboard-1" class="w-full">
       <Tabs.List class="rounded-t-mdgap-4 bg-background">
         <Tabs.Trigger class="data-[state=active]:bg-secondary rounded-full px-4" value="dashboard-1"
-          >Dashboard 1</Tabs.Trigger
+          >Table Layout</Tabs.Trigger
         >
         <Tabs.Trigger class="data-[state=active]:bg-secondary rounded-full px-4" value="dashboard-2"
           >Dashboard 2</Tabs.Trigger

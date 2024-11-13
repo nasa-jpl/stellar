@@ -13,8 +13,7 @@ const tableCellVariants = tv({
   variants: {
     size: {
       default: 'p-4',
-      sm: 'px-4 py-2',
-      xs: 'px-4 py-0.5',
+      sm: 'px-4 py-2 text-xs',
       lg: 'p-6',
     },
   },

@@ -1,5 +1,6 @@
 <script lang="ts">
   import Activity from 'lucide-svelte/icons/activity';
+  import Bell from 'lucide-svelte/icons/bell';
   import Bird from 'lucide-svelte/icons/bird';
   import ChartLine from 'lucide-svelte/icons/chart-line';
   import CircleUser from 'lucide-svelte/icons/circle-user';
@@ -11,30 +12,34 @@
   import Radio from 'lucide-svelte/icons/radio';
   import Rocket from 'lucide-svelte/icons/rocket';
   import Satellite from 'lucide-svelte/icons/satellite';
+  import Search from 'lucide-svelte/icons/search';
   import ShoppingCart from 'lucide-svelte/icons/shopping-cart';
   import Users from 'lucide-svelte/icons/users';
 
   import { Badge } from '$lib/components/ui/badge/index.js';
-  import * as Breadcrumb from '$lib/components/ui/breadcrumb/index.js';
   import { Button } from '$lib/components/ui/button/index.js';
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
+  import { Input } from '$lib/components/ui/input/index.js';
   import { ScrollArea } from '$lib/components/ui/scroll-area/index.js';
   import * as Sheet from '$lib/components/ui/sheet/index.js';
-  import { Tabs } from '$lib/index.js';
   import DataTable from './data-table.svelte';
 </script>
 
 <div class="grid min-h-full w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
   <div class="bg-muted/40 hidden border-r md:block">
     <div class="flex h-full max-h-screen flex-col gap-2">
-      <div class="flex h-10 items-center border-b px-4 lg:h-[60px] lg:px-4">
+      <div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
         <a href="/" class="flex items-center gap-2 font-semibold">
           <Bird class="h-5 w-5" />
           <span class="text-sm">Flight Deck</span>
         </a>
+        <Button variant="outline" size="icon" class="ml-auto h-8 w-8">
+          <Bell class="h-4 w-4" />
+          <span class="sr-only">Toggle notifications</span>
+        </Button>
       </div>
       <div class="flex-1">
-        <nav class="grid items-start px-2 text-sm font-medium lg:px-2">
+        <nav class="grid items-start px-1 text-xs font-medium lg:px-2">
           <a
             href="##"
             class="text-muted-foreground hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
@@ -87,7 +92,7 @@
     </div>
   </div>
   <div class="flex flex-col">
-    <header class="bg-muted/40 flex h-12 items-center gap-4 border-b px-2 lg:h-[60px] lg:px-6">
+    <header class="bg-muted/40 flex h-12 items-center gap-4 border-b px-4 lg:h-[60px] lg:px-6">
       <Sheet.Root>
         <Sheet.Trigger asChild let:builder>
           <Button variant="outline" size="icon" class="shrink-0 md:hidden" builders={[builder]}>
@@ -96,21 +101,21 @@
           </Button>
         </Sheet.Trigger>
         <Sheet.Content side="left" class="flex flex-col">
-          <nav class="grid gap-1 text-lg font-medium">
-            <a href="##" class="flex items-center gap-2 text-md font-semibold">
+          <nav class="grid gap-2 text-lg font-medium">
+            <a href="##" class="flex items-center gap-2 text-lg font-semibold">
               <Package2 class="h-6 w-6" />
               <span class="sr-only">Acme Inc</span>
             </a>
             <a
               href="##"
-              class="text-muted-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-2 py-2"
+              class="text-muted-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2"
             >
               <House class="h-5 w-5" />
               Dashboard
             </a>
             <a
               href="##"
-              class="bg-muted text-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-2 py-2"
+              class="bg-muted text-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2"
             >
               <ShoppingCart class="h-5 w-5" />
               Orders
@@ -118,21 +123,21 @@
             </a>
             <a
               href="##"
-              class="text-muted-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-2 py-2"
+              class="text-muted-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2"
             >
               <Package class="h-5 w-5" />
               Products
             </a>
             <a
               href="##"
-              class="text-muted-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-2 py-2"
+              class="text-muted-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2"
             >
               <Users class="h-5 w-5" />
               Customers
             </a>
             <a
               href="##"
-              class="text-muted-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-2 py-2"
+              class="text-muted-foreground hover:text-foreground mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2"
             >
               <ChartLine class="h-5 w-5" />
               Analytics
@@ -141,27 +146,20 @@
         </Sheet.Content>
       </Sheet.Root>
       <div class="w-full flex-1">
-        <div class="relative">
-          <Breadcrumb.Root>
-            <Breadcrumb.List>
-              <Breadcrumb.Item>
-                <Breadcrumb.Link href="/">Home</Breadcrumb.Link>
-              </Breadcrumb.Item>
-              <Breadcrumb.Separator />
-              <Breadcrumb.Item>
-                <Breadcrumb.Link href="/components">Layouts</Breadcrumb.Link>
-              </Breadcrumb.Item>
-              <Breadcrumb.Separator />
-              <Breadcrumb.Item>
-                <Breadcrumb.Page>Table Layout</Breadcrumb.Page>
-              </Breadcrumb.Item>
-            </Breadcrumb.List>
-          </Breadcrumb.Root>
-        </div>
+        <form>
+          <div class="relative">
+            <Search class="text-muted-foreground absolute left-2.5 top-2.5 h-4 w-4" />
+            <Input
+              type="search"
+              placeholder="Search products..."
+              class="bg-background w-full appearance-none pl-8 shadow-none md:w-2/3 lg:w-1/3"
+            />
+          </div>
+        </form>
       </div>
       <DropdownMenu.Root>
         <DropdownMenu.Trigger asChild let:builder>
-          <Button builders={[builder]} variant="ghost" size="icon" class="rounded">
+          <Button builders={[builder]} variant="secondary" size="icon" class="rounded-full">
             <CircleUser class="h-5 w-5" />
             <span class="sr-only">Toggle user menu</span>
           </Button>
@@ -177,31 +175,15 @@
       </DropdownMenu.Root>
     </header>
     <main class="flex flex-1 flex-col">
-      <div class="flex items-center gap-4 lg:gap-6">
-        <Tabs.Root value="sm" class="w-full">
-          <div class="flex justify-between items-center gap-4 mt-2 lg:p-4">
-            <h1 class="text-md font-semibold md:text-md">Satellites</h1>
-            <Tabs.List class="p-0.5 h-6">
-              <Tabs.Trigger class="py-0.5 text-xs" value="sm">Small</Tabs.Trigger>
-              <Tabs.Trigger class="py-0.5 text-xs" value="default">Default</Tabs.Trigger>
-            </Tabs.List>
-          </div>
-
-          <Tabs.Content value="sm">
-            <div class="flex">
-              <ScrollArea class="w-full px-0 mx-0">
-                <DataTable size="sm" evr={true} />
-              </ScrollArea>
-            </div>
-          </Tabs.Content>
-          <Tabs.Content value="default">
-            <div class="flex">
-              <ScrollArea class="w-full px-0 mx-0">
-                <DataTable size="default" evr={true} />
-              </ScrollArea>
-            </div>
-          </Tabs.Content>
-        </Tabs.Root>
+      <div class="flex items-center gap-4 p-4 lg:gap-6 lg:p-6">
+        <h1 class="text-md font-semibold md:text-md">Satellite Fleet</h1>
+      </div>
+      <div class="flex px-2">
+        <ScrollArea class="w-full px-0 mx-0">
+          <!-- <p class="text-muted-foreground text-sm">Launch your first satellite mission to begin operations.</p>
+          <Button class="mt-4">Launch Mission</Button> -->
+          <DataTable />
+        </ScrollArea>
       </div>
     </main>
   </div>
