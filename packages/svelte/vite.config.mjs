@@ -4,4 +4,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [sveltekit(), resolve()],
+  server: {
+    fs: {
+      allow: ['./dist'],
+    },
+  },
 });

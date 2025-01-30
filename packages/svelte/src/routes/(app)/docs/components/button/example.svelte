@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Button } from '$lib/index.js';
+  import { Button } from '@nasa-jpl/stellar-svelte';
 </script>
 
 <Button>Button</Button>

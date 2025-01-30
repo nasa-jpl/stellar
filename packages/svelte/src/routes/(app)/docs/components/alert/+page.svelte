@@ -10,9 +10,9 @@
 
 <div class="flex-col">
   <ComponentHeader
-    title="Button"
-    description="Displays a button or a component that looks like a button."
-    link="https://www.shadcn-svelte.com/docs/components/button"
+    title="Alert"
+    description="Displays a callout for user attention."
+    link="https://www.shadcn-svelte.com/docs/components/alert"
   />
   <ComponentExample>
     <Example slot="preview" />
