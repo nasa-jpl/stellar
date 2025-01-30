@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+  import { Breadcrumb } from '@nasa-jpl/stellar-svelte';
   import DocsSidebarNav from '../../../www/components/nav/docs-sidebar-nav.svelte';
 </script>
 
@@ -28,6 +30,17 @@
       />
       <!-- </ScrollArea> -->
     </aside>
-    <slot />
+    <div>
+      <Breadcrumb.Root>
+        <Breadcrumb.List>
+          <Breadcrumb.Item>Docs</Breadcrumb.Item>
+          <Breadcrumb.Separator />
+          <Breadcrumb.Item class="capitalize text-foreground font-medium">
+            {$page.route.id?.split('/').at(-1)}
+          </Breadcrumb.Item>
+        </Breadcrumb.List>
+      </Breadcrumb.Root>
+      <slot />
+    </div>
   </div>
 </div>
