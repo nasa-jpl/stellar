@@ -1,7 +1,5 @@
 <script lang="ts">
-  // import { ScrollArea } from "$lib/registry/new-york/ui/scroll-area/index.js";
   import DocsSidebarNav from '../../../www/components/nav/docs-sidebar-nav.svelte';
-  // import { docsConfig } from '$lib/config/docs.js';
 </script>
 
 <div class="border-b">
@@ -13,10 +11,17 @@
       <DocsSidebarNav
         items={[
           {
+            title: 'Getting Started',
+            items: [
+              { title: 'Introduction', href: '/docs', items: [] },
+              { title: 'Installation', href: '/docs/installation', items: [] },
+            ],
+          },
+          {
             title: 'Components',
             items: [
-              { title: 'Alert', href: '/components/alert', items: [] },
-              { title: 'Button', href: '/components/button', items: [] },
+              { title: 'Alert', href: '/docs/components/alert', items: [] },
+              { title: 'Button', href: '/docs/components/button', items: [] },
             ],
           },
         ]}

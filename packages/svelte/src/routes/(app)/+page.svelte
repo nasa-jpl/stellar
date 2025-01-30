@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Button, ModeWatcher, Tabs } from '$lib/index.js';
-  import DashboardOne from './components/examples/dashboard-one.svelte';
+  import DashboardOne from './docs/components/examples/dashboard-one.svelte';
 </script>
 
 <ModeWatcher />
