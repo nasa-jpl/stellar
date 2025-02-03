@@ -47,6 +47,3 @@ export * as ToggleGroup from './components/ui/toggle-group/index.js';
 export { Toggle } from './components/ui/toggle/index.js';
 export { Tooltip } from './components/ui/tooltip/index.js';
 export { H1, H2, H3, H4, P } from './components/ui/typography/index.js';
-
-// Re-export lucide icons
-export * from 'lucide-svelte';
