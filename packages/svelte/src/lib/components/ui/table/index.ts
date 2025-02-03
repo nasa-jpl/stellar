@@ -1,4 +1,5 @@
-import { type VariantProps, tv } from 'tailwind-variants';
+import type { VariantProps } from '$lib/types/tailwind.js';
+import { tv } from 'tailwind-variants';
 import Body from './table-body.svelte';
 import Caption from './table-caption.svelte';
 import Cell from './table-cell.svelte';
@@ -41,10 +42,10 @@ export {
   Body as TableBody,
   Caption as TableCaption,
   Cell as TableCell,
+  tableCellVariants,
   Footer as TableFooter,
   Head as TableHead,
   Header as TableHeader,
   Row as TableRow,
-  tableCellVariants,
   type TableCellProps,
 };

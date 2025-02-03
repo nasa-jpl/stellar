@@ -1,8 +1,13 @@
 <script lang="ts">
+  import ButtonLib from '$lib/components/ui/button/button.svelte';
   import { Tabs } from '$lib/index.js';
+  import { Button as ButtonDist, Smile } from '../../../dist/index.js';
 </script>
 
 <div class="flex-1 items-start pb-12 pt-8">
+  <ButtonDist variant="defauslt">test <Smile /></ButtonDist>
+  <ButtonLib variant="destrusctive">test <Smile /></ButtonLib>
+
   <Tabs.Root value="preview" class="relative mr-auto w-full">
     <div class="flex items-center justify-between pb-3">
       <Tabs.List class="w-full justify-start rounded-none border-b bg-transparent p-0 h-9">
