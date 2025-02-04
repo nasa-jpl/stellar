@@ -84,7 +84,7 @@
           <Breadcrumb.Item>Docs</Breadcrumb.Item>
           <Breadcrumb.Separator />
           <Breadcrumb.Item class="capitalize text-foreground font-medium">
-            {$page.route.id?.split('/').at(-1)}
+            {$page.route.id?.split('/').at(-1)?.replace('-', ' ')}
           </Breadcrumb.Item>
         </Breadcrumb.List>
       </Breadcrumb.Root>
