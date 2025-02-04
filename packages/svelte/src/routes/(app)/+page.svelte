@@ -11,12 +11,14 @@
       Launch powerful space tools
     </div>
 
-    <p class="text-xl text-muted-foreground font-light max-w-2xl text-center">
+    <p class="text-2xl text-muted-foreground font-light max-w-2xl text-center">
       Flexible React and Svelte components to quickly design and build high-quality, accessible web applications. Built
       with Shadcn/ui, Radix, and more.
     </p>
     <div class="flex gap-4 my-4">
-      <Button size="lg">Get started</Button><Button variant="secondary" size="lg">Components</Button>
+      <Button href="/docs" size="lg">Get started</Button><Button variant="secondary" size="lg" href="/docs/components"
+        >Components</Button
+      >
     </div>
   </div>
   <!-- <div class="flex flex-col gap-4">

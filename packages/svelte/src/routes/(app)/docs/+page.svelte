@@ -1,7 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { cn } from '$lib/utils.js';
-  import '@nasa-jpl/stellar';
   import ChevronRight from 'lucide-svelte/icons/chevron-right';
 
   // export let data: PageData;
