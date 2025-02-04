@@ -4,7 +4,7 @@
   import type { InputEvents } from './index.js';
 
   type $$Props = HTMLInputAttributes & {
-    el?: HTMLSpanElement;
+    el?: HTMLInputElement;
   };
   type $$Events = InputEvents;
 
