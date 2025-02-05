@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { Button } from '@nasa-jpl/stellar-svelte';
+  import { Button } from '$lib/index.js';
+  // import { Button } from '@nasa-jpl/stellar-svelte';
   import { Star } from 'lucide-svelte';
 </script>
 
