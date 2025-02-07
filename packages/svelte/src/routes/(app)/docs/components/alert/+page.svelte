@@ -1,5 +1,4 @@
 <script lang="ts">
-  import '@nasa-jpl/stellar';
   import 'svelte-highlight/styles/monokai.css';
   import ComponentCode from '../../../../../www/components/component-code.svelte';
   import ComponentExample from '../../../../../www/components/component-example.svelte';
