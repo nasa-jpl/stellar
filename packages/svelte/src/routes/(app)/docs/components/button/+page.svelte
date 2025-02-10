@@ -4,18 +4,61 @@
   import ComponentHeader from '$src/www/components/component-header.svelte';
   import '@nasa-jpl/stellar';
   import 'svelte-highlight/styles/monokai.css';
-  import Example from './example.svelte';
-  import exampleString from './example.svelte?raw';
+  import ExampleDefault from './example-default.svelte';
+  import exampleDefaultString from './example-default.svelte?raw';
+  import ExampleIcon from './example-icon.svelte';
+  import exampleIconString from './example-icon.svelte?raw';
+  import ExampleLg from './example-lg.svelte';
+  import exampleLgString from './example-lg.svelte?raw';
+  import ExampleSm from './example-sm.svelte';
+  import exampleSmString from './example-sm.svelte?raw';
+  import ExampleXs from './example-xs.svelte';
+  import exampleXsString from './example-xs.svelte?raw';
 </script>
 
-<div class="flex-col">
+<div class="flex-col space-y-8">
   <ComponentHeader
     title="Button"
     description="Displays a button or a component that looks like a button."
     link="https://www.shadcn-svelte.com/docs/components/button"
   />
-  <ComponentExample>
-    <Example slot="preview" />
-    <ComponentCode slot="code" code={exampleString} />
-  </ComponentExample>
+
+  <div class="space-y-4">
+    <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Default</h3>
+    <ComponentExample>
+      <ExampleDefault slot="preview" />
+      <ComponentCode slot="code" code={exampleDefaultString} />
+    </ComponentExample>
+  </div>
+  <div class="space-y-4">
+    <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Small</h3>
+    <ComponentExample>
+      <ExampleSm slot="preview" />
+      <ComponentCode slot="code" code={exampleSmString} />
+    </ComponentExample>
+  </div>
+
+  <div class="space-y-4">
+    <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Extra Small</h3>
+    <ComponentExample>
+      <ExampleXs slot="preview" />
+      <ComponentCode slot="code" code={exampleXsString} />
+    </ComponentExample>
+  </div>
+
+  <div class="space-y-4">
+    <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Large</h3>
+    <ComponentExample>
+      <ExampleLg slot="preview" />
+      <ComponentCode slot="code" code={exampleLgString} />
+    </ComponentExample>
+  </div>
+
+  <div class="space-y-4">
+    <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Icon</h3>
+    <ComponentExample>
+      <ExampleIcon slot="preview" />
+      <ComponentCode slot="code" code={exampleIconString} />
+    </ComponentExample>
+  </div>
 </div>
