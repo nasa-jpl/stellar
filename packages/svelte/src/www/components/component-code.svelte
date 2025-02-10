@@ -5,6 +5,6 @@
   export let code: string = '';
 </script>
 
-<div class="rounded-md overflow-hidden">
+<div class="rounded-md overflow-hidden max-h-[500px]">
   <Highlight language={typescript} {code} />
 </div>

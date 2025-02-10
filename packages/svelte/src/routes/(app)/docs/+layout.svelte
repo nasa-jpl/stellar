@@ -16,8 +16,10 @@
     { title: 'Carousel', url: 'carousel' },
     { title: 'Checkbox', url: 'checkbox' },
     { title: 'Collapsible', url: 'collapsible' },
+    { title: 'Combobox', url: 'combobox' },
     { title: 'Command', url: 'command' },
     { title: 'Context Menu', url: 'context-menu' },
+    // { title: 'Data Table', url: 'data-table' },
     { title: 'Dialog', url: 'dialog' },
     { title: 'Drawer', url: 'drawer' },
     { title: 'Dropdown Menu', url: 'dropdown-menu' },
@@ -47,7 +49,6 @@
     { title: 'Toggle', url: 'toggle' },
     { title: 'Toggle Group', url: 'toggle-group' },
     { title: 'Tooltip', url: 'tooltip' },
-    { title: 'Typography', url: 'typography' },
   ];
 </script>
 

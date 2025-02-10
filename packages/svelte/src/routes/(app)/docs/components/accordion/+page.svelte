@@ -1,9 +1,9 @@
 <script lang="ts">
+  import ComponentCode from '$src/www/components/component-code.svelte';
+  import ComponentExample from '$src/www/components/component-example.svelte';
+  import ComponentHeader from '$src/www/components/component-header.svelte';
   import '@nasa-jpl/stellar';
   import 'svelte-highlight/styles/monokai.css';
-  import ComponentCode from '../../../../../www/components/component-code.svelte';
-  import ComponentExample from '../../../../../www/components/component-example.svelte';
-  import ComponentHeader from '../../../../../www/components/component-header.svelte';
   import Example from './example.svelte';
   import exampleString from './example.svelte?raw';
 </script>
@@ -11,7 +11,7 @@
 <div class="flex-col">
   <ComponentHeader
     title="Accordion"
-    description="Displays a callout for user attention."
+    description="A vertically stacked set of interactive headings that each reveal an associated section of content."
     link="https://www.shadcn-svelte.com/docs/components/accordion"
   />
   <ComponentExample>
