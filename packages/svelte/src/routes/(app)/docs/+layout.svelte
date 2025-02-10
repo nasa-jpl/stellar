@@ -45,7 +45,7 @@
     { title: 'Table', url: 'table' },
     { title: 'Tabs', url: 'tabs' },
     { title: 'Textarea', url: 'textarea' },
-    { title: 'Theme Switcher', url: 'theme-switcher' },
+    // { title: 'Theme Switcher', url: 'theme-switcher' },
     { title: 'Toggle', url: 'toggle' },
     { title: 'Toggle Group', url: 'toggle-group' },
     { title: 'Tooltip', url: 'tooltip' },
