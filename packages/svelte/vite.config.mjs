@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [sveltekit(), resolve()],
   server: {
     fs: {
-      allow: ['./dist'],
+      allow: ['./dist', '../css/dist'],
     },
   },
   resolve: {
