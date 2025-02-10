@@ -1,5 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import { sveltekit } from '@sveltejs/kit/vite';
+import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -7,6 +8,11 @@ export default defineConfig({
   server: {
     fs: {
       allow: ['./dist'],
+    },
+  },
+  resolve: {
+    alias: {
+      $src: path.resolve('./src'),
     },
   },
 });
