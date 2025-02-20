@@ -24,6 +24,9 @@
       <!-- {#if doc.description} -->
       <p class="text-muted-foreground text-balance text-lg">
         <!-- {doc.description} -->
+        hello? // mention sizing // overall approach -> detailed docs are on shadcn-svelte / react
+
+        1. what this is
       </p>
       <!-- {/if} -->
     </div>

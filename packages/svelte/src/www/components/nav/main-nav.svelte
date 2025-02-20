@@ -13,7 +13,7 @@
       class={`${cn(
         'transition-colors hover:text-foreground/80',
         $page.url.pathname === '/docs' ? 'text-foreground' : 'text-foreground/60',
-      )} foo`}
+      )}`}
     >
       Docs
     </a>
