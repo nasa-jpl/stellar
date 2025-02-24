@@ -76,7 +76,7 @@
               title: 'Components',
               items: components.map(component => ({
                 title: component.title,
-                href: `/docs/components/${component.url}`,
+                href: `${base}/docs/components/${component.url}`,
                 items: [],
               })),
             },

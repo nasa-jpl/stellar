@@ -46,7 +46,7 @@
       Examples
     </a> -->
     <a
-      href="https://github.com/nasa-jpl/svelte-stellar"
+      href="https://github.com/nasa-jpl/stellar"
       target="_blank"
       rel="noopener noreferrer"
       class={cn('text-foreground/60 transition-colors hover:text-foreground/80 lg:block')}
