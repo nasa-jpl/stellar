@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Accordion } from '@nasa-jpl/stellar-svelte';
+  import { Accordion } from '$lib/index.js';
 </script>
 
 <Accordion.Root class="w-full sm:max-w-[70%]">

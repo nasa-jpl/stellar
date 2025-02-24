@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import { Breadcrumb, ScrollArea } from '@nasa-jpl/stellar-svelte';
+  import { Breadcrumb, ScrollArea } from '$lib/index.js';
   import DocsSidebarNav from '../../../www/components/nav/docs-sidebar-nav.svelte';
 
   const components = [

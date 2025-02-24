@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { AlertDialog, Button } from '@nasa-jpl/stellar-svelte';
+  import { AlertDialog, Button } from '$lib/index.js';
 </script>
 
 <AlertDialog.Root>

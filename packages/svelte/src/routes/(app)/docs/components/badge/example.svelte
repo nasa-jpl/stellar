@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Badge } from '@nasa-jpl/stellar-svelte';
+  import { Badge } from '$lib/index.js';
 </script>
 
 <div class="flex gap-4">

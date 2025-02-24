@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Avatar } from '@nasa-jpl/stellar-svelte';
+  import { Avatar } from '$lib/index.js';
 </script>
 
 <Avatar.Root>

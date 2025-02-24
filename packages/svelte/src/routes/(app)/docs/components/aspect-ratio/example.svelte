@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { AspectRatio } from '@nasa-jpl/stellar-svelte';
+  import { AspectRatio } from '$lib/index.js';
 </script>
 
 <div class="w-[450px]">
