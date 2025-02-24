@@ -2,7 +2,7 @@
   import ComponentCode from '$src/www/components/component-code.svelte';
   import ComponentExample from '$src/www/components/component-example.svelte';
   import ComponentHeader from '$src/www/components/component-header.svelte';
-  import '@nasa-jpl/stellar';
+
   import 'svelte-highlight/styles/monokai.css';
   import ExampleSm from './example-sm.svelte';
   import exampleSmString from './example-sm.svelte?raw';
