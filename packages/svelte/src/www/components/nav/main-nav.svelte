@@ -26,7 +26,7 @@
     >
       Components
     </a>
-    <a
+    <!-- <a
       href="/themes"
       class={cn(
         'transition-colors hover:text-foreground/80',
@@ -43,7 +43,7 @@
       )}
     >
       Examples
-    </a>
+    </a> -->
     <a
       href="https://github.com/nasa-jpl/svelte-stellar"
       target="_blank"
