@@ -32,8 +32,8 @@ const selectVariants = {
     xs: {
       trigger: 'h-6 px-2 py-1 text-xs',
       content: 'p-0.5',
-      item: 'py-0.5 pl-5 pr-1 text-xs',
-      label: 'py-0.5 pl-5 pr-1 text-xs',
+      item: 'py-1 pl-5 pr-1 text-xs',
+      label: 'py-1 pl-5 pr-1 text-xs',
       icon: 'left-1 h-2.5 w-2.5',
     },
   },

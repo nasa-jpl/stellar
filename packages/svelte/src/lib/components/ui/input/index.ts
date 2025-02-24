@@ -27,7 +27,7 @@ export type InputSize = 'default' | 'sm';
 const inputVariants = {
   size: {
     default: 'h-10 px-3 py-2',
-    sm: 'h-8 px-2 text-xxs',
+    sm: 'h-8 px-2 text-xs',
   },
 };
 
