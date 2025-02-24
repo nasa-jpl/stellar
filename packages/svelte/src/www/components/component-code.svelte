@@ -33,7 +33,7 @@
       </div>
     </button>
   </div>
-  <div class="overflow-auto max-h-[500px]">
+  <div class="overflow-auto max-h-[500px] min-h-12">
     <Highlight language={typescript} {code} />
   </div>
 </div>
