@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import { Button, ModeWatcher, Tabs } from '$lib/index.js';
   import DashboardOne from './docs/components/examples/dashboard-one.svelte';
 </script>
@@ -16,8 +17,10 @@
       with Shadcn/ui, Radix, and more.
     </p>
     <div class="flex gap-4 my-4">
-      <Button href="/docs" size="lg">Get started</Button><Button variant="secondary" size="lg" href="/docs/components"
-        >Components</Button
+      <Button href="{base}/docs" size="lg">Get started</Button><Button
+        variant="secondary"
+        size="lg"
+        href="{base}/docs/components">Components</Button
       >
     </div>
   </div>

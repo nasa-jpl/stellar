@@ -16,6 +16,7 @@
   import ShoppingCart from 'lucide-svelte/icons/shopping-cart';
   import Users from 'lucide-svelte/icons/users';
 
+  import { base } from '$app/paths';
   import { Badge } from '$lib/components/ui/badge/index.js';
   import { Button } from '$lib/components/ui/button/index.js';
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
@@ -29,7 +30,7 @@
   <div class="bg-muted/40 hidden border-r md:block">
     <div class="flex h-full max-h-screen flex-col gap-2">
       <div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
-        <a href="/" class="flex items-center gap-2 font-semibold">
+        <a href="{base}/" class="flex items-center gap-2 font-semibold">
           <Bird class="h-5 w-5" />
           <span class="text-sm">Flight Deck</span>
         </a>

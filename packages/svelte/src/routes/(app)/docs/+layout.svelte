@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import { page } from '$app/stores';
   import { Breadcrumb, ScrollArea } from '$lib/index.js';
   import DocsSidebarNav from '../../../www/components/nav/docs-sidebar-nav.svelte';
@@ -63,12 +64,12 @@
             {
               title: 'Getting Started',
               items: [
-                { title: 'Introduction', href: '/docs', items: [] },
-                { title: 'Installation', href: '/docs/installation', items: [] },
-                { title: 'Dark Mode', href: '/docs/modes', items: [] },
-                { title: 'Theming', href: '/docs/theming', items: [] },
-                { title: 'Icons', href: '/docs/icons', items: [] },
-                { title: 'About', href: '/docs/about', items: [] },
+                { title: 'Introduction', href: `${base}/docs`, items: [] },
+                { title: 'Installation', href: `${base}/docs/installation`, items: [] },
+                { title: 'Dark Mode', href: `${base}/docs/modes`, items: [] },
+                { title: 'Theming', href: `${base}/docs/theming`, items: [] },
+                { title: 'Icons', href: `${base}/docs/icons`, items: [] },
+                { title: 'About', href: `${base}/docs/about`, items: [] },
               ],
             },
             {
