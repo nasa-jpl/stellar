@@ -8,7 +8,7 @@ export default {
   content: ['./node_modules/@nasa-jpl/stellar-svelte/dist/**/*.{html,js,svelte,ts}', './src/**/*.{html,js,svelte,ts}'],
   // Extend the Stellar Svelte tailwind configuration
   presets: [require('@nasa-jpl/stellar-svelte/tailwindConfig')],
-  // ...
+
 };
 `;
 </script>
@@ -21,8 +21,11 @@ export default {
   <div class="pb-12 pt-8">
     <p class="leading-7 pb-1">Use the following command to install Svelte Stellar into your Svelte project.</p>
     <ComponentCode code="npm install --save @nasa-jpl/stellar-svelte" />
-    <p class="leading-7 pb-1 pt-6">Import the Stellar css file into your top level component or page</p>
-    <ComponentCode code={`import @nasa-jpl/stellar-svelte/styles;`} />
+    <p class="leading-7 pb-1 pt-6">
+      Import the Stellar css and font files into your top level component or page. Stellar uses the Inter font by
+      default.
+    </p>
+    <ComponentCode code={`import @nasa-jpl/stellar-svelte/styles;\nimport @nasa-jpl/stellar-svelte/font;`} />
     <p class="leading-7 pb-1 pt-6">And import a Stellar component in your application</p>
     <ComponentCode
       code={`import { Button } from @nasa-jpl/stellar-svelte;\n...\n<Button variant='outline'>Submit</Button>`}
