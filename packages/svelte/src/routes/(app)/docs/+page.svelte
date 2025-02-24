@@ -1,50 +1,27 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  import { cn } from '$lib/utils.js';
-  import ChevronRight from 'lucide-svelte/icons/chevron-right';
-
-  // export let data: PageData;
-
-  // type Component = $$Generic<ComponentType>;
-  // $: component = data.component as unknown as Component;
-  // $: doc = data.metadata;
 </script>
 
-<main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
-  <div class="mx-auto w-full min-w-0">
-    <div class="text-muted-foreground mb-4 flex items-center space-x-1 text-sm">
-      <div class="overflow-hidden text-ellipsis whitespace-nowrap">Docs</div>
-      <ChevronRight class="h-4 w-4" />
-      <!-- <div class="text-foreground font-medium">{doc.title}</div> -->
-    </div>
-    <div class="space-y-2">
-      <h1 class={cn('scroll-m-20 text-4xl font-bold tracking-tight')}>
-        <!-- {doc.title} -->
-      </h1>
-      <!-- {#if doc.description} -->
-      <p class="text-muted-foreground text-balance text-lg">
-        <!-- {doc.description} -->
-        hello? // mention sizing // overall approach -> detailed docs are on shadcn-svelte / react
-
-        1. what this is
-      </p>
-      <!-- {/if} -->
-    </div>
-
-    <div class="markdown pb-12 pt-8" id="markdown">
-      <!-- <svelte:component this={component} /> -->
-    </div>
-
-    <!-- <DocsPager /> -->
+<main class="relative py-6 lg:gap-10 lg:py-8">
+  <div class="space-y-2">
+    <h1 class="scroll-m-20 text-4xl font-bold tracking-tight">Introduction</h1>
+    <p class="text-muted-foreground text-balance text-lg">UI design system for spacecraft operations.</p>
   </div>
-  <div class="hidden text-sm xl:block">
-    <div class="sticky top-16 -mt-10 h-[calc(100vh-3.5rem)] overflow-hidden pt-6">
-      {#key $page.url.pathname}
-        <!-- <TableOfContents /> -->
-      {/key}
-      <div class="z-10 pt-4">
-        <!-- <Carbon /> -->
-      </div>
-    </div>
+  <div class="pb-12 pt-8">
+    <p class="leading-7 pb-1">
+      Stellar is UI design system for spacecraft operations tools that enables developers and designers to make use of
+      battle-tested components and focus their efforts on the unique aspects of their applications. Included in this
+      design system are code components for React and Svelte, design files and assets, and guidelines for use.
+    </p>
   </div>
+  <h2 class="border-b pb-2 text-2xl font-semibold tracking-tight">Foundations</h2>
+  <p class="leading-7 pb-1 pt-8">
+    The Stellar design system builds on top of Shadcn (React), Shadcn-Svelte (Svelte), and TailwindCSS.
+  </p>
+  <pre>
+    Talk about:
+    - Abstracting shadcn for end users w/limited examples + links to full underlying docs
+    - Customizations made for density
+    - Upcoming high contrast mode for screen sharing/accessibility
+    - Custom components
+  </pre>
 </main>

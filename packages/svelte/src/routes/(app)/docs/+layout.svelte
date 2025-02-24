@@ -65,6 +65,9 @@
               items: [
                 { title: 'Introduction', href: '/docs', items: [] },
                 { title: 'Installation', href: '/docs/installation', items: [] },
+                { title: 'Dark Mode', href: '/docs/modes', items: [] },
+                { title: 'Theming', href: '/docs/theming', items: [] },
+                { title: 'About', href: '/docs/about', items: [] },
               ],
             },
             {
