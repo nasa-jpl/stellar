@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - develop
+      - feat/docs-site
   workflow_dispatch:
 
 permissions:
