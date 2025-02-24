@@ -64,7 +64,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "vite build && ls && npm run package && ls && npm run build:css",
+    "build": "vite build && npm run package && npm run build:css",
     "build:css": "tailwind build src/index.css -o dist/index.css",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
