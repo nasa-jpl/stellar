@@ -30,9 +30,6 @@
     >
       Open source from NASA's Jet Propulsion Laboratory
     </div>
-    <div class="text-2xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
-      User Interface Standards
-    </div>
     <p class="text-xl text-muted-foreground font-light max-w-2xl text-center">
       Flexible React and Svelte components to quickly design and build high-quality, accessible web applications. Built
       with Shadcn/ui, Radix, and more.
