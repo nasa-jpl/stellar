@@ -99,7 +99,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run build:icons && npm run build:lib",
+    "build": "npm run build:lib",
     "build:icons": "svgr -d ./src/components/Icons/ ../css/dist/icons/ && prettier ./src/components/Icons --write",
     "build:lib": "rollup -c",
     "build:storybook": "storybook build",
@@ -115,5 +115,5 @@
     "definition": "dist/esm/index.d.ts"
   },
   "version": "2.0.0-alpha.35",
-  "gitHead": "e8ce0b96712cefccff8f31d5307e96f26c19d965"
+  "gitHead": "4716175d0a430cb7ca875bab39aef9296b4265d7"
 }
