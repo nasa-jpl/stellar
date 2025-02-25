@@ -2,7 +2,6 @@
   import ComponentCode from '$src/www/components/component-code.svelte';
   import ComponentExample from '$src/www/components/component-example.svelte';
   import ComponentHeader from '$src/www/components/component-header.svelte';
-
   import 'svelte-highlight/styles/monokai.css';
   import ExampleDefault from './example-default.svelte';
   import exampleDefaultString from './example-default.svelte?raw';
@@ -12,6 +11,8 @@
   import exampleLgString from './example-lg.svelte?raw';
   import ExampleSm from './example-sm.svelte';
   import exampleSmString from './example-sm.svelte?raw';
+  import ExampleXl from './example-xl.svelte';
+  import exampleXlString from './example-xl.svelte?raw';
   import ExampleXs from './example-xs.svelte';
   import exampleXsString from './example-xs.svelte?raw';
 </script>
@@ -51,6 +52,14 @@
     <ComponentExample>
       <ExampleLg slot="preview" />
       <ComponentCode slot="code" code={exampleLgString} />
+    </ComponentExample>
+  </div>
+
+  <div class="space-y-4">
+    <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Large</h3>
+    <ComponentExample>
+      <ExampleXl slot="preview" />
+      <ComponentCode slot="code" code={exampleXlString} />
     </ComponentExample>
   </div>
 

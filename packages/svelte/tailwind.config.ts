@@ -15,7 +15,7 @@ const config: Config = {
     },
     extend: {
       fontSize: {
-        xxs: '0.55rem',
+        xxs: '0.625rem',
       },
       colors: {
         border: 'hsl(var(--border) / <alpha-value>)',

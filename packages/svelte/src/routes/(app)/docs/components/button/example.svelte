@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Button } from '$lib/index.js';
-  // import { Button } from '$lib/index.js';
   import { Star } from 'lucide-svelte';
 </script>
 
