@@ -81,5 +81,5 @@
   "svelte": "./dist/index.js",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "2.0.0-alpha.39"
+  "version": "2.0.0-alpha.40"
 }
