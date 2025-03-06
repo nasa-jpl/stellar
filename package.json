@@ -47,8 +47,5 @@
     "packages/css",
     "packages/react",
     "packages/svelte"
-  ],
-  "dependencies": {
-    "@fontsource/inter": "^5.1.1"
-  }
+  ]
 }
