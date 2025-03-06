@@ -44,8 +44,8 @@
     },
     "./styles": "./dist/index.css",
     "./tailwindConfig": "./tailwind.config.ts",
-    "./theme": "./src/theme.css",
-    "./font": "./src/font.css",
+    "./theme": "./dist/theme.css",
+    "./font": "./dist/font.css",
     "./utils": "./dist/utils.js"
   },
   "files": [
