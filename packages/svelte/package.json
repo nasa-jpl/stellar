@@ -11,7 +11,6 @@
     "lucide-svelte": "^0.454.0",
     "mode-watcher": "^0.4.1",
     "paneforge": "^0.0.6",
-    "patch-package": "^8.0.0",
     "svelte-sonner": "^0.3.28",
     "sveltekit-superforms": "^2.20.0",
     "tailwind-merge": "^2.3.0",
@@ -57,8 +56,7 @@
     "tailwind.config.ts",
     "src/theme.css",
     "src/font.css",
-    "package.json",
-    "patches"
+    "package.json"
   ],
   "license": "ISC",
   "main": "eslint.config.js",
@@ -80,8 +78,7 @@
     "lint": "prettier --check . && eslint .",
     "package": "svelte-kit sync && svelte-package && publint",
     "prepublishOnly": "npm run build",
-    "preview": "vite preview",
-    "postinstall": "patch-package"
+    "preview": "vite preview"
   },
   "svelte": "./dist/index.js",
   "type": "module",
