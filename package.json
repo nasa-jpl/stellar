@@ -41,11 +41,15 @@
     "build:react": "cd ./packages/react && npm run build",
     "build": "npm run build:css && npm run build:react && npm run build:svelte",
     "dev:react": "cd ./packages/react && npm run storybook",
-    "dev:svelte": "cd ./packages/svelte && npm run dev"
+    "dev:svelte": "cd ./packages/svelte && npm run dev",
+    "postinstall": "patch-package"
   },
   "workspaces": [
     "packages/css",
     "packages/react",
     "packages/svelte"
-  ]
+  ],
+  "dependencies": {
+    "patch-package": "^8.0.0"
+  }
 }

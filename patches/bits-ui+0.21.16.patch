@@ -1,0 +1,15 @@
+diff --git a/node_modules/bits-ui/package.json b/node_modules/bits-ui/package.json
+index e529803..457c1af 100644
+--- a/node_modules/bits-ui/package.json
++++ b/node_modules/bits-ui/package.json
+@@ -10,6 +10,10 @@
+     ".": {
+       "types": "./dist/index.d.ts",
+       "svelte": "./dist/index.js"
++    },
++    "./dist/*": {
++      "types": "./dist/*",
++      "svelte": "./dist/*"
+     }
+   },
+   "files": [
