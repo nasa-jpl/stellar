@@ -57,7 +57,8 @@
     "tailwind.config.ts",
     "src/theme.css",
     "src/font.css",
-    "package.json"
+    "package.json",
+    "patches"
   ],
   "license": "ISC",
   "main": "eslint.config.js",
