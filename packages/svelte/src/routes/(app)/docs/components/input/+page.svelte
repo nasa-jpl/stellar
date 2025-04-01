@@ -6,6 +6,8 @@
   import 'svelte-highlight/styles/monokai.css';
   import ExampleSm from './example-sm.svelte';
   import exampleSmString from './example-sm.svelte?raw';
+  import ExampleXs from './example-xs.svelte';
+  import exampleXsString from './example-xs.svelte?raw';
   import Example from './example.svelte';
   import exampleString from './example.svelte?raw';
 </script>
@@ -27,6 +29,14 @@
     <ComponentExample>
       <ExampleSm slot="preview" />
       <ComponentCode slot="code" code={exampleSmString} />
+    </ComponentExample>
+  </div>
+
+  <div class="space-y-4">
+    <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Extra Small</h3>
+    <ComponentExample>
+      <ExampleXs slot="preview" />
+      <ComponentCode slot="code" code={exampleXsString} />
     </ComponentExample>
   </div>
 </div>

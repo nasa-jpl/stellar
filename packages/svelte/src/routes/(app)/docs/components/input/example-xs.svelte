@@ -2,4 +2,4 @@
   import { Input } from '$lib/components/ui/input/index.js';
 </script>
 
-<Input sizeVariant="sm" placeholder="Small input" class="max-w-xs" />
+<Input sizeVariant="xs" placeholder="Extra small input" class="max-w-xs" />

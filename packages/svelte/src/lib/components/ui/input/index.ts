@@ -22,12 +22,13 @@ export type InputEvents = {
   wheel: FormInputEvent<WheelEvent>;
 };
 
-export type InputSize = 'default' | 'sm';
+export type InputSize = 'default' | 'sm' | 'xs';
 
 const inputVariants = {
   size: {
     default: 'h-10 px-3 py-2',
     sm: 'h-8 px-2 text-xs',
+    xs: 'h-6 px-2 text-xs',
   },
 };
 
