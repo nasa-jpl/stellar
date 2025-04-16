@@ -4,7 +4,7 @@
   import ComponentHeader from '$src/www/components/component-header.svelte';
   import ReactAdapter from '$src/www/components/react-adapter.svelte';
   import 'svelte-highlight/styles/monokai.css';
-  import { Examples } from '../../../../../../../react/dist/index.js';
+  import { ReactExamples } from '../../../../../../../react/dist/index.js';
   import ReactExampleString from '../../../../../../../react/src/examples/button-examples.js?raw';
   import ExampleDefault from './example-default.svelte';
   import exampleDefaultString from './example-default.svelte?raw';
@@ -34,7 +34,7 @@
       <ComponentCode slot="code" code={exampleDefaultString} />
     </ComponentExample>
     <ComponentExample>
-      <ReactAdapter component={Examples.ButtonDefault} slot="preview" />
+      <ReactAdapter component={ReactExamples.ButtonDefault} slot="preview" />
       <ComponentCode slot="code" code={ReactExampleString} />
     </ComponentExample>
   </div>
