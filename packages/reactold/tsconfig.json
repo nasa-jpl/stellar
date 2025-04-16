@@ -1,12 +1,7 @@
 {
-  "files": [],
   "extends": ["../../tsconfig.json"],
-  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
+    "baseUrl": "src",
     "sourceMap": true,
     "outDir": "dist",
     "target": "ESNext",

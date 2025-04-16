@@ -1,9 +1,10 @@
 import type { Config } from 'tailwindcss';
+import tailwindAnimate from 'tailwindcss-animate';
 import { fontFamily } from 'tailwindcss/defaultTheme';
 
 const config: Config = {
   darkMode: ['class'],
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts}', '../react@next/dist/**/*.{tsx,js}'],
   safelist: ['dark'],
   theme: {
     container: {
@@ -62,6 +63,7 @@ const config: Config = {
       },
     },
   },
+  plugins: [tailwindAnimate],
 };
 
 export default config;

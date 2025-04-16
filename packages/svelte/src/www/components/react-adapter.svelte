@@ -8,10 +8,10 @@
   let root: Root;
 
   onMount(() => {
-    const { el, children, class: _, ...props } = $$props;
+    const { component, children, class: _, ...props } = $$props;
     try {
       root = createRoot(container);
-      root.render(e(el, props, children));
+      root.render(component);
     } catch (err) {
       console.warn(`react-adapter failed to mount.`, { err });
     }
