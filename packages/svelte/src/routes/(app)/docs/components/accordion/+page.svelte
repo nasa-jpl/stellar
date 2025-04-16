@@ -25,9 +25,9 @@
   </svelte.fragement>
   <svelte.fragement slot="React">
     <ComponentHeader
-      title="Alert Dialog"
-      description="A modal dialog that interrupts the user with important content and expects a response."
-      link="https://ui.shadcn.com/docs/components/alert-dialog"
+      title="Accordion"
+      description="A vertically stacked set of interactive headings that each reveal an associated section of content."
+      link="https://ui.shadcn.com/docs/components/accordion"
     />
     <ComponentExample>
       <ReactAdapter component={ReactExamples.AccordionDefault} slot="preview" />

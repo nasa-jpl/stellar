@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { useState } from 'react';
+import { toast } from 'sonner';
 import './App.css';
 import reactLogo from './assets/react.svg';
 import { Button } from './components/ui/button';
@@ -14,6 +15,7 @@ import {
 } from './components/ui/dialog';
 import { Input } from './components/ui/input';
 import { Label } from './components/ui/label';
+import { Toaster } from './components/ui/toaster';
 import viteLogo from '/vite.svg';
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
 
   return (
     <>
+      <Toaster />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -47,6 +50,20 @@ function App() {
       </Accordion>
 
       <h1>Vite + React</h1>
+      <Button
+        variant="outline"
+        onClick={() =>
+          toast.success('Event has been created', {
+            description: 'Sunday, December 03, 2023 at 9:00 AM',
+            action: {
+              label: 'Undo',
+              onClick: () => console.info('Undo'),
+            },
+          })
+        }
+      >
+        Show Toast
+      </Button>
       <Dialog>
         <DialogTrigger asChild>
           <Button variant="outline">Edit Profile</Button>

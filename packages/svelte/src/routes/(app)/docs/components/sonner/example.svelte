@@ -16,3 +16,9 @@
 >
   Show Toast
 </Button>
+
+<!--
+  Somewhere in the root of your application...
+  import { Toaster } from "@nasa-jpl/stellar-svelte";
+  <Toaster />
+-->

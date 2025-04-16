@@ -7,11 +7,11 @@
   const components = [
     { title: 'Accordion', url: 'accordion' },
     { title: 'Alert', url: 'alert' },
-    { title: 'Button', url: 'button' },
     { title: 'Alert Dialog', url: 'alert-dialog' },
     { title: 'Aspect Ratio', url: 'aspect-ratio' },
     { title: 'Avatar', url: 'avatar' },
     { title: 'Badge', url: 'badge' },
+    { title: 'Button', url: 'button' },
     { title: 'Calendar', url: 'calendar' },
     { title: 'Card', url: 'card' },
     { title: 'Carousel', url: 'carousel' },
