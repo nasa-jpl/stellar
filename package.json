@@ -40,7 +40,6 @@
     "build:css": "cd ./packages/css && npm run build",
     "build:svelte": "cd ./packages/svelte && npm run build",
     "build:react": "cd ./packages/react && npm run build",
-    "build:react@next": "cd ./packages/react@next && npm run build",
     "build": "npm run build:css && npm run build:react && npm run build:svelte",
     "dev:react": "cd ./packages/react && npm run storybook",
     "dev:svelte": "cd ./packages/svelte && npm run dev"
