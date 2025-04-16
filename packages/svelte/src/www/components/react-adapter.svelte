@@ -26,4 +26,4 @@
   });
 </script>
 
-<div style:display="flex" bind:this={container} class={$$props.class} />
+<div class="flex w-full justify-center" bind:this={container} />
