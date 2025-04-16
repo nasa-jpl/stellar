@@ -2,7 +2,10 @@
   import ComponentCode from '$src/www/components/component-code.svelte';
   import ComponentExample from '$src/www/components/component-example.svelte';
   import ComponentHeader from '$src/www/components/component-header.svelte';
+  import ReactAdapter from '$src/www/components/react-adapter.svelte';
   import 'svelte-highlight/styles/monokai.css';
+  import { Examples } from '../../../../../../../react/dist/index.js';
+  import ReactExampleString from '../../../../../../../react/src/examples/button-examples.js?raw';
   import ExampleDefault from './example-default.svelte';
   import exampleDefaultString from './example-default.svelte?raw';
   import ExampleIcon from './example-icon.svelte';
@@ -29,6 +32,10 @@
     <ComponentExample>
       <ExampleDefault slot="preview" />
       <ComponentCode slot="code" code={exampleDefaultString} />
+    </ComponentExample>
+    <ComponentExample>
+      <ReactAdapter component={Examples.ButtonDefault} slot="preview" />
+      <ComponentCode slot="code" code={ReactExampleString} />
     </ComponentExample>
   </div>
   <div class="space-y-4">

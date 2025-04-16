@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { ThemeSwitcherDropdown } from '$lib/index.js';
+  import { Select, ThemeSwitcherDropdown } from '$lib/index.js';
+  import { framework } from '$src/www/store.js';
   import MainNav from '../../../www/components/nav/main-nav.svelte';
 </script>
 
@@ -11,7 +12,21 @@
   </p>
   <div class="container flex h-14 max-w-screen-2xl items-center">
     <MainNav />
+
     <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+      <Select.Root
+        selected={{ label: $framework, value: $framework }}
+        onSelectedChange={option => ($framework = option?.value ?? 'Svelte')}
+      >
+        <Select.Trigger class="w-[120px]" size="sm">
+          <Select.Value />
+        </Select.Trigger>
+        <Select.Content size="sm">
+          <Select.Item size="sm" value="React" label="React">React</Select.Item>
+          <Select.Item size="sm" value="Svelte" label="Svelte">Svelte</Select.Item>
+        </Select.Content>
+        <Select.Input name="framework" />
+      </Select.Root>
       <ThemeSwitcherDropdown />
     </div>
   </div>
