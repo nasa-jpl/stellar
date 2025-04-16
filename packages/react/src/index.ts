@@ -18,7 +18,6 @@ export * as Dialog from './components/ui/dialog.js';
 export * as Drawer from './components/ui/drawer.js';
 export * as DropdownMenu from './components/ui/dropdown-menu.js';
 export * as Form from './components/ui/form.js';
-export * as Frame from './components/ui/frame.js';
 export { HoverCard } from './components/ui/hover-card.js';
 export { Input } from './components/ui/input.js';
 export { Label } from './components/ui/label.js';

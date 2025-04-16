@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.1.1",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -83,13 +84,17 @@
       "require": "./dist/index.umb.cjs"
     },
     "./styles": "./dist/index.css",
-    "./tailwindConfig": "./tailwind.config.js"
+    "./tailwindConfig": "./tailwind.config.js",
+    "./theme": "./src/theme.css",
+    "./font": "./src/font.css"
   },
   "files": [
     "dist",
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*",
     "tailwind.config.js",
+    "src/theme.css",
+    "src/font.css",
     "package.json"
   ],
   "publishConfig": {

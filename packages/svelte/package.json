@@ -70,7 +70,7 @@
   },
   "scripts": {
     "build": "vite build && npm run package && npm run build:css",
-    "build:css": "tailwind build src/index.css -o dist/index.css && tailwind build src/font.css -o dist/font.css",
+    "build:css": "tailwind build src/index.css -o dist/index.css",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
