@@ -10,6 +10,19 @@
 
 <slot></slot>
 <ModeWatcher />
-<Toaster />
+<div id="svelte-toaster">
+  <Toaster />
+</div>
 
-<style></style>
+<style>
+  /* Overrides for react <-> svelte CSS clashes */
+
+  /* Sonner */
+  :global(#svelte-toaster :where([data-sonner-toaster][data-y-position='bottom'])) {
+    bottom: max(var(--offset), env(safe-area-inset-bottom));
+  }
+
+  :global(#svelte-toaster :where([data-sonner-toaster][data-x-position='right'])) {
+    right: max(var(--offset), env(safe-area-inset-right));
+  }
+</style>
