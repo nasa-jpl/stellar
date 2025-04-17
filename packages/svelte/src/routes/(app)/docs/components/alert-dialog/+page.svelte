@@ -12,7 +12,7 @@
 </script>
 
 <ComponentDocs>
-  <svelte.fragement slot="Svelte">
+  <svelte.fragment slot="Svelte">
     <ComponentHeader
       title="Alert Dialog"
       description="A modal dialog that interrupts the user with important content and expects a response."
@@ -22,8 +22,8 @@
       <Example slot="preview" />
       <ComponentCode slot="code" code={exampleString} />
     </ComponentExample>
-  </svelte.fragement>
-  <svelte.fragement slot="React">
+  </svelte.fragment>
+  <svelte.fragment slot="React">
     <ComponentHeader
       title="Alert Dialog"
       description="A modal dialog that interrupts the user with important content and expects a response."
@@ -33,5 +33,5 @@
       <ReactAdapter component={ReactExamples.AlertDialogDefault} slot="preview" />
       <ComponentCode slot="code" code={ReactExampleString} />
     </ComponentExample>
-  </svelte.fragement>
+  </svelte.fragment>
 </ComponentDocs>

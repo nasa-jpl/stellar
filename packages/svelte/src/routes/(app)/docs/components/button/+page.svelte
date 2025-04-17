@@ -27,7 +27,7 @@
 </script>
 
 <ComponentDocs>
-  <svelte.fragement slot="Svelte">
+  <svelte.fragment slot="Svelte">
     <ComponentHeader
       title="Button"
       description="Displays a button or a component that looks like a button."
@@ -80,8 +80,8 @@
         <ComponentCode slot="code" code={exampleIconString} />
       </ComponentExample>
     </div>
-  </svelte.fragement>
-  <svelte.fragement slot="React">
+  </svelte.fragment>
+  <svelte.fragment slot="React">
     <ComponentHeader
       title="Button"
       description="Displays a button or a component that looks like a button."
@@ -134,5 +134,5 @@
         <ComponentCode slot="code" code={ReactExampleIconString} />
       </ComponentExample>
     </div>
-  </svelte.fragement>
+  </svelte.fragment>
 </ComponentDocs>

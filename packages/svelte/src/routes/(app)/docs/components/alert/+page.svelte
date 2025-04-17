@@ -12,7 +12,7 @@
 </script>
 
 <ComponentDocs>
-  <svelte.fragement slot="Svelte">
+  <svelte.fragment slot="Svelte">
     <ComponentHeader
       title="Alert"
       description="Displays a callout for user attention."
@@ -22,8 +22,8 @@
       <Example slot="preview" />
       <ComponentCode slot="code" code={exampleString} />
     </ComponentExample>
-  </svelte.fragement>
-  <svelte.fragement slot="React">
+  </svelte.fragment>
+  <svelte.fragment slot="React">
     <ComponentHeader
       title="Alert"
       description="Displays a callout for user attention."
@@ -33,5 +33,5 @@
       <ReactAdapter component={ReactExamples.AlertDefault} slot="preview" />
       <ComponentCode slot="code" code={ReactExampleString} />
     </ComponentExample>
-  </svelte.fragement>
+  </svelte.fragment>
 </ComponentDocs>

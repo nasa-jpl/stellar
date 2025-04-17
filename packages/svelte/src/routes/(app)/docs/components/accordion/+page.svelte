@@ -12,7 +12,7 @@
 </script>
 
 <ComponentDocs>
-  <svelte.fragement slot="Svelte">
+  <svelte.fragment slot="Svelte">
     <ComponentHeader
       title="Accordion"
       description="A vertically stacked set of interactive headings that each reveal an associated section of content."
@@ -22,8 +22,8 @@
       <Example slot="preview" />
       <ComponentCode slot="code" code={exampleString} />
     </ComponentExample>
-  </svelte.fragement>
-  <svelte.fragement slot="React">
+  </svelte.fragment>
+  <svelte.fragment slot="React">
     <ComponentHeader
       title="Accordion"
       description="A vertically stacked set of interactive headings that each reveal an associated section of content."
@@ -33,5 +33,5 @@
       <ReactAdapter component={ReactExamples.AccordionDefault} slot="preview" />
       <ComponentCode slot="code" code={ReactExampleString} />
     </ComponentExample>
-  </svelte.fragement>
+  </svelte.fragment>
 </ComponentDocs>

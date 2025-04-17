@@ -12,7 +12,7 @@
 </script>
 
 <ComponentDocs>
-  <svelte.fragement slot="Svelte">
+  <svelte.fragment slot="Svelte">
     <ComponentHeader
       title="Sonner"
       description="An opinionated toast component for Svelte. This component requires usage of the Toaster component in the root of the application. Please refer to the API documentation for more instructions."
@@ -22,8 +22,8 @@
       <Example slot="preview" />
       <ComponentCode slot="code" code={exampleString} />
     </ComponentExample>
-  </svelte.fragement>
-  <svelte.fragement slot="React">
+  </svelte.fragment>
+  <svelte.fragment slot="React">
     <ComponentHeader
       title="Sonner"
       description="An opinionated toast component for Svelte. This component requires usage of the Toaster component in the root of the application. Please refer to the API documentation for more instructions."
@@ -33,5 +33,5 @@
       <ReactAdapter component={ReactExamples.SonnerDefault} slot="preview" />
       <ComponentCode slot="code" code={ReactExampleString} />
     </ComponentExample>
-  </svelte.fragement>
+  </svelte.fragment>
 </ComponentDocs>
