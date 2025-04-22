@@ -7,7 +7,8 @@
     "build": "vite build && npm run build:css",
     "build:css": "tailwind build src/index.css -o dist/index.css",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@fontsource/inter": "^5.1.1",
