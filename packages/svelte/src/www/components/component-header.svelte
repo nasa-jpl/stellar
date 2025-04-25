@@ -17,7 +17,7 @@
         href={link}
         target="_blank"
         rel="noreferrer"
-        class="focus:ring-ring inline-flex select-none items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent gap-1"
+        class="focus:ring-ring inline-flex select-none items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent gap-1"
       >
         API Reference
         <ExternalLink size={15} />

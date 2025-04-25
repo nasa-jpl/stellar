@@ -22,7 +22,7 @@
     </div>
     <Tabs.Content value="preview">
       <div
-        class="ring-offset-background focus-visible:ring-ring mt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 relative rounded-md border"
+        class="ring-offset-background focus-visible:ring-ring mt-2 focus-visible:outline-none focus-visible:ring-2 relative rounded-md border"
       >
         <div class="preview flex min-h-[350px] w-full justify-center p-10 items-center">
           <slot name="preview" />

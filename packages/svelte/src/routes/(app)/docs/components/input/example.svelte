@@ -2,4 +2,4 @@
   import { Input } from '$lib/index.js';
 </script>
 
-<Input type="email" placeholder="email" class="max-w-xs" />
+<Input placeholder="Default input" class="max-w-xs" />

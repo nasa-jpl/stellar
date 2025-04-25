@@ -11,7 +11,11 @@
     const { component, children, class: _, ...props } = $$props;
     try {
       root = createRoot(container);
-      root.render(component);
+      if (typeof component === 'object') {
+        root.render(component);
+      } else if (typeof component === 'function') {
+        root.render(e(component, props));
+      }
     } catch (err) {
       console.warn(`react-adapter failed to mount.`, { err });
     }

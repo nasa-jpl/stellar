@@ -1,17 +1,22 @@
 <script lang="ts">
-	import * as FormPrimitive from "formsnap";
-	import { cn } from "$lib/utils.js";
+  import { cn } from '$lib/utils.js';
+  import * as FormPrimitive from 'formsnap';
+  import type { LabelSize } from '../label/index.js';
+  import { formVariants } from './index.js';
 
-	type $$Props = FormPrimitive.LegendProps;
+  type $$Props = FormPrimitive.LegendProps & {
+    size?: LabelSize;
+  };
 
-	let className: $$Props["class"] = undefined;
-	export { className as class };
+  let className: $$Props['class'] = undefined;
+  export let size: LabelSize = 'default';
+  export { className as class };
 </script>
 
 <FormPrimitive.Legend
-	{...$$restProps}
-	class={cn("data-[fs-error]:text-destructive text-sm font-medium leading-none", className)}
-	let:legendAttrs
+  {...$$restProps}
+  class={cn('data-[fs-error]:text-destructive leading-none', formVariants.size[size].legend, className)}
+  let:legendAttrs
 >
-	<slot {legendAttrs} />
+  <slot {legendAttrs} />
 </FormPrimitive.Legend>
