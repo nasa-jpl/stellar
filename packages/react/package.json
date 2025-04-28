@@ -1,6 +1,6 @@
 {
   "name": "@nasa-jpl/stellar-react",
-  "version": "2.0.0-alpha.59",
+  "version": "2.0.0-alpha.60",
   "type": "module",
   "scripts": {
     "dev": "vite",
