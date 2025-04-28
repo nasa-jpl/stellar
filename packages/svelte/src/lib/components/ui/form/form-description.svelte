@@ -2,14 +2,14 @@
   import { cn } from '$lib/utils.js';
   import * as FormPrimitive from 'formsnap';
   import type { HTMLAttributes } from 'svelte/elements';
-  import type { LabelSize } from '../label/index.js';
+  import type { FormSize } from '../../../../../../react/dist/index.js';
   import { formVariants } from './index.js';
 
   type $$Props = HTMLAttributes<HTMLSpanElement> & {
-    size?: LabelSize;
+    size?: FormSize;
   };
   let className: string | undefined | null = undefined;
-  export let size: LabelSize = 'default';
+  export let size: FormSize = 'default';
   export { className as class };
 </script>
 

@@ -16,11 +16,13 @@ const formVariants = {
       description: 'text-sm font-medium',
       legend: 'text-sm font-medium',
       errors: 'text-sm font-medium',
+      field: 'space-y-2',
     },
     sm: {
       description: 'text-xs font-normal',
       legend: 'text-xs font-normal',
       errors: 'text-xs font-normal',
+      field: 'space-y-1',
     },
   },
 };

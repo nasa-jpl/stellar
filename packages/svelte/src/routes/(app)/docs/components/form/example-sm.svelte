@@ -38,7 +38,7 @@
 </script>
 
 <form method="POST" class="w-2/3 space-y-6" use:enhance>
-  <Form.Field {form} name="username">
+  <Form.Field {form} name="username" size="sm">
     <Form.Control let:attrs>
       <Form.Label size="sm">Username</Form.Label>
       <Input sizeVariant="sm" {...attrs} bind:value={$formData.username} />

@@ -38,7 +38,7 @@ export function FormSm() {
           control={form.control}
           name="username"
           render={({ field }) => (
-            <FormItem>
+            <FormItem size="sm">
               <FormLabel size="sm">Username</FormLabel>
               <FormControl>
                 <Input sizeVariant="sm" placeholder="shadcn" {...field} />

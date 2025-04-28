@@ -70,13 +70,20 @@ type FormItemContextValue = {
 
 const FormItemContext = React.createContext<FormItemContextValue>({} as FormItemContextValue);
 
-const FormItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({ className, ...props }, ref) => {
+const formItemVariants = {
+  size: {
+    default: 'space-y-2',
+    sm: 'space-y-1',
+  },
+};
+
+const FormItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & { size?: FormSize }>(
+  ({ className, size = 'default', ...props }, ref) => {
     const id = React.useId();
 
     return (
       <FormItemContext.Provider value={{ id }}>
-        <div ref={ref} className={cn('space-y-2', className)} {...props} />
+        <div ref={ref} className={cn(formItemVariants.size[size], className)} {...props} />
       </FormItemContext.Provider>
     );
   },
