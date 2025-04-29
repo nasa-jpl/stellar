@@ -12,4 +12,7 @@ export * from './form/form-examples-sm.tsx';
 export * from './input/input-examples-default.tsx';
 export * from './input/input-examples-sm.tsx';
 export * from './input/input-examples-xs.tsx';
+export * from './select/select-examples-default.tsx';
+export * from './select/select-examples-sm.tsx';
+export * from './select/select-examples-xs.tsx';
 export * from './sonner-examples.tsx';

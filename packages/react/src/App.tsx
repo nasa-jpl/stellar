@@ -15,6 +15,15 @@ import {
 } from './components/ui/dialog';
 import { Input } from './components/ui/input';
 import { Label } from './components/ui/label';
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from './components/ui/select';
 import { Toaster } from './components/ui/toaster';
 import viteLogo from '/vite.svg';
 
@@ -23,6 +32,31 @@ function App() {
 
   return (
     <>
+      <Select>
+        <SelectTrigger size="xs" className="w-[180px]">
+          <SelectValue placeholder="Select a fruit" />
+        </SelectTrigger>
+        <SelectContent size="xs">
+          <SelectGroup>
+            <SelectLabel size="xs">Fruits</SelectLabel>
+            <SelectItem size="xs" value="apple">
+              Apple
+            </SelectItem>
+            <SelectItem size="xs" value="banana">
+              Banana
+            </SelectItem>
+            <SelectItem size="xs" value="blueberry">
+              Blueberry
+            </SelectItem>
+            <SelectItem size="xs" value="grapes">
+              Grapes
+            </SelectItem>
+            <SelectItem size="xs" value="pineapple">
+              Pineapple
+            </SelectItem>
+          </SelectGroup>
+        </SelectContent>
+      </Select>
       <Toaster />
       <div>
         <a href="https://vite.dev" target="_blank">
