@@ -23,6 +23,7 @@
     // { title: 'Data Table', url: 'data-table' },
     { title: 'Dialog', url: 'dialog' },
     { title: 'Drawer', url: 'drawer' },
+    { title: 'Date Picker', url: 'date-picker' },
     { title: 'Dropdown Menu', url: 'dropdown-menu' },
     { title: 'Form', url: 'form' },
     { title: 'Hover Card', url: 'hover-card' },

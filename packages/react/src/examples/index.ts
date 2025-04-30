@@ -7,6 +7,8 @@ export * from './button/button-examples-lg.js';
 export * from './button/button-examples-sm.js';
 export * from './button/button-examples-xl.js';
 export * from './button/button-examples-xs.js';
+export * from './date-picker/date-picker-examples-default.js';
+export * from './date-picker/date-picker-examples-sm.js';
 export * from './form/form-examples-default.tsx';
 export * from './form/form-examples-sm.tsx';
 export * from './input/input-examples-default.tsx';

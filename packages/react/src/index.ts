@@ -14,6 +14,7 @@ export { Checkbox } from './components/ui/checkbox.js';
 export * from './components/ui/collapsible.js';
 export * from './components/ui/command.js';
 export * from './components/ui/context-menu.js';
+export * from './components/ui/date-picker.js';
 export * from './components/ui/dialog.js';
 export * from './components/ui/drawer.js';
 export * from './components/ui/dropdown-menu.js';

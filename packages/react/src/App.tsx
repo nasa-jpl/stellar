@@ -1,9 +1,13 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { startOfDay } from 'date-fns';
+import { CalendarArrowDown, Eraser } from 'lucide-react';
 import { useState } from 'react';
+import { DateRange, TZDate } from 'react-day-picker';
 import { toast } from 'sonner';
 import './App.css';
-import reactLogo from './assets/react.svg';
 import { Button } from './components/ui/button';
+import { Calendar } from './components/ui/calendar';
+import DatePicker, { DateRangePicker, formatDateISO, parseDateStringISO } from './components/ui/date-picker';
 import {
   Dialog,
   DialogContent,
@@ -24,14 +28,72 @@ import {
   SelectTrigger,
   SelectValue,
 } from './components/ui/select';
+import { ThemeProvider } from './components/ui/theme-provider';
 import { Toaster } from './components/ui/toaster';
-import viteLogo from '/vite.svg';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [date, setDate] = useState<Date | undefined>(new Date('2025-02-01T00:00:00Z'));
+  const [dateRange, setDateRange] = useState<DateRange>({
+    from: new Date('2025-02-01T00:00:00Z'),
+    to: new Date('2025-02-15T00:00:00Z'),
+  });
 
   return (
-    <>
+    <ThemeProvider>
+      <DatePicker
+        size="sm"
+        startMonth={new Date('2020-02-01T00:00:00Z')}
+        endMonth={new Date('2040-12-01T00:00:00Z')}
+        timezone="UTC"
+        selected={date}
+        onChange={setDate}
+        formatDate={formatDateISO}
+        parseDateString={parseDateStringISO}
+        footer={
+          <div className="mt-2 flex flex-col gap-2">
+            <Button size="lg" className="w-full" variant="outline" onClick={() => setDate(undefined)}>
+              <Eraser size={16} /> Clear
+            </Button>
+            <Button
+              size="lg"
+              className="w-full"
+              variant="outline"
+              onClick={() => setDate(startOfDay(new TZDate(new Date(), 'UTC')))}
+            >
+              <CalendarArrowDown size={16} /> Today
+            </Button>
+          </div>
+        }
+      />
+      <br />
+      <DateRangePicker
+        size="sm"
+        timezone="UTC"
+        selected={dateRange}
+        onChange={setDateRange}
+        formatDate={formatDateISO}
+        parseDateString={parseDateStringISO}
+        footer={
+          <div className="mt-2 flex flex-col gap-2">
+            <Button
+              size="lg"
+              className="w-full"
+              variant="outline"
+              onClick={() => setDateRange({ from: undefined, to: undefined })}
+            >
+              <Eraser size={16} /> Clear
+            </Button>
+            <Button
+              size="lg"
+              className="w-full"
+              variant="outline"
+              onClick={() => setDateRange({ from: startOfDay(new TZDate(new Date(), 'UTC')), to: undefined })}
+            >
+              <CalendarArrowDown size={16} /> Today
+            </Button>
+          </div>
+        }
+      />
       <Select>
         <SelectTrigger size="xs" className="w-[180px]">
           <SelectValue placeholder="Select a fruit" />
@@ -59,12 +121,7 @@ function App() {
       </Select>
       <Toaster />
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Calendar captionLayout="dropdown" mode="single" />
       </div>
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
@@ -83,7 +140,6 @@ function App() {
         </AccordionItem>
       </Accordion>
 
-      <h1>Vite + React</h1>
       <Button
         variant="outline"
         onClick={() =>
@@ -126,14 +182,7 @@ function App() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
-      <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    </ThemeProvider>
   );
 }
 
