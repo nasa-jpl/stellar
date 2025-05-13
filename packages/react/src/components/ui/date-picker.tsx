@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { format, formatISO, isValid, parse, parseISO } from 'date-fns';
+import { format, formatISO, parse, parseISO } from 'date-fns';
 import { CalendarIcon } from 'lucide-react';
 import { FocusEvent, KeyboardEvent, useCallback, useEffect, useState } from 'react';
 import { DateRange, PropsBase, PropsRange, PropsSingle, TZDate } from 'react-day-picker';
@@ -10,7 +10,6 @@ import { Popover, PopoverContent, PopoverTrigger } from './popover';
 
 type DatePickerProps = {
   className?: string;
-  parseDateString?: (dateString: string, timezone: string) => Date;
   formatDate?: (date: Date, timezone: string) => string;
   timezone?: string;
   size?: 'default' | 'sm';
@@ -18,6 +17,8 @@ type DatePickerProps = {
   onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void;
   onBlur?: (event: FocusEvent<HTMLInputElement, Element>) => void;
   onChange?: (date: Date) => void;
+  inputProps?: React.ComponentProps<'input'>;
+  onCalendarSelect?: (date: Date) => void;
 } & Omit<PropsBase, 'mode'> &
   Omit<PropsSingle, 'mode' | 'onSelect'>;
 
@@ -38,11 +39,10 @@ export function parseDateStringISO(dateString: string) {
 }
 
 export function DatePicker({
-  parseDateString = parseDateStringDefault,
   formatDate = formatDateDefault,
-  onKeyUp = () => {},
-  onBlur = () => {},
+  inputProps = {},
   onChange = () => {},
+  onCalendarSelect = () => {},
   timezone = 'UTC',
   size = 'default',
   className = '',
@@ -80,7 +80,9 @@ export function DatePicker({
       const tzdate = new TZDate(date, timezone);
       setSelectedDate(tzdate);
       setInputValue(formatDate(tzdate, timezone));
-      onChange(date); // use normal date for change event to preserve native date functions
+      const nativeDate = new Date(tzdate);
+      onChange(nativeDate); // use normal date for change event to preserve native date functions
+      onCalendarSelect(nativeDate);
     }
     setPopoverOpen(false);
   };
@@ -88,15 +90,6 @@ export function DatePicker({
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const dateString = e.target.value;
     setInputValue(dateString); // keep the input value in sync
-
-    const parsedDate = parseDateString(dateString, timezone);
-    if (!parsedDate || !isValid(parsedDate)) {
-      setSelectedDate(undefined);
-    } else {
-      setSelectedDate(parsedDate);
-      setMonth(parsedDate);
-      onChange(new Date(parsedDate)); // use normal date for change event to preserve native date functions
-    }
   };
 
   return (
@@ -108,8 +101,7 @@ export function DatePicker({
         value={inputValue}
         placeholder={placeholder}
         onChange={handleInputChange}
-        onKeyUp={onKeyUp}
-        onBlur={onBlur}
+        {...inputProps}
       />
       <Popover open={popoverOpen} onOpenChange={setPopoverOpen}>
         <PopoverTrigger asChild>
@@ -135,24 +127,33 @@ export function DatePicker({
 }
 
 type DateRangePickerProps = {
+  /* TODO add inputProps for start and end */
   className?: string;
-  parseDateString?: (dateString: string, timezone: string) => Date;
   formatDate?: (date: Date, timezone: string) => string;
   timezone?: string;
   size?: 'default' | 'sm';
   placeholder?: string;
-  onKeyUp?: (event: KeyboardEvent<HTMLInputElement>) => void;
-  onBlur?: (event: FocusEvent<HTMLInputElement, Element>) => void;
+  onKeyUp?: (
+    event: KeyboardEvent<HTMLInputElement>,
+    which: 'from' | 'to',
+    inputValues: { from: string; to: string },
+  ) => void;
+  onBlur?: (
+    event: FocusEvent<HTMLInputElement, Element>,
+    which: 'from' | 'to',
+    inputValues: { from: string; to: string },
+  ) => void;
   onChange?: (dateRange: DateRange) => void;
+  onCalendarSelect?: (dateRange: DateRange) => void;
 } & Omit<PropsBase, 'mode'> &
   Omit<PropsRange, 'mode' | 'onSelect'>;
 
 export function DateRangePicker({
-  parseDateString = parseDateStringDefault,
   formatDate = formatDateDefault,
   onKeyUp = () => {},
   onBlur = () => {},
   onChange = () => {},
+  onCalendarSelect = () => {},
   timezone = 'UTC',
   size = 'default',
   className = '',
@@ -172,7 +173,7 @@ export function DateRangePicker({
 
   // Hold the month in state to control the calendar when the input changes
   const [month, setMonth] = useState<Date | undefined>(getSelectedDateFromProp(props.selected?.from, timezone));
-  const [selectedDate, setSelectedDate] = useState<DateRange | undefined>({
+  const [selectedDateRange, setSelectedDateRange] = useState<DateRange | undefined>({
     from: getSelectedDateFromProp(props.selected?.from, timezone),
     to: getSelectedDateFromProp(props.selected?.to, timezone),
   });
@@ -185,8 +186,8 @@ export function DateRangePicker({
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   useEffect(() => {
-    setMonth(getSelectedDateFromProp(props.selected?.from, timezone));
-    setSelectedDate({
+    setMonth(getSelectedDateFromProp(props.selected?.to, timezone));
+    setSelectedDateRange({
       from: getSelectedDateFromProp(props.selected?.from, timezone),
       to: getSelectedDateFromProp(props.selected?.to, timezone),
     });
@@ -198,51 +199,18 @@ export function DateRangePicker({
     if (!dateRange) {
       setFromInputValue('');
       setToInputValue('');
-      setSelectedDate(undefined);
+      setSelectedDateRange(undefined);
     } else {
       const { from, to } = dateRange;
       if (from && to) {
         const tzdateFrom = new TZDate(from, timezone);
         const tzdateTo = new TZDate(to, timezone);
-        setSelectedDate({ from: tzdateFrom, to: tzdateTo });
+        setSelectedDateRange({ from: tzdateFrom, to: tzdateTo });
         setFromInputValue(formatDate(tzdateFrom, timezone));
         setToInputValue(formatDate(tzdateTo, timezone));
         onChange(dateRange); // use normal date for change event to preserve native date functions
+        onCalendarSelect(dateRange);
       }
-    }
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, type: 'from' | 'to') => {
-    const dateString = e.target.value;
-    // keep the input value in sync
-    if (type === 'from') {
-      setFromInputValue(dateString);
-    } else {
-      setToInputValue(dateString);
-    }
-
-    const parsedDate = parseDateString(dateString, timezone);
-    if (!parsedDate || !isValid(parsedDate)) {
-      if (type === 'from') {
-        setSelectedDate({ from: undefined, to: selectedDate?.to });
-      } else {
-        setSelectedDate({ from: selectedDate?.from, to: undefined });
-      }
-    } else {
-      let newDateRange: DateRange = { from: undefined, to: undefined };
-      if (type === 'from') {
-        newDateRange = { from: parsedDate, to: selectedDate?.to };
-      } else {
-        newDateRange = { from: selectedDate?.from, to: parsedDate };
-      }
-      setSelectedDate(newDateRange);
-      setMonth(parsedDate);
-
-      // use normal date for change event to preserve native date functions
-      onChange({
-        from: newDateRange.from ? new Date(newDateRange.from) : undefined,
-        to: newDateRange.to ? new Date(newDateRange.to) : undefined,
-      });
     }
   };
 
@@ -254,9 +222,9 @@ export function DateRangePicker({
         type="text"
         value={fromInputValue}
         placeholder={placeholder}
-        onChange={e => handleInputChange(e, 'from')}
-        onKeyUp={onKeyUp}
-        onBlur={onBlur}
+        onChange={e => setFromInputValue(e.target.value)}
+        onKeyUp={e => onKeyUp(e, 'from', { from: fromInputValue, to: toInputValue })}
+        onBlur={e => onBlur(e, 'from', { from: fromInputValue, to: toInputValue })}
       />
       <Input
         sizeVariant={size === 'sm' ? 'xs' : 'default'}
@@ -264,9 +232,9 @@ export function DateRangePicker({
         type="text"
         value={toInputValue}
         placeholder={placeholder}
-        onChange={e => handleInputChange(e, 'to')}
-        onKeyUp={onKeyUp}
-        onBlur={onBlur}
+        onChange={e => setToInputValue(e.target.value)}
+        onKeyUp={e => onKeyUp(e, 'to', { from: fromInputValue, to: toInputValue })}
+        onBlur={e => onBlur(e, 'to', { from: fromInputValue, to: toInputValue })}
       />
       <Popover open={popoverOpen} onOpenChange={setPopoverOpen}>
         <PopoverTrigger asChild>
@@ -280,7 +248,7 @@ export function DateRangePicker({
             captionLayout="dropdown"
             month={month}
             onMonthChange={setMonth}
-            selected={selectedDate}
+            selected={selectedDateRange}
             onSelect={handleDayPickerSelect}
             mode="range"
             {...props}

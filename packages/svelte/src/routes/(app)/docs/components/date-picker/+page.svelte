@@ -21,7 +21,11 @@
   <svelte.fragment slot="React">
     <div class="space-y-4">
       <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Default</h3>
-      <ComponentHeader title="Date Picker" description="A calendar combined with an input" />
+      <ComponentHeader title="Date Picker" description="A calendar combined with an input." />
+      <p>
+        This is a custom Stellar component that wraps the Shadcn Calendar component. Date validation aside from a basic
+        date-fns.isValid must be handled outside of this component.
+      </p>
       <ComponentExample>
         <ReactAdapter component={ReactExamples.DatePickerDefault} slot="preview" />
         <ComponentCode slot="code" code={ReactExampleDefaultString} />
@@ -35,5 +39,13 @@
         <ComponentCode slot="code" code={ReactExampleSmString} />
       </ComponentExample>
     </div>
+
+    <!-- <div class="space-y-4">
+      <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Validation Example</h3>
+      <ComponentExample>
+        <ReactAdapter component={ReactExamples.DatePickerValidation} slot="preview" />
+        <ComponentCode slot="code" code={ReactExampleValidationString} />
+      </ComponentExample>
+    </div> -->
   </svelte.fragment>
 </ComponentDocs>
