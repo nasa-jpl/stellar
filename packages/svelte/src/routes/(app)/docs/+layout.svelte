@@ -24,6 +24,7 @@
     { title: 'Dialog', url: 'dialog' },
     { title: 'Drawer', url: 'drawer' },
     { title: 'Date Picker', url: 'date-picker' },
+    { title: 'Date Range Picker', url: 'date-range-picker' },
     { title: 'Dropdown Menu', url: 'dropdown-menu' },
     { title: 'Form', url: 'form' },
     { title: 'Hover Card', url: 'hover-card' },

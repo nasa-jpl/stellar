@@ -157,7 +157,7 @@ export function DateRangePicker({
   timezone = 'UTC',
   size = 'default',
   className = '',
-  placeholder = `Ex: ${formatDate(new TZDate(new Date(), 'UTC'), 'UTC')}`,
+  placeholder = `Ex: ${formatDate(new TZDate('2030-12-01T00:00:00Z', 'UTC'), 'UTC')}`,
   ...props
 }: DateRangePickerProps) {
   const getSelectedDateFromProp = useCallback(
