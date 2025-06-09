@@ -45,3 +45,4 @@ export * from './components/ui/toggle-group.js';
 export { Toggle } from './components/ui/toggle.js';
 export * from './components/ui/tooltip.js';
 export * as ReactExamples from './examples/index.js';
+export * from './lib/utils.js';

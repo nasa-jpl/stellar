@@ -47,3 +47,4 @@ export * as ToggleGroup from './components/ui/toggle-group/index.js';
 export { Toggle } from './components/ui/toggle/index.js';
 export * as Tooltip from './components/ui/tooltip/index.js';
 export * from './components/ui/typography/index.js';
+export * from './utils.js';
