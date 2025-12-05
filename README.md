@@ -2,7 +2,7 @@
 
 # Stellar
 
-The Svelte and React implementations of the Stellar design system for spacecraft operation tools. These libraries are customizations of the [shadcn-svelte](https://svelte-4.shadcn-svelte.com/) and [shadcn](https://ui.shadcn.com/) kits. Current Svelte support is limited to Svelte 4 and current React support is for 18.
+The Svelte and React implementations of the Stellar design system for spacecraft operation tools. These libraries are customizations of the [shadcn-svelte](https://svelte-4.shadcn-svelte.com/) and [shadcn](https://ui.shadcn.com/) kits. Current Svelte support is limited to Svelte 4 and current React support is for version 18.
 
 ## Install
 
