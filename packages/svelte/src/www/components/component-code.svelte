@@ -1,11 +1,13 @@
 <script lang="ts">
   import { Check, Copy } from 'lucide-svelte';
   import { Highlight } from 'svelte-highlight';
+  import css from 'svelte-highlight/languages/css';
   import typescript from 'svelte-highlight/languages/typescript';
   import { cubicInOut } from 'svelte/easing';
   import { fade } from 'svelte/transition';
 
   export let code: string = '';
+  export let language: 'typescript' | 'css' = 'typescript';
   let copied = false;
 
   async function copyCode() {
@@ -34,6 +36,6 @@
     </button>
   </div>
   <div class="overflow-auto max-h-[500px] min-h-12">
-    <Highlight language={typescript} {code} />
+    <Highlight language={language === 'typescript' ? typescript : css} {code} />
   </div>
 </div>
