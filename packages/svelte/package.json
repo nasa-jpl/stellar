@@ -1,6 +1,7 @@
 {
   "author": "",
   "dependencies": {
+    "@fontsource/inter": "^5.1.1",
     "@internationalized/date": "^3.5.6",
     "bits-ui": "^0.21.16",
     "clsx": "^2.1.1",
@@ -19,8 +20,8 @@
   },
   "description": "Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).",
   "devDependencies": {
-    "@nasa-jpl/stellar": "file:../css/dist",
     "@sveltejs/adapter-node": "^5.0.1",
+    "@sveltejs/adapter-static": "^3.0.8",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/package": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -44,7 +45,9 @@
     },
     "./styles": "./dist/index.css",
     "./tailwindConfig": "./tailwind.config.ts",
-    "./theme": "./src/theme.css"
+    "./theme": "./src/theme.css",
+    "./font": "./src/font.css",
+    "./utils": "./dist/utils.js"
   },
   "files": [
     "dist",
@@ -52,6 +55,7 @@
     "!dist/**/*.spec.*",
     "tailwind.config.ts",
     "src/theme.css",
+    "src/font.css",
     "package.json"
   ],
   "license": "ISC",
@@ -79,5 +83,6 @@
   "svelte": "./dist/index.js",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "2.0.0-alpha.30"
+  "version": "2.0.0-alpha.71",
+  "gitHead": "9f9d2026f90afcf4d6d40968379e23a7f69ecbe2"
 }
