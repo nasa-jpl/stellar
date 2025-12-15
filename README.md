@@ -2,41 +2,20 @@
 
 # Stellar
 
-A CSS implementation of the Stellar design system for spacecraft operation tools.
+The Svelte and React implementations of the Stellar design system for spacecraft operation tools. These libraries are customizations of the [shadcn-svelte](https://svelte-4.shadcn-svelte.com/) and [shadcn](https://ui.shadcn.com/) kits. Current Svelte support is limited to Svelte 4 and current React support is for version 18.
 
 ## Install
 
-### CSS only
+### Svelte Components
 
 ```sh
-npm install @nasa-jpl/stellar --save
+npm install @nasa-jpl/stellar-svelte --save
 ```
 
 ### React components
 
 ```sh
 npm install @nasa-jpl/stellar-react --save
-```
-
-### Svelte components
-
-```sh
-npm install @nasa-jpl/stellar-svelte --save
-```
-
-## Usage
-
-Import the desired CSS files into your project to make the classes globally available. See our [example project][stellar-example] for detailed API usage.
-
-```html
-<html>
-  <head>
-    <link href="@nasa-jpl/stellar/dist/css/button.css" rel="stylesheet" />
-  </head>
-  <body>
-    <button class="st-button">Stellar!</button>
-  </body>
-</html>
 ```
 
 ## Development
@@ -48,5 +27,3 @@ If you are a developer you can get started quickly by reading the [developer doc
 ## License
 
 The scripts and documentation in this project are released under the [MIT License](LICENSE).
-
-[stellar-example]: https://nasa-jpl.github.io/stellar/example/
