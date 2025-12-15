@@ -7,21 +7,35 @@
   import 'svelte-highlight/styles/monokai.css';
   import { ReactExamples } from '../../../../../../../react/dist/index.js';
   import ReactExampleString from '../../../../../../../react/src/examples/alert-examples.js?raw';
-  import Example from './example.svelte';
-  import exampleString from './example.svelte?raw';
+  import ExampleDefault from './example-default.svelte';
+  import exampleDefaultString from './example-default.svelte?raw';
+  import ExampleLg from './example-lg.svelte';
+  import exampleLgString from './example-lg.svelte?raw';
 </script>
 
 <ComponentDocs>
   <svelte.fragment slot="Svelte">
     <ComponentHeader
-      title="Alert"
-      description="Displays a callout for user attention."
-      link="https://www.shadcn-svelte.com/docs/components/alert"
+      title="Button"
+      description="Displays a button or a component that looks like a button."
+      link="https://www.shadcn-svelte.com/docs/components/button"
     />
-    <ComponentExample>
-      <Example slot="preview" />
-      <ComponentCode slot="code" code={exampleString} />
-    </ComponentExample>
+
+    <div class="space-y-4">
+      <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Default</h3>
+      <ComponentExample>
+        <ExampleDefault slot="preview" />
+        <ComponentCode slot="code" code={exampleDefaultString} />
+      </ComponentExample>
+    </div>
+
+    <div class="space-y-4">
+      <h3 class="mt-8 scroll-m-20 text-xl font-semibold tracking-tight">Large</h3>
+      <ComponentExample>
+        <ExampleLg slot="preview" />
+        <ComponentCode slot="code" code={exampleLgString} />
+      </ComponentExample>
+    </div>
   </svelte.fragment>
   <svelte.fragment slot="React">
     <ComponentHeader
