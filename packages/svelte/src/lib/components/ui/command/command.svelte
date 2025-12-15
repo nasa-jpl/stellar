@@ -1,13 +1,19 @@
 <script lang="ts">
 	import { Command as CommandPrimitive } from "cmdk-sv";
 	import { cn } from "$lib/utils.js";
+	import { type CommandSize, setCommandCtx } from "./index.js";
 
-	type $$Props = CommandPrimitive.CommandProps;
+	type $$Props = CommandPrimitive.CommandProps & {
+		size?: CommandSize;
+	};
 
 	export let value: $$Props["value"] = undefined;
+	export let size: CommandSize = "default";
 
 	let className: string | undefined | null = undefined;
 	export { className as class };
+
+	setCommandCtx(size);
 </script>
 
 <CommandPrimitive.Root

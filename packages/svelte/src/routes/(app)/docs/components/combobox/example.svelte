@@ -59,8 +59,8 @@
     </Button>
   </Popover.Trigger>
   <Popover.Content class="w-[200px] p-0">
-    <Command.Root>
-      <Command.Input placeholder="Search framework..." class="h-9" />
+    <Command.Root size="xs">
+      <Command.Input placeholder="Search framework..." />
       <Command.Empty>No framework found.</Command.Empty>
       <Command.Group>
         {#each frameworks as framework}
