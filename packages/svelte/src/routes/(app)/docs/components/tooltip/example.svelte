@@ -8,6 +8,7 @@
     <Button builders={[builder]} variant="outline">Hover</Button>
   </Tooltip.Trigger>
   <Tooltip.Content>
+    <Tooltip.Arrow />
     <p>Add to library</p>
   </Tooltip.Content>
 </Tooltip.Root>
