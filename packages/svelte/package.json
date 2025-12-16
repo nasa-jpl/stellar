@@ -83,6 +83,6 @@
   "svelte": "./dist/index.js",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "2.1.3",
-  "gitHead": "590f271e5ebdbfbe39006074d14c226dbef038c2"
+  "version": "2.1.4",
+  "gitHead": "0d7c555e0c299235cfd04e3201623717a09a0962"
 }
