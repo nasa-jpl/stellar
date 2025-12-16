@@ -1,6 +1,6 @@
 {
   "name": "@nasa-jpl/stellar-react",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -101,5 +101,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e2dc6438ca5ff9808e3b1e30aa4811a6cca21880"
+  "gitHead": "47dcd0b9718477e5a6969cf07e1ea05a57592825"
 }
