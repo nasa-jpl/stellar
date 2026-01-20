@@ -12,10 +12,6 @@
   export let variant: $$Props['variant'] = 'default';
   export let size: AlertSize = 'default';
   export { className as class };
-  $: console.log(
-    'cn(alertVariants({ variant }), alertVariants.variants.size[size].alert, className) :>> ',
-    cn(alertVariants({ variant }), alertVariants.variants.size[size].alert, className),
-  );
 </script>
 
 <div
